@@ -5,10 +5,6 @@
     <title>Title</title>
     <style>
 
-        *{
-            padding: 0;
-            margin: 0;
-        }
         ul{
             list-style: none;
         }
@@ -23,7 +19,7 @@
         .test2{
             background: url("beijing.jpg");
             height: 500px;
-            width: 2025px;
+            width: 3000px   ;
             position: relative;
             right: 500px;
             top: 100px;
@@ -111,13 +107,14 @@
             border: none;
             position: relative;
             top: -10px;
+            background-color: #f56600;
         }
         .tu{
             padding-top: 10px;
             text-align: center;
             display: inline-block;
             position: relative;
-            top: 170px;
+            top: 120px;
             width: 100%;
             height: 19px;
             background-repeat: no-repeat
@@ -162,7 +159,7 @@
             background-color: #0000FF;
             position: relative;
             left:70px;
-
+        }
         fieldset {
             display: block;
             -webkit-margin-start: 2px;
@@ -176,7 +173,38 @@
             border-style: groove;
             border-color: threedface;
             border-image: initial;
+
         }
+        .xian{
+            border-top: 1px solid #e0e0e0;
+            padding-top: 10px;
+            padding-bottom: 10px\9;
+
+        }
+
+
+        .xian-txt{
+            font-size: 14px;
+            color: #b0b0b0;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        legend {
+            display: block;
+            -webkit-padding-start: 2px;
+            -webkit-padding-end: 2px;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            text-align: center;
+
+        }
+.ppp{
+    width: 100%;
+    height: 10px;
+}
 .denglu1{
     color: white;
     background-color: #f56600;
@@ -188,22 +216,24 @@
 <div class="test2">
     <div class="test3">
         <div class="id1">
-            <a href="" class="zhanghao" style="text-decoration: none">帐号登陆</a>
+            <a href="https://www.bilibili.com/" class="zhanghao" style="text-decoration: none">帐号登陆</a>
         <span class="line"></span>
-        <a href="" class="saoma" style="text-decoration: none">扫码登录</a>
+        <a href="https://www.bilibili.com/" class="saoma" style="text-decoration: none">扫码登录</a>
         </div>
         <input class="input1" type="text4" placeholder="邮箱/手机号/小米ID"><br>
         <input class="input2" type="text5" placeholder="密码">
         <div id="denglu"><input class="denglu1" type="submit"value="登录"></div>
-   <div class="tu">
-       <a href=""><i class="qq" ></i></a>
-       <a href=""><i class="weibo" ></i></a>
-       <a href=""><i class="zhifubao" ></i></a>
-       <a href=""><i class="weixin" ></i></a>
-   </div>
-        <div class="xian">
-<fieldset></fieldset>
-        </div>
+        <p class="ppp"></p>
+            <div class="tu">
+                <a href="https://www.bilibili.com/"><i class="qq" ></i></a>
+                <a href="https://www.bilibili.com/"><i class="weibo" ></i></a>
+                <a href="https://www.bilibili.com/"><i class="zhifubao" ></i></a>
+                <a href="https://www.bilibili.com/"><i class="weixin" ></i></a>
+            </div>
+            <div class="xian">
+                <fieldset class="xian"><legend align="center" class="xian-txt">其他方式登录</legend></fieldset>
+            </div>
+
     </div>
 </div>
 
