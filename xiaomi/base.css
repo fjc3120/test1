@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* */
+.clearfix:after{
+    content:"";
+    clear:both;
+    display: block;
+
+}
+/* */
+/* header css start */
+.header a{
+    display: block;
+}
+.header img{
+    vertical-align: top;
+}
+.header{
+    width: 1130px;
+    margin: 0 auto;
+}
+/* header css end */
+
+/* container css start */
+.container{
+    background: url("../beijing.jpg") center;
+    height: 588px;
+}
+.container .login-bar{
+    width: 1130px;
+    margin:0 auto;
+}
+.container .login-form{
+    width: 410px;
+    height: 524px;
+    background-color: white;
+    float: right;
+    margin-top: 32px;
+}
+.container .topo-text{
+    font-size: 24px;
+}
+.container .topo-text{
+    padding: 27px 0 24px 0;
+    text-align: center;
+}
+.container .topo-text a{
+    text-decoration: none;
+    color: #666;
+}
+.container .border-Line{
+    border: 1px solid #dddddd;
+    margin: 0 35px 0 35px;
+}
+.container .topo-text a:first-child{
+    color: #f56600;
+}
+.container .topo-text a:hover{
+    color: #f56600;
+}
+.container .login-input input{
+    width: 306px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    font-size: 80%;
+    font-family: arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    margin-bottom: 14px;
+}
+.container .login-content{
+    width: 348px;
+    margin: 0 auto;
+}
+.container .login-btn input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #f56600;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.container .small-text{
+    font-size: 14px;
+}
+.container .small-text a{
+    text-decoration: none;
+}
+.container .st-left{
+    float: left;
+}
+.container .st-left a{
+    color: #f56600;
+}
+.container .st-right{
+    float: right;
+}
+.container .st-right a{
+    color: #757575;
+}
+/* container css end */
