@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+/* top css start */
+.top{
+     height: 40px;
+    background: #333;
+    margin: 0 auto;
+    font-size: 14px;
+    overflow: hidden;
+}
+.container{
+background-color:#333;
+    height: 40px;
+    width: 1250px;
+    margin: 0 auto;
+    line-height: 40px;
+    overflow: hidden;
+}
+.container .container-left{
+    float: left;
+}
+.container-right{
+    float: right;
+    margin: 0  70px;
+}
+.container .container-right .shop{
+    background-color: #424242;
+    display: inline-block;
+    margin: 0 30px;
+}
+.container span{
+    color: #424242;
+    margin: 0 .5em;
+}
+.container a{
+     color: #b0b0b0;
+    text-decoration: none;
+ }
+ .container a:hover{
+     color: white;
+ }
+/* top css end */
+/* hearder css start */
+.hearder{
+    height: 100px;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+}
+.hearder .hearder-logo{
+    background-color: #ff6700;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+
+    margin: 20px 80px 20px 140px;
+    float: left;
+}
+.hearder  .hearder-logo .mi-logo{
+    background-color: #ff6700;
+    width: 55px;
+    height: 55px;
+}
+.hearder .black{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.hearder .list{
+    text-decoration: none;
+    color: #333333;
+    overflow: hidden;
+    float: left;
+}
+.hearder .list ul{
+    list-style: none;
+    float: left;
+    margin: 33px 0 0;
+}
+.hearder ul li{
+    display: inline-block;
+    margin: 5px 17px 0 2px;
+}
+.hearder ul a{
+    text-decoration: none;
+    color: #333333;
+}
+/* hearder css end*/
