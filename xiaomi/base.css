@@ -106,4 +106,62 @@
 .container .st-right a{
     color: #757575;
 }
+.container .login-type{
+    margin-top: 160px;
+}
+.container .login-type fieldset{
+    border: 0;
+    border-top: 1px solid #bbb ;
+    color: #bbb;
+    font-size: 14px;
+    padding-top: 20px;
+}
+.container .login-icon{
+    text-align: center;
+}
+.container .login-icon  a{
+    width: 30px;
+    height: 30px;
+    background-color: #757575;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%; /*兼容*/
+    -moz-border-radius: 50%;    /*兼容*/
+    -o-border-radius: 50%;      /*兼容*/
+    border-radius: 50%;         /*兼容*/
+    margin: 0 17px;
+}
+.container .login-icon i{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../3333.png");
+    margin: 4px auto 0;
+}
+.container  .qq i{
+    background-position: -19px 0;
+}
+.container .qq:hover{
+    background-color: #2088d1;
+}
+.container  .sina i{
+    background-position: -38px 0;
+}
+.container .sina:hover{
+    background-color: #d32f2f;
+}
+.container  .alipay i{
+    background-position: -57px 0;
+    width: 25px;
+}
+.container .alipay:hover{
+    background-color: #0ae;
+}
+.container  .wechat i{
+    background-position: -84px 0;
+    width: 23px;
+}
+.container .wechat:hover{
+    background-color: #00d20d;
+}
 /* container css end */
