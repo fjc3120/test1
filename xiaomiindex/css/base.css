@@ -186,8 +186,48 @@ display: block;
     /*position: relative;*/
     /*right: 300px;*/
 /*}*/
-.header2  .bj a:hover{
-    color: #333333;
+.header2  .bj .i-left:hover{
+    color: white;
+    background-color: #424242;
+}
+.header2  .bj .i-right:hover{
+    color: white;
+    background-color: #424242;
+}
+.header2 .bj .i-left{
+    display: inline-block;
+    text-decoration: none;
+    color: #bbbbbb;
+    width: 41px;
+    height: 69px;
+    float: left;
+    position: relative;
+    left: 234px;
+    top: 220px;
+}
+.header2 .bj .i-right{
+    display: inline-block;
+    text-decoration: none;
+    color: #bbbbbb;
+    width: 41px;
+    height: 69px;
+    float: right;
+    position: relative;
+    top: 220px;
+}
+.header2 .bj .i-left-i {
+    width: 41px;
+    height: 69px;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 69px;
+}
+.header2 .bj .i-right-i{
+    display: inline-block;
+    width: 41px;
+    height: 69px;
+    font-size: 50px;
+    line-height: 69px;
 }
 .header2 .content .bj1{
     background-color: #666666;
