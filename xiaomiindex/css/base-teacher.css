@@ -253,12 +253,35 @@ ul{
     background-color: #5f5750;
     float: left;
 }
+.slider-bottom li:before{
+    position: relative;
+    top: -20px;
+    left: 4px;
+    width: 68px;
+    height: 1px;
+   float: left;
+    content: "";
+    background: #665e57;
+}
+.slider-bottom li:after{
+    position: relative;
+    top: -26px;
+    left: 0;
+    width: 1px;
+    height: 64px;
+    float: left;
+    content: "";
+    background: #665e57;
+}
+.slider-bottom .top:before{
+    display: none;
+}
 .slider-bottom ul li{
     float: left;
     width: 72px;
     padding: 0 3px;
     text-align: center;
-    padding-top: 32px;
+    padding-top: 12px;
 }
 .slider-bottom ul a{
     text-decoration: none;
