@@ -7,7 +7,7 @@
     width: 1226px;
     margin: 0 auto;
 }
-clearfix:after{
+.clearfix:after{
     content: "";
     clear: both;
     display: block;
@@ -26,6 +26,9 @@ clearfix:after{
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
+}
+a{
+    text-decoration: none;
 }
 /* global end */
 /*topber start */
@@ -305,3 +308,223 @@ margin-left: 14px;
     margin-top: 14px;
 }
 /*slider-bar end*/
+
+/*home star*/
+
+.home .title {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    width: 1226px;
+    height: 58px;
+}
+.home .title a{
+    display: inline-block;
+    float: right;
+    border: 1px solid #e0e0e0;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.home .title a:hover{
+    color: #ff6700;
+}
+.home .xm ul{
+    display: inline-block;
+    width: 2480px;
+}
+.home .xm ul li{
+    display: inline-block;
+    width: 234px;
+    height: 300px;
+    float: left;
+    padding-top: 39px;
+    margin-right: 14px;
+    text-align: center;
+    border-top: 2px solid #ffac13;
+    background-color: #dddddd;
+}
+.home .xm li .sj{
+    width: 160px;
+    height: 166px;
+    margin: 0 37px 22px;
+    float: left;
+}
+.home .xm li  .sj-imga{
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+.home .xm li h3{
+    width: 194px;
+    height: 21px;
+    margin: 0 20px 3px;
+    float: left;
+}
+.home .xm  h3 a{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    height: 20px;
+    width:100%;
+    color: #333333;
+}
+.home .xm .p-1{
+    text-align: center;
+    float: left;
+    width: 194px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 0 20px 12px;
+}
+.home .xm .p-2{
+    text-align: center;
+    float: left;
+    width: 234px;
+    height: 28px;
+    margin: 0;
+    color: #ff6709;
+}
+/*home end*/
+
+/*page start*/
+.page{
+    width: 100% ;
+    height: 950px;
+    background-color:#dddddd;
+    padding: 60px 0 0;
+}
+.page .title-2{
+    width: 1226px;
+    height: 58px;
+}
+.page span{
+float: left;
+}
+.page .ul{
+    width: 280px;
+    height: 42px;
+    float: right;
+text-align: right;
+}
+.page .ul li{
+    display: inline-block;
+    margin: 0 0 0 25px;
+}
+.page .row{
+    width: 1226px;
+    height: 628px;
+}
+.page .row .row-left {
+    float: left;
+    width: 234px;
+    height: 628px;
+}
+.page  .row-left a{
+    display: inline-block;
+    width: 234px;
+    height: 628px;
+}
+.page .row .row-right{
+    float: left;
+    width: 992px;
+    height: 614px;
+    margin:0 0 -14px -14px;
+}
+.page .row-right ul{
+    display: inline-block;
+    width: 992px;
+}
+.page .row-right li{
+    display: inline-block;
+    width: 234px;
+    height: 246px;
+    float: left;
+    padding: 34px 0 20px 0;
+    margin: 0 0 14px 14px;
+    text-align: center;
+    border-top: 2px solid #ffac13;
+    background-color: #dddddd;
+}
+.page .row-right  .sj{
+    width: 160px;
+    height: 166px;
+    margin: 0 37px 22px;
+    float: left;
+}
+.page .row-right  .sj-imga{
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+.page .row-right   h3{
+    width: 194px;
+    height: 21px;
+    margin: 0 20px 3px;
+    float: left;
+}
+.page .row-right   h3 a{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    height: 20px;
+    width:100%;
+    color: #333333;
+}
+.page .row-right .p-1{
+    text-align: center;
+    float: left;
+    width: 50px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: -80px 20px 12px;
+}
+.page .row-right .p-2{
+    text-align: center;
+    float: left;
+    width: 50px;
+    height: 28px;
+    color: #ff6709;
+    margin: -60px 0 0 0;
+}
+.page .row .row-right  .li-8 a{
+    float: right;
+}
+.page .li-8-1{
+    float: right;
+    width: 234px;
+    height: 93px;
+}
+.page .row .li-8-1 .sj-imga{
+    width: 80px;
+    height: 80px;
+}
+.page .li-8-2{
+    float: right;
+    width: 234px;
+    height: 93px;
+}
+.page .row .li-8-2 .sj-imga{
+    width: 80px;
+    height: 80px;
+}
+.page  .li-8 .sj {
+    width: 80px;
+    height: 85px;
+display: inline-block;
+    float: left;
+}
+.page .li-8 h3{
+    width: 100px;
+    height: 28px;
+    margin: -10px 110px 5px 30px;
+}
+/*page end*/
