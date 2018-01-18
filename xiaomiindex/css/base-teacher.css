@@ -217,6 +217,7 @@ ul{
 .slider-bar  .si-top a:last-child{
     float: right;
     background-position: -125px;
+    
 }
 .slider-bar  .si-top  .sit-left:hover{
     background-position: 0,0;
