@@ -201,10 +201,10 @@ ul{
 .slider-bar .slider-icon .si-top{
     position: absolute;
     top:50%;
-    left: 234px;
+    left: 233px;
     height: 70px;
     margin-top: -35px;
-    width: 990px;
+    width: 993px;
 }
 .slider-bar  .si-top a{
     display: inline-block;
@@ -217,7 +217,7 @@ ul{
 .slider-bar  .si-top a:last-child{
     float: right;
     background-position: -125px;
-    
+
 }
 .slider-bar  .si-top  .sit-left:hover{
     background-position: 0,0;

@@ -229,6 +229,12 @@ display: block;
     font-size: 50px;
     line-height: 69px;
 }
+.header2 .bj .bj-list{
+   padding:20px 0;
+    z-index: 10;
+    width: 234px;
+    height: 420px;
+}
 .header2 .content .bj1{
     background-color: #666666;
     width: 235px;
@@ -293,8 +299,8 @@ background: rgba(0,0,0,0.5);
     text-decoration: none;
     color: white;
     display: block;
-    line-height: 35px;
-    padding: 8px 0 2px 23px;
+    line-height: 32px;
+    padding: 8px 0 2px 40px;
 }
 .header2 .bj-list a:hover{
     background: #ff6700;
