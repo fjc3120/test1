@@ -479,21 +479,15 @@ ul{
     color: #333333;
 }
 .page .row-right .p-1{
-    text-align: center;
     float: left;
-    width: 50px;
-    height: 18px;
     font-size: 12px;
     color: #b0b0b0;
-    margin: -80px 20px 12px;
+    margin: 0 0 0 100px;
 }
 .page .row-right .p-2{
-    text-align: center;
     float: left;
-    width: 50px;
-    height: 28px;
     color: #ff6709;
-    margin: -60px 0 0 0;
+    margin: 10px 0 0 104px;
 }
 .page .row .row-right  .li-8 a{
     float: right;
@@ -502,15 +496,24 @@ ul{
     float: right;
     width: 234px;
     height: 93px;
+    position: relative;
 }
 .page .row .li-8-1 .sj-imga{
     width: 80px;
     height: 80px;
 }
+.page .row .li-8-1 .p-4{
+    color: #f56600;
+}
+.page .row .li-8 p{
+position: relative;
+    top: 35px ;
+}
 .page .li-8-2{
     float: right;
     width: 234px;
     height: 93px;
+    position: relative;
 }
 .page .row .li-8-2 .sj-imga{
     width: 80px;
