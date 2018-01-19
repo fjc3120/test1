@@ -435,7 +435,7 @@ ul{
     float: left;
     width: 992px;
     height: 614px;
-    margin:0 0 -14px -14px;
+    margin:0 0 -14px 0x;
 }
 .page .row-right ul{
     display: inline-block;
@@ -444,13 +444,13 @@ ul{
 .page .row-right li{
     display: inline-block;
     width: 234px;
-    height: 246px;
+    height: 244px;
     float: left;
     padding: 34px 0 20px 0;
     margin: 0 0 14px 14px;
     text-align: center;
     border-top: 2px solid #ffac13;
-    background-color: #dddddd;
+    background-color: white;
 }
 .page .row-right  .sj{
     width: 160px;
