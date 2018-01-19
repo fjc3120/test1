@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var a=1;//number数值型
+    var b=2.5;//不分 int float 都是number
+    var c="a"; //字符型 string
+    var d="abc";//不分字符和字符串，都是字符型 string
+    var aa=0.1+0.2;//【】特殊】=0.30000000000000004
+    var e=true;//false 布尔型 Boolean
+    var f=d+a;//自动转换成字符串相加 abc1
+    var g;//undefined 未定义 ，不是报错
+    var h="2";
+    h=parseInt(h);//字符串转换成数值型
+    h=+"2";//字符串转换成数值型
+    var i=parseInt(c);//不识别的数值型 =NaN ，是number
+    var j=""; //空的字符串也属于 fales  ,不空的字字符串属于 true
+               //  0是flase  1是true
+               // false 0 "" NaN null undefined 都是属于flase
+               //  &&与    ||或
+    // console.log ("1");   //控制台查看输出
+   // document.write();    // 网页查看输出
+     a+=1;// 等于 a=a+1;
+    a++; // 等于 a=a+1;后赋值
+     ++a; // 等于 a=a+1;  先赋值
+    // document.write(1/0);  报错的数值型 =Infinity  ，是number
+    var n="1"+1+4; // ==114
+    var m=1+4+"1";//==51
+    console.log(a);
+</script>
+</body>
+</html>
