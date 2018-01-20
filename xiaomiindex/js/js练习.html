@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//    var a = window.prompt("过年回家，你妈问你：有没有对象啊?");
+//    var c = "没有";
+//    var f = "我是程序员";
+//    var d = {
+//        name:"小红",
+//            age:"18岁",
+//            sex:"男",
+//    }
+//        if(a=="有"|| a=="没有"|| a=="我是程序员")
+//        {
+//            if(a==c)
+//            {
+//                alert("你妈说：哦~~~");
+//            }
+//            else if (a==f)
+//            {
+//                alert("有啊，面向对象object嘛~");
+//            }
+//            else
+//                {
+//                alert("我女朋友叫"+d.name+"。     年龄"+ d.age+ "。   只可惜是个"+d.sex+"的！");
+//                    var b = window.prompt("哪个学校的娃娃呀?");
+//                    d.school=b;
+//                    alert("跟我一样都是"+d.school);
+//                }
+//        }
+//        else
+//        {
+//            alert("别打岔，问你话呢")
+//        }
+
+//    if(a=="有"|| a=="没有"|| a=="我是程序员")
+//    {
+//        if(a==c)
+//        {
+//            alert("你妈说：哦~~~");
+//        }
+//        else if (a==f)
+//        {
+//            alert("有啊，面向对象object嘛~");
+//        }
+//        else
+//            {
+//            alert("我女朋友叫"+d.name+"。     年龄"+ d.age+ "。   只可惜是个"+d.sex+"的！");
+//            }
+//    }
+//    else
+//    {
+//        alert("别打岔，问你话呢")
+//    }
+/*------------------------------------------------------------------------------------------*/
+
+//var h = [0];
+//d= window.confirm("今天中午吃啥");
+//if(d)
+//{
+//    var c = prompt("几个人吃");
+//    for(e=1; e<=c; e++  )
+//    {
+//        var g = prompt("第" + e + "个人是谁");
+//       h[0] = h.push(g);
+//    }
+//    for(var n=1;n<h.length; n++)
+//    {
+//        var a = Math.random();
+//        a = a * 10;
+//        a = Math.floor(a);
+//        switch (a)
+//        {
+//            case 1:
+//                b = "吃毛线吃，吃屎去吧！";
+//                break;
+//            case 2:
+//                b = "吃麻婆豆腐";
+//                break;
+//            case 3:
+//                b = "吃炒土豆丝";
+//                break;
+//            case 4:
+//                b = "吃红烧茄子";
+//                break;
+//            case 5:
+//                b = "喝西北风吧";
+//                break;
+//            case 6:
+//                b = "与师弟们辟谷多时，只为冲破天劫";
+//                break;
+//            case 7:
+//                b = "吃烤肉拌饭";
+//                break;
+//            case 8:
+//                b = "吃麻辣烫";
+//                break;
+//            case 9:
+//                b = "吃豆腐脑";
+//                break;
+//            case 0:
+//                b = "吃锅包肉";
+//                break;
+//            default:
+//                b = "想吃屁吧";
+//                break;
+//        }
+//       alert(h[n]+b);
+//    }
+//}
+//else
+//    {
+//        alert("吃屁吧你");
+//    }
+/*
+//var a = "a";
+//var b = parseInt(a);
+//console.log(b);
+//console.log(isNaN(b));*/
+  /*  ----------------------------------------*/
+//  var lunch = window.confirm("中午吃啥");
+//  var isFor = true;
+//  if(lunch){
+//      var personName = [];
+//      var personNum = window.prompt("几个人");
+//      if(isNaN(personNum)){
+//          alert("输入的不是数字");
+//      }else{
+//          for(var i=0; i<personNum;i++) {
+//              personName[i] = window.prompt("第" + (i + 1) + "个人叫啥");
+//              if (!personName[i]) {
+//                  isFor = false;
+//                  break;
+//              }
+//          }
+//          if(isFor){
+//              for (var j = 0; j < personNum.length; j++) {
+//                  var string1 = personName[i];
+//                  var a = Math.random();
+//                  a = Math.floor(a * 10);
+//                  switch (a) {
+//                      case 1:
+//                          alert(string1 + "土豆丝");
+//                          break;
+//                      case 2:
+//                          alert(string1 + "宫保鸡丁");
+//                          break;
+//                      case 3:
+//                          alert(string1 + "鱼香肉丝");
+//                          break;
+//                      case 4:
+//                          alert(string1 + "地三鲜");
+//                          break;
+//                      case 5:
+//                          alert(string1 + "烧茄子");
+//                          break;
+//                      case 6:
+//                          alert(string1 + "米线");
+//                          break;
+//                      case 7:
+//                          alert(string1 + "麻辣烫");
+//                          break;
+//                      case 8:
+//                          alert(string1 + "盖饭");
+//                          break;
+//                      case 9:
+//                          alert(string1 + "炒饭");
+//                          break;
+//                      case 10:
+//                          alert(string1 + "面条");
+//                          break;
+//                      default:
+//                          alert(string1 + "随便");
+//                  }
+//              }
+//          } else {
+//              alert("取消");
+//          }
+//      }
+//  }else{
+//      alert("取消");
+//  }
+
+    /*========*/
+var count=[];
+    var isFor = true;
+    var lunch = window.confirm("吃啥");
+    if(lunch)
+    {
+         var sum = window.prompt("几个人");
+         if(!isNaN(sum))
+         {
+            for(var i=0; i<sum;i++) {
+                var name = prompt("第" + (i + 1) + "个人叫啥");
+                count[i]=name;
+                if (!count[i]) {
+                    isFor = false;
+                    break;
+                }
+            }
+                if(isFor)
+                {
+                    for(var j=0; j<sum;j++) {
+                      var  eat = count[j];
+                        var a = Math.random();
+                        a = Math.floor(a * 10);
+                        switch (a) {
+                            case 1:
+                                alert(eat + "土豆丝");
+                                break;
+                            case 2:
+                                alert(eat + "宫保鸡丁");
+                                break;
+                            case 3:
+                                alert(eat + "鱼香肉丝");
+                                break;
+                            case 4:
+                                alert(eat + "地三鲜");
+                                break;
+                            case 5:
+                                alert(eat + "烧茄子");
+                                break;
+                            case 6:
+                                alert(eat + "米线");
+                                break;
+                            case 7:
+                                alert(eat + "麻辣烫");
+                                break;
+                            case 8:
+                                alert(eat + "盖饭");
+                                break;
+                            case 9:
+                                alert(eat + "炒饭");
+                                break;
+                            case 10:
+                                alert(eat + "面条");
+                                break;
+                            default:
+                                alert(eat + "随便");
+                        }
+                    }
+                }
+                else
+                {
+                    alert("取消");
+                }
+         }
+         else
+         {
+             alert("取消");
+         }
+    }
+    else
+    {
+        alert("取消");
+    }
+</script>
+</body>
+</html>
