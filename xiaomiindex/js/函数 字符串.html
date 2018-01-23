@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<!--<a href="dom.html">跳转</a>-->
 <!--<button onclick="alert('1111');">你好</button>-->
 <!--<button onclick="alert(a);">你好</button>-->
 <!--<div class="a">文字</div>-->
@@ -112,6 +113,15 @@
 //        console.log(add);
 //        console.log("阶乘和为"+add);
 //    }
+    /**/
+//    var sum = 1;
+//    var add = 0;
+//    //    for(var i=1;i<11;i++){
+//    //        sum*=i;
+//              add+=sum;
+    //        console.log(add);
+    //    }
+    /**/
 
     /*5.三角形*/
 //    for(var i=1;i<=5;i++){
@@ -143,7 +153,7 @@
 
 //
 //    for(var i=1000;i<10000;i++){
-//        var a=  Math.floor(i/1000);    // 千位
+//        var a=  Math.floor(i/1000);    // 千位  取小数点的整数位
 //        var b= Math.floor(i/100)%10;    //百位
 //        var c= Math.floor(i/10)%10;     // 十位
 //        var d= Math.floor(i)%10;     // 个位
@@ -151,6 +161,97 @@
 //            console.log(i);
 //        }
 //    }
+
+    /*------------------------------------------第五章练习题-----------------------------------*/
+
+    /*1.*/
+   // f(x) = 4x2+3x+2
+//    var c = function () {
+//        return (x*x);
+//    }
+//    var x = window.prompt("请输入X");
+//    var y = function (x1){
+//        return (4*c()+3*x+2);
+//    }
+//    console.log(y(x));
+    /**/
+    var x = window.prompt("请输入X");
+    console.log(Math.pow(x,3)*4+3*x+2);
+
+    /*2.*/
+//    var x0 = window.prompt("请输入X");
+//    var y0 = window.prompt("请输入Y");
+//    function Min(x,y) {
+//        if(x<y){
+//            return x;
+//        }else return y;
+//    }
+//    console.log(Min(x0,y0));
+
+    /*3.*/
+//    var cont=0;
+//    //var x= window.prompt("输入一个非负整数");
+//    function a(x0) {
+//        if(x0%3==0 && x0%5==0 && x0%7==0){
+//            return x0;
+//        }else {return "";}
+//    }
+//    for(var i=1;i<=1000;i++){
+//
+//        if(a(i)){
+//            cont++;
+//           document.write(i+" ");
+//            if(cont%6==0){
+//                document.write("<br>");
+//            }
+//        }
+//    }
+
+    /*4.素数*/
+//var b=0;
+//var c=0;
+//    for(var i=100;i<=1000;i++) {
+//        for (var j = 2; j <= i - 1; j++) {
+//            if (i % j != 0) {
+//                b = 1;
+//            }
+//        }
+//        if (b == 1) {
+//            document.write(i+" ");
+//            c++;
+//            if (c % 6 == 0) {
+//                document.write("<br>");
+//            }
+//        }
+//    }
+    /*5.非递归函数 */
+    var sum10 = 1;
+    for(var i=1;i<11;i++){
+        sum10*=i;
+        console.log(sum10);
+    }
+    console.log("10！="+sum10);  //10!
+
+    var sum12 = 1;
+    for(var j=1;j<13;j++){
+        sum12*=j;
+        console.log(sum12);
+    }
+    console.log("12！="+sum12);
+    function  factorial() {
+        return sum12-sum10;
+    }
+    console.log(factorial());
+    /*6.*/
+    /*7.*/
+
+    /*8.*/
+    /*9.*/
+
+
+    /*----------------------第六章练习题---------------------------*/
+    /*1.*/
+
 </script>
 </body>
 </html>
