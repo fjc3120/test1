@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button onclick="alert('1111');">你好</button>-->
+<button onclick="alert(a);">你好</button>
+<script>
+//    var aa = "abcdefg";
+//    console.log(aa.length);//计算长度
+//    console.log(aa.indexOf("d")); //d所在的第几个位置,第一次出现 ，从0开始
+//    console.log(aa.indexOf("y"));//返回负值，y不在aa字符串中
+//    console.log(aa.lastIndexOf("c"));//c所在的第几个位置,最后一次出现 ，从0开始
+//    console.log(aa.replace("fg","xx"));//字符串替换，把fg替换成xx
+//    console.log(aa.substr(1,3));//截取从b到d  bcd。
+//    console.log(aa.substring(1,3));//截取b到d，但不包括d。  bc
+//    console.log(aa.toLowerCase());//转换成小写
+//    console.log(aa.toUpperCase());//转换成大写
+//
+//
+//    var bb = "2017-08-03";
+//    console.log(bb.split("-"));//把bb拆成一个数组,日期常用
+
+/*习题选出max*/
+//var x=Math.random();
+//var y=Math.random();
+//(x>y)?console.log(x):console.log(y);
+/**/
+var today = new Date();
+var year = today.getFullYear();
+ function years() {
+    if((year%4==0&&year%100!==0)||year%400==0){
+        return "true";
+    }else{
+        return "flase";
+    }
+}
+var a = years();
+console.log(year);
+console.log(today);
+console.log(a);
+</script>
+</body>
+</html>

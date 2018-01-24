@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .a{
+            width: 1000px;
+            height: 500px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #f56600;
+            position: relative;
+        }
+        .x1{
+            height: 200px;
+            width: 200px;
+            border:  2px solid #0000FF;
+        }
+        ul{
+            position: absolute;
+            top: 250px;
+            list-style-type: none;
+           width: 1000px;
+            height: 200px;
+        }
+        li{
+            display: inline-block;
+            border:  2px solid #0000FF;
+            margin: 0 20px;
+            height: 100px;
+            width: 100px;
+        }
+        .a ul li img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <div class="b"><img src="../../mi.png" alt="" class="x1"></div>
+    <div>
+        <ul>
+            <li><img src="../../3.png" alt="" class="z1"></li>
+            <li><img src="../../4.png" alt="" class="z2"></li>
+            <li><img src="../../222.png" alt="" class="z3"></li>
+            <li><img src="../../3333.png" alt="" class="z4"></li>
+        </ul>
+    </div>
+</div>
+<script>
+    var aLi = document.getElementsByTagName("img");
+    var aX1 = document.getElementsByClassName("x1");
+  for(var i=0;i<aLi.length;i++){
+      aLi[i].onmouseover = function () {
+          var thisSrc = this.getAttribute("src");
+          aX1[0].setAttribute("src",thisSrc);  //替换属性
+      }
+  }
+</script>
+</body>
+</html>

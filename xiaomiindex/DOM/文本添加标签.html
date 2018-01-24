@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            margin: 200px   auto 0  auto;
+        }
+        .active{
+            color: #f56600;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <p class="aa">文本1</p>
+    <p>文本2</p>
+    <p>文本3</p>
+    <p>文本4</p>
+</div>
+<script>
+var aP = document.getElementsByTagName("p");
+for(var i=0;i<aP.length;i++){
+    aP[i].onclick= function () {
+        for(var j=0;j<aP.length;j++){
+            aP[j].classList.remove("active");  //移除 ()里的属性
+        }
+     //  this.className = "active";    //添加class 标签的属性 不推荐
+        this.classList.add("active");  //添加class 标签的属性    ,移除时，不会变原来的aa，
+    }
+}
+</script>
+</body>
+</html>

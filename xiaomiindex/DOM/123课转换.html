@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .a{
+            height: 300px;
+            width: 800px;
+            margin: 0 auto;
+        }
+       .a .cl{
+           width: 800px;
+           height: 50px;
+           background-color: #333333;
+
+       }
+        .a .cl  p{
+            float: left;
+            margin:0 15px;
+            line-height: 50px;
+            color: white;
+            border-right: 1px solid #f56600;
+        }
+        ul{
+
+            float: left;
+            margin-top: 20px;
+        }
+        .a-div{
+            width: 798px;
+            height: 150px;
+            border: 1px solid #333333;
+            display: none;
+        }
+        .a-div{
+            width: 798px;
+            height: 150px;
+            border: 1px solid #333333;
+           // display: none;
+        }
+        .a-div{
+            width: 798px;
+            height: 150px;
+            border: 1px solid #333333;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+<div class="cl">
+    <p>第一课</p>
+    <p>第二课</p>
+    <p>第三课</p>
+</div>
+    <div class="a-div" style="display: block">
+        <ul class="a-div-ul">
+            <li>1231231</li>
+            <li>213213213</li>
+            <li>535353</li>
+            <li>21312321</li>
+        </ul>
+    </div>
+    <div class="a-div">
+        <ul class="a-div-ul">
+            <li>525151</li>
+            <li>84862</li>
+        </ul>
+    </div>
+    <div class="a-div">
+        <ul class="a-div-ul">
+            <li>854224</li>
+            <li>888888</li>
+            <li>111111</li>
+        </ul>
+    </div>
+</div>
+<script>
+    var adiv =document.getElementsByClassName("a-div");
+    var ap =document.getElementsByTagName("p");
+    for(var i=0;i<ap.length;i++){
+        ap[i].index = i;
+        ap[i].onmouseover = function () {
+            for(var j=0;j<ap.length;j++){
+                adiv[j].style.display = "none";
+            }
+             adiv[this.index].style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text"><br>
+    <button>跳转</button>
+</div>
+<script>
+    var aBn = document.getElementsByTagName("button");
+    var aIt = document.getElementsByTagName("input");
+//    aBn[0].onclick = function () {
+    //        var thisval =aIt[0].value;     //获取输出的value
+    //        location.href = "http://"+thisval;    //转移网址
+    //    }
+    //        aIt[0].onkeydown = function (e) {    //获取键盘的点击事件  //回车的keyCode=13
+    //            var thisval =aIt[0].value;
+    //           var keyCod = e.keyCode;
+    //           if(keyCod==13){
+    //               location.href = "http://"+thisval;
+    //           }
+    //        }
+
+
+    aBn[0].onclick = function () {
+        var a = aIt[0].value;
+        location.href = "http://"+a;
+    }
+    aIt[0].onkeydown = function (e) {
+        var b = e.keyCode;
+        var a = aIt[0].value;
+        if(b==13){
+            location.href = "http://"+a;
+        }
+        console.log(e);
+    }
+</script>
+</body>
+</html>

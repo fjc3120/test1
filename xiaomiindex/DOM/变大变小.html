@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #aaa{
+            width: 200px;
+            height: 200px;
+            background-color: #424242;
+            position:absolute;
+            top:30%;
+            left: 40%;
+            display: block;
+        }
+        #bbb{
+            background-color: #5f5750;
+            width: 400px;
+            position:absolute;
+            top:20%;
+            left: 33%;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            width: 400px;
+        }
+        li{
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+<div id="bbb">
+    <ul>
+        <li><button>变宽</button></li>
+        <li><button>变高</button></li>
+        <li><button>变色</button></li>
+        <li><button>隐藏</button></li>
+        <li><button>重置</button></li>
+    </ul>
+</div>
+
+<div id="aaa"></div>
+<script>
+var oDiv = document.getElementById("bbb");
+var aLi = document.getElementsByTagName("li");
+var oDiv = document.getElementById("aaa");
+//aLi[4].onclick = function () {
+// aaa.style.cssText="";
+//}
+//aLi[3].onclick = function () {
+//    aaa.style.display = "none";
+//}
+//aLi[2].onclick = function () {
+//    aaa.style.backgroundColor = "#d32f2f";
+//}
+//aLi[1].onclick = function () {
+//    aaa.style.height = "400px";
+//}
+//aLi[0].onclick = function () {
+//    aaa.style.width ="400px";
+//}
+
+</script>
+
+</body>
+</html>
