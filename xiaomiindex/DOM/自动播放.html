@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: #333333;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bj-div{
+            height: 400px;
+            width: 800px;
+            margin: 20px auto;
+            border: 10px solid #eeeeee;
+            border-radius: 1%;
+        }
+        .bj-div img {
+            height: 400px;
+            width: 800px;
+            display: none;
+        }
+        .bj-div  ul{
+            list-style-type: none;
+            float: right;
+            z-index: 10;
+            position: relative;
+            top: -40px;
+        }
+        .bj-div ul li{
+            width: 25px;
+            height: 25px;
+            color: white;
+            background-color: #f56600;
+            display: inline-block;
+            margin: 0 5px;
+            border: 1px solid #f56600;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .bj-div  li:hover{
+            background-color: #5f5750;
+            color: #00aaee;
+        }
+        .bj-div p{
+            border: 1px solid #f56600;
+            border-radius: 50%;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            color: #ffffff;
+            background-color: #f56600;
+            display: inline-block;
+            z-index: 10;
+            position: relative;
+            top: -40px;
+            margin: 0 5px;
+        }
+        .bj-div p:hover{
+            background-color: #5f5750;
+            color: #00aaee;
+        }
+    </style>
+</head>
+<body>
+<div class="bj-div">
+    <div id="cccc">
+        <img src="../images/BJ1.jpg" alt="" class="bj-img">
+        <img src="../images/BJ2.jpg" alt="" class="bj-img">
+        <img src="../images/BJ3.jpg" alt="" class="bj-img">
+        <img src="../images/3.png" alt="" class="bj-img">
+        <img src="../images/bj5.jpg" alt="" class="bj-img">
+    </div>
+
+    <ul class="bj-ul">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <p this-type="up">&#60;</p>
+    <p this-type="next">&#62;</p>
+</div>
+<script>
+var aLi = document.getElementsByTagName("li");
+var aDiv =document.getElementById("cccc");
+var aP = document.getElementsByTagName("p");
+var aImg = document.getElementsByTagName("img");
+var s=0;
+var m=0;
+var go;
+var isInterval =true;
+aImg[0].style.display = "block";
+function move(m) {
+    if(isInterval==true){
+            change(s+1);
+            m++;
+        }
+    }
+aDiv.onmouseover =function () {
+    isInterval =false;
+}
+aDiv.onmouseout = function () {
+    isInterval =true;
+}
+go= setInterval("move(m)",1000);
+for(var k=0;k<aP.length;k++){
+    aP[k].onclick = function () {
+        var c =this.getAttribute("this-type");
+        if(c=="next") {
+                change(s + 1);
+            }
+        else{
+            change(s-1);
+        }
+    }
+}
+for(var i=0;i<aLi.length;i++){
+    aLi[i].index= i;
+aLi[i].onmouseover = function () {
+     change(this.index);
+}
+function change(index) {
+    if(index==5){
+        index=0;
+    }else if(index<0){
+        index=4;
+    }
+    for(var j=0;j<aLi.length;j++){
+        aImg[j].style.display = "none";
+      //  aImg[j].style.backgroundColor ="#f56600";
+       // aImg[j].style.color="#ffffff";
+    }
+    aImg[index].style.display = "block";
+    //aImg[index].style.backgroundColor = "#5f5750";
+   // aImg[index].style.color="#00aaee";
+    s=index;
+
+}
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .a1{
+            width: 200px;
+            height: 30px;
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<div class="a1">
+
+</div>
+<script>
+var aD1 = document.getElementsByClassName("a1");
+var s;
+    aD1[0].onmouseover = function () {
+            clearInterval(s);
+            s = setInterval(function () {
+                aD1[0].style.width = aD1[0].offsetWidth + 5 + 'px';
+            }, 10);
+    }
+    aD1[0].onmouseout =function () {
+            clearInterval(s);
+            s = setInterval(function () {
+                if(aD1[0].offsetWidth<=200){
+                    clearInterval(s);
+                }else{
+                    aD1[0].style.width = aD1[0].offsetWidth - 5 + 'px';
+                }
+            }, 10);
+        }
+</script>
+</body>
+</html>
