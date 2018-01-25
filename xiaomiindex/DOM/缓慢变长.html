@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .a1{
+        div{
             width: 200px;
             height: 30px;
             background-color: #d32f2f;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-<div class="a1">
-
-</div>
+<div class="a1"></div>
+<div class="a2"></div>
+<div class="a3"></div>
 <script>
-var aD1 = document.getElementsByClassName("a1");
+var aD1 = document.getElementsByTagName("div");
 var s;
-    aD1[0].onmouseover = function () {
-            clearInterval(s);
-            s = setInterval(function () {
-                aD1[0].style.width = aD1[0].offsetWidth + 5 + 'px';
-            }, 10);
+var This;
+for(var i=0;i<aD1.length;i++){
+    aD1[i].onmouseover = function () {
+        clearInterval(s);
+        This=this;
+        s = setInterval(function () {
+            This.style.width = This.offsetWidth + 5 + 'px';
+        }, 10);
     }
-    aD1[0].onmouseout =function () {
-            clearInterval(s);
-            s = setInterval(function () {
-                if(aD1[0].offsetWidth<=200){
-                    clearInterval(s);
-                }else{
-                    aD1[0].style.width = aD1[0].offsetWidth - 5 + 'px';
-                }
-            }, 10);
-        }
+    aD1[i].onmouseout =function () {
+        clearInterval(s);
+        This=this;
+        s = setInterval(function () {
+            if(This.offsetWidth<=200){
+                clearInterval(s);
+            }else{
+                This.style.width = This.offsetWidth - 5 + 'px';
+            }
+        }, 10);
+    }
+}
+
 </script>
 </body>
 </html>
