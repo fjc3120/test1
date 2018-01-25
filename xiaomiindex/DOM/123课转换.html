@@ -84,8 +84,10 @@
         ap[i].onmouseover = function () {
             for(var j=0;j<ap.length;j++){
                 adiv[j].style.display = "none";
+                ap[j].style.backgroundColor = "#333333";
             }
              adiv[this.index].style.display = "block";
+            ap[this.index].style.backgroundColor = "#b0b0b0";
         }
     }
 </script>
