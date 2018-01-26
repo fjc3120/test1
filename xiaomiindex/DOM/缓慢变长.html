@@ -19,28 +19,28 @@
 <script>
 var aD1 = document.getElementsByTagName("div");
 var s;
-var This;
+//var e;
 for(var i=0;i<aD1.length;i++){
+   // aD1[i].index=i;
     aD1[i].onmouseover = function () {
-        clearInterval(s);
-        This=this;
-        s = setInterval(function () {
+        clearInterval(this.s);
+        var This =this;
+        this.s = setInterval(function () {
             This.style.width = This.offsetWidth + 5 + 'px';
         }, 10);
     }
     aD1[i].onmouseout =function () {
-        clearInterval(s);
-        This=this;
-        s = setInterval(function () {
+        clearInterval(this.s);
+        var This = this;
+        this.s = setInterval(function () {
             if(This.offsetWidth<=200){
-                clearInterval(s);
+                clearInterval(This.s);
             }else{
                 This.style.width = This.offsetWidth - 5 + 'px';
             }
         }, 10);
     }
 }
-
 </script>
 </body>
 </html>
