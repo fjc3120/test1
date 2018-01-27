@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .clearfix:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .box{
+            width: 430px;
+            height: 100px;
+            background-color: #666666;
+            margin: 100px auto;
+            border: 1px solid #dddddd;
+            padding: 10px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .box ul{
+            width: 1102px;
+            position: absolute;
+          /*display: block;*/
+        }
+        .box li{
+            float: left;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin-right: 10px;
+            background-color: #333333;
+            color: #dddddd;
+            /*display: list-item;*/
+        }
+        .btn{
+            width: 200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .btn button{
+            padding: 20px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="box-ul clearfix">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <!--<li>5</li>-->
+        </ul>
+    </div>
+    <div class="btn">
+        <button>向左</button>
+        <button>向右</button>
+    </div>
+    <script>
+        var oUl = document.getElementsByTagName("ul")[0];
+        var aBtn =document.getElementsByTagName("button");
+        var tmp=3;
+        var s;
+     aBtn[0].onclick = function () {
+            clearInterval(s);
+            tmp=1;
+            aaa();
+        }
+        aBtn[1].onclick = function () {
+            clearInterval(s)
+            tmp=0;
+            aaa();
+        }
+ function aaa() {
+     if(tmp==1){
+         s=setInterval(function () {
+             if(oUl.offsetLeft==-550){
+                 oUl.style.left = 0;
+             }else{
+                 oUl.style.left = oUl.offsetLeft - 5+"px";
+             }
+             console.log(oUl.offsetLeft);
+         },30)
+     }else if(tmp==0){
+         s=setInterval(function () {
+             if(oUl.offsetLeft==0){
+                 oUl.style.left =-550+"px";
+             } else{
+                 oUl.style.left = oUl.offsetLeft +5+"px";
+             }
+         },30)
+     }
+ }
+    </script>
+</body>
+</html>
