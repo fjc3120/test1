@@ -107,10 +107,10 @@
                 <li><img src="../images/3.png" alt=""></li>
                 <li><img src="../images/bj5.jpg" alt=""></li>
                 <li><img src="../images/BJ1.jpg" alt=""></li>
-                <li><img src="../images/BJ2.jpg" alt=""></li>
-                <li><img src="../images/BJ3.jpg" alt=""></li>
-                <li><img src="../images/3.png" alt=""></li>
-                <li><img src="../images/bj5.jpg" alt=""></li>
+                <!--<li><img src="../images/BJ2.jpg" alt=""></li>-->
+                <!--<li><img src="../images/BJ3.jpg" alt=""></li>-->
+                <!--<li><img src="../images/3.png" alt=""></li>-->
+                <!--<li><img src="../images/bj5.jpg" alt=""></li>-->
             </ul>
     </div>
     <div class="left-right">
@@ -138,6 +138,8 @@
     aSp[0].onclick = function () {
         clearInterval(s);
         left(--globalIndex);
+//        if(){}
+
     }
     aSp[1].onclick = function () {
         clearInterval(s);
@@ -161,22 +163,36 @@
     }
     function right(aa) {
         s=setInterval(function () {
+            if(oHul.offsetLeft==-3275){
+                globalIndex = 0;
+                aa=0;
+                oHul.style.left=0+"px";
+            }else{
                 if(oHul.offsetLeft==-655*aa){
                     clearInterval(s);
                     globalIndex = aa;
                 }else{
                     oHul.style.left = oHul.offsetLeft-5+"px";
                 }
+            }
+
         },10);
     }
     function left(aa) {
         s=setInterval(function () {
-        if(oHul.offsetLeft==-655*aa){
-            clearInterval(s);
-            globalIndex = aa;
-        }else{
-            oHul.style.left = oHul.offsetLeft+5+"px";
-        }
+            if(oHul.offsetLeft==0){
+                globalIndex = 0;
+                aa=4;
+                oHul.style.left=-3275+"px";
+            }else{
+                if(oHul.offsetLeft==-655*aa){
+                    clearInterval(s);
+                    globalIndex = aa;
+                }else{
+                    oHul.style.left = oHul.offsetLeft+5+"px";
+                }
+            }
+
     },10);
     }
 </script>
