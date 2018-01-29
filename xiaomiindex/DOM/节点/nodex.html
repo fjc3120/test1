@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bos">
+<ul id="class1"></ul>
+</div>
+<script>
+    var oBox =document.getElementById("box");
+    var oUl=document.getElementById("class1");
+    oBox.innerHTML = "<div class='a'>111</div>" ;//添加标签    innerText添加文字  //不好移除
+    oBox.innerHTML+="<div></div>" ;//在原来基础上添加
+   // innerHTML 等于下面的
+    var oDiv =document.createElement("div");  //创建标签 为对象oDIV
+    oDiv.innerText = "111";  //给对象加文字内容
+    oBox.appendChild(oDiv); //将对象标签添加到oBox里
+    oBox.removeChild(oDiv);//将对象标签从oBox里移除
+    oBox.hasChildNodes() //判断oBox里是否有子元素，空格回车都算
+    oBox.replaceChild(oDiv,oUl); //交换子元素，前面被后面替换
+    oBox.cloneNode(); //克隆当前节点，不可隆子元素
+
+</script>
+</body>
+</html>
