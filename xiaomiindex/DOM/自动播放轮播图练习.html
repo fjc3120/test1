@@ -130,6 +130,9 @@
     var aListli =aList[0].getElementsByTagName("li");
     var globalIndex=0;
     var s;
+    oHul.onmouseover = function () {
+        clearInterval(s);
+    }
     aSp[0].onclick = function () {
         clearInterval(s);
         left(--globalIndex);
