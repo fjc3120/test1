@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #666666;
+            margin: 100px auto;
+            text-align: center;
+        }
+        #up{
+            border: 1px solid #333333;
+        }
+        #down{
+            border: 1px solid #333333;
+        }
+        ul{
+            list-style: none;
+            color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div id="up">上课科目</div>
+    <div id="down">下课作业</div>
+</div>
+<script>
+    var oUp = document.getElementById("up");
+    var oUd = document.getElementById("down");
+    var oU1;
+    var oU2;
+
+        oUp.onmouseover =  function up() {
+            oU1 = document.createElement("ul");
+            oU1.innerHTML="<li>数学</li><li>英语</li><li>美术</li>";
+            oUp.appendChild(oU1);
+        }
+        oUd.onmouseover= function down() {
+            oU2 = document.createElement("ul");
+            oU2.innerHTML="<li>预习</li><li>复习</li><li>自习</li>";
+            oUd.appendChild(oU2);
+        }
+        oUp.onmouseout = function () {
+           oUp.removeChild(oU1);
+        }
+        oUd.onmouseout =function () {
+           oUd.removeChild(oU2);
+        }
+
+</script>
+</body>
+</html>

@@ -42,7 +42,7 @@
 <!--//<img src="../../images/BJ1.jpg" alt="">-->
 <script>
     var oBox = document.getElementById("box");
-    var aSpan = document.getElementsByTagName("span")[1];
+    var aSpan = document.getElementsByTagName("span")[0];
    // var span2=aSpan.nextSibling;  //查找下一个兄弟元素  查找下一个节点的所有东西，包括回车空格和注释，不推荐
   //  var span3=aSpan.nextElementSibling;  //查找下一个兄弟元素  查找下一个节点的所有东西  //兼容性
    // var span2 = aSpan.previousElementSibling; //查找上一个节点 //兼容性
@@ -56,13 +56,13 @@
 
 
 
-//    var i=0;
-//    var span=[];
-//    span[0]=aSpan.nextSibling;
-//    while(span[i] && span[i].nodeType!=1){
-//        span[i+1]=span[i].nextSibling;
-//        i++;
-//    } console.log(span[i]);
+    var i=0;
+    var span=[];
+    span[0]=aSpan.nextSibling;
+    while(span[i] && span[i].nodeType!=1){
+        span[i+1]=span[i].nextSibling;
+        i++;
+    } console.log(span[i]);
 
 
 
