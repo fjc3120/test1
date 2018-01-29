@@ -130,22 +130,38 @@
     var aListli =aList[0].getElementsByTagName("li");
     var globalIndex=0;
     var s;
+    var isrun =true;
+    var istimer=true;
+    setInterval(function () {
+        if(isrun && istimer){
+            right(++globalIndex);
+        }
+    },1000)
     oHul.onmouseover = function () {
-        clearInterval(s);
+       istimer=false;
+    }
+    oHul.onmouseout =function () {
+        istimer=true;
     }
     aSp[0].onclick = function () {
-        clearInterval(s);
-        left(--globalIndex);
+        if(isrun){
+            clearInterval(s);
+            left(--globalIndex);
+        }
     }
     aSp[1].onclick = function () {
-        clearInterval(s);
-        right(++globalIndex);
+        if(isrun){
+            clearInterval(s);
+            right(++globalIndex);
+        }
     }
     for(var i=0;i<aListli.length;i++){
         aListli[i].index=i;
         aListli[i].onmouseover = function () {
-            clearInterval(s);
-            change(this.index);
+            if(isrun){
+                clearInterval(s);
+                change(this.index);
+            }
         }
     }
     function change(bb) {
@@ -158,6 +174,7 @@
           }
     }
     function right(aa) {
+        isrun=false;
         s=setInterval(function () {
             if(oHul.offsetLeft==-3275){
                 globalIndex = 0;
@@ -167,13 +184,16 @@
                 if(oHul.offsetLeft==-655*aa){
                     clearInterval(s);
                     globalIndex = aa;
+                    isrun =true;
                 }else{
                     oHul.style.left = oHul.offsetLeft-5+"px";
+
                 }
             }
         },10);
     }
     function left(aa) {
+        isrun=false;
         s=setInterval(function () {
             if(oHul.offsetLeft==0){
                 globalIndex = 0;
@@ -183,6 +203,7 @@
                 if(oHul.offsetLeft==-655*aa){
                     clearInterval(s);
                     globalIndex = aa;
+                    isrun =true;
                 }else{
                     oHul.style.left = oHul.offsetLeft+5+"px";
                 }
