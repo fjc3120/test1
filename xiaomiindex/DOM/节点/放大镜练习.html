@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{position: relative;}
+        *{
+            margin: 0;
+            padding:0;
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            background-color: #666666;
+            border: 1px solid #ff6600;
+            overflow: hidden;
+        }
+       #big-box{
+           width: 300px;
+           height: 300px;
+           position: absolute;
+           left: 310px;
+           top: 0;
+           /*background-color: #666666;*/
+           border: 1px solid #FF9900;
+           display: none;
+           overflow: hidden;
+       }
+       #box img{
+            width: 300px;
+            height: 300px;
+        }
+        #big-box img{
+            width: 600px;
+            height: 600px;
+            position: absolute;
+        }
+        #sp{
+            width: 150px;
+            height: 150px;
+            background-color: #dddddd;
+            position: absolute;
+            opacity:0.5;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <img src="../../images/300x300.png" alt="">
+    <span id="sp"></span>
+</div>
+
+<div id="big-box">
+    <img src="../../images/300x300.png" alt="" id="big">
+</div>
+<script>
+    var oBox = document.getElementById("box");
+    var oBigbox = document.getElementById("big-box");
+    var oSp =document.getElementById("sp");
+    var oImg2 = document.getElementById("big");
+    oBox.onmousemove =function (e) {
+            oSp.style.top = e.clientY-150/2+"px";
+            oSp.style.left =e.clientX-150/2+"px";
+            oBigbox.style.display = "block";
+            oSp.style.display="block";
+        if(oSp.offsetLeft<0){
+            oSp.style.left=0+"px";
+        }
+        if(oSp.offsetTop<0){
+            oSp.style.top=0+"px";
+        }
+        if(oSp.offsetLeft>150){
+            oSp.style.left=150+"px";
+        }
+        if(oSp.offsetTop>150){
+            oSp.style.top=150+"px";
+        }
+            oImg2.style.top = -oSp.offsetTop*2+"px";
+            oImg2.style.left =-oSp.offsetLeft*2+"px";
+
+        }
+    oBox.onmouseout =function () {
+        oBigbox.style.display = "none";
+        oSp.style.display="none";
+    }
+</script>
+</body>
+</html>

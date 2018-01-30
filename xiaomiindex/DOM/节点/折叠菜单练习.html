@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style-type: none;
+            background-color: #dddddd;
+            border: 1px solid #666666;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 200px   auto;
+            text-align: center;
+        }
+        .upul{
+            display: none;
+        }
+        .downul{
+            display: none;
+        }
+        .heard div{
+            border: 1px solid #ffffff;
+            background-color: #333333;
+            color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="heard">
+        <li id="up">
+            <div class="divup">标题</div>
+            <ul class="upul">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+        <li id="down">
+            <div class="divdown">标题</div>
+            <ul class="downul">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script>
+    var oBox = document.getElementsByClassName("box")[0];
+    var aDiv = oBox.getElementsByTagName("div");
+    var isclick=true;
+//    var aa =next(aDiv)
+    function next(obj) {
+        var thisobj = obj;
+        do{
+            thisobj= thisobj.nextSibling;
+        }while (thisobj && thisobj.nodeType!=1);
+        return thisobj;
+    }
+    for(var i=0;i<aDiv.length;i++){
+        aDiv[i].isclick=true;
+        aDiv[i].onclick =function () {
+            var thisnext =next(this);
+            if(this.isclick){
+                thisnext.style.display ="block";
+                this.isclick=false;
+            }else{
+                thisnext.style.display="none";
+                this.isclick=true;
+            }
+        }
+    }
+</script>
+</body>
+</html>

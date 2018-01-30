@@ -50,6 +50,7 @@ function change() {
     if(key==1){
         timer=setInterval("change()",1000);
         this.innerText = "暂停";
+        key*=-1;
     }
 else{
     clearInterval(timer);

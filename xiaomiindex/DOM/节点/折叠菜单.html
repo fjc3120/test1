@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style-type: none;
+            background-color: #dddddd;
+            border: 1px solid #666666;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 200px   auto;
+            text-align: center;
+        }
+        .upul{
+            display: none;
+        }
+        .downul{
+            display: none;
+        }
+        .heard div{
+            border: 1px solid #ffffff;
+            background-color: #333333;
+            color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul class="heard">
+        <li id="up">
+            <div class="divup">标题</div>
+            <ul class="upul">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+        <li id="down">
+            <div class="divdown">标题</div>
+            <ul class="downul">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script>
+    var oLup = document.getElementById("up");
+    var oLdown = document.getElementById("down");
+    var oDivup = oLup.getElementsByTagName("div")[0];
+    var oDivdown = oLdown.getElementsByTagName("div")[0];
+    var onext = oLup.getElementsByTagName("ul")[0];
+    var onext2 =oLdown.getElementsByTagName("ul")[0];
+    var i=0;
+    var aUpul=[];
+    var aDownul=[];
+    var key=1;
+    var key2=1;
+    var next= function nextup() {                     //获取兄弟节点的后面节点信息 ,当内容为文字标签是跳出
+        aUpul[0]=oDivup.nextSibling;
+        while(aUpul[i] && aUpul[i].nodeType!=1){
+            aUpul[i+1]=aUpul[i].nextSibling;
+            i++;
+        }
+    }
+    var next2= function nextdown() {
+        aDownul[0]=oDivdown.nextSibling;
+        while(aDownul[i] && aDownul[i].nodeType!=1){
+            aDownul[i+1]=aDownul[i].nextSibling;
+            i++;
+        }
+    }
+    oDivup.onclick =function () {
+        if(key==1){          //全局变量KEY可以使点击有多种效果
+            onext.style.display = "block";
+            key*=-1;
+        }else{
+            onext.style.display = "none";
+            key*=-1;
+        }
+    }
+    oDivdown.onclick =function () {
+        if(key2==1){
+            onext2.style.display = "block";
+            key2*=-1;
+        }else{
+            onext2.style.display = "none";
+            key2*=-1;
+        }
+    }
+</script>
+</body>
+</html>
