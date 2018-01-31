@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+        }
+        .div2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="div2">
+        <div class="div3">11111</div>
+    </div>
+</div>
+<p id="p1">222222222222</p>
+<script>
+    var oDiv1 = document.getElementsByClassName("div1")[0];
+    var oDiv2 = document.getElementsByClassName("div2")[0];
+    var oDiv3 = document.getElementsByClassName("div3")[0];
+    var oP1 = document.getElementById("p1");
+//    oDiv1.onclick = function () {
+//        console.log(e);
+//
+//        console.log("div1");
+//
+//    }
+//    oDiv2.onclick = function () {
+//        console.log("div2");
+//    }
+//    oDiv3.onclick = function (e) {
+//        console.log("div3");
+////        e.stopPropagation();     //用e，阻止冒泡，加在哪里，有在哪里停止
+//    }
+//    oDiv3.onclick = function (e) {
+//        console.log("div3-1");
+//    }
+//    oDiv3.addEventListener("click",function () {    //没有on的点击事件 后面加匿名或有名函数  两个一样的匿名函数是两个函数 ，两个一样的有名函数是同一函数
+//        console.log("div3");    //addEventListener事件监听  对象-执行事件-函数
+//    });                                              //能触发多重定义，（自己一个对象的多重定义不算冒泡）可以冒泡，可以被阻止冒泡
+//    oDiv3.addEventListener("click",function () {    //没有on的点击事件 后面加匿名或有名函数
+//        console.log("div-1");
+//    });
+//    function fn1() {
+//        console.log("1");
+//        oDiv3.removeEventListener("click",fn1); //移除add函数，要放在函数里 remove和add 的参数要完全相等
+//    }
+//    oDiv3.addEventListener("click",fn1);
+
+//    oDiv3.addEventListener("click",function () {
+//        console.log("div3");
+//    });
+//    oDiv3.removeEventListener("click",function () {       //不能移除，匿名函数是两个函数
+//        console.log("div3");
+//    });
+
+//        oDiv3.addEventListener("click",function () {
+//            console.log("div3");
+//        },true);
+//        oDiv2.addEventListener("click",function () {
+//            console.log("div2");
+//        },true);
+//        oDiv1.addEventListener("click",function () {
+//            console.log("div1");
+//        },true);                                       //事件捕获从外往里 ，true换成false是冒泡，丛里到外 //顺序，事件是先执行捕获，再执行冒泡
+
+//    oDiv1.attachEvent("onclick",function () {    //IE兼容使用，click加on  等于addEventListener 移除用detachEvent
+////            console.log("div1");
+////        });                                     //没有true 参数
+//    function aa(b,c) {
+//        console.log(this);  //this指向windows
+//        console.log(b);
+//        console.log(c);
+//    }
+//    var person = {
+//        name:"xiaoming",
+//        age:"18"
+//    };
+    //aa(11,22);
+   // aa.call(person,"11","22");    //call和apply能改变this的指向，变成第一个参数。后面参数为aa函数的参数
+    //aa.apply(person,["11","22"]);
+//    oDiv3 = function () {
+//        console.log("div3");
+//    }
+    function fn1() {
+        console.log(this);
+    }
+    function fn2() {
+        console.log(this);
+    }
+    addEvent(oDiv3,"click",fn1);
+    addEvent(oP1,"click",fn2);
+   removeEvent(oDiv3,"click",fn1);
+    removeEvent(oP1,"click",fn2);
+    function addEvent(elem,eve,fun) {   //封装ie和其它浏览器兼容
+        if(elem.addEventListener){ //能力测试
+            elem.addEventListener(eve,fun);
+        }else if(elem.attachEvent){ //兼容ie
+            elem[fun] = function () {
+                fun.call(elem);   //IE兼容，将this从windows变成指向对象 因为会直接执行，所以要放到函数里
+            }
+            elem.attachEvent("on"+eve,elem[fun]);
+        }else{
+            elem["on"+eve] = fun;
+
+
+        }
+    }
+
+
+    function removeEvent(elem,eve,fun) {
+        if(elem.removeEventListener){
+            elem.removeEventListener(eve,fun);
+        }else if(elem.detachEvent){    //ie的移除
+            elem.detachEvent("on"+eve,elem[fun]);
+        }else{
+            elem["on"+eve] = null;
+        }
+    }
+
+</script>
+</body>
+</html>

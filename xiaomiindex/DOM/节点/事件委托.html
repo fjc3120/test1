@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn1">添加</button>
+<ul id="ul1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<button id="btn">append</button>
+<div id="box">
+    <div id="div1">11</div>
+    <div id="div2">22</div>
+</div>
+<script>         //冒泡委托优点 ，摆脱for循环，用父级冒泡给子级添加属性
+//    var oUl = document.getElementById("ul1");
+//    var oBox = document.getElementById("box");
+//    var oDiv1 = document.getElementById("div1");
+//     var oDiv2 = document.getElementById("div2");
+//     var oBtn = document.getElementById("btn");
+//     var oBtn1 = document.getElementById("btn1");
+//    var  oNew =   document.createElement("li");
+//    oNew.innerHTML = "nihao";// =Math.random();的化就可以重复添加了
+//
+//    oBtn1.onclick=function () {
+//        oUl.appendChild(oNew);
+//    }
+//oUl.onclick=function (e) {   //冒泡委托 ==for遍历后每个都执行一次。直接用一个父级当对象调用子级元素
+//    var This = window.event.srcElement||e.target;  //window 的是ie兼容性    //e是oUl  e.target是oUl里的li 常规浏览器的
+//    console.log(This.innerHTML);
+//}
+
+    /**/
+    var oUl = document.getElementById("ul1");
+    var oBtn1 = document.getElementById("btn1");
+    var oNew = document.createElement("li");
+    oNew.innerHTML = "hello";
+    oBtn1.onclick=function () {
+    oUl.appendChild(oNew);
+    }
+    oUl.onclick=function (e) {
+      var eve = window.event.srcElement || e.target;
+      console.log(eve.innerHTML);
+    }
+</script>
+</body>
+</html>
