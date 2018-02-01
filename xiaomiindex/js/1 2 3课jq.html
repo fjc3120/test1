@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        .a{
+            height: 300px;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .a .cl{
+            width: 800px;
+            height: 50px;
+            background-color: #333333;
+
+        }
+        .a .cl  p{
+            float: left;
+            margin:0 15px;
+            line-height: 50px;
+            color: white;
+            border-right: 1px solid #f56600;
+        }
+        ul{
+
+            float: left;
+            margin-top: 20px;
+        }
+        .a-div {
+            width: 798px;
+            height: 150px;
+            border: 1px solid #333333;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+        .a-div1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <div class="cl">
+        <p>第一课</p>
+        <p>第二课</p>
+        <p>第三课</p>
+    </div>
+    <div class="a-div active">
+        <ul class="a-div-ul">
+            <li>1231231</li>
+            <li>213213213</li>
+            <li>535353</li>
+            <li>21312321</li>
+        </ul>
+    </div>
+    <div class="a-div">
+        <ul class="a-div-ul">
+            <li>525151</li>
+            <li>84862</li>
+        </ul>
+    </div>
+    <div class="a-div">
+        <ul class="a-div-ul">
+            <li>854224</li>
+            <li>888888</li>
+            <li>111111</li>
+        </ul>
+    </div>
+</div>
+<script>
+    var $p = $("p");
+    var $div = $(".a-div");
+//    $p.click(function () {
+//        $div.css("display","none");
+//       var $index=$(this).index();  //索引
+//       $div.eq($index).css("display","block");  //eq()第几个
+//    });
+    /**/
+//    $p.click(function () {
+//        $div.removeClass("active");
+//       var $index =$(this).index();
+//       $div.eq($index).addClass("active");
+//    });
+    /**/
+
+</script>
+</body>
+</html>
