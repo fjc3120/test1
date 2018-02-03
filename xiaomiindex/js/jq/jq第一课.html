@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+<div id="box">
+    <div id="aa">
+        <div id="div1">ddd</div>
+        <input type="text">
+        <button>按钮</button>
+        <p>1</p>
+        <p class="bb">2</p>
+        <p class="dd ee">3</p>
+        <p>4 你好</p>
+        <p>5</p>
+        <p></p>
+        <a href=""><p></p></a>
+    </div>
+</div>
+<div>
+    <a href="">123</a>
+</div>
+<script>
+    var $box =$("#box"); //id
+    var $aa = $(".aa");// class 不用加下标【】了
+    var $p =$("p"); //tp
+    var list =$("p,div");
+//    var $child =$("#box>.aa").html();//子代
+//    var $child =$("#box .aa").html();//后代
+//   ("#div1+p");//div1后面的第一个p
+//    ("#div1~~p");//div1后面所有的p
+//    $("p:eq(1)");//p的[1]
+//    $("p").eq(1);//p的[1]
+//    $("p:even");//p的[奇数]
+//    $("p:first");//p的[0]
+//    $(".bb").click(function () {
+//        console.log($(this).index()); //点击class为bb的p的索引
+//        $(this).addClass("active"); //给this添加class
+//        $(this).removeClass("active"); //给this移除class
+//        $(this).css({"display":"none","color":"blue"});//多个属性用{　}和,
+//    })
+//    console.log($box.get(0));
+//    console.log($box.html());
+//$(".bb").attr("text-type") //获取属性，自定义也可以
+//XXXXXXXX  $(".bb").prop("text-type") //获取属性，自定义不可以获取
+//$(".bb").attr("class")
+//$(".bb").prop("class")  //比如checked复选框被选中状态，不会再标签里显示时，用prop（）能取到，attr（）取不到，除非给attr赋上checked
+//$(".bb").prop("checked",true); //默认被选中，两个变量为赋值
+//$(".bb").attr("checked","checked");
+  //  $("p:last").css("color","red");
+   // $("p:not('.bb')").css("color","red"); //除了.bb 都改变
+   // $("p:odd").css("color","red"); //从0开始，奇数
+  //  $("p:even").css("color","red"); //从0开始，偶数
+   // $("p:root").css("color","red"); //根标签
+
+
+//    var $input = $("input");
+//    var $btn = $("button");
+//    $btn.eq(0).click(function () {
+//        var text =$input.val(); //text是"1223"这样的字符串 但又是变量，字符串拼接
+//    var ccc=   $("p:contains("+text+")").css("color","red");
+//       console.log(ccc);
+//    })
+
+
+   //$("p:contains('你好')").css("color","red"); //选中包含字符的内容的标签
+  //  var ccc= $("p:empty").html("123"); //选取为空的P标签
+// var ccc= $("div:has('p')").html("你好"); // 判断，如果div下有P就选中，并把内容变成你好，否则不选择
+   // var ccc= $("p:parent").html("你好");//判断，p里有东西，是父标签就选中，该内容
+   // var ccc= $("p:visible").html("你好");//display block的标签，选择 空标签也算，只要不隐藏
+  //  var ccc= $("p:hidden").html("你好");//选择所有被隐藏的p标签 display none 的
+
+    //var ccc= $("p[class^='bb']").html("你好");// ^=是以bb为开头    //p标签下class且以bb开头的标签选中
+ //   var ccc= $("p[class*='bb']").html("你好");//  *=是里面包含bb
+  //  var ccc= $("p[class~='bb']").html("你好");//  ~=包含bb 且以空格间隔开的
+    //var ccc= $("p[class^='ee'][class~='dd']").html("你好");// 与关系
+   // var ccc= $("p:first-child").html("你好");// p是否是第一个子标签，是就选中不是就不选中
+   // var ccc= $("p:first-of-type").html("你好");//选中第一次出现的P标签
+ //   var ccc= $("p:nth-child(1)").html("你好");// p的下标索引，从1开始，不是0
+   // var ccc= $("p:nth-child(2n)").html("你好");// n可以未定义  2n偶数 ，2n-1基数
+  //  var ccc= $("p:nth-child(3)").toggleClass("ee");  //有就删掉，没有就加上
+  //  $(".bb").siblings("p").css("color","red");//p标签中的除了bb以外的，全部执行
+    //$("#box").removeAttr("class"); //移除了#box的不能获取孙子代
+    $("#aa").children(".ee"); //获取子代中.ee的标class属性
+    $("#aa").children("p"); //获取所有子代p  签
+    $("#aa").find("p");//获取所有后代p  包括孙子代
+</script>
+</body>
+</html>

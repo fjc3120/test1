@@ -38,7 +38,7 @@
             display: block;
         }
         .a-div1{
-            display: block;
+            display:block;
         }
     </style>
 </head>
@@ -86,6 +86,13 @@
 //       $div.eq($index).addClass("active");
 //    });
     /**/
+
+    $p.click(function () {
+        var This =$(this).index();
+      $div.removeClass("none");
+            //$div.eq(This).toggleClass("active");
+        $div.eq(This).siblings("div").addClass("active");
+        })
 
 </script>
 </body>

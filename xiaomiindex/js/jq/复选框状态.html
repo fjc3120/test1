@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+<div>
+    <h1>你的爱好是？</h1>
+    <input type="checkbox" value="">足球
+    <input type="checkbox">排球
+    <input type="checkbox">篮球
+    <input type="checkbox">羽毛球<br>
+    <button>全选</button>
+    <button>全不选</button>
+    <button>反选</button>
+</div>
+<script>
+ $("button").eq(0).click(function () {
+     $("input").prop("checked",true);
+ });
+ $("button").eq(1).click(function () {
+     $("input").prop("checked",false);
+ });
+ /*  反选的三种方法*/
+// $("button").eq(2).click(function () {
+//    for(var i=0;i<$("input").length;i++){
+//     if($("input").eq(i).prop("checked")){
+//         $("input").eq(i).prop("checked",false);
+//     }else{
+//         $("input").eq(i).prop("checked",true);
+//     }
+// }
+// });
+// $("button").eq(2).click(function () {
+// $("input").each(function (index,elem) {
+//    if($(elem).prop("checked")) {
+//        $(elem).prop("checked",false);
+//    }else{
+//        $(elem).prop("checked",true);
+//    }
+// })
+// });
+ $("button").eq(2).click(function () {
+     $("input").each(function (index,elem) {
+         elem.checked = !elem.checked;
+     })
+ });
+
+    /*for each*/  //对象的循环遍历方法
+//    var person = {
+//        name:"xiaoming",
+//        age:"18",
+//        school:"xiaoxue"
+//    }
+// person.forEach(function (index,elem) {    //两个参数
+//     console.log(index);
+//     console.log(elem);
+// })
+//    $(person).each(function (index,elem) {    //两个参数    // 把源生对象person转换成jq对象$(person)就可以用jq的函数方法了
+//        console.log(index);     //index是索引                            //把jq对象转换成原生对象 $(person).get[0]
+//        console.log(elem);      //elem每个对象 是源生对象，需要$(elem)
+//        if($(elem).prop("checked")){
+//            $(elem).prop("checked",false);
+//        }else{
+//            $(elem).prop("checked",true);
+//        }
+//    })
+// $(person).each(function (index,elem) {
+//     elem.checked  =!elem.checked;   //jq的源生简化版本
+// })
+</script>
+</body>
+</html>

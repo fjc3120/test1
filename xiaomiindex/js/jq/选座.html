@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            height: 50px;
+            width: 380px;
+            display: inline-block;
+
+           position: relative;
+            top: 15px;
+        }
+        li{
+            height: 30px;
+            width: 30px;
+            float: left;
+            margin-right: 20px;
+        }
+        .box{
+            width: 500px;
+            height: 700px;
+            background-color: #333333;
+        }
+        .h1{
+            width: 400px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .h2{
+            width: 400px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .h3{
+            width: 400px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .h4{
+            width: 400px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .h5{
+            width: 400px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        ul li div{
+            height: 30px;
+            width: 30px;
+            margin-top: 10px;
+            background-color: white;
+        }
+        .border{
+            width: 450px;
+            height: 500px;
+            border-bottom: 1px solid #333333;
+        }
+        .text{
+            width: 450px;
+            height: 130px;
+        }
+        span{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .span-right{
+            margin-left:  255px;
+        }
+        .display{
+            width: 450px;
+            height: 50px;
+            background-color: #ff6600;
+            margin-top: 15px;
+            position: relative;
+        }
+        .display-1{
+            height: 40px;
+            width: 400px;
+            position: absolute;
+            top: 5px;
+        }
+        .display-1 div{
+            height: 40px;
+            width: 100px;
+            background-color: #0000FF;
+            float: left;
+            margin-right: 20px;
+        }
+        .color-b{
+            background-color: #0000FF;
+        }
+        .color-r{
+            background-color: red;
+        }
+        .display-2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="border">
+        <div class="h1">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+        </div>
+        <div class="h2">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+        </div>
+        <div class="h3">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+        </div>
+        <div class="h4">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+        </div>
+        <div class="h5">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text">
+        <span class="span-lesf">已选座位</span>
+        <span class="span-right">最多可选3个座位</span><br>
+        <div class="display">
+            <div class="display-1">
+                <div class="display-2"></div>
+                <div class="display-2"></div>
+                <div class="display-2"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="money">
+        <span>合计</span>
+        <span>00</span>
+        <span>11</span>
+        <a href="">购买</a>
+    </div>
+</div>
+<script>
+
+$("li:nth-child(4)").css("marginLeft","50px");
+$("li:nth-child(1)").css("marginLeft","20px");
+var tmpe = 0;
+for(var i=0;i<$("li").length;i++){
+    var a=Math.random();
+    if(a>0.5){
+        $("li>div").eq(i).addClass("color-b");
+    }
+}
+    $("li").find("div").click(function () {
+            if($(this).hasClass("color-b")){
+            }
+            else if($(this).hasClass("color-r")){
+                $(this).removeClass("color-r");
+                tmpe--;
+                console.log(tmpe);
+            }
+            else{
+                if(tmpe<3){
+                    $(this).addClass("color-r");
+                    tmpe++;
+                }
+            }
+        if(tmpe==0){
+            $(".display-1").find("div").addClass("display-2");
+        }
+        if(tmpe==1){
+                $(".display-1").find("div").addClass("display-2");
+            $(".display-2:nth-child(1)").removeClass("display-2");
+    }
+    else if(tmpe==2){
+            $(".display-1").find("div").addClass("display-2");
+        $(".display-2:nth-child(1)").removeClass("display-2");
+        $(".display-2:nth-child(2)").removeClass("display-2");
+    }
+    else if(tmpe==3) {
+            $(".display-1").find("div").addClass("display-2");
+            $(".display-2:nth-child(1)").removeClass("display-2");
+            $(".display-2:nth-child(2)").removeClass("display-2");
+            $(".display-2:nth-child(3)").removeClass("display-2");
+        }
+    })
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 10px solid;
+           margin: 10px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #00aaee;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="box" class="aa"></div>-->
+<!--<input type="text" value="123">-->
+<div class="box">
+    <div class="box2">
+        <a href="">
+            <div class="box4">222</div>
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+   // $("#box").removeAttr("class"); //移除了#box的class属性
+  //  console.log($("input").val());//获取文本框/复选框之类的value的值 如果val（里面有值）为赋值
+  //  console.log($("#box").hasClass("aa"));//判断#box里是否包含class为aa ，是返回true 否false
+  // console.log($(".box").width()); //显示.box的width
+  // console.log($(".box").height());
+  // console.log($(".box").innerHeight()); //包含了padding
+  // console.log($(".box").outerHeight()); //包含了padding和border
+ //console.log($(".box").offset()); //返回选中对象相对于文档的距离
+ // console.log($(".box2").position());//返回选中对象相对于定位父级的距离,没有定位的就相对与文档
+  // console.log($(".box").clone());   //克隆
+   //var aa =$(".box").clone().get(0);
+  // $(".box2").html(aa);
+  // console.log($(".box").offset());
+//   $(".box2").wrap("<div class='box3'>"); //在每个.box2外层包上一层class为box3的div
+  // $(".box2").wrapAll("<div class='box3'>"); //在.box2为一个整体外层包上一层class为box3的div
+   //$(".box2").wrapInner("<div class='box3'>"); //在每个.box2里面包上一层class为box3的div
+  // $(".box2").append("<div class='box3'>"); //相当于after
+  // $("<div class='box3'>").appendTo(".box2"); //相当于append   两者区别：appendTo返回的是对象 可以.css（）。append返回的不是对象 不可以.css
+ //  $(".box4").html("<a>123</a>"); //添加标签和文本  输出a标签的123
+  // $(".box4").text("<a>123</a>");  //添加文本    输出<a>123</a>
+  // $(".box2").before("<div class='box3'>");  //再前面添加，after是后面      返回的对象是$(".box2")
+ // $("<div class='box3'>").insertBefore(".box2").css("color","red");  //和before一样，但返回的是对象是$("<div class='box3'>")
+  //  $(".box2").empty();  //把.box2里面所有东西，包括标签，全部清除
+  // $(".box2").remove();  //把.box2这个对象清除
+   $(".box4").unwrap("div");  //如果父级是div就移除，不是就不动
+
+</script>
+</body>
+</html>
