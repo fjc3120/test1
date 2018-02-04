@@ -49,7 +49,7 @@
         <p>第二课</p>
         <p>第三课</p>
     </div>
-    <div class="a-div active">
+    <div class="a-div active" id="m">
         <ul class="a-div-ul">
             <li>1231231</li>
             <li>213213213</li>
@@ -86,13 +86,17 @@
 //       $div.eq($index).addClass("active");
 //    });
     /**/
-
+//
+//    $p.click(function () {
+//        var This =$(this).index();
+//      $div.removeClass("none");
+//            //$div.eq(This).toggleClass("active");
+//        $div.eq(This).siblings("div").addClass("active");
+//        })
     $p.click(function () {
-        var This =$(this).index();
-      $div.removeClass("none");
-            //$div.eq(This).toggleClass("active");
-        $div.eq(This).siblings("div").addClass("active");
-        })
+        $
+       $div.eq($(this).index()).addClass("active").siblings().removeClass("active");
+    });
 
 </script>
 </body>

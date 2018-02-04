@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="jquery.easing.1.3.js"></script>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<button id="show">show</button>
+<button id="hide">hide</button>
+<button id="faddin">faddin</button>
+<button id="faddout">faddout</button>
+<button id="fadto">fadto</button>
+<button id="fadtoggle">fadtoggle</button>
+<button id="toggle1">toggle1</button>
+<button id="animate">animate</button>
+<button id="animated">animated</button>
+<button id="slidedown">slidedown</button>
+<button id="slideup">slideup</button>
+<button id="slidetoggle">slidetoggle</button>
+<button id="stop1">stop</button>
+<button id="stoptrue">stoptrue</button>
+<button id="stopfalseture">stopfalsetrue</button>
+<button id="stoptrueture">stoptruetrue</button>
+<div id="box"></div>
+<script>
+    $("#show").click(function () {
+        $("#box").show("slow");     //缩放
+    })
+    $("#hide").click(function () {
+        $("#box").hide("fast");
+    })
+    $("#faddin").click(function () {
+        $("#box").fadeIn("fast");
+    })
+    $("#faddout").click(function () {
+        $("#box").fadeOut("fast");     //淡入淡出
+    })
+    $("#fadto").click(function () {   //透明度
+        $("#box").fadeTo("fast",0.5);
+    })
+    $("#fadtoggle").click(function () {
+    $("#box").fadeToggle("fast");
+    })
+    $("#toggle1").click(function () {
+        $("#box").toggle("slow");   //隐藏和显示
+    })
+    $("#animate").click(function () {     //顺序执行  四个参数 第三个不写是默认linear,也可以引用第三方的动画库 【对象】，【时间】，【swing /  linear 越来越慢/快】，【函数】
+        $("#box").animate({
+            opacity: 0.25,
+            opacity: 'toggle',  //toggle是反复 ，200和“200”是变成到200px，“”里可以加单位，+=是在原基础上+。
+            height: 'toggle'   //对象里设置
+        }, 5000,"easeInOutElastic",function() {   //时间参数 和添加的效果  和动画效果执行完后执行function
+            // Animation complete.
+        });   //隐藏和显示
+    })
+    $("#animated").click(function () {         //动画再执行中才能触发
+        $("#box:animated").css("background","blue");
+    })
+
+    $("#slidedown").click(function () {
+        $("#box").slideDown("slow");
+    })
+    $("#slideup").click(function () {
+        $("#box").slideUp("slow");
+    })
+    $("#slidetoggle").click(function () {
+        $("#box").slideToggle("slow");
+    })
+    $("#stop1").click(function () {
+        $("#box").stop();  //停止[当前队列]所有动画效果,继续执行其它队列的动画 有四种参数
+    })
+    $("#stoptrue").click(function () {
+        $("#box").stop(true);  //停止[所有队列]所有动画效果
+    })
+    $("#stopfalsetrue").click(function () {
+        $("#box").stop(false,true);  //立即执行（跳过）完成[当前队列]所有动画效果，继续执行其它队列的动画
+    })
+    $("#stoptruetrue").click(function () {
+        $("#box").stop(true,true);  //立即执行（跳过）完成[所有队列]所有动画效果
+    })
+
+</script>
+</body>
+</html>

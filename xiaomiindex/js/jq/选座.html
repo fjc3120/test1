@@ -24,10 +24,13 @@
             float: left;
             margin-right: 20px;
         }
+        body{
+            background-color: #333333;
+        }
         .box{
             width: 500px;
             height: 700px;
-            background-color: #333333;
+            margin: 0 auto;
         }
         .h1{
             width: 400px;
@@ -63,7 +66,7 @@
         .border{
             width: 450px;
             height: 500px;
-            border-bottom: 1px solid #333333;
+            border-bottom: 1px solid #212121;
         }
         .text{
             width: 450px;
@@ -197,12 +200,12 @@ for(var i=0;i<$("li").length;i++){
             else if($(this).hasClass("color-r")){
                 $(this).removeClass("color-r");
                 tmpe--;
-                console.log(tmpe);
             }
             else{
                 if(tmpe<3){
                     $(this).addClass("color-r");
                     tmpe++;
+                    console.log($(this));
                 }
             }
         if(tmpe==0){
