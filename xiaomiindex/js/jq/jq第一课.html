@@ -40,6 +40,7 @@
         <div class="zzv">c</div>
     </div>
 </div>
+
 <script>
     var $box =$("#box"); //id
     var $aa = $(".aa");// class 不用加下标【】了
@@ -126,11 +127,24 @@
    // $(".bb").parent("div").css("color","red"); //往上一直找到父级，括号里可以不写参数
   //  $(".bb").parents.css("color","red");//所有父级
    // $(".bb").parentsUntil("#div1").css("color","red"); //往上一直找到父级，直到#div1但不包括她
+    //$(":input").trigger("click"); //执行对象的操作 ，不用自己点击  ，所有input都执行  //会冒泡
+   // $(":input").triggerHandler("click"); //输出对象的操作，但是不执行行为，比如，输出点击，但不真的点 ，而且只输出一次input//会阻止冒泡
+  $("#aa").load("扫描.html"); //加载另一个文件    可以用css控制load文件
+    $(function () {          //页面加载完才执行 ,
+        console.log("1");
+    })
+$.extend(person,person1);将两个或更多的对象合并到一起，后面的对象不变，第一个的对象改变
+    源生.defaultValue //input里的默认值
+    源生.value  //input里的value值
+    $("input").focus(function () {  //获取焦点时
 
+    }).blur(function () {  //失去焦点时  可以连在一起写
 
-
-
-
+    })
+  css  overflow:scroll; //超出父级的地方变成滚动条显示
+    $("#aa").scroll();//滚动就发生
+    $("#aa").scrollTop; //每滚动一次都返回一个距离顶部的数值
+    $("#aa").scrollLeft() //左右滚
 
 
 

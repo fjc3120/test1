@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        p{
+
+           width: 100px;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            left: 20px;
+            border-bottom: 1px solid #ffffff ;
+            border-top: 1px solid #ffffff ;
+            z-index: 10;
+            background-color: white;
+            padding: 0 0 0 30px;
+        }
+        li ul{
+           display: none;
+            position: relative;
+            bottom: 32px;
+            left: 149px;
+        }
+         .box .line{
+            border-bottom: 1px solid#00d20d ;
+            border-top: 1px solid #00d20d ;
+             border-right: 1px solid #ffffff;
+        }
+        .active{
+            display: block;
+        }
+        .box{
+            position: relative;
+        }
+
+        p + ul{
+            border: 1px solid#00d20d ;
+            z-index: 5;
+            width: 100px;
+        }
+        p + ul li{
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li class="a">
+            <p>菜单1️⃣</p>
+            <ul>
+                <li>菜单内容1️⃣</li>
+                <li>菜单内容2️⃣</li>
+            </ul>
+        </li>
+        <li class="a">
+            <p>菜单2️⃣</p>
+            <ul>
+                <li>菜单内容1️⃣</li>
+                <li>菜单内容2️⃣</li>
+            </ul>
+        </li>
+        <li class="a">
+            <p>菜单3️⃣</p>
+            <ul>
+                <li>菜单内容1️⃣</li>
+                <li>菜单内容2️⃣</li>
+            </ul>
+        </li>
+        <li class="a">
+            <p>菜单4️⃣</p>
+            <ul>
+                <li>菜单内容1️⃣</li>
+                <li>菜单内容2️⃣</li>
+            </ul>
+        </li>
+        <li class="a">
+            <p>菜单5️⃣</p>
+            <ul>
+                <li>菜单内容1️⃣</li>
+                <li>菜单内容2️⃣</li>
+            </ul>
+        </li>
+        <li class="a">
+            <p>菜单6️⃣</p>
+            <ul>
+                <li>菜单内容1️⃣</li>
+                <li>菜单内容2️⃣</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script>
+        $("p").mousemove(function () {
+            $(this).next().addClass("active");
+            $(this).addClass("line");
+
+        })
+        $("p").mouseout(function () {
+            $(this).next().removeClass("active");
+            $(this).removeClass("line");
+        })
+</script>
+</body>
+</html>

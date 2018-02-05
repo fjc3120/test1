@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            margin: 100px 0 0 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <button id="big">放大</button>
+    <button id="small">缩小</button>
+    <br>
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+</div>
+<script>
+    $("#small").click(function () {
+        $("#text").stop(true,true);
+        $("#text").animate({
+            height:'-=50'
+        }, 1000);
+    })
+    $("#big").click(function () {
+        $("#text").stop(true,true);
+        $("#text").animate({
+            height:'+=50'
+        }, 1000);
+    })
+</script>
+</body>
+</html>
