@@ -30,17 +30,17 @@
             left: 48.5%;
         }
         .list{
-            width: 1519px;
+            width: 100%;
             height: 59px;
             background-color: white;
         }
-        .list ul{
+        .menu {
            text-align: center;
         }
-        .list ul li{
+        .menu  li{
             display: inline-block;
         }
-        .list li a{
+        .menu li a{
             padding: 0 21px;
             color: #505050;
             line-height: 4em;
@@ -48,23 +48,70 @@
         .list ul .list-1{
             border-bottom: 2px solid #ff6600;
         }
+        .row:before{
+            display: table;
+            content: " ";
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .row:after{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
 <div class="header">
     <a href="" class="header-a"><img src="../../images/A1.png" alt=""></a>
 </div>
-    <div class="list">
-        <div class="container">
-        <ul>
-            <li class="list-1"><a href="">首页</a></li>
-            <li><a href="">论坛</a></li>
-            <li><a href="">快捷手册</a></li>
-            <li><a href="">中文文档</a></li>
-            <li><a href="">下载</a></li>
-            <li><a href="">关于</a></li>
-        </ul>
+    <!--<div class="list">-->
+        <!--<div class="container">-->
+        <!--<ul>-->
+            <!--<li class="list-1"><a href="">首页</a></li>-->
+            <!--<li><a href="">论坛</a></li>-->
+            <!--<li><a href="">快捷手册</a></li>-->
+            <!--<li><a href="">中文文档</a></li>-->
+            <!--<li><a href="">下载</a></li>-->
+            <!--<li><a href="">关于</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<ul class="navbar navbar-default">
+    <!--navbar表示导航条
+      navbar-defaule默认导航条样式
+      navbar-fixed-top导航固定在顶部-->
+    <div class="container-fluid">
+        <!--导航头部-->
+        <div class="navbar-header">
+            <!--<a href="index.html" rel="external nofollow" class="navbar-brand">-->
+    <span class="glyphicon glyphicon-home">
+    </span>
+                <!--导航折叠按钮-->
+                <button class="navbar-toggle" data-toggle="collspan" data-target="#divNav">
+
+                    <!---   navbar-toggle:【触发】按钮，会有下拉导航    data-toggle:交替执行某动作，collapse:展开和收缩
+                          data-target:目标对象(自己定义一个名字-->
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <!--按钮里的内容,三条横杠-->
+
+                </button>
+                <!--点击按钮将显示的导航栏目-->
+                <div id="divNav" class="collapse nav-collapse">
+                    <!--这里的div的id要和上面的data-target值一致，nav-collapse就是折叠导航--->
+                    <ul class="nav navbar-nav">
+                        <li>首页</li>
+                        <li>菜单1</li>
+                        <li>菜单2</li>
+                        <li>菜单3</li>
+                    </ul>
+                </div>
+        </div>
     </div>
-</div>
+</ul>
 </body>
 </html>
