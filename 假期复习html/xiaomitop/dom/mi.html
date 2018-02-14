@@ -11,7 +11,7 @@
     
     <style>
         *{
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
         }
         ul{
@@ -44,7 +44,8 @@
         .denglu .center{
             width: 350px;
             height: 484px;
-            margin: 20px 30px 20px 30px;position: relative;
+            margin: 20px 30px 20px 30px;
+            position: relative;
         }
         .clearfix:after{
             content:"";
@@ -83,6 +84,8 @@
             height: 45px;
             margin-bottom: 14px;
             font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         .denglu .btn{
             padding: 0;
@@ -94,7 +97,34 @@
             color: white;
             border: 0;
         }
-    </style>
+        .denglu .zc{
+            margin-top: 10px; ;
+        }
+        .denglu .zc .sp1{
+            float: left;
+            color: #ff6600;
+        }
+        .denglu .zc .sp2{
+            float: right;
+            color: #9d9d9d;
+        }
+        .denglu .line{
+            width: 100%;
+            height: 75px;
+           margin-top: 130px;
+        }
+        .denglu .line fieldset{
+            height: 40px;
+            border-top: 1px solid #9d9d9d;
+        }
+        .denglu .line legend{
+            font-size: 14px;
+            text-align: center;
+            color: #9d9d9d;
+            width: 90px;
+        border-bottom: none;
+}
+</style>
 </head>
 <body>
 <div class="top">
@@ -122,9 +152,23 @@
                 <div class="btn">
                     <input type="submit" value="登录">
                 </div>
-                <div class="zc"></div>
-                <div class="line"></div>
-                <div class="logo"></div>
+                <div class="zc clearfix">
+                    <span class="sp1">手机短信登录/注册</span>
+                    <span class="sp2">立即注册 | 忘记密码</span>
+                </div>
+                <div class="line">
+                    <fieldset>
+                        <legend>其他登录方式</legend>
+                    </fieldset>
+                    <div class="logo">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
