@@ -42,21 +42,57 @@
             right: 200px;
         }
         .denglu .center{
-            width: 410px;
-            margin: 10px auto;position: relative;
+            width: 350px;
+            height: 484px;
+            margin: 20px 30px 20px 30px;position: relative;
+        }
+        .clearfix:after{
+            content:"";
+            clear:both;
+            display: block;
+        }
+        .center .dlsm{
+            width: 100%;
+            height: 75px;
+            position: relative;
+            top: -5px;
+            padding: 20px 0 20px 0;
         }
         .center .dlsm ul{
             position: absolute;
-            top: 20px;
-            left: 25%;
+            left: 12%;
         }
         .center .dlsm li{
             font-size: 24px;
-            margin: 0 20px 0 0;
+            margin:0 35px 0 0;
+        }
+        .dlsm li:nth-child(1){
+            color: #ff6600;
+        }
+        .dlsm li:nth-child(3):hover{
+            color: #ff6600;
         }
         .center .dlsm .li-div{
-            height: 10px;
-            border: 1px solid #666666;
+            height: 35px;
+            border-right: 1px solid #dddddd;
+            position: absolute;
+            top: -1px;
+        }
+        .denglu .zhmm input{
+            width: 100%;
+            height: 45px;
+            margin-bottom: 14px;
+            font-size: 14px;
+        }
+        .denglu .btn{
+            padding: 0;
+        }
+        .denglu .btn input{
+            width: 350px;
+            height: 44px;
+            background-color: #ff6600;
+            color: white;
+            border: 0;
         }
     </style>
 </head>
@@ -72,15 +108,20 @@
         <a href=""><img src="../img/big-bj.jpg" alt=""></a>
         <div class="denglu">
             <div class="center">
-                <div class="dlsm">
+                <div class="dlsm clearfix">
                     <ul>
                         <li>账号登录</li>
                         <li><div class="li-div"></div></li>
                         <li>扫码登陆</li>
                     </ul>
                 </div>
-                <div class="zhmm"></div>
-                <div class="btn"></div>
+                <div class="zhmm">
+                    <input type="text" class="ipt1" placeholder="邮箱/手机号/小米ID">
+                    <input type="text" class="ipt2" placeholder="密码">
+                </div>
+                <div class="btn">
+                    <input type="submit" value="登录">
+                </div>
                 <div class="zc"></div>
                 <div class="line"></div>
                 <div class="logo"></div>
