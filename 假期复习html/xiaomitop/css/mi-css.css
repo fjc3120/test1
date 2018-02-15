@@ -1,0 +1,168 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+}
+.header .bj{
+    width: 100%;
+    height: 588px;
+    overflow: hidden;
+    position: relative;
+}
+.header .bj img{
+    position: absolute;
+    left: -34%;
+}
+.header .bj .denglu{
+    width: 410px;
+    height: 524px;
+    background-color: white;
+    position: absolute;
+    top: 32px;
+    right: 200px;
+}
+.denglu .center{
+    width: 350px;
+    height: 484px;
+    margin: 20px 30px 20px 30px;
+    position: relative;
+}
+.clearfix:after{
+    content:"";
+    clear:both;
+    display: block;
+}
+.center .dlsm{
+    width: 100%;
+    height: 75px;
+    position: relative;
+    top: -5px;
+    padding: 20px 0 20px 0;
+}
+.center .dlsm ul{
+    position: absolute;
+    left: 12%;
+}
+.center .dlsm li{
+    font-size: 24px;
+    margin:0 35px 0 0;
+}
+.dlsm li:nth-child(1){
+    color: #ff6600;
+}
+.dlsm li:nth-child(3):hover{
+    color: #ff6600;
+}
+.center .dlsm .li-div{
+    height: 35px;
+    border-right: 1px solid #dddddd;
+    position: absolute;
+    top: -1px;
+}
+.denglu .zhmm input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.denglu .btn{
+    padding: 0;
+}
+.denglu .btn input{
+    width: 350px;
+    height: 44px;
+    background-color: #ff6600;
+    color: white;
+    border: 0;
+}
+.denglu .zc{
+    margin-top: 10px; ;
+}
+.denglu .zc .sp1{
+    float: left;
+    color: #ff6600;
+}
+.denglu .zc .sp2{
+    float: right;
+    color: #9d9d9d;
+}
+.denglu .zc .sp2:hover{
+    color: #ff6700;
+}
+.denglu .line{
+    width: 100%;
+    height: 75px;
+    margin-top: 130px;
+}
+.denglu .line fieldset{
+    height: 40px;
+    border-top: 1px solid #9d9d9d;
+}
+.denglu .line legend{
+    font-size: 14px;
+    text-align: center;
+    color: #9d9d9d;
+    width: 90px;
+    border-bottom: none;
+}
+.line .logo{
+    position: relative;
+}
+.line .logo li{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left:44px;
+    border: 1px solid #666666;
+    border-radius: 55px;
+    text-align: center;
+    background-color: #666666;
+}
+.logo li i{
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../img/youxiajiao.png");
+    margin-top: 4px;
+}
+.logo li .qq{
+    background-position: -19px 0;
+}
+.logo li:nth-child(1):hover{
+    background-color: #2aabd2;
+    border: 1px solid #2aabd2;
+}
+.logo li .sina{
+    background-position: -38px 0;
+}
+.logo li:nth-child(2):hover{
+    background-color: red;
+    border: 1px solid red;
+}
+.logo li .alipay{
+    width: 24px;
+    height: 18px;
+    background-position: -57px 0;
+}
+.logo li:nth-child(3):hover{
+    background-color:#2aabd2 ;
+    border:1px solid #2aabd2;
+}
+.logo li .wechat{
+    width: 23px;
+    background-position: -84px 0;
+}
+.logo li:nth-child(4):hover{
+    background-color: #00FF00;
+    border: 1px solid #00FF00;
+}
