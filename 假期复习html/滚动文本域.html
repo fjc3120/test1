@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../xiaomiindex/js/jq/jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            margin: 100px 0 0 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <button>up</button>
+    <button>down</button>
+    <br>
+    <textarea name="" id="" cols="30" rows="10">111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</textarea>
+
+</div>
+<script>
+    $("button").eq(0).on("click",function () {
+            $("textarea").animate(
+                {
+                    scrollTop:'-=30'
+                },1000
+            )
+        if($("textarea").scrollTop()<=0){
+            $("textarea").scrollTop=0;
+        }
+        console.log($("textarea").scrollTop());
+    })
+    $("button").eq(1).on("click",function () {
+            $("textarea").animate(
+                {
+                    scrollTop:'+=30'                    //设置滚动条位置 不用（）
+                },1000
+            )
+        console.log($("textarea").scrollTop());         //$("textarea").scrollTop() 是提取滚动条位置-数值 要（）
+    })
+</script>
+</body>
+</html>
