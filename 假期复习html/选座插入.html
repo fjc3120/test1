@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="jquery-3.3.1.js"></script>
+    <script src="../xiaomiindex/js/jq/jquery-3.3.1.js"></script>
     <style>
         *{
             margin:0;
@@ -147,7 +147,6 @@
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="header">
         <div class="date">
@@ -161,7 +160,7 @@
             </ul>
         </div>
         <div class="img">
-         <!--<img src="pingmu.png">-->
+            <!--<img src="pingmu.png">-->
         </div>
     </div>
     <div class="content" id="list-content">
@@ -185,33 +184,33 @@
 <script>
     charu();
     var wz=[];
-function charu() {
-    var thishtml ="";
-    for(var i=0;i<10;i++){
-        thishtml+="<ul class='content-list'>";
-        for(var j=0;j<10;j++){
-            if(Math.random()<0.5){
-                thishtml+='<li sign='+(i+1)+'排'+(j+1)+'座 class="empty"></li>'
-            }else{
-                thishtml+='<li sign='+(i+1)+'排'+(j+1)+'座 class="sold"></li>'
+    function charu() {
+        var thishtml="";
+        for(var i=0;i<10;i++){
+            thishtml+="<ul class='content-list'>";
+            for(var j=0;j<10;j++){
+                if(Math.random()<0.5){
+                    thishtml+='<li class="empty" sign='+(i+1)+'排'+(j+1)+'座></li>';
+                }else{
+                    thishtml+='<li class="" sign='+(i+1)+'排'+(j+1)+'座></li>';
+                }
             }
+            thishtml+="</ul>";
         }
-        thishtml+="</ul>";
+        $("#list-content").html(thishtml);
     }
-    $("#list-content").html(thishtml);
-}
-$(".content-list").on("click","li",function () {
-    var $class = $(this).attr("class");
-    var $sign = $(this).attr("sign");
-    if($class=="empty" && wz.length<5){
-        $(this).attr("class","selected");
-        wz.push($sign);
-    }else if($class=="selected"){
-        $(this).attr("class","empty");
-        Remove($sign);
-    }
-    show();
-})
+
+    $(".content-list").on("click","li",function () {
+        if($(this).attr("class")=="empty"&& wz.length<5){
+            $(this).attr("class","selected");
+            wz.push($(this).attr("sign"));
+        }
+        else if($(this).attr("class")=="selected"){
+            $(this).attr("class","empty");
+            Remove($(this).attr("sign"));
+        }
+        show();
+    })
     function Remove(arr) {
         for(var i=0;i<wz.length;i++){
             if(wz[i]==arr){
@@ -220,8 +219,8 @@ $(".content-list").on("click","li",function () {
         }
     }
     function show() {
-        var thishtml ="";
-            thishtml +="<ul>";
+        var thishtml="";
+        thishtml+="<ul>";
         $("#js-money").html("¥"+wz.length*99);
         $("#js-sum").html("¥99*"+wz.length);
         for(var i=0;i<wz.length;i++){
