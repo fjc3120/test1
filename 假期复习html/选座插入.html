@@ -207,14 +207,14 @@
         }
         else if($(this).attr("class")=="selected"){
             $(this).attr("class","empty");
-            Remove($(this).attr("sign"));
+            Remove($(this).attr("sign"));  //删除wz【】里面的元素
         }
         show();
     })
     function Remove(arr) {
         for(var i=0;i<wz.length;i++){
-            if(wz[i]==arr){
-                wz.splice(i,1);
+            if(wz[i]==arr){          //通过参数传过来的值进行对比，判断是否相等的，相等就删除
+                wz.splice(i,1); //将数组wz【】里的第i个元素开始删除一个 ==删除第i个元素
             }
         }
     }
