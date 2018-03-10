@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            display: -webkit-box; /*不用加width: 25%计算;和浮动，同样效果*/
+            /*-webkit-box-orient: horizontal;             */
+            /*排列方式
+horizontal：
+设置伸缩盒对象的子元素从左到右水平排列
+vertical：
+设置伸缩盒对象的子元素从上到下纵向排列
+inline-axis：
+设置伸缩盒对象的子元素沿行轴排列
+block-axis：
+设置伸缩盒对象的子元素沿块轴排列*/
+            /*padding: 0 100px; !*弹性盒模型子元素空间是除去padding和margin后再分配的 *!*/
+            -webkit-box-pack: justify; /*放在父元素里
+start：
+设置伸缩盒对象的子元素从开始位置对齐（大部分情况等同于左对齐，受）
+center：
+设置伸缩盒对象的子元素居中对齐
+end：
+设置伸缩盒对象的子元素从结束位置对齐（大部分情况等同于右对齐）
+justify：
+设置或伸缩盒对象的子元素两端对齐*/
+        }
+        .box div{
+            width: 100px;
+            height: 100px;
+            /*width: 25%;*/
+            /*display: inline-block;*/
+            /*float: left;*/
+
+            /*-webkit-box-flex: 1; !*等宽1:1:1：1 自动计算好宽度，可以一起写，可以单独写*!*/
+
+        }
+        .div1{
+            background: #d32f2f;
+            /*-webkit-box-flex: 1;*/
+            -webkit-box-ordinal-group: 2;  /*显示顺序，从小到大*/
+        }
+        .div2{
+            /*margin-left: 100px;*/
+            background: #00d20d;
+            /*-webkit-box-flex: 1;*/
+            -webkit-box-ordinal-group: 1;
+        }
+        .div3{
+            background: #0000FF;
+            /*-webkit-box-flex: 1;*/
+            -webkit-box-ordinal-group: 1;
+        }
+        .div4{
+            background: #FF9900;
+            /*-webkit-box-flex: 1;*/
+            -webkit-box-ordinal-group: 4;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</div>
+</body>
+</html>

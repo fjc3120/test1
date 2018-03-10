@@ -5,10 +5,10 @@
     <title>Title</title>
     <style>
         .div1{
-            width: 800px;
-            height: 800px;
+            width: 400px;
+            height: 400px;
             background: url("../../test11/3.png") no-repeat;
-            background-size: 300px 200px;   /*取值：
+            background-size:auto;   /*取值：
 <length>：
 用长度值指定背景图像大小。不允许负值。
 <percentage>：
@@ -19,10 +19,45 @@ cover：
 将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器。
 contain：
 将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内。*/
+            border: 20px solid rgba(0,0,0,.5);
+            padding: 10px;
+            background-origin: padding-box ;
+                /*从padding区域（含padding）开始显示背景图像。
+                border-box：
+                从border区域（含border）开始显示背景图像。
+                content-box：
+                从content区域开始显示背景图像。*/
+            background-clip: content-box;
+        }
+        .div2{
+            width: 400px;
+            height: 400px;
+            color: transparent;
+            font-size: 150px;
+            background: url("../../test11/4.png");
+            -webkit-background-clip: text; /*把背景图片放在文字里
+padding-box：
+从padding区域（不含padding）开始向外裁剪背景。
+border-box：
+从border区域（不含border）开始向外裁剪背景。
+content-box：
+从content区域开始向外裁剪背景。
+text：text的兼容性不好
+从前景内容的形状（比如文字）作为裁剪区域向外裁剪，如此即可实现使用背景作为填充色之类的遮罩效果*/
+        }
+        .div3{
+            width: 400px;
+            height: 400px;
+            background: url("../../test11/3.png") no-repeat 100px 100px,url("../../test11/3.png") no-repeat 200px 200px;
+            /*多图片用，间隔  多重属性都是，间隔*/
         }
     </style>
 </head>
 <body>
-<div class="div1"></div>
+<!--<div class="div1"></div>-->
+<!--<div class="div2">-->
+    <!--哈哈哈哈哈-->
+<!--</div>-->
+<div class="div3"></div>
 </body>
 </html>
