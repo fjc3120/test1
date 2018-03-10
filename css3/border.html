@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: #d32f2f;
+            -webkit-border-radius:10px; /*不对四个角的顺序*/
+            -moz-border-radius:10px;
+            -ms-border-radius:10px;
+            -o-border-radius:10px;
+            border-radius:5px 10px 15px 20px;/*左上 右上 右下 左上*/
+        border-radius: 10px  20px; /*左上 右下  ，  右上 左下 对角效果*/
+        border-radius: 10px  20px 30px; /*左上 ， 右上 左下对角 ， 右下*/
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<!-- 渐进增强  保留最低功能 ->
+<!-- 优雅降级 保留最佳效果  基础功能写在最下面，如 border-radius:10px;兼容在前面 ，**-推荐使用，兼容性写再前面-->
+</body>
+</html>
