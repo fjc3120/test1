@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            border: 1px dashed #000;
+            perspective: 1000px;  /*视觉距离 1000比较好  3D效果要加这个，加在父级*/
+            /*perspective-origin: 50% 50%; !* 视觉中心点 *!*/
+        }
+        .box div{
+            position: absolute;
+            top:0;
+            left: 0;
+            transition: all 1s linear;
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background: #d32f2f;
+            transform-style: preserve-3d;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background: #0000FF;
+            transform: rotateX(180deg) translateZ(1px);
+        }
+        .div1:hover{
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="div1">
+        小伙伴20
+        <div class="div2">
+        哈哈哈哈哈哈
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

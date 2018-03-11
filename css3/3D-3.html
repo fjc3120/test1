@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 100px;
+            background: #0000FF;
+            animation: move 2s linear 2 alternate forwards 1s infinite;  /*动画参数 move是@名，2秒执行时间，线性,执行次数和infinite不能同用 ,执行一次后反向执行，执行100%后停住不变,延迟时间,无限循环*/
+        }
+        @keyframes move {  /*关键针*/
+            0%{
+                width: 200px;
+            }
+            50%{
+                width: 400px;
+            }
+            100%{
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1,.div2{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            background: #d32f2f;
+            -webkit-transform:rotate(30deg)  scale(1.5);  /*rotate(30deg) deg角度单位旋转  translate(x,y)位移 scale(宽，高)*/
+            transform:rotate(30deg)  scale(1.5);   /*空格间隔多重属性*/
+            -webkit-transition:all 2s linear 1s;       /*，逗号间隔多重相同属性如width，height。 transition过度要配合触发条件*/
+            transition:all 2s linear 1s;       /*linear是过渡时间*/
+            transform-origin: center center; /*原点居中*/
+        }
+        .div2{
+            background: #0000FF;
+            -webkit-transform:rotate(60deg) scale(1.5);
+            transform:rotate(60deg) scale(1.5);
+        }
+        .div1:hover{
+            z-index: 10;
+            -webkit-transform:rotate(360deg)  scale(2);
+            transform:rotate(360deg)  scale(2);
+        }
+        .div2:hover{
+            z-index: 10;
+            -webkit-transform:rotate(360deg)  scale(2);
+            transform:rotate(360deg)  scale(2);
+        }
+    </style>
+</head>
+<body>
+<div class="div1">123</div>
+<div class="div2" id="div22">456</div>
+</body>
+</html>
