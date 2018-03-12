@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .style1{
+            color: red;
+        }
+        .style2{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+ <div id="div1" class="style2">哈哈哈哈</div>
+ <button id="btn">按钮</button>
+ <script>
+     var oDiv = document.getElementById("div1");
+     var oBtn = document.getElementById("btn");
+//     oDiv.className = "style1";  /*替换class*/
+//     oDiv.className += "style1"; /*要字符串拼接，易错*/
+//     oDiv.classList.add("style1"); /*添加class*/
+//     oDiv.classList.remove("style1"); /*移除这个class*/
+
+     oBtn.onclick =function () {
+         oDiv.classList.toggle("style1"); /*点一次生效，点一次取消*/
+         console.log( oDiv.classList.length); /*长度*/
+     }
+
+ </script>
+</body>
+</html>

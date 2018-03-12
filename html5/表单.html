@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">   <!-- 表单用这个括起来,提交表单用这个,把后台地址卸载action里   ,里面是行级元素-->
+    <!--<label for="user">用户名</label>  &lt;!&ndash;和input关联 ，在for里写input的id&ndash;&gt;-->
+    <!--<input type="text" id="user" name="">--> <!--name是传输数据的-->
+
+    <!--<label>用户名<input type="text" autofocus placeholder=""></label>  &lt;!&ndash;也可以这么写，就不用for了, autofocus 自动选中，placeholder文本框里的阴影文字  &ndash;&gt;-->
+    <input type="button" value="提交">  <!-- button不会跳转-->
+    <input type="submit" value="提交">  <!-- submin是提交按钮,会跳转-->
+
+    <!--<input type="text" list="cars" >   &lt;!&ndash; datalist下拉菜单+自动扫描输入 &ndash;&gt;-->
+    <!--<datalist id="cars">-->
+        <!--<option value="123"></option>-->
+        <!--<option value="234"></option>-->
+        <!--<option value="345"></option>-->
+    <!--</datalist>-->
+
+    <input type="email"> <!--验证是否邮箱地址，没有去后台 -->
+    <input type="date"> <!--日历，但兼容性不好，每个浏览器的样式也不一样 -->
+    <input type="time"> <!--时间 -->
+
+
+        <input type="number" max="10" step="2">    <!--数字加减，移动端好用  最大是10，每次加2 可以不写-->
+    <input type="range"> <!-- 滑块，一般自己写，可控性差 -->
+
+</form>
+</body>
+</html>

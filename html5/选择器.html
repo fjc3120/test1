@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="div1" id="box1">
+    <div class="civ2"></div>
+    <div class="div2"></div>
+</div>
+<script>
+    var aDiv = document.getElementsByClassName("div1");  /*htmllist列表*/
+    var oDiv = document.getElementById("box1");
+    var tName = document.getElementsByTagName("div");
+    var quer = document.querySelector(".div1"); /*H5 直接找到*/
+    var quer1 = document.querySelector(".div2"); /*只返回第一个.div2*/
+    var quer2 = document.querySelectorAll(".div2");/*获取全部的.div2 是nodelist节点列表*/
+    console.log(oDiv.children); /*htmllist列表*/
+    console.log(oDiv.childNodes); /*nodelist节点列表包括文本节点*/
+
+</script>
+</body>
+</html>

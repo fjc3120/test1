@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../xiaomiindex/js/jq/jquery-3.3.1.js"></script>
+    <!--<script>-->
+        <!--window.onload=function () {-->
+            <!--js写在这里       /*延迟加载，先加载js再加载下面的*/-->
+        <!--}-->
+    <!--</script>-->
+</head>
+<body>
+<div id="div1" xxx="nest" data-aaa="11" data-bbb-ccc="22"></div>  <!--自定义属性不能随便写，一般格式是data-xxx=“” -->
+<script>
+//    var oDiv = document.getElementById("div1");
+//    var aa = oDiv.getAttribute("xxx"); /*获取自定义属性*/
+//    var bb = oDiv.dataset.aaa; /*返回11*/
+//    var cc = oDiv.dataset; /*返回列表形式的data*/
+//    var dd = oDiv.dataset.bbbCcc; /*data-bbb-ccc获取写成 oDiv.dataset.bbbCcc 第二个-后第一个字幕大写*/
+//    oDiv.setAttribute("aaa","test"); /*这是属性 aaa=“test”*/
+//    console.log(bb);
+
+    console.log($("#div1").data("aaa")); /*得到11*/
+</script>
+</body>
+</html>
