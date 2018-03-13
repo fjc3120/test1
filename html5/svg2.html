@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        svg{
+            /*background: #000;*/
+        }
+        #box{
+            position: relative;
+
+        }
+        #count{
+            position: absolute;
+            top:75px;
+            left: 90px;
+            font-size: 60px;
+            font-weight: bolder;
+        }
+        #svg{
+            transform: rotate(-90deg);
+
+        }
+        #cir{
+                                    /*献给灰色的圆初始化一个虚线*/
+            stroke-dashoffset: 0; /*起点的偏移量 正值是起点往做移动，负值是起点往右移动。反映到圆上，正，起点往左，起点处多出一段空白。负，起点往右，末尾多出一段空白*/
+            stroke-dasharray: 628;  /*设置虚线的定式。一个参数就是每段628，间隔628，因为线一共628的长度这是一条628的虚线+628的空白。例如两个参数的话 50，20为，每段虚线长50，间隔20*/
+            transition: all 1s linear; /*动画效果*/
+
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <svg width="240"    height="240" id="svg">  <!--（圆半径+20的宽）X2为svg大小 -->
+        <circle cx="120" cy="120" r="100" style="fill:#fff;stroke-width: 20;stroke:#43AEFA;"/> <!--/*fill是填充颜色*/-->
+        <circle id="cir" cx="120" cy="120" r="100" style="fill:transparent;stroke-width: 20;stroke:gray;"/> <!--/*transparent透明色，否则有宽度*/ -->
+    </svg> <!--用第二个圆来覆盖第一个圆，灰色覆盖蓝色-->
+    <div id="count">10</div>
+</div>
+<script>
+    var oCir = document.querySelector("#cir");
+    var t=10;
+    var once = 628/10; /*半径是100，周长是628，分成10分*/
+    var oCount = document.querySelector("#count");
+    var timer = setInterval(function () {
+        oCount.innerHTML = t;
+        t--;
+        if(t<0){
+            clearInterval(timer);
+        }else{                                        /*虚线的起点负值往右，正值往左，数变大就是往左移动*/
+            oCir.style.strokeDashoffset =once*t-628;
+            /*灰色的起点，但是负值往右边即顺时针，正值往左即逆时针*/
+        }
+
+    },1000)
+</script>
+</body>
+</html>

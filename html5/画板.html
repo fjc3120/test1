@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../xiaomiindex/js/jq/jquery-3.3.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        #draw{
+            background:#000000;
+        }
+    </style>
+</head>
+<body>
+<canvas id="draw" width="400" height="400">
+
+</canvas>
+<script>
+    var oDiv = document.querySelector("#draw");
+    var draw = oDiv.getContext("2d");
+    oDiv.onmousedown = function (e) { /*鼠标点下去*/
+        draw.beginPath();
+        draw.moveTo(e.clientX,e.clientY); /*  鼠标点下去后，起始点变成鼠标的点坐标*/
+        oDiv.onmousemove = function (e) {  /*鼠标移动动*/
+            draw.lineTo(e.clientX,e.clientY); /*线的终点变成鼠标的点坐标*/
+            draw.strokeStyle = "#ffffff";
+            draw.stroke();
+        }
+        oDiv.onmouseup = function () {
+            oDiv.onmousemove = null; /*鼠标点击抬起后，鼠标移动函数变成空即画线失效*/
+        }
+    }
+</script>
+</body>
+</html>

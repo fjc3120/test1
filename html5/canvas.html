@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../xiaomiindex/js/jq/jquery-3.3.1.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        #box{
+            background:#000000;
+        }
+    </style>
+</head>
+<body>
+<canvas id="box" width="400" height="400">
+
+</canvas> <!--width 和height不能用style写  画板-->
+<script>
+
+        var oBox = document.querySelector("#box");  /*可以取class也可以取id*/
+        var context = oBox.getContext("2d"); /*声明一块画布,获取“2d”上下文动画*/
+
+        context.beginPath();/*开始*/  /*context是画直线*/
+        context.moveTo(10,10); /*要画坐标起始点*/
+        context.lineTo(100,100); /*线的终点*/
+        context.lineWidth = 10; /*线宽*/
+        context.strokeStyle = "#ffffff"; /*线颜色*/
+        context.stroke(); /*执行画线*/
+
+
+        context.beginPath();/*开始*/  /*这是第二条线开始，如果不写会变成一条线同事操作*/
+        context.moveTo(100,100); /*要画坐标起始点*/
+        context.strokeStyle = "#ff0000";
+        context.lineWidth = 5;
+        context.lineTo(10,200);
+        context.stroke();
+/*************************************/
+        var x = oBox.width / 2;  /*画弧线*/
+        var y = oBox.height / 2;
+        var radius = 75;         /*半径*/
+        var startAngle = 1.1 * Math.PI;  /*圆弧的起点*/ /*圆的0在右，1在左边 从0到2*/
+        var endAngle = 1.9 * Math.PI;      /*圆弧的终点*/
+        var counterClockwise = false;   /*true是起点终点去反，flase正常*/
+        context.beginPath();
+        context.arc(x, y, radius, startAngle, endAngle,
+            counterClockwise);
+        context.lineWidth = 5;
+        context.strokeStyle = "#ff0000";
+        context.stroke();
+
+</script>
+</body>
+</html>
