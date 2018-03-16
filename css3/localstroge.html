@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    localStorage.school = "heida";/*设置 可以链式操作 除非数据被删除，否则一直存在*//*一般5M存储,只有请求时使用数据，不参与服务器的通信,可以用源生的接口，不用封装，可以再次封装*/
+//    localStorage.home = "hab";
+//    localStorage.setItem("age","18"); /*设置 和第一种差不多*/
+////    localStorage.clear(); /*全部清除*/
+////    localStorage.removeItem("age"); /*单个清除*/
+//    console.log(localStorage.school); /*取*/
+//
+//    console.log( localStorage.getItem("age")); /*取*/
+    sessionStorage.setItem("age","18"); /*会随着浏览器的关闭而消失,页面会话（打开界面）期间有效*/  /*设置*/
+    console.log(sessionStorage.getItem("age"));/*取*/
+</script>
+</body>
+</html>

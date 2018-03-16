@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../xiaomiindex/js/jq/jquery-3.3.1.js"></script>
+</head>
+<body>
+<script>
+//    var timer = new Date();
+//    timer.setDate(timer.getDate()+10);/*当前时间+10天*/
+//    document.cookie = "school=heida;expires="+timer.toUTCString();/*Application设置时间，十天以后过期*/
+//    document.cookie = "home=hab;expires="+timer.toUTCString();
+//    document.cookie = "school=aa"; /*覆盖 也相当于删除*/
+
+//    console.log(document.cookie); /*查看*/
+
+//    timer.setDate(timer.getDate()-11); /*当前时间-11天*/
+//    document.cookie = "school=heida;expires="+timer.toUTCString();/*过期一天即删除*/
+//    console.log(arr[0].split(";")[1]);
+//    console.log(document.cookie.split("=")[3]);
+    function setCookie(key,value,expires) {   /*设置*/
+        var timer = new Date();
+        timer.setDate(timer.getDate()+expires);
+        var str = key+"="+value+";expires="+timer.toUTCString();
+        document.cookie = str;
+    }
+    function getCookie(key) {  /*获取*/
+        var arr = document.cookie.split(";");/*把一个字符串分割成数组split(";"),从指定地方分割，从;分号开始切割*/
+        for(var i=0;i<arr.length;i++){
+           if( arr[i].split("=")[0].trim()==key){  /*trim()把字符串前后空格去除*/
+               return arr[i].split("=")[1];
+           }
+        }
+    }
+    function delCookie(key) {   /*删除*/
+        var timer = new Date();
+        timer.setDate(timer.getDate()-1);
+       document.cookie = key+"=null;expires="+timer.toUTCString();
+    }
+//    console.log(document.cookie);
+    setCookie("school1","Linda","10");
+   console.log( getCookie("school1"));
+   delCookie("school1");
+   console.log(getCookie("school1"));   /*cookie只能存4K数据，而且有时间限制*/
+</script>
+</body>
+</html>
