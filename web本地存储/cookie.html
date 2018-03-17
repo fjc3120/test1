@@ -26,6 +26,7 @@
         document.cookie = str;
     }
     function getCookie(key) {  /*获取*/
+        /*也可以split("; ")去除空格,用分号+空格作为分割*/
         var arr = document.cookie.split(";");/*把一个字符串分割成数组split(";"),从指定地方分割，从;分号开始切割*/
         /*school=heida；10 按照；分成了arr【school=heida，10】*/
         for(var i=0;i<arr.length;i++){
