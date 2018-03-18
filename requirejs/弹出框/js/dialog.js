@@ -12,14 +12,32 @@ define(["jquery"],function ($) {
                   this.$mask = $('<div class="dialog-mask"></div>');
                   this.$container = $('<div class="dialog-container"></div>');
                   this.$header = $('<div class="dialog-header"></div>');
-                  this.$title = $('<div class="dialog-title">注册</div>');
+                  this.$title = $('<div class="dialog-title"></div>');
                   this.$close = $('<div class="dialog-btn close">[X]</div>');
                   this.$content = $('<div class="dialog-content"></div>');
+                  this.defaultSettings={  /*默认*/
+                      width:400,
+                      height:300,
+                      title:"弹框",
+                      content:"1234!"
+                  };
                 }
-                Dialog.prototype.open=function () {
+
+                Dialog.prototype.open=function (settings) {
+                $.extend(this.defaultSettings,settings);
                 this.$box.append(this.$mask).append(this.$container);
                 this.$container.append(this.$header).append(this.$content);
                 this.$header.append(this.$title).append(this.$close);
+                this.$container.css({
+                    width:this.defaultSettings.width,
+                    height:this.defaultSettings.height
+                });
+                this.$title.text(this.defaultSettings.title);
+                    if(this.defaultSettings.content.indexOf("html")!=-1){  /*判断字符串是否包含...*/
+                        this.$content.load("js/a.html"); /*插html文件*/
+                    } else{
+                        this.$content.html(this.defaultSettings.content);
+                    }
                 $("body").append(this.$box);
                 var This = this;
                 this.$close.click(function () {

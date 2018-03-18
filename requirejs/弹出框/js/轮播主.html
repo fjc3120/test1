@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        body{
+            background-color: #333333;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+        }
+        .box{
+            width: 670px;
+            height: 370px;
+            margin: 40px auto;
+            background-color: #dddddd;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            left: -400px;
+            top: -35px;
+        }
+
+        .box .header{
+            width: 650px;
+            height: 350px;
+            line-height: 350px;
+            margin: 10px 0 0 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .box .header ul{
+            width: 6700px;
+            height: 350px;
+            position: absolute;
+        }
+        .box .header li{
+            height: 350px;
+        }
+        .box .header img{
+            width: 650px;
+            height: 350px;
+        }
+        .box  .left-right{
+            float: left;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            top: -30px;
+            left: 20px;
+            color: #dddddd;
+        }
+        .box .left-right span{
+            display: inline-block;
+            border: 1px solid #f56600;
+            border-radius: 50%;
+            background: #F90;
+            text-align: center;
+            height: 18px;
+            width: 18px;
+            line-height: 18px;
+        }
+        .box .left-right span:hover{
+            background-color: #ff6600;
+        }
+        .box .list{
+            float: left;
+            width: 180px;
+            height: 30px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .box .list  ul{
+            height: 28px;
+            width: 180px;
+        }
+        .box .list li{
+            margin-right: 10px;
+            border: 1px solid #f56600;
+            border-radius: 50%;
+            height: 18px;
+            width: 18px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 18px;
+            color: #dddddd;
+            background: #F90;
+        }
+        .box .list li:hover{
+            background-color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1">
+
+</div>
+<div class="box2">
+
+</div>
+<script src="require.js" data-main="轮播辅1"></script>
+
+<script>
+
+//    var oHul = document.getElementsByClassName("picture")[0];
+//    var aSp = document.getElementsByTagName("span");
+//    var aList = document.getElementsByClassName("list-ul");
+//    var aListli =aList[0].getElementsByTagName("li");
+//    var globalIndex=0;
+//    var s;
+//    var isrun =true;
+//    var istimer=true;
+////    setInterval(function () {
+////        if(isrun && istimer){
+////            right(++globalIndex);
+////        }
+////    },1000)
+//    oHul.onmouseover = function () {
+//        istimer=false;
+//    }
+//    oHul.onmouseout =function () {
+//        istimer=true;
+//    }
+//    aSp[0].onclick = function () {
+//        if(isrun){
+//            clearInterval(s);
+//            left(--globalIndex);
+//        }
+//    }
+//    aSp[1].onclick = function () {
+//        if(isrun){
+//            clearInterval(s);
+//            right(++globalIndex);
+//        }
+//    }
+//    for(var i=0;i<aListli.length;i++){
+//        aListli[i].index=i;
+//        aListli[i].onmouseover = function () {
+//            if(isrun){
+//                clearInterval(s);
+//                change(this.index);
+//            }
+//        }
+//    }
+//    function change(bb) {
+//        if(globalIndex<(bb+0.1)) {
+//            right(bb)
+//        }
+//        else if(globalIndex>(bb+0.1)){
+//            left(bb);
+//        }
+//    }
+//    function right(aa) {
+//        isrun=false;
+//        s=setInterval(function () {
+//            if(oHul.offsetLeft==-3275){
+//                globalIndex = 0;
+//                aa=0;
+//                oHul.style.left=0+"px";
+//            }else{
+//                if(oHul.offsetLeft==-655*aa){
+//                    clearInterval(s);
+//                    globalIndex = aa;
+//                    isrun =true;
+//                }else{
+//                    oHul.style.left = oHul.offsetLeft-5+"px";
+//
+//                }
+//            }
+//        },10);
+//    }
+//    function left(aa) {
+//        isrun=false;
+//        s=setInterval(function () {
+//            if(oHul.offsetLeft==0){
+//                globalIndex = 0;
+//                aa=4;
+//                oHul.style.left=-3275+"px";
+//            }else{
+//                if(oHul.offsetLeft==-655*aa){
+//                    clearInterval(s);
+//                    globalIndex = aa;
+//                    isrun =true;
+//                }else{
+//                    oHul.style.left = oHul.offsetLeft+5+"px";
+//                }
+//            }
+//        },10);
+//    }
+</script>
+</body>
+</html>

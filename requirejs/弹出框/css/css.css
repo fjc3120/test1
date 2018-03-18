@@ -45,3 +45,6 @@
 .dialog-content{
     margin-top: 20px;
 }
+.dialog-content input{
+    margin-top: 50px;
+}
