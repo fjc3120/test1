@@ -1,0 +1,18 @@
+$first:#ccc;
+.div1{
+  color: $first;
+  .div2{
+    margin: 0;
+  }
+  &:hover{
+    color: $first;
+  }
+  &-aa{
+    background: $first;
+  }
+}
+/*123*/
+/*哈哈*/
+//123
+/*!hh*/
+
