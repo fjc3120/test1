@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="inp">
+<button id="btn">提交</button>
+<body>
+<script>
+    var oInp = document.getElementById("inp");
+    var oBtn = document.getElementById("btn");
+    oBtn.onclick=function () {
+        var str = oInp.value;
+        var reg=/^0*(13|15)\d{9}$/;
+        console.log(reg.test(str));
+    }
+////    var str ="abc"; /*要执行正则表达式的目标字符串*/
+////    var reg=/b/; /*直接量写法*/
+////    reg1 = new RegExp("c");/*对象写法*/
+////    console.log(reg1.exec(str));/*扫描，再str里找有没有reg1*/
+//    reg =/c{1}/; /*一个连续的c*/
+//    reg1 =/c{3}/;/*三个连续的c*/ /*没有就返回null*/
+//    reg2 =/c{3,4}/; /*三个或四个，如果都生效匹配最多的那个，否则匹配合适的*/
+//    reg3 =/c{3,}/;/*三个或者更多*/
+//    str='cainiao';
+//    /*c* 和 c{0,} 一样*/
+//    /*c+ 和 c{1,} 是一个意思。*/
+//    /*c? 和 c{0,1} 是一个意思。*/
+//    /*{n,}?, *?, +?, ??, {m,n}? 匹配最少的那个*/
+//    reg4=/^c/; /*以c开头*/
+//    reg4=/c$/; /*以c结尾*/
+//    reg5=/./; /*‘.’会匹配字符串中除了换行符\n之外的所有字符，*/
+//    str5='asdasd'; /*返回a*/
+//    reg6=/.+/;
+//    str6='asdasdzczxrfe'; /*返回asdasdzczxrfe*/
+//    /*b|c 匹配b或者c*/
+//    reg7=/^b|c.+/; /*以b开头，或者c，不以/n开头，+一直找*/
+//    str7='cainiao'; /*返回cainiao*/
+//    reg7=/^b|c.+/;
+//console.log(reg.exec(str));
+//
+//    reg=/^[abc]/; /*[abc]表示a或者b或者c中的任意一个字符。*/ /*:[a-z],[A-Z],[0-9]，分别表示小写字母，大写字母，数字*/
+//    reg = /^[a-zA-Z][a-zA-Z0-9_]+/;
+//        str='test';/*结果是整个test，正则的意思是开头必须是英文字母，后面可以是英文字母或者数字以及下划线。*/
+//    /*反字符集合[^abc] 就是/^[abc]/的非，不是以【abc】开头的*/
+//
+//reg = /\bc/; /*\b表示边界  \B表示非边界。*/
+//str='维生素c'; /*返回结果c。匹配到了右边界的c字符*/
+//
+//reg = /\bc/;
+//str='bcb'; /*null ，c不是左右边界*/
+//str='b c b'; /*返回c 空格也算边界*/
+//
+// /*\d表示数字的意思，相反，\D表示非数字*/
+//reg = /\d/;
+//str='bcb2';/*返回2*/
+//    /*\f匹配换页符，\n匹配换行符，\r匹配回车，\t匹配制表符，\v匹配垂直制表符。
+//     \s匹配单个空格，等同于[\f\n\r\t\v]。*/
+//reg = /\s.+/;
+//str='This is a test String.';
+////\s匹配单个空格，等同于[\f\n\r\t\v]。例如：
+////返回“ is a test String.”，正则的意思是匹配第一个空格以及其后的所有非换行字符。大写一般都是非
+//    /*\w表示单词字符，等同于字符集合[a-zA-Z0-9_]。 数字字母下划线才算单词字符，汉字符号不是*/
+//
+//reg = /(\w)(\w)/;/*匹配两个\w，再分别写出*/
+//str='blueidea'; /*返回bl，b，l  匹配b和l 然后分别是b和l   */
+//
+//reg = /(\w)\1/; /*匹配bb  b，第一个（b）*/
+//str='blueidea'; /*null*/
+//
+//reg = /(\w)(\w)\2\1/; /*匹配w，o，第二个（o），第一个（w）即woow*/
+//str='woow'; /*返回woow*/
+///*如(?:pattern)的正则就可以避免保存括号内的匹配结果。即去掉？：后面的东西*/
+//
+//reg = /cainiao(?=8)/; /*cainiao后面是不是8，是8就匹配，？=只参与验证，不输出*/
+//str='cainiao8';/*返回'cainiao*/
+//    /*?! 是？=  的非*/
+//
+//  //转移 如想匹配c*  就要reg = /c\*/
+//var reg = /b/i; //匹配b或B，不区分大小写
+///* /^b/; 匹配开头的b*/
+//    /* /^b/m; 匹配每行首的b */
+//    /* /b$/m；匹配每行尾的b  */
+///*----------------------------------------------------*/
+//    var reg=/b/;  /*一个b*/
+    //var reg1=/b/g; /*替换所有的b*/
+//    var str='abbcde';
+//    var Str=str.replace(reg,'c'); /*本来是返回b的 ，这里把str的reg的代码替换成了c*/
+    //var Str2=str.replace(reg1,'c');/*所有b变成c*/
+//    console.log(reg.exec(Str)); /*返回c */
+    //console.log(reg1.exec(Str2)); /*返回cc */
+
+//    var str='30CAC0040';
+//    var reg = /\d{2}$/;
+//    console.log(reg.exec(str));/*取出40 以数字结尾取2个*/
+//
+//    var str ="蓝  色  理  想";
+//    var reg =/\s+/g; /*蓝 色 理 想*/
+//        console.log (str.replace(reg," "));
+
+//        var str = "13555555555";/*11位手机号*/
+//        var reg=/^0*(13|15)\d{9}$/; /*以0开头，0可以连续多个或0个,然后13或15后面9个数字结尾*/
+//        console.log(reg.exec(str));
+//console.log(reg.test(str)); /*成功返回true，失败返回false  相当于测试*/
+
+</script>
+</body>
+</html>
