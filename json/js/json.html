@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    var user = {
+//        name:"xiaoming",
+//        age:"17",
+//        school:"heida"
+//    };
+//    user ='{name:"xiaoming",}'; /*json传成字符串*/
+
+//    var str = JSON.stringify(user); /*JSON将对象转换成字符串传到后台*/
+//    var obj = JSON.parse(str);  /*JSON将字符串转换成对象传回来*/
+//        var obj = eval("str"); /*将字符串转换成js代码，但是安全性差，不用了，都用JSON*/
+//    console.log(obj);
+
+//    var user = {
+//        name:"xiaoming",
+//        age:"17",
+//        home:"广州",
+//        hobby:["看电影","旅游"],
+//        sister:{
+//            sister1:{
+//                name:"xiaofang",
+//                age:"24",
+//                job:"护士"
+//            },
+//            sister2:{
+//                name:"xiaohong",
+//                age:"23",
+//                job:"教师"
+//            }
+//        }
+//    }
+//    JSON.stringify(user);
+//    var str = JSON.stringify(user)
+//    console.log(str);
+
+//    var a = 5; /*基本数据类型*/
+//    var b = a;
+//    a=3;
+//    console.log(b); /*b=5，b取a的值，不是a .互不影响*/
+//
+//    var obj = {  /*引用数据类型，对象类，array，function，data*/
+//        name:"xiaohong",  /*里面是一个指向地址在栈内存里 。对象内容在堆内存里*/
+//        age:"17"
+//    };
+//    obj.name = "xiaoming";
+//    var obj1 = obj; /*直接赋值不是开辟空间，是复制了指向地址*/
+//    console.log(obj1);/*obj1的name变成xiaoming了，对象obj的值改变了*/
+//    var obj1 = {}; /*这是又开辟了一个空间*/
+//    obj1.name = obj.name;
+//    obj1.age = obj.age;
+//    obj.name = "xiaoming";
+//console.log(obj1);
+//console.log(obj);
+/*/////////////////深克隆对象*/
+//    var obj = {
+//        name:"xiaohong",
+//        age:"17",
+//        school:"heida",
+//         sister:{
+//             sister1:{
+//                 name:"xiaofang",
+//                 age:"24",
+//                 job:"护士"
+//             }
+//         }
+//
+//    };
+//
+//function clone(obj) { /*对象深克隆封装*/  /*深拷贝方法1*/
+//    var obj1={};
+//    for (var a in obj){/*for in 循环  遍历出对象的属性名字*/
+//        if(typeof obj[a]=="object"){ /*如果对象里的元素是不是对象*/
+//            obj1[a]=clone(obj[a]);
+//        }else{
+//            obj1[a]=obj[a];/*相当于obj.a 怕保留字影响所有用【】*/
+//        }
+//
+//    }
+//    return obj1; /*递归需要return值*/
+//}
+//
+//var obj3= clone(obj);
+//obj.name = "小明"; /*深拷贝*/
+//obj.sister.sister1.name = "小芳";
+//console.log(obj3);
+
+var obj4 ={
+    name:"aa",
+    age:"17",
+    school:"heida"
+}
+var obj5 = JSON.stringify(obj4);/*转换成字符串，存的是基本数据类型，不是引用类型了*/  /*也是深拷贝方法2*/
+obj4.name="bb";  /*影响不到obj5了*/
+console.log(JSON.parse(obj5));
+
+</script>
+</body>
+</html>
