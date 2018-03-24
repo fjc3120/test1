@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        header,nav,footer{
+            height: 100px;
+            background-color: #8c8c8c;
+            max-width: 960px;
+            width: 100%;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 100px;
+        }
+        article,img{
+            max-width: 960px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+        section{
+            height: 300px;
+            float: left;
+            text-align: center;
+            display: table; /*table的垂直居中1放父级*/
+        }
+        p{
+            display: table-cell;/*table的垂直居中2*/
+            vertical-align: middle;/*table的垂直居中3 只有航级元素才能用*/
+        }
+         .right{
+            background-color: #ff6600;
+            width: 25%;
+            margin-left: 5%;
+        }
+         .left{
+            background-color: #00d20d;
+            width:70%;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        @media (max-width: 600px) {
+           .clearfix section{
+                width: 100%;
+               margin: 10px 0 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>页头</header>
+<nav>导航</nav>
+<article> <!--内容-->
+    <img src="haibao.jpg" alt="">
+</article>
+    <article class="clearfix">
+    <section class="left"> <!--段落，章节-->
+        <p>ksandsa linduindu sainci oasmas iocmas cascssa ndsalindus aincioa smasioc mascas cssand salindusai ncioasmasiocm ascascssan dsalin dusainc ioasma siocmasc ascssand salindus aincio asmasi ocmasca scsaincio asmasioc mascascsa</p>
+    </section>
+    <section class="right">
+        <p>sandsal indusai nan salindu sainc ioasmasi ocmascascs sa ndsa lindus aincioa smasioc mascascss andsali ndusai ncioasm asiocmascasc ssandsal indusai ncioa smasio cmascascs</p>
+    </section>
+</article>
+<footer>页脚</footer>
+</body>
+</html>

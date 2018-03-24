@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header,nav,footer{
+            height: 100px;
+            width: 100%;
+            max-width: 960px;
+            background-color: #8c8c8c;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 100px;
+        }
+        article{
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            display: block;
+        }
+        article div{
+            width: 100%;
+            max-width: 960px;
+            padding-bottom: 56.22%;
+            /*margin: 0 auto;*/
+            /*display: block;*/
+            background: url("haibao.jpg") no-repeat center/cover;  /*position和size有共同值，所以加/分辨*/
+            /*background-size: contain;*/
+        }
+        section{
+            float: left;
+            height: 300px;
+            text-align: center;
+            display: table;
+        }
+        p{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .left{
+            background-color: #0000FF;
+            width: 70%;
+        }
+        .right{
+            background-color: red;
+            width: 25%;
+            margin-left: 5%;
+        }
+        .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+            .clearfix section{
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>页头</header>
+<nav>导航栏</nav>
+<article>
+    <div></div>
+</article>
+<article class="clearfix">
+<section class="left">
+    <p>ksandsa linduindu sainci oasmas iocmas cascssa ndsalindus aincioa smasioc mascas cssand salindusai ncioasmasiocm ascascssan dsalin dusainc ioasma siocmasc ascssand salindus aincio asmasi ocmasca scsaincio asmasioc mascascsa</p>
+</section>
+<section class="right">
+    <p>sandsal indusai nan salindu sainc ioasmasi ocmascascs sa ndsa lindus aincioa smasioc mascascss andsali ndusai ncioasm asiocmascasc ssandsal indusai ncioa smasio cmascascs</p>
+</section>
+</article>
+<footer>页脚</footer>
+</body>
+</html>

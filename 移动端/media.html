@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: #ff6600;
+        }
+        @media (max-width: 1000px)and (min-width: 500px){ /*max 1000和min 500都执行 and相当于  与,&&*/
+
+        }
+        @media (max-width: 1000px),(min-width: 500px){ /*,逗号相当于or, 或, ||*/
+            /*@media (max-width: 1000px)not(min-width: 500px) !*     not相当于非，！*!*/
+                /*@media only(min-width: 500px) !*      only仅仅支持*!*/
+        }
+
+        @media (orientation: landscape) { /*orientationz 屏幕方向：横屏*/ /*portrait不写默认竖屏*/
+            .div1{
+                background-color: #00d20d;
+            }
+        }
+        @media (orientation: portrait) { /*portrait 屏幕方向：竖屏*/ /*portrait不写默认竖屏*/
+            .div1{
+                background-color: #0000FF;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+</body>
+</html>
