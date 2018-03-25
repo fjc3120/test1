@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <style>
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: #0000FF;
+            position: relative;
+            top: -100px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+<div data-role="page" id="pageone" data-theme="b"> <!--data-theme="a|b|c|d|e"更改主题-->
+    <div data-role="header">
+        <h1>分组按钮</h1>
+    </div>
+    <div data-role="header">
+        <a href="#" data-role="button" data-icon="home" class="btn1">首页</a>
+        <h1>欢迎访问我的主页</h1>
+        <a href="#" data-role="button" data-icon="search" class="btn2">搜索</a>
+    </div>
+    <div data-role="content">
+        <a href="#" data-role="button" data-icon="search">搜索按钮</a>
+        <div data-role="controlgroup" data-type="horizontal">
+            <p>水平分组：</p>
+            <a href="#" data-role="button">按钮 1</a>
+            <a href="#" data-role="button">按钮 2</a>
+            <a href="#" data-role="button">按钮 3</a>
+        </div><br>
+        <label for="slider-fill">Slider with fill and step of 50:</label>
+        <input type="range" name="slider-fill" id="slider-fill" value="60" min="0" max="1000" step="50" data-highlight="true">
+        <div data-role="controlgroup" data-type="vertical">
+            <p>垂直分组（默认）：</p>
+            <a href="#" data-role="button">按钮 1</a>
+            <a href="#" data-role="button">按钮 2</a>
+            <a href="#" data-role="button">按钮 3</a>
+        </div>
+    </div>
+<div class="div1">
+
+</div>
+    <div class="div2">
+
+    </div>
+    <div data-role="footer">
+        <h1>页脚文本</h1>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> <!--要用低版本 -->
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script>  /*js写在引用下面*/
+$(document).on("pageinit","#pageone",function(){ /*防止未加载完执行不了  和变成全局变量*/
+        $(".btn1").click(function () {
+            console.log(1);
+        });
+        $(".btn2").on("tap",function () {   /*tap相当于移动端的click，但是tap有300mm后执行，判断是否是单击事件还是双击*/
+            console.log(2);
+        });
+
+    $(".div1").on("click",function () {
+        console.log(3);
+    });
+    $(".div2").on("tap",function () {   /*tap有点透缺点，下载fastclick.js文件可以解决，tap,tap相当于移动端的click，但是tap有300mm后执行，判断是否是单击事件还是双击*/
+        $(this).hide();/*隐藏*/
+        console.log(4);
+    });
+//    $(".div1").on("tap",function () {
+//        console.log(3);
+//    });
+//    $(".div2").on("tap",function () {   /*tap相当于移动端的click，但是tap有300mm后执行，判断是否是单击事件还是双击*/
+//        console.log(4);
+//    });
+});
+</script>
+</body>
+</html>
