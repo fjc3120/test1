@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="oul">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<script>
+    
+  //  var a = "1";
+//    console.log(a);
+//    function a() {
+//        console.log("2");
+//    }
+  // a ="aaa"; /*a（）从变量变成了“aaa”字符串*/
+   // console.log(a);
+   // a();/*不能输出，不是函数了*/
+
+//  var str = "a";
+//    function foo() {
+//        var str; //函数里变量提升作用域再函数里
+//        console.log(str);
+//        str= "b";
+//    }
+  //foo();
+
+//var oUl = document.getElementById("oul");
+//var aLi = document.getElementsByTagName("li");
+//                  ////////闭包就是能使用其它函数内部的变量
+//for( var i=0;i<aLi.length;i++){
+//    (function (key) { /*立即执行函数*/  //闭包，执行完后，key没有被释放且内部函数可以访问外部函数
+//        aLi[key].onclick =function () {
+//            console.log(key);
+//        }
+//   })(i) //立即执行的参数
+//}
+
+//     function fun1() {
+//         var a ="123";
+//         function fun2() {
+//             console.log(a);   //函数里的函数可以访问外部函数，且不被释放。闭包
+//         }
+//       fun2();
+//     }
+//    fun1();
+
+//    function foo1() {  //三层也能读取 闭包不限制层数,闭包有链级作用域，单向向上，
+  //        var a = "123";  //子级能用父级的变量 。但是！父级不能用子级的变量。
+  //        function foo2() {
+  //            function foo3() {
+  //                console.log(a);
+  //            }foo3();
+  //        }foo2();
+  //    }foo1();
+
+
+//  let a ="1123";  //不存在变量提升
+////     let a="1";               // 不允许重复声明
+// console.log(a);                          //暂时性死区
+                                                 //块级作用域
+//    function foo() {
+//        a="12"; //不能使用a
+//        console.log(a);
+//        let a="1"; //暂时性死区 在let a作用域中，未声明前，不能被使用
+//    }foo();
+
+//    if(1){
+  //       let a=0;  //块级作用域 {}里 才有效
+  //
+  //    }
+  //    console.log(a); //不可用，超出｛｝块级作用域了
+
+//    const a = "3"; //定义常量，不能改变变量指向的地址  即不能改基本数据类型的值，能改引用数据类型的指向地址
+//    a=5; //错误
+//    console.log(a);
+
+//    const  obj={
+//        name:"xiaoming",
+//        age:"17"
+//    };
+//    const  obj2={
+//        name:"aa"
+//    };
+//    obj=obj2; //不能改变变量指向的地址
+//    console.log(obj);
+
+    const  obj={
+        name:"xiaoming",
+        age:"17"
+    }
+    Object.freeze(obj); //冻结。不能改obj里的值
+    obj.name="aaa";
+  console.log(obj);
+</script>
+</body>
+</html>
