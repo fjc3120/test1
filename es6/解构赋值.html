@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    ////////////解构赋值 ----数组----------------
+//    let arr=[3,5,8];
+//    let a,b,c;
+//    a==arr[0];
+//    b==arr[1];
+//    c==arr[2];
+
+//let arr=[3,5,8]
+//    let[a,b,c] = arr; //解构赋值，不用单独赋值,把数组里的值提取出来赋值给变量
+//    console.log(a,b,c);
+
+//    let[a,b,c]=[4,5,6,7]; //输出4，5，6，多余的不接收
+// console.log(a,b,c);
+
+//    let[a,b,c]= [3,[4,5],6];  //b=[4,5]
+// console.log(a,b,c);
+
+//    let[a,[b,c],d]=[3,[4,5],6];
+//    console.log(a,b,c,d);
+
+    ////////////解构赋值 ----对象----------------
+//
+//    var obj={
+//        name:"xiaominh",
+//        age:"17"
+//    };
+//   let name = obj.name;
+//   let age = obj.age;
+   // let {name,age}={name:"xiaoming",age:"17"};
+    //let {name,age}=obj
+  //  let {a,b}=obj; //错误 对象解构一定要对应属性名｛name，age｝。。错误
+//    let {name:a,age:b}=obj; //换变量名的方法 name变成a，age变成b
+//    console.log(a,b);
+
+    ////////////解构赋值 ----字符串----------------
+
+
+//    var str = "hello world";
+//    //console.log(str.charAt(0));//获取字符串第一个
+//    console.log(str[0]); //字符串当作数组
+
+//    let str = "hello world";
+//    let [a,b,c,d] =str;
+//    console.log(a,b,c,d);
+
+    ////////////解构赋值 ----函数的参数----------------
+//    function foo(a,b) { //a，b是两个参数 【a，b】是一个参数
+//        console.log(a,b);
+//        console.log(a+b);
+//    }
+//    foo([4,6]); //一个数组相当于一个参数
+
+//    var obj={
+//        name:"xiaoming",
+//        age:"17"
+//    };
+//    function foo({name:a,age:b,school="heida"}) { //这个school相当于默认值，
+//        console.log(a);
+//        console.log(b);
+//        console.log(school);
+//    }
+//  //  foo(obj);
+//    foo({name:"xiaoming",age:"17",school:"linda"}); //解构作为对象参数
+
+    ////////////解构赋值 ----函数的返回值----------------
+//    function foo() {
+//     //   return "123";
+//        return [1,2,3];
+//    }
+//    let [a,b,c]=foo();
+//    console.log([a,b,c]);
+
+    ////////////解构赋值 ----变量互换---------------
+//    let a=4;
+//    let b=5;
+//    let key =a;  //通过中间值
+//     a=b;
+//     b=key;
+
+//    a=a+b;
+//    b=a-b;
+//    a=a-b;
+
+    //解构 1
+    //     [a,b]=[b,a];
+    //解构 2
+  // a=[b,b=a][0]; a为右边数组【0】，b为a
+     //console.log([a,b]);
+
+    ////////////解构赋值 ----Json应用---------------
+
+    let jsonStr = '{"name":"xiaoming","age":"17"}'; //字符串里要全是引号
+    let{name,age}=JSON.parse(jsonStr); //JSON.parse(jsonStr)字符串转换成对象
+    console.log(name,age);
+
+</script>
+</body>
+</html>
