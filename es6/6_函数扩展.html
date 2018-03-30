@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //--------------①参数默认值
+    //    function foo(a,b) {
+//        b = b || 'world'; //不完善 false不是undefined
+//        console.log(`${a} ${b}`);
+//    }
+//    foo('hello','world');
+
+//
+//    function foo(a,b='world') { //b的默认值为world b传值则为b
+//        console.log(`${a} ${b}`);
+//    }
+//    foo('hello','aa'); //undefined可以占位相当于没传 null false不能占位
+
+    //--------------①与解构赋值结合
+//    function foo([a,b,c,d=0]) { //也可设置默认值
+//        console.log(a,b,c,d);
+//    }
+//    foo([1,2,3]); //数组
+
+    function foo({name,age,school=0}) { //也可设置默认值
+        console.log(name,age,school);
+    }
+    foo({
+        name:"zs",
+        age:18
+    }); //对象
+</script>
+</body>
+</html>

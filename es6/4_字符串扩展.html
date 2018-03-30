@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1"></div>
+<script>
+//    let str = 'abc';//new String('abc');
+//    let a=5,b=6;
+//    let str ='sadsaz'+a+'xvtrut' +  //以前的回车要加‘+’ 麻烦
+//        'reibiob'+b+'niovzxncoie'; //以前的字符串拼接
+
+//--------------------字符串扩展 ①模板字符串(反引号) ``  ~~下面这个富川：${} 支持标签、换行 数学运算
+//let a=5,b=6;
+//let str =`sadsa${a}zxvt<h3>h3</h3>rutre
+//ibiobni${b}ovzxncoie`; //反引号 回车没有关系 ，也不用‘+’拼接了。用${a}.可以解析标签
+//let str2 = `${a}+${b} = ${a+b}`; //数学运算
+//   // console.log(str);
+//document.getElementById("div1").innerHTML = str;
+//document.getElementById("div1").innerHTML = str2;
+
+////----------------------字符串扩展 ②includes()VS	indexOf()
+//     let str = 'hello world';           //str.indexOf('world')返回6 ，str.indexOf('aa')返回-1
+//     console.log(str.indexOf('world'));   //【索引】 检索字符串，看字符串里是否包含目标字符串,不包含返回-1，包含返回对应第一个字符的索引
+//     console.log(str.includes('woo')); // 【boolean布尔型】测试是包含指定字符串 检索字符串，包含返回true 不包含false
+////-------------//字符串扩展    ③startsWith()	VS endsWith()
+//    console.log(str.startsWith('hello'));//【boolean布尔型】测试是否以指定字符串开头
+//    console.log(str.endsWith('world'));//【boolean布尔型】测试是否以指定字符串结尾
+//
+//   String.prototype.sw = function (str) {  //== function sw（str）｛｝； 封装就可以在源生下定义这个方法变成了startsWith（）；
+//        if(this.indexOf(str)==0){  //输入的str与目标字符串一模一样
+//            return true;
+//        }else{
+//            return  false;  //输入的str与目标字符串有不一样的地方
+//        }
+//   };
+//console.log(str.sw("hello"));
+//String.prototype.ew = function (str) {
+//    console.log(this.length); //总的str 'hello world';
+//    console.log(str.length);//输入的str长度
+//    console.log(this.indexOf(str));//输入的str第一个检索
+//    if(this.indexOf(str)==this.length-str.length){
+//        return true;
+//    }else{
+//        return  false;
+//    }
+//};
+//console.log(str.ew("orld")); //对象.方法str.ew  定义在prototype原型下 ，否则只是一个普通函数
+
+//-------------------------④padStart(5,‘abc’)   padEnd()
+    let str ='xy';
+    console.log(str.padStart(7,'abc'));  //padStart相当于从str开始的地方填充 abcabxy ，在str前用‘abc’填充一共至7位，如果位数不够就重复
+    console.log(str.padEnd(7,'abc'));//padStart相当于从str结束的地方填充
+console.log(str.repeat(5)); //repeat(5), str重复5次
+//⑤repeat(5）
+</script>
+</body>
+</html>

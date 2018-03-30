@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    //--------------十进制=>二进制
+//    let n = 5;//十进制5  二进制101
+//    console.log(n.toString(2)); //n.toString(2) 十进制=>二进制  可以把十进制n转化成任意进制
+//
+//    //--------------二进制=>十进制
+//    let m = 101;//5
+//    console.log(parseInt(m,2));//parseInt(m,2)二进制=>十进制  可以把二进制m转化成十进制
+
+//-------------①二进制0B 八进制0O  零B，零欧
+//    let n = 0B101; //二进制0B
+//    let m = 0O111;//八进制0O
+//    console.log(n);
+//    console.log(m);
+
+//    //-------------②是否为数字：Number.isFinite(5); 【boolean布尔型】判断是不是数字
+    // console.log(Number.isFinite(5));//【boolean布尔型】5是数字返回true
+     //   console.log(Number.isFinite('a'));//【boolean布尔型】'a'不是数字返回false.   【null,undefined,'a','5',5/0,NaN,】都不是数字
+
+//    //-------------③Number.isNaN(NaN); 【boolean布尔型】判断是不是 不是数字【是否为非数字】
+    //    console.log(Number.isNaN(NaN)); //Number.isNaN(NaN)==window.isNaN(NaN)一些方法移植到Number对象上面，行为完全保持不变。这样做的目的，是逐步减少全局性方法，使得语言逐步模块
+
+//    //-------------④Number.isInteger(5)【boolean布尔型】 判断是否为整数 int
+//    console.log(Number.isInteger(5));
+////    //-------------⑤Number.parseFloat(5) //解析一个字符串，并返回一个浮点数。
+//console.log(Number.parseFloat(5));//5
+//console.log(Number.parseFloat( 6 )); //6 前后可以有空格
+//console.log(Number.parseFloat("40 years"));//40  解析一个字符串，years不管
+//console.log(Number.parseFloat("He was 40"));//NaN 第一个字符串He 不是浮点数，返回NaN
+
+//    //------------⑥Number.parseInt(5.5) //解析一个字符串，并返回一个整数。
+//console.log(Number.parseInt(5.5));//5
+
+//    //------------⑦Number.isSafeInteger()【boolean布尔型】 判断是否是安全的整数 Number.MAX_SAFE_INTEGER  Number.MIN_SAFE_INTEGER  int安全范围
+//    let max = Math.pow(2,53); //整数int 的最大值2^53
+//    console.log(max);//整数int 的最大值2^53
+//    console.log(max+1);//没变，不能+1了，最大值
+//    console.log(max-1);//整数int最大值的安全范围
+//    console.log(-max+1);//整数int最小值的安全范围
+//
+//    console.log(Number.isSafeInteger(max));//超出整数int最大值的安全范围 false
+//
+//    console.log(Number.MAX_SAFE_INTEGER);//整数int最大值的安全范围
+//    console.log(Number.MIN_SAFE_INTEGER);//整数int最小值的安全范围
+//
+//    //------------⑧Math.trunc(); 去除一个数的小数部分，返回整数部分
+//    console.log(Math.trunc(5.5));//不是四舍五入，是把小数点后面的都舍去了
+//
+////    //------------⑨Math.sign();  判断一个数到底是正数、负数、还是零
+//    console.log(Math.sign(-3)); //整数返回1，负数返回-1，0返回0
+
+</script>
+</body>
+</html>
