@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<div id="div1">div1</div>
 <body>
 <script>
     //--------------①参数默认值
@@ -25,13 +26,122 @@
 //    }
 //    foo([1,2,3]); //数组
 
-    function foo({name,age,school=0}) { //也可设置默认值
-        console.log(name,age,school);
-    }
-    foo({
-        name:"zs",
-        age:18
-    }); //对象
+//    function foo({name,age,school=0}) { //也可设置默认值
+//        console.log(name,age,school);
+//    }
+//    foo({
+//        name:"zs",
+//        age:18
+//    }); //对象
+
+    //--------------②方法名.length   返回没有指定默认值的参数个数,从左往右数，发现默认参数就直接停止
+//    function foo(a,b=0,c) {
+//        return a+b+c;
+//    }
+//    foo(5,6,7);
+//    console.log(foo.length);//1
+
+    //--------------③方法名.name   返回函数名，匿名函数返回空字符串，但ES6会返回对应变量名
+//
+//   var foo2= function (a,b=0,c) {
+//        return a+b+c;
+//    }
+//    foo2(5,6,7);
+//    console.log(foo2.name);//foo2
+
+    //--------------④rest参数 ... 扩展运算符做参数
+//        function foo(a,...b) {
+//            console.log(a,b);
+//        }
+//        foo(5,6,7);
+
+    //--------------⑤’use	strict’ 严格模式，不是es6里的
+        //------------1.全局变量必须显式声明
+//
+//     a=5;
+//     console.log(a);//输出5
+
+   // 'use strict';
+//        a=5;
+//        console.log(a);//错误
+
+//    //------------2.禁止this关键字指向全局对象 构造函数必须new
+//    function foo() {
+//        console.log(this);//.禁止this关键字指向全局对象 即window
+//    }
+//    foo();
+    
+//    function people(name,age) {
+//        this.name=name;
+//        this.age=age;
+//    }
+//    //people('zs','18');//严格模式下会报错
+//    let p =new people('zs','18');//必须这样写，不能写成上面那行
+    //------------3.函数不能有重名的参数
+//    function foo(a,a,b) {  //严格模式下错误
+//        console.log(this);//.禁止this关键字指向全局对象 即window
+//    }
+//    foo(1,2,3);
+
+    //------------4.禁止使用with语句
+
+//    let a=5;
+//    let obj={
+//        a:6
+//    }
+//    with (obj){
+//        console.log(a); //obj.a  6
+//    }
+//    console.log(a); // a 5
+//    console.log(obj.a)//obj.a  6
+
+    //------------5.arguments.callee() 禁止使用此方法调用自己
+        //6......
+    //--------------⑥箭头函数 =>
+
+//    function foo(x,y) {
+//        return x+y;
+//    }
+//   console.log(foo(5,6));
+    //等于
+//    let foo=(x,y)=>{return x+y;};  //let 函数名=（参数）=>｛函数体｝
+//    console.log(foo(5,6));
+//
+//    let foo=(x,y)=>x+y; //如果函数体只有一行，可以简写，如果参数只有一个的话（）也可以不写
+//
+    //-----------------(3)不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用 rest参数代替
+//    let foo=(...arg)=>{  //参数数目不确定，用rest
+//        console.log(arg);//不能用 console.log(arguments);
+//    };foo(1,2,3)
+
+    //-----------------(2)不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。
+//    function people(name,age) {
+//            this.name=name;
+//            this.age=age;
+//        }
+
+//        let people = (name,age) => {
+//        this.name=name;
+//        this.age=age;
+//    };
+//        let p =new people('zs','18'); //不可以new
+
+    //-----------------(1)函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+//    let oDiv1 = document.querySelector('#div1');
+//    oDiv1.addEventListener("click",function(){ //点击触发
+//        setInterval(function () {
+//            console.log(this);// window this是多变的
+//        },2000);
+//        console.log(this);//div1
+//    },false);
+//
+    let oDiv1 = document.querySelector('#div1');
+    oDiv1.addEventListener("click",function(){ //点击触发
+        setInterval(() =>{ //箭头函数
+            console.log(this);// div1 再箭头函数中，this固定，不是可变的
+        },2000);
+        console.log(this);//div1
+    },false);
 </script>
 </body>
 </html>
