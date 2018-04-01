@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $.get('json.json',{},function (ref) { //$.get() 方法通过 HTTP GET 请求从服务器上请求数据。
+        console.log(ref); //回调函数
+    },'json')
+</script>
+</body>
+</html>

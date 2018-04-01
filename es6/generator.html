@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery-3.3.1.js"></script>
+<script>
+//    function* foo() {
+//        yield function () {
+//            console.log(1);
+//            console.log(4);
+//        };
+//        yield 2;
+//        return 3;
+//    }
+//    let a = foo();
+//  //  a.next(); // 要手动控制 执行
+//    console.log(a.next().value());
+//    console.log(a.next());
+//    console.log(a.next());
+
+    //--异步嵌套，不如promise好 a.next();的参数是传给上一个yield
+    function runAjax(url) {
+        $.get(url,function (ref) {
+            console.log(ref);
+            a.next();
+        })
+    }
+    function* foo() {
+        yield runAjax('json.json');
+        yield runAjax('json.json');
+        return  yield runAjax('json.json');
+    }
+    let a = foo();
+    a.next();
+</script>
+</body>
+</html>

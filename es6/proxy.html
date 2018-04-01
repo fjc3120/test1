@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    let obj = new Proxy({
+//        name:"xiaohong",
+//
+//    },
+//        {
+//            get:function(target,key,property){ //get是获得值之前做的事
+//                console.log("get:"+key,property);
+//                  return target[key];
+//            },
+//
+//            set:function (target,key,value,receiver) { //set是改变值时做的事，必须要有return
+//                console.log("set"+key,value,receiver);
+//                  return target[key] = value;
+//            }
+//
+//
+//        }
+//
+//    );
+//    obj.name = "aaa"; //赋值时，改变时调用set
+//    obj.name;//取值前此时调用get
+
+    function target() {
+        console.log('target');
+        return 'target123';
+    }
+   var handler = {
+            apply(target, ctx, args){
+                console.log('handler');
+                return Reflect.apply(...args); //handler一定要写return
+            }
+   };
+    let foo = new Proxy(target,handler);  //target()执行函数，handler（）执行前要执行的函数
+        console.log(foo());
+
+</script>
+</body>
+</html>

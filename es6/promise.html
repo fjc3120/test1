@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery-3.3.1.js"></script>
+<script>
+//    $.get('json.json',function (ref) {  //这种嵌套不行，错误太多，影响性能，最多能2层
+//        console.log(ref);
+//        $.get('json.json',function (ref) {
+//            console.log(ref);
+//        })
+//    })
+    //-----Promise	是异步编程的一种解决方案，比传统的解决方案————更合理和更强大。回调函数和事件  [异步操作]
+    let pro1 = new Promise(function (resolve,reject) { //resolve,reject 如果成功调用resolve，失败调用reject
+        setTimeout(function () {  //异步
+            resolve(); // 成功
+            //reject();//失败
+        },1000)
+    }).then(function () { // 成功时调用  嵌套
+        console.log("sucess!")
+    }).catch(function () {//失败时调用
+        console.log("false!")
+    })
+
+</script>
+</body>
+</html>
