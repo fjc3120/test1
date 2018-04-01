@@ -31,15 +31,15 @@
     function target() {
         console.log('target');
         return 'target123';
-    }
+    };
    var handler = {
-            apply(target, ctx, args){
-                console.log('handler');
-                return Reflect.apply(...args); //handler一定要写return
+            apply:function () {
+                return 'handler123';
             }
+               // return Reflect.apply(...args); //handler一定要写return
    };
     let foo = new Proxy(target,handler);  //target()执行函数，handler（）执行前要执行的函数
-        console.log(foo());
+       console.log(foo());
 
 </script>
 </body>
