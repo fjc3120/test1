@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj = {
+        name:"aa",
+        age:"16"
+    }
+    let name = Symbol(); //固定不会改变，可以添加相同属性
+    let age = Symbol();
+    obj[age] = "17";
+    obj[name] = "BBB";
+
+    // for(var i in obj){
+    //     console.log(i);
+    // }
+
+    console.log(obj);
+
+</script>
+</body>
+</html>
