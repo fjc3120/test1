@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="./jquery-3.3.1.js"></script>  <!--  ./表示当前目录     -->
+<script>
+    //-----Ajax_jq 封装的方法
+    $(function () {
+        $.get('json.json',{name:'zs',age:'18'},function(res){console.log(res);},'json'); //get()参数 1.url
+                                                            // 2.传参数（可不写）3.回调函数（业务逻辑代码） 4.数据类型 。直接就是对象，不是字符串了
+        $.post('json.json',{name:'zs',age:'18'},function(res){console.log(res);},'json');//和get一样的参数写
+    })
+</script>
+</body>
+</html>

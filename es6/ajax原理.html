@@ -5,30 +5,52 @@
     <title>Title</title>
 </head>
 <body>
-<div id="myDiv"></div>
+<div id="myDiv">
+    <ul class="list"></ul>
+</div>
 <script>
-
-    //------创建对象
+    let oUl = document.querySelector('.list');
+    //---1.------创建 XMLHttpRequest 对象
     var xmlhttp;
     if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari
         xmlhttp=new XMLHttpRequest();
     }
-    else
+    else  //解决兼容性问题
     {// code for IE6, IE5
         xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
     }
 
-    //------发送请求
-    xmlhttp.open("GET","tsconfig.json?",true);
-    xmlhttp.send();
+    //---2.------向服务器发送请求
+    xmlhttp.open("GET","json.json?name=zhangsan&age=18",true); //1.第一个参数"GET"---获取GET（请求会显示在url上 不安全。在请求头里，有缓存），
+                                         //GET和POST       //提交post（安全。在请求体里，无缓存）
+                                         //2.第二个参数"json.json"---get的地址  ?name=zhangsan&age=18是传的参数
+                                        //3.第三个参数true---异步（false同步，没人用同步，Ajax就是异步）
+    xmlhttp.send();//发送
 
-    //-------响应
+    //--3.------服务器响应
     xmlhttp.onreadystatechange=function()
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            //---------------------readyState==4为成功
+            // 0: 请求未初始化
+            //  1: 服务器连接已建立
+            //    2: 请求已接收
+             //     3: 请求处理中
+              //      4: 请求已完成，且响应已就绪
+
+            // ----------------status==200为ok
+                   // 200: "OK"
+              //404: 未找到页面
         {
-            document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+            //document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+            //自己写的业务逻辑代码，运用
+            //返回的是字符串，需要自己转换
+            let json = JSON.parse(xmlhttp.responseText);
+            let list = json.musicData;
+            for(let item of list){
+                oUl.innerHTML += `<li>${item.title}</li>`; //歌名插入
+            }
         }
     }
 </script>
