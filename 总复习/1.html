@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="裤子,牛仔裤"><!--content搜索的关键字-->
+    <meta name="description" content="简介"><!--搜索关键字下面的简介-->
+    <title>Title</title> <!--logo-->
+    <style>
+        /* 下面的叫 css reset
+            一般用 normalize.css 代替，此文件里包含*，ul，<a>,img 这些问题的解决
+            。 bootstrap里面有用
+        */
+        *{
+            padding: 0;
+            margin: 0;
+        }/*过于暴力*/
+
+        ul{ /*ul只是继承了li，写li就可以*/
+            list-style: none;
+        }
+        li{ /*li才是生效的*/
+            list-style: none;
+        }
+        img { /*去除<a>里的img的黑边*/
+            border: 0;
+        }
+        a { /* <a>去除下划线 */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>h1</h1>
+<h6>h6</h6>
+ <p title="123123">p</p><!--<p>自带边距 -->
+<div>div</div>
+<a href=""><img src="" alt="这是一张图片"></a><!-- 在<a>里夹img会使img有黑边。-->
+<img src="" alt="图片加载失败" title="这是一张图片"><!-- alt= 是当图片加载失败后显示的文字
+                                                        title= 是当鼠标放在上面时显示的文字，可以加载任何地方-->
+<span>span</span>
+<button>button</button>
+<textarea name="" id="" cols="30" rows="10">textarea</textarea>
+
+<table border="1"> <!--表格，有行有列 border描边-->
+<tr><!--1行 -->
+    <td>1</td> <!--列 -->
+    <td>2</td>
+</tr>
+<tr><!--2行 -->
+     <td>3</td>
+     <td>4</td>
+</tr>
+</table>
+<!--
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+行级元素：span a img input textarea button
+块级元素：p div h1-h6 ul ol li
+区别：行级元素不能设置宽和高，是内容撑起来的
+      块级元素在不设置宽度时，宽度会充满父元素,高度是内容的高度
+      行级元素设置宽高：1.display，2.float浮动，3.固定文档流（绝对定位）
+display: 1.block   2.inline   3.inline-block  4.none   5.box     6.table   7.table-cell
+1.block 显示为块级，此元素前后会带有换行符
+2.inline 默认内联元素（行级），元素前后没有换行符。
+3.inline-block 行内块元素。
+4.none 会被显示。
+5.box 弹性盒模型
+6.table 块级表格来显示（类似 <table>），表格前后带有换行符。
+7.table-cell 一个表格单元格显示（类似 <td> 和 <th>）
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////
+语义化标签
+-->
+</body>
+</html>
