@@ -51,9 +51,26 @@
      <td>4</td>
 </tr>
 </table>
+<form action="" onsubmit="alert(123)"> <!--form表单，action属性是提交的目标地址.
+    <form action="" onsubmit="alert(123);return false;">  onsubmit是form点击提交后触发的事件，顺序为先触发，再提交。
+                                                          return false 即只触发事件，不提交(不刷新界面，类似ajax)  -->
+    <!-- 1.---------->
+    <label for="ipt">用户名: </label> <!--for和id相同的input相关联-->
+    <input type="text" id="ipt" name="ipt"><br><!--后台根据name的名字接收input的值-->
+    <!-- 2.---------->
+    <label>密码: <input type="text"></label><br> <!--也可以不写for和id，将input放入label里面-->
+    学校: <select><!--下拉选框-->
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+    </select>
+    <input type="submit"><!--提交表单-->
+    <input type="reset"><!--重置表单-->
+    <button type="button">提交</button> <!--button在form里默认是提交表单，type=button即不提交-->
+</form>
 <!--
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-行级元素：span a img input textarea button
+行级元素：span a img input textarea button label select
 块级元素：p div h1-h6 ul ol li
 区别：行级元素不能设置宽和高，是内容撑起来的
       块级元素在不设置宽度时，宽度会充满父元素,高度是内容的高度
@@ -68,7 +85,11 @@ display: 1.block   2.inline   3.inline-block  4.none   5.box     6.table   7.tab
 7.table-cell 一个表格单元格显示（类似 <td> 和 <th>）
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////
-语义化标签
+--   语义化标签-1.便于团队维护和开发，2.搜索引擎可以根据标签的语言确定上下文和权重问题，3.HTML结构清晰，4.代码可读性较好
+--   字符实体：
+ 	空格	&nbsp;	&#160;
+<	小于号	&lt;	&#60;
+>	大于号	&gt;	&#62;
 -->
 </body>
 </html>

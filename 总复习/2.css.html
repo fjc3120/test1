@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background: #ff0000;
+            overflow: hidden;
+            /*margin-bottom: 100px;*/
+            /*padding-top: 50px;*/
+            /*box-sizing: border-box; !*css3属性  在w3c标准盒模型下实现怪异盒模型*!*/
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #00ff00;
+            /*margin-top: 500px; !*两个兄弟关系的元素【外边距合并问题】（上面的 margin-bottom，下面的 margin-top），*/
+                                /*取两个中较大的一个，而不是两者和*!*/
+            margin-top: 100px;/*父子关系时，子元素 margin-top，父元素也会生效。需要在父元素加overflow: hidden即不生效*/
+        }
+    </style>
+</head>
+<body>
+<div id="div1"> <!--父子级和兄弟级常见margin问题 -->
+    <div id="div2"></div>
+</div>
+<!--<div id="div2"></div>-->
+
+<!--
+css选择器:
+1.id选择器      #id{}
+2.class选择器   .class{}
+3.标签选择器    div{}  p{}
+4.后代选择器    #div1 .a{}    空格     #div1下的所有.a（儿子，孙子，重孙子）
+5.子代选择器    #div1 > .a{}    >      #div1下的儿子.a（只有儿子）。有兼容性问题
+6.多类选择器    .b.a{}     紧挨着写 .b和.a (a和b是同一个class下的，同时生效)
+7.分组选择器    div,h1{}      ,   把很多分成一组（原本div和h1是不同位置，同时生效）
+8.伪类选择器    （像加了一个class一样）
+                a:link {color: #FF0000}		/* 未访问的链接 */
+                a:visited {color: #00FF00}	/* 已访问的链接 */
+                a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */ 早期的ie只有a能加hover
+                a:active {color: #0000FF}	/* 选定的链接 */
+9.伪对象选择器  ::after{在标签【内容】的后面插入}  ::before{在标签【内容】的前面插入}  <div> before 内容 after </div>
+                {content:""; display:block 必须要有}、
+             伪对象不一定是真实存在的，，伪类选择器真实存在的
+10.属性选择器   input[name]{}       name叫user的input  （1.input里包含【】的属性的会被选中
+                input[name=user]{}                       2.input里有【】属性=xxx的会被选中
+                                                         3.input里第一个【】会被选中 ）
+11.相邻兄弟选择器    +    ~   p+p{} （p后面的一个p兄弟）  p~p{}  （p后面的所有p兄弟）
+12.css3选择器
+
+
+
+盒模型：两种 1.W3C标准盒模型 2.怪异（混搭）盒模型
+都是四层：从里到外，element（内容）<padding<margin<border
+两种的区别：1.W3C标准盒模型的宽高是element的宽高，.怪异（混搭）盒模型的宽高是element+padding+border
+
+-->
+
+</body>
+</html>
