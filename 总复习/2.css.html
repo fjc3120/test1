@@ -18,7 +18,7 @@
             height: 200px;
             background: #00ff00;
             /*margin-top: 500px; !*两个兄弟关系的元素【外边距合并问题】（上面的 margin-bottom，下面的 margin-top），*/
-                                /*取两个中较大的一个，而不是两者和*!*/
+                                /*取两个中较大的一个，而不是两者和，box-sizing: border-box用怪异盒模型解决问题*!*/
             margin-top: 100px;/*父子关系时，子元素 margin-top，父元素也会生效。需要在父元素加overflow: hidden即不生效*/
         }
     </style>
@@ -57,6 +57,17 @@ css选择器:
 盒模型：两种 1.W3C标准盒模型 2.怪异（混搭）盒模型
 都是四层：从里到外，element（内容）<padding<margin<border
 两种的区别：1.W3C标准盒模型的宽高是element的宽高，.怪异（混搭）盒模型的宽高是element+padding+border
+
+盒模型：两个外边距合并问题（兄弟，父子）
+定位：position：
+static默认
+relative相对（相对自己的初始位置--相对自己没定位时的位置--不脱离文档流）
+absolute绝对（相对与离自己最近的，已经定位的，祖先元素，没有就是body--脱离文档流）（使用绝对定位时，一般给父元素相对定位）
+fixed固定（相对与浏览器，有兼容性问题）
+var iscrollTop = document.body.scrollTop  || document.documentElement.scrollTop // 取当前浏览器滚动条操作。 来代替fixed兼容性问题
+浮动：float:left/right(脱离文档流，不能设置具体位置如left：200px；是错误的。只能在父元素里往左或往右)
+clear：both
+
 
 -->
 

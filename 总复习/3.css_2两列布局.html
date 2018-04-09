@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*问题：两列布局，左侧宽度固定，右侧宽度自适应*/
+
+        #div1{
+            width: 200px;
+            height: 400px;
+            background: #ff0000;
+            /*float: left;*/
+            /*opacity:0.5;*/
+            /*filter: alpha(opacity=50);!*透明度ie兼容性问题，需要这样写，0.5=50*!*/
+            /*position: absolute;*/
+            /*top:0;*/
+            /*left:0;*/
+
+        }
+        #div2{
+            height: 400px;
+            background: #00ff00;
+            /*margin-left: 200px;*/
+            -webkit-box-flex:1; /*一份*/
+        }
+        #div3{
+            display: -webkit-box;
+        }
+    </style>
+</head>
+<body>
+<div id="div3">
+    <div id="div1"></div>
+    <div id="div2"></div>
+</div>
+
+<!--
+ /*问题：两列布局，左侧宽度固定，右侧宽度自适应*/
+ 1.float:left div1浮动脱离文档流+ div2 margin-left:200px
+ 2.position定位 div1绝对定位absolute脱离文档流+ div2 margin-left:200px
+ 3.弹性盒模型 需要一个父元素div3  {display: -webkit-box;} 要变动的子元素div2{ -webkit-box-flex:1;}
+4.也许能用栅栏格
+-->
+</body>
+</html>

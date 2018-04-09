@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        #div1{
+            background: #ff0000;
+            /*display: none;!*空间释放，点击事件取消,DOM结构里不存在*!*/
+            /*opacity:0!*空间还在，点击事件还在*!;*/
+            /*visibility: hidden;!*空间还在，点击事件取消*!*/
+
+        }
+        #div2{
+            background: #00ff00;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div><!--两个div间隔存在空白段，是换行产生-->
+<script>
+    let oDiv1 = document.getElementById("div1");
+    oDiv1.onclick = function () {
+        alert(123);
+    };
+</script>
+<!--
+            /*display: none;!*空间释放，点击事件取消,DOM结构里不存在*!*/
+            /*opacity:0!*空间还在，点击事件还在*!;*/
+            /*visibility: hidden;!*空间还在，点击事件取消*!*/
+
+
+display:inline-block;兼容性问题
+css的兼容性问题：
+1.display:inline-block;
+2.position:fixed;
+3.opacity:0.5;透明度
+4.height: 1px;/*ie6兼容性。有一个文字那么高*/
+            font-size: 0;
+            line-height: 0;
+-->
+</body>
+</html>
