@@ -49,13 +49,7 @@ module.exports = {
         },{
             test:/\.scss$/i,
             use:['style-loader','css-loader','sass-loader']
-        },{
-            test:/\.scss$/i,
-            use:ExtractTextPlugin.extract({
-                fallback:"style-loader",
-                use:['css-loader','sass-loader']
-            })
-        }]
+        },]
     }
 
 }
