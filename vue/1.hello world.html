@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+    </div>
+    <div id="app2">
+        {{msg}}
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: '#app', /* el -挂载元素，只在#app里生效*/
+            data: {       /* data - 要显示在el里的数据*/
+                msg: 'Hello World' /*msg是自己定义的数据*/
+            }
+
+        });
+        console.log(vm);
+                 new Vue({
+            el: '#app2',
+            data: {
+                msg: 'Vue.js'
+            }
+
+        });
+    </script>
+</body>
+</html>

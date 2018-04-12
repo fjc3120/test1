@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!-- v-if控制元素是否显示-->
+        <span v-if="isLogin == 1 ?true:false">{{msg}}</span>  <!-- v-if=可以是表达式也可以是变量 不显示【不是】display：none。而是连DOM都没有-->
+        <span v-else>请登陆</span>  <!-- v-else 与v-if取相反值 -->
+        <br>
+
+        <span v-if="letter == 'A'">A</span>
+        <span v-else-if="letter == 'B'">B</span>
+        <span v-else>C</span>
+        <br>
+
+        <span v-show="isShow">show</span> <!--*** v-show与v-if 功能相同但是，不显示后【是】display：none-->
+        <!-- 什么时候使用：如某个元素【频繁】显示，不显示之间转换。使用v-show -->
+    </div>
+    <script src="vue.js"></script>
+    <script>
+          let vm =  new Vue({
+            el: '#app',
+            data:{
+//                isLogin: false ,/*isLogin相当于变量，是否登录过*/
+                isLogin: 1 ,
+                msg: '欢迎',
+                letter: 'A',
+                isShow: false
+            }
+        }) ;
+    </script>
+</body>
+</html>
