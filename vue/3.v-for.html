@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div id="app">
+            <ul>
+                <!--数组-->
+                <li v-for=" (school,index) in schools">{{school}} -- {{index+1}}</li>
+                <!-- 要循环li就把v-fof写在li里
+                 v-for=" (school,index) in schools"   (自定义变量,索引) in 循环的data的数据
+                 ｛｛自定义变量｝｝ -- ｛｛索引+1｝｝ index从0开始
+                 -->
+
+            </ul>
+
+            <ul>
+                <!--对象-->
+                <li v-for="(val,key,index) in obj"> <!-- (val,key,index) (属性值，属性名，索引)  -->
+                    <h3>{{val}}</h3>
+                    <h3>{{key}}</h3>
+                    <h3>{{index}}</h3>
+                </li>
+            </ul>
+
+            <ul>
+                <!--数组对象-->
+                <!--<li v-for="obj in arr">-->
+                <li v-for="obj in arrSort">
+                    <!--{{obj.name}} &#45;&#45;{{obj.age}} &#45;&#45; {{obj.conpany}}-->
+                    <div v-for="(val,key) in obj">{{val}} -- {{key}}</div>
+                </li>
+            </ul>
+        </div>
+
+    　 <script src="vue.js"></script>
+
+       <script>
+          let vm = new Vue({
+              el: '#app',
+              data: {
+                   schools:['金融','黑大','农大','林大'],
+                   obj:{
+                       name:'zs',
+                       age:18,
+                       conpany:'baidu',
+                   },
+                  arr:[{ /*数组对象*/
+                      name:'zs',
+                      age:28,
+                      conpany:'baidu',
+                  },{
+                      name:'ls',
+                      age:20,
+                      conpany:'ali',
+                  },{
+                      name:'ww',
+                      age:30,
+                      conpany:'tx',
+                  }]
+              },
+              computed: {  /*计算属性   下面的方法名不能和data里的重复,不能用arr（） */
+                  arrSort() {  /*es6的 arrSor：function（）｛｝简写*/
+                     return this.arr.sort(function (a,b) {/*sort()排序*/  /*vm.arr.sort()*/
+                          return a.age - b.age;
+                      });
+                  }
+              }
+          })
+      </script>
+</body>
+</html>

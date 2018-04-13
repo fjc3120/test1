@@ -18,6 +18,8 @@
 
         <span v-show="isShow">show</span> <!--*** v-show与v-if 功能相同但是，不显示后【是】display：none-->
         <!-- 什么时候使用：如某个元素【频繁】显示，不显示之间转换。使用v-show -->
+        <!--<span v-else>Not show</span>&lt;!&ndash; v-show和v-else 在vue1.0版本可以连用，在vue2.0版本不可以连用 &ndash;&gt;-->
+        <span v-show="!isShow">Not show</span><!-- 用！代替v-else -->
     </div>
     <script src="vue.js"></script>
     <script>

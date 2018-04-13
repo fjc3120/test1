@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <span v-text="msg"></span> <!-- {{msg}}不用写了. v-text="msg"去显示{{msg}} 主要作用可以解决一闪的问题{{}} -->
+        <br>
+        <span v-text="msg1"></span>
+        <br>
+        <span v-html="msg1"></span>  <!-- 显示标签，虽然也能解决一闪问题，但是安全性差，最好不要使用-->
+    </div>
+
+    <script src="vue.js"></script>
+
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                msg: 'hello',
+                msg1: '<h3>hhh</h3>',
+            }
+        })
+    </script>
+</body>
+</html>
