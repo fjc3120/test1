@@ -23,4 +23,6 @@ let obj ={
 };
 console.log(obj+"hello");
 
-$("#div5").innerHTML =  '姓名:${info.name}年龄:${info.age}学校:${info.school}';
+
+let json = require('../info.json');
+document.getElementById("json").innerHTML = `姓名:${info.name}年龄:${info.age}学校:${info.school}`;
