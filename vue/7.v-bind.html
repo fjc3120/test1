@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .aa{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- v-bind:src简写成:src    -->
+        <!--<img  v-bind:src="imgSrc" alt=""> &lt;!&ndash; 用v-bind:src接收变量 &ndash;&gt;-->
+            <!--<img  :src=imgSrc alt="">-->
+        <div id="div1"  :class="classname">20000</div> <!-- :class="变量" -->
+        <div id="div2"  :class="{aa:isAa,bb:isBb}">20000</div> <!-- .aa显示与否取决于isAa,可以有多个属性 -->
+        <div :style="styleObj"></div>
+        <div v-bind:text-content.prop="text">div</div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:{
+                imgSrc:'https://cn.vuejs.org/images/geekbang4.gif',
+                classname:'aa',
+                isAa: true,
+                isBb: false,
+                styleObj:{
+                    width:'200px',
+                    height:'200px',
+                    background:'#00ffff',
+                },
+                text:"DOM内容",
+            },
+//            computed:{
+//                cisActive(){
+//                    if(this.isActive){
+//                        return 'active';
+//                    }else{
+//                        return '';
+//                    }
+//                }
+//            }
+        })
+    </script>
+</body>
+</html>

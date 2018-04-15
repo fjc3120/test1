@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h1 v-cloak>{{msg}}</h1> <!-- v-cloak 渲染完成后显示 -->
+        <h1 v-pre>{{msg}}</h1> <!-- v-pre 原样输出-->
+        <button @click.once="add">add</button> <!-- .once只渲染一次 -->
+        <h1 v-text="num"></h1>
+    </div>
+
+    <script src="vue.js"></script>
+
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                msg: '你好',
+                num:'',
+            },
+            methods:{
+                add(){
+                    this.num++;
+                },
+            },
+        });
+    </script>
+</body>
+</html>

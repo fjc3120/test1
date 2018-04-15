@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../为博客做的准备/bootstrap4.0/css/bootstrap.css">
+    <style>
+   #app .red{
+        background: #ff0000;
+    }
+
+    </style>
+</head>
+<body>
+<div id="app" class="text-center">
+    <h1>todolist</h1>
+    <hr>
+
+
+    <form class="form-inline" @submit.prevent>
+        <div class="form-group mx-sm-3 mb-2">
+            <input @keyup.enter="search" v-model="keywords" type="text" class="form-control"   placeholder="请输入关键字">
+        </div>
+        <button @click="search" type="submit" class="btn btn-primary mb-2">搜索</button>
+    </form>
+
+    <form class="form-inline" @submit.prevent>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="product-name">商品名称：</label>
+            <input v-model="productName" type="text" class="form-control" id="product-name" placeholder="请输入商品名称">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="product-price">商品价格：</label>
+            <input v-model.number="productPrice" type="number" class="form-control" id="product-price" placeholder="请输入商品价格">
+            <!-- productPrice是字符型，要改成数值型 -->
+        </div>
+        <button @click="addProduct" type="submit" class="btn btn-primary mb-2">添加</button>
+    </form>
+    <table class="table  table-hover">
+        <thead>
+        <tr>
+            <th>选择</th>
+            <th>商品名称</th>
+            <th>商品价格</th>
+            <th>删除</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(product,index) in productList" @click="select(product)" :class="{red:product.isSelected}">
+                <td><input type="checkbox" @click.stop v-model="checkedList" :value="index"></td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td><button @click.stop="delProduct(index)" type="button" class="btn btn-warning btn-sm ">×</button></td>
+            </tr>
+        <tr>
+            <td>
+                <button @click.stop="delChecked" type="button" class="btn btn-danger btn-sm ">删除选中</button>
+            </td>
+            <td colspan="3">
+                总价：{{csum}} 元
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="../为博客做的准备/bootstrap4.0/js/jquery-3.3.1.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="../为博客做的准备/bootstrap4.0/js/bootstrap.js"></script>
+<script src="vue.js"></script>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+
+            productList:[
+                {
+                    name:'衣服',
+                    price:123,
+                    isSelected:false,
+                },{
+                    name:'裤子',
+                    price:200,
+                    isSelected:false,
+                },{
+                    name:'鞋子',
+                    price:333,
+                    isSelected:false,
+                },{
+                    name:'帽子',
+                    price:150,
+                    isSelected:false,
+                },{
+                    name:'书包',
+                    price:50,
+                    isSelected:false,
+                },
+            ],
+
+            sum:0,
+            checkedList:[],
+            productName:'',
+            productPrice:'',
+            keywords:'',
+
+        },
+        methods:{
+            select(product){
+                product.isSelected = !product.isSelected;
+//                if(product.isSelected){   /*计算价格方法一*/
+//                    this.sum += product.price;/*依赖于传来的参数*/
+//                }else{
+//                    this.sum -= product.price;
+//                }
+//                this.getSum(); /*调用函数法  */
+            },
+//            getSum(){ /*计算价格方法二 函数法，不依赖与传来的参数*/
+//                this.sum = 0;
+//                this.productList.forEach((item,index)=>{
+//                    if(item.isSelected){
+//                        this.sum += item.price;
+//                    }
+//                });
+//            },
+            delProduct(index){ /*删除*/
+                this.productList.splice(index, 1);
+            },
+            delChecked(){ /*批量删除选中*/
+                this.productList = this.productList.filter((item,index)=>{ /*遍历*/
+                        if(!this.checkedList.includes(index)){ /*  .includes（）返回布尔型 ,如果包含*/
+                            return item; /*返回的是新数组，所以要this.productList再赋值给新的变量this.productList*/
+                        }
+                });
+                this.checkedList = [];/*取消选中状态*/
+            },
+            addProduct(){ /*添加*/
+                this.productList.push({
+                    name:this.productName,
+                    price:this.productPrice,
+                    isSelected:false,
+                });
+                this.productName = '';/*添加完清空input*/
+                this.productPrice = '';
+            },
+            search(){
+                this.productList = this.productList.filter((item)=>{
+                    if(item.name.includes(this.keywords) || item.price.toString().includes(this.keywords) ){
+                        return item;
+                    }
+                });
+            },
+        },
+        computed:{ /*只能计算现有属性 计算价格方法三。有缓存，当关联的数据变化就自动调用。性能最好*/
+            csum(){ /*不能有data里的名，要新建*/      /* 计算价格*/
+                let temp =0;
+                this.productList.forEach((val,key)=>{  /*遍历过滤
+                forEach,map,filter.some，every，都是遍历，参数相同
+                    forEach不返回值
+                     filter返回数组的选中的
+                     map全数组返回，未选中的显示undefined(也可以自己写返回值)
+                                                            */
+                    if(val.isSelected){
+                        temp += val.price;
+                    }
+                });
+                return temp;
+            }
+        },
+    });
+</script>
+</body>
+</html>

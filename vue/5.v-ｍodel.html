@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model.lazy.number.trim="msg"> <!--监听msg,.lazy失去焦点才会改变..number转换成数值类型..trim输入首尾空格过滤-->
+        <input type="radio" name="sex" value="man" v-model="sex">MAN  <!--相同name 变成单选-->
+        <input type="radio" name="sex" value="woman" v-model="sex">WOMAN<!--监听同一个数据,其实是value-->
+        <input type="checkbox" v-model="ball" value="篮球">篮球
+        <input type="checkbox" v-model="ball" value="足球">足球
+        <input type="checkbox" v-model="ball" value="排球">排球
+
+        <div>
+            <select name="" id=""  v-model="city"> <!--下拉菜单v-model放在select-->
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="深圳">深圳</option>
+            </select>
+        </div>
+        <div>
+            <textarea name=""  cols="30" rows="10" v-model="info"></textarea>
+         </div>
+        <div>{{msg}}<br>
+            {{sex}}<br>
+            {{ball}}<br>
+            {{city}}<br>
+            {{info}}
+        </div>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                msg: "",
+                sex:"",
+                ball:[],
+                city:"",
+                info:"",
+            },
+            methods: {
+
+            },
+            computed: {
+
+            }
+        })
+    </script>
+
+</body>
+</html>

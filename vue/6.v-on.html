@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background: #ff0000;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #00ff00;
+        }
+    </style>
+</head>
+    <body>
+    <div id="app">
+        <!-- v-on:简写成 @ -->
+            <button v-on:click="clickhandler(2,$event)">btn</button> <!-- v-on给元素绑定事件（点击。移动） -->
+              <button @click.once="clickhandler(2,$event)">btn</button>  <!-- （实参，事件对象） .once只生效一次  -->
+            <button v-on="{ mousedown: doThis, mouseup: doThat }">btn2</button> <!--绑定多个事件 -->
+        <h1 v-text="num"></h1>
+
+        <div id="div1" @click="clickDiv1">
+            <div id="div2" @click.stop="clickDiv2"></div> <!-- .stop阻止冒泡-->
+        </div>
+
+        <a href="http://www.baidu.com" @click="baiduClick($event)">baidu</a><!-- 源生     阻止默认行为，取消跳转 -->
+        <a href="http://www.baidu.com" @click.prevent="baiduClick">baidu</a> <!-- .prevent阻止默认行为，取消跳转 -->
+
+        <input type="text" @keyup="keyupHandler($event)"> <!-- @keyup 点击键盘-->
+        <input type="text" @keyup.13="keyupHandler"> <!-- @keyup.13 点击回车  @keyup.键盘码 -->
+    </div>
+
+    <script src="vue.js"></script>
+
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                num:0,
+            },
+            methods:{
+                clickhandler(n,e){
+//                   this.num++; /*点击加一*/
+                    this.num += n;/*点击加n ，实参是2*/
+                    console.log(e);
+                },
+                doThis(){
+                    console.log('doThis');
+                },
+                doThat(){
+                    console.log('doThat');
+                },
+                clickDiv1(){
+                    console.log('div1');
+                },
+                clickDiv2(){
+                    console.log('div2');
+                },
+                baiduClick(e){
+//                    return false;
+                    e.preventDefault();/*取消默认状态,a点击不能跳转*/
+                },
+                keyupHandler(e){
+//                    if(e.keyCode == 13){ /*回车*/
+                        console.log(123);
+//                    }
+                },
+            },
+
+        })
+</script>
+</body>
+</html>

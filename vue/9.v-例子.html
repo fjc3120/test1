@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../为博客做的准备/bootstrap4.0/css/bootstrap.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .row{
+            border-bottom:1px solid #b0b0b0 ;
+            margin: 0;
+        }
+        .col-md-3,.col-md-6{
+            border-right:1px solid #b0b0b0 ;
+        }
+        .BG{
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+<div class="box" style="position: absolute;left: 50%;margin-left: -300px;">
+    <h1>todolist</h1>
+    <div id="app">
+        <input type="text">
+        <button>搜索</button>
+        <br>
+        <input type="text">
+        <input type="text">
+        <button>添加</button>
+
+        <div class="formList" style="width: 600px;height: 228px;border-left: 1px solid #b0b0b0;border-top:1px solid#b0b0b0; ">
+            <div class="row">
+                <div class="col-md-3">选择</div>
+                <div class="col-md-3">待办事项</div>
+                <div class="col-md-3">代办用时</div>
+                <div class="col-md-3">操作</div>
+            </div>
+            <div class="row" :class="{BG:isDisplay==3}" @click="Click()">
+                <div class="col-md-3">
+                    <input type="checkbox" :class="{BG:isDisplay==3}" @click="Click()">
+                </div>
+                <div class="col-md-3">上课</div>
+                <div class="col-md-3">2</div>
+                <div class="col-md-3">
+                    <button>删除</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox">
+                </div>
+                <div class="col-md-3">吃饭</div>
+                <div class="col-md-3">1</div>
+                <div class="col-md-3">
+                    <button>删除</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox">
+                </div>
+                <div class="col-md-3">午休</div>
+                <div class="col-md-3">1</div>
+                <div class="col-md-3">
+                    <button>删除</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox">
+                </div>
+                <div class="col-md-3">篮球</div>
+                <div class="col-md-3">2</div>
+                <div class="col-md-3">
+                    <button>删除</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox">
+                </div>
+                <div class="col-md-3">聚会</div>
+                <div class="col-md-3">3</div>
+                <div class="col-md-3">
+                    <button>删除</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="checkbox">
+                </div>
+                <div class="col-md-3">上课</div>
+                <div class="col-md-3">2</div>
+                <div class="col-md-3">
+                    <button>删除</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                   <button>删除选中</button>
+                </div>
+                <div class="col-md-3">总用时：</div>
+                <div class="col-md-6">0</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="vue.js"></script>
+    <script src="../为博客做的准备/bootstrap4.0/js/jquery-3.3.1.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../为博客做的准备/bootstrap4.0/js/bootstrap.js"></script>
+
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                bg:'BG',
+                backgroundColor:'#6c757d',
+                isDisplay:2,
+            },
+            methods:{
+                Click(){
+                 if(this.isDisplay%2==0){
+                     this.isDisplay++;
+                 }else{
+                     this.isDisplay--;
+                 }
+                },
+
+            },
+        });
+</script>
+</body>
+</html>
