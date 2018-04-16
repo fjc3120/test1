@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <div v-mydiy="'red'">div</div>
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+        Vue.directive('mydiy',function (el, binding, vnode){ /*可以操纵真实DOM
+        1.el：指令所绑定的元素，可以用来直接操作 DOM 。
+         2.binding：一个对象{
+         name：指令名，不包括 v- 前缀 即 myDirect。
+         value：指令的绑定值，例如：v-my-directive="1 + 1" 中，绑定值为 2。
+         . . .
+         }
+        3. vnode：Vue 编译生成的虚拟节点(虚拟DOM)
+         */
+//            console.log(el);
+//            console.log(binding);
+//            console.log(vnode);
+
+            el.style.backgroundColor = binding.value;
+
+        });
+
+        let vm = new Vue({
+            el: '#app',
+            data: {},
+
+        });
+
+    </script>
+</body>
+</html>
