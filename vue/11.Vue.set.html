@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <button @click="change">按钮</button>
+    <div v-for="item in arr">{{item}}</div>
+    <div v-for="o in obj">{{o}}</div>
+
+</div>
+
+<script src="vue.js"></script>
+
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            //对象和数组在Vue里 属于【根级属性】，不允许通过下标改变值
+            arr: ['a', 'b', 'c', 'd'],
+            obj : {
+                name: 'zs',
+            },
+        },
+        methods:{
+            change(){
+                /*数组*/
+//                this.arr[2] = 'e'; /* ×错误，在Vue里，数组不能通过下标直接改变值*/
+                /*对象*/
+//                this.obj.age = 18; /*× 错误，在Vue里，对象不能通过下标添加新属性**/
+
+                /*--------------Vue.set 扩展实例构造器，避开Vue不能检测属性被添加的限制---------------*/
+
+//                Object.assign(this.obj, {age:18}); /*× 错误 ,es6的合并对象法添加也不行*/
+ /*数组通过下标直接改变值*/
+ Vue.set(this.arr, 2, 'e'); /* 数组，参数1-改变数组，2-改变位置， 3-改变后的值*/
+ /*对象通过下标添加新属性*/
+ Vue.set(this.obj, 'age', 20);/*对象，参数1-改变对象，2-添加的属性， 3-添加属性的值*/
+            },
+        },
+    });
+
+    /*在源生里，数组和对象可以通过下标赋值*/
+//    let arr = ['a', 'b', 'c', 'd'];
+//    arr[2] = 'e';  /*可以*/
+//
+//    let obj = {
+//        name: 'zs',
+//    };
+//    obj.age = 18; /*可以*/
+</script>
+</body>
+</html>
