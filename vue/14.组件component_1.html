@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div id="app">
+            <hello msg="这是全局组件1"></hello> <!--组件可以调用多次-->
+            <hello msg="这是全局组件2"></hello>
+            <my-components :content="msg2"></my-components> <!-- data的值传给组件要v-bind : . 参数进props
+            myComponents变my-components   标签中大写字母变小写，前面加-  -->
+        </div>
+        <script src="vue.js"></script>
+
+        <script>
+            //组件相当于自定义一个标签，用这个标签代表很多东西
+            //----全局组件----
+            Vue.component('hello', {  /* 组件外必须有一个标签，所以必须用一个div包起来*/
+                template: `
+                <div>
+                    <h1>{{ msg }}</h1>
+                    <h1>这是一个全局组件</h1>
+                </div>
+                `,
+                props: ['msg'], /* props 参数.如果组件传参数，必须跟有 props属性*/
+
+            });
+
+
+
+            let vm = new Vue({
+                el: '#app',
+                data: {
+                    msg2:'这是一个局部组件',
+                },
+                /*----局部组件-----*/
+                components: { /*----局部组件-----*/
+                    myComponents: { /*要么myComponents，要么'my-components'*/
+                        template:`
+                            <h1>{{ content }}</h1>
+                        `,
+                        props: ['content'],
+                    },
+                },
+            });
+        </script>
+</body>
+</html>

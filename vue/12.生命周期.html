@@ -34,10 +34,10 @@
             created(){ /*创建后*/ /*当ajax只是传送数据时，放到这里*/
                 //mounted,销毁后定时器还在执行，只要在销毁前清除就OK
                 console.log('created');
-                    this.timer = setInterval(()=>{
-                    console.log(Math.random());
-                    this.num++;
-                }, 1000);
+//                    this.timer = setInterval(()=>{
+//                    console.log(Math.random());
+//                    this.num++;
+//                }, 1000);
             },
             beforeMount(){ /*挂载前*/
                 console.log('beforeMount');
@@ -45,6 +45,10 @@
             mounted(){ /*挂载后*/ //当ajax要操作真实DOM时，把数据放到这里，前三个操作都获取不到真实DOM
                 //mounted,销毁后定时器还在执行.只要在销毁前清除就OK
                 console.log('mount');    //前四个钩子只会在第一次触发
+                this.timer = setInterval(()=>{
+                    console.log(Math.random());
+                    this.num++;
+                }, 1000);
             },
             beforeUpdate(){ /*更新前*/ //每次点击都只执行更新前和更新后两步
                 console.log('beforeUpdata');

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--<web></web>-->
+        <hello></hello>
+    </div>
+
+    <script src="vue.js"></script>
+
+    <script>
+        Vue.component('web', {
+            template: `<h1>{{ msg }}</h1>`,
+            props:['msg'],
+        });
+        Vue.component('hello', {  /*组件嵌套*/
+            template: `
+            <div>
+                 <h1>hello组件</h1>
+                 <web msg="web组件"></web>
+            </div>
+            `,
+        });
+
+        let vm = new Vue({
+           el:'#app',
+           data:{},
+
+        });
+    </script>
+</body>
+</html>

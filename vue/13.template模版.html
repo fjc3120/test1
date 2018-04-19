@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+
+        <!--<div v-show="isShow"> &lt;!&ndash;不显示时，此div存在于dom中，换成template后则不存在于dom中&ndash;&gt;-->
+
+        <template v-if="isShow"> <!-- template不存在于dom中，并且v-show不支持，使用v-if-->
+            <h1>h10</h1>
+            <h1>h11</h1>
+            <h1>h12</h1>
+            <h1>h13</h1>
+        </template>
+
+        <!--</div>-->
+
+    </div>
+    <script src="vue.js"></script>
+
+    <script>
+        let vm = new Vue ({
+            el: '#app',
+            data: {
+                isShow:false,
+            },
+        });
+    </script>
+</body>
+</html>
