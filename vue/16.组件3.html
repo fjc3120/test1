@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!-- is 用于切换组件 -->
+    <div :is="witchComponents"></div>
+
+
+</div>
+
+<script src="vue.js"></script>
+
+<script>
+
+    let vm = new Vue({
+       el:'#app',
+       data: {
+           witchComponents: 'components1' , //witchComponents值对应组件名称
+       },
+        components:{
+           components1:{
+               template:`<h1>components1</h1>`,
+           },
+            components2:{
+                template:`<h1>components2</h1>`,
+            },
+            components3:{
+                template:`<h1>components3</h1>`,
+            },
+        },
+    });
+</script>
+</body>
+</html>

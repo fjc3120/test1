@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <comp>
+        <span slot="username">zs</span> <!-- 动态传参数标签 -->
+        <span slot="age">20</span>
+    </comp>
+
+
+    <comp>   <!-- 没有传参数则调用默认值 -->
+        <h1 slot="username">ls</h1>
+    </comp>
+
+</div>
+<template id="temp">
+    <div>
+        <p>
+            <!--用户名：XX-->
+            <!-- 具(体)名(字)插槽  动态 -->
+            用户名：<slot name="username">默认姓名</slot> <!-- slot 里是默认值 -->
+        </p>
+        <p>
+            <!--年龄：YY-->
+            年龄：<slot name="age">默认年龄</slot>
+        </p>
+    </div>
+
+</template>
+
+<script src="vue.js"></script>
+
+<script>
+
+    let vm =new Vue({
+       el:'#app',
+        data:{},
+        components:{
+           comp:{ //用id 代替拼接标签
+               template: '#temp',
+           },
+        },
+    });
+</script>
+</body>
+</html>
