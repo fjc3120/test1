@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="demo">
+      {{ firstName }} +  {{ lastName }} = {{ fullName }}
+    </div>
+<script src="vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#demo',
+        data: {
+            firstName: 'Foo',
+            lastName: 'Bar',
+//            fullName: 'Foo Bar'
+        },
+//        watch: {  //擅长应用场景：一个数据的改变【影响多个数据】
+//            firstName: function (val) {
+//                this.fullName = val + ' ' + this.lastName
+//            },
+//            lastName: function (val) {
+//                this.fullName = this.firstName + ' ' + val
+//            }
+//        },
+        computed:{ //擅长应用场景：一个数据的改变【受多个数据的影响】
+            //默认有get函数 ，可以写set函数
+            //计算属性的结果会被缓存，除非依赖的响应式属性变化才会重新计算。
+            fullName(){
+                return  this.firstName + "" + this.lastName;
+            },
+        },
+
+    })
+;
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ipt">
+<h1 id="h1"></h1>
+
+<script>
+//    let obj = {
+//
+//    };
+//    let initValue = 'hello';
+//    Object.defineProperty(obj, 'newKey', {
+//        get(){
+//            //获取值时触发get函数
+//            return initValue;
+//        },
+//        set(value){
+//            //设置值时触发set函数，设置的新值通过参数value得到
+//            initValue = value;
+//        },
+//    });
+//
+//    //获取值
+//    console.log(obj.newKey);//hello,获取值（输出）时调用get.
+//    //设置值
+//    obj.newKey = 'change value';//设置值（赋值）时调用set  change value作为set的参数value
+//    console.log(obj.newKey);//change value
+   //-----------------------------
+
+    let oIpt = document.getElementById('ipt');
+    let oH1 = document.getElementById('h1');
+    let obj = {};
+
+    oIpt.onkeyup = function () {
+      obj.name = this.value;
+    };
+
+    Object.defineProperty(obj, 'name', {
+       get(){
+
+       },
+        set(val){
+            oH1.innerHTML = val;
+        },
+    });
+</script>
+</body>
+</html>
