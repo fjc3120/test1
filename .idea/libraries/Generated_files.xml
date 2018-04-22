@@ -12,10 +12,11 @@
         <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.f16ac5c624284d30f5af.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/src/router/index.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.base.conf.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.prod.conf.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.dev.conf.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.2a615da655a58be59f4d.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -29,10 +30,11 @@
       <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.f16ac5c624284d30f5af.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/src/router/index.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" />
-      <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.base.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.prod.conf.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.dev.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.2a615da655a58be59f4d.js" />
     </CLASSES>
     <SOURCES />
   </library>

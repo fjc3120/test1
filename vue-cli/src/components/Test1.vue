@@ -8,7 +8,17 @@
 
   <script>
   export default{
+    beforeRouteEnter(to, from, next){
+      console.log('进入之前');
+      next(true);
+    },
+    beforeRouteLeave(to, from, next){
+      console.log('离开之前');
+      next(true);
+    },
+    beforeRouteUpdate(to, from, next){
 
+    },
   }
 
   </script>
