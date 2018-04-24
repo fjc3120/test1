@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*  script写在上面会先加载js，但可能导致页面堵塞。。
+         添加window.onload = function（）｛｝； 就可以写在上面
+         会等所有DOM结构都加载完后才执行js，会比写在下面的慢一些
+           */
+        window.onload = function () {
+
+        };
+    </script>
+</head>
+<body>
+    <script>
+        /*
+         第一个字符必须是字母、下划线、$
+        * 变量基本类型：number string boolean undefined（未赋值） null（不存在）
+        * var a=5
+        * 用typeof（a）来判断类型 为 “5” 。
+        *    undefined == null对      undefined  === null错误  值相等，但类型不同
+        * */
+
+        //---函数方法最好要先定义，后调用
+        aa(); //ok
+        function aa() {
+            alert(123);
+        }
+        //---
+        bb();//错误
+        var bb = function () {
+            alert(234);
+        };
+        bb();//OK
+
+        var oDiv , iNum , aArr , sName;  //对象，整形，数组，字符串。常用命名
+
+        location.href //设置或返回完整的url
+        navigator.userAgent //获取浏览器的信息，版本号操作系统什么的
+        /*浏览器是靠内核区分的
+        Trident IE内核
+        Gecko 火狐内核
+        Presto Opera欧彭内核
+        KHTML  Safari苹果和Google Chrome谷歌内核
+        */
+
+        document.getElementById("id"); //id
+      var aDiv =   document.getElementsByTagName("div"); // 标签. aDiv是节点列表，类似数组但不是数组
+        document.getElementsByClassName("aa"); //class 兼容性问题
+        document.getElementsByName("username");//兼容性问题
+        document.querySelector("#id");//获取一个元素，支持很多。 兼容性问题  h5
+        document.querySelectorAll(".aa"); //获取一堆元素  兼容性问题  h5
+
+    </script>
+</body>
+</html>
