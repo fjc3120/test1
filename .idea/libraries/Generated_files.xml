@@ -2,6 +2,7 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.7e4da93481a92631315a.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/.postcssrc.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/config/index.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/config/prod.env.js" />
@@ -17,9 +18,11 @@
         <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.prod.conf.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.dev.conf.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.2a615da655a58be59f4d.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/src/vuex/store.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.7e4da93481a92631315a.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/.postcssrc.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/config/index.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/config/prod.env.js" />
@@ -35,6 +38,7 @@
       <root url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.prod.conf.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.dev.conf.js" />
       <root url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.2a615da655a58be59f4d.js" />
+      <root url="file://$PROJECT_DIR$/dist/vue-cli/src/vuex/store.js" />
     </CLASSES>
     <SOURCES />
   </library>

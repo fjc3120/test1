@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+        <button @click="show1">1</button>
+        <button @click="show2">2</button>
+        <my-dia v-show="isShow1" @close="isShow1 = false ">
+            <span slot="title">弹框1</span>
+            <div slot="item">内容</div>
+        </my-dia>
+
+        <my-dia v-show="isShow2" @close="isShow2 = false ">
+            <span slot="title">弹框2</span>
+            <div slot="item">内容</div>
+        </my-dia>
+
+</div>
+<template id="dia">
+    <div>
+        <div>
+            <slot name="title"></slot>
+        </div>
+        <div>
+            <span @click="$emit('close')">[X]</span>
+        </div>
+        <div>
+            <slot name="item"></slot>
+        </div>
+    </div>
+
+</template>
+<script src="vue.js"></script>
+<script>
+    Vue.component('my-dia', {
+        template : '#dia',
+    });
+    let vm = new Vue ({
+        el: '#app',
+        data:{
+            isShow1:false,
+            isShow2:false,
+        },
+        methods:{
+            show1(){
+                this.isShow1 = true;
+            },
+            show2(){
+                this.isShow2 = true;
+            },
+        },
+    });
+
+</script>
+</body>
+</html>
