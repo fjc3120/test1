@@ -10,20 +10,27 @@
             background-color: #333333;
             position: absolute;
         }
+        .div1{
+            height: 300px;
+            border:5px solid;
+        }
     </style>
 </head>
 <body>
-<div id="box"></div>
+<div class="div1">    <div id="box"></div></div>
+
+
 <script>
     var oBox = document.getElementById("box");
     var a=false;
     oBox.onmousedown = function (e) {
         a=true;
-      var  oBoxY=e.clientY-this.offsetTop;
-     var   oBoxX=e.clientX-oBox.offsetLeft;
+      var  oBoxY=e.clientY-oBox.offsetTop; //oBox.offsetTop --box的边框距html的距离
+     var   oBoxX=e.clientX-oBox.offsetLeft;//e.clientY  --鼠标距离html的距离
+     console.log(e.clientY,oBox.offsetTop);//鼠标-box=鼠标距离box内边框的距离
         document.onmousemove =function (e) {
             if(a==true){
-                oBox.style.top = e.clientY-oBoxY+"px";
+                oBox.style.top = e.clientY-oBoxY+"px";//鼠标-box内边框距离=box外边框距html距离
                 oBox.style.left =e.clientX-oBoxX+"px";
             }
         }

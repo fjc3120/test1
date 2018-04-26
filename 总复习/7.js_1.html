@@ -8,9 +8,9 @@
          添加window.onload = function（）｛｝； 就可以写在上面
          会等所有DOM结构都加载完后才执行js，会比写在下面的慢一些
            */
-        window.onload = function () {
-
-        };
+//        window.onload = function () {
+//
+//        };
     </script>
 </head>
 <body>
@@ -24,21 +24,21 @@
         * */
 
         //---函数方法最好要先定义，后调用
-        aa(); //ok
-        function aa() {
-            alert(123);
-        }
-        //---
-        bb();//错误
-        var bb = function () {
-            alert(234);
-        };
-        bb();//OK
+//        aa(); //ok
+//        function aa() {
+//            alert(123);
+//        }
+//        //---
+//        bb();//错误
+//        var bb = function () {
+//            alert(234);
+//        };
+//        bb();//OK
 
-        var oDiv , iNum , aArr , sName;  //对象，整形，数组，字符串。常用命名
-
-        location.href //设置或返回完整的url
-        navigator.userAgent //获取浏览器的信息，版本号操作系统什么的
+//        var oDiv , iNum , aArr , sName;  //对象，整形，数组，字符串。常用命名
+//
+//        location.href //设置或返回完整的url
+//        navigator.userAgent //获取浏览器的信息，版本号操作系统什么的
         /*浏览器是靠内核区分的
         Trident IE内核
         Gecko 火狐内核
@@ -50,8 +50,20 @@
       var aDiv =   document.getElementsByTagName("div"); // 标签. aDiv是节点列表，类似数组但不是数组
         document.getElementsByClassName("aa"); //class 兼容性问题
         document.getElementsByName("username");//兼容性问题
-        document.querySelector("#id");//获取一个元素，支持很多。 兼容性问题  h5
+        document.querySelector("#id");//【获取】一个元素，支持很多。 兼容性问题  h5
         document.querySelectorAll(".aa"); //获取一堆元素  兼容性问题  h5
+
+        var oDiv = document.createElement("div"); //【创建】一个div元素，创建createElement()
+        oDiv.innerHTML = "div1;";//给元素设置东西
+         document.body.appendChild(oDiv);//把新建元素插入,在父节点【追加孩子】appendChild（）
+      var oDiv1= oDiv.cloneNode(true);//【克隆,】产生新的节点
+
+        var oDiv2 = document.createElement("div");
+        oDiv2.innerHTML = "div2;";
+        document.body.insertBefore(oDiv2,oDiv); //在oDiv前【插入】oDiv2
+
+        document.body.removeChild(oDiv2);//【移除】孩子元素
+
 
     </script>
 </body>
