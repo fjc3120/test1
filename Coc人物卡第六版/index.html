@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <script src="jquery/jquery-3.3.1.js"></script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
+</head>
+<body>
+<div class="header"></div>
+<div class="container-fluid" id="container-fluid-header">
+    <div class="header-logo">
+        <a href=""><img src="img/QQ图片20180501215312.png" alt=""></a>
+    </div>
+</div>
+<div class="item">
+    <div class="container">
+        <hr>
+        <form action="">
+            <div class="personal-information">
+                <p><span>基本信息</span></p>
+                <span>姓名：</span><input type="text" style='width:16.2rem'><br>
+                <span>性别：</span><select name="" id="" style='width:5.8rem'>
+                         <option value="">男</option>
+                         <option value="">女</option>
+                    </select>
+                <span>年龄：</span><select name="" id="age" style='width:5.8rem'>
+
+                    </select><br>
+            </div>
+
+            <div class="money">
+                <p><span>资产</span></p>
+                <span>现金：</span><input type="text"><br>
+                <span>储蓄：</span><input type="text">
+            </div>
+
+            <div class="personal-attributes-left">
+                <p><span>人物属性</span></p>
+                <span>力量：</span><input type="text" style='width:13rem'>
+                <span>敏捷：</span><input type="text" style='width:13rem'><br>
+                <span>体质：</span><input type="text" style='width:13rem'>
+                <span>智力：</span><input type="text" style='width:13rem'><br>
+                <span>意志：</span><input type="text" style='width:13rem'>
+                <span>外貌：</span><input type="text" style='width:13rem'><br>
+                <span>体型：</span><input type="text" style='width:13rem'>
+                <span>教育：</span><input type="text" style='width:13rem'>
+            </div>
+
+            <div class="personal-attributes-right">
+                <p><span>人物属性</span></p>
+                <div class="table">
+                    <table border="1">
+                        <tr>
+                            <td>灵感：</td>
+                            <td>**</td>
+                            <td>幸运：</td>
+                            <td>**</td>
+                        </tr>
+                        <tr>
+                            <td>知识：</td>
+                            <td>**</td>
+                            <td>SAN值：</td>
+                            <td>**</td>
+                        </tr>
+                        <tr>
+                            <td>HP值：</td>
+                            <td>**</td>
+                            <td>MP值：</td>
+                            <td>**</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="point">
+                <p><span>配点</span></p>
+
+            </div>
+            <div class="skill"></div>
+        </form>
+
+    </div>
+
+
+</div>
+
+
+<script>
+    for (var i=0; i<=99; i++){
+        $("#age").append("<option>"+i+"</option>");
+    }
+
+
+</script>
+</body>
+</html>

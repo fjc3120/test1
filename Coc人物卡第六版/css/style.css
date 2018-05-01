@@ -1,0 +1,60 @@
+html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
+/*----------header start-----------------*/
+#container-fluid-header {
+    padding: 0;
+}
+.container-fluid .header-logo img{
+    width:100%;
+}
+/*----------header end-----------------*/
+/*----------item start-----------------*/
+.item{
+    background-color: rgb(0,0,0);
+}
+.item span{
+    color: white;
+}
+.item p{
+    background-color: rgba(0,0,100,.5);
+    width: 98%;
+}
+.item .personal-information {
+    width: 50%;
+    text-align: center;
+    border-right:1px solid #dddddd ;
+    float: left;
+}
+ .item .money {
+     width: 50%;
+     text-align: center;
+     float: right;
+ }
+ .money p{
+     float: right;
+ }
+ .item .personal-attributes-left{
+     width: 50%;
+     text-align: center;
+     float: left;
+     border-right:1px solid #dddddd ;
+ }
+ .item .personal-attributes-right{
+     width: 50%;
+     text-align: center;
+     float: right;
+ }
+.personal-attributes-right p{
+    float: right;
+}
+.personal-attributes-right table {
+    margin:  auto;
+    color: #dddddd;
+    width: 34.5rem;
+    height: 10rem;
+}
+ .item .point{
+     width: 50%;
+     text-align: center;
+     float: left;
+     border-right:1px solid #dddddd ;
+ }
