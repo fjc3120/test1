@@ -9,7 +9,7 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
 /*----------header end-----------------*/
 /*----------item start-----------------*/
 .item{
-    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
 .item span{
     color: white;
@@ -46,11 +46,11 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
 .personal-attributes-right p{
     float: right;
 }
-.personal-attributes-right table {
+.personal-attributes-right .table-attributes table {
     margin:  auto;
     color: #dddddd;
     width: 34.5rem;
-    height: 10rem;
+    height: 10.4rem;
 }
  .item .point{
      width: 50%;
@@ -58,3 +58,35 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
      float: left;
      border-right:1px solid #dddddd ;
  }
+ .point .table-skill table {
+     margin:  auto;
+     color: #dddddd;
+     width: 34.5rem;
+     height: 10.4rem;
+ }
+.table-skill table select{
+    color: black;
+}
+.item .iMg{
+    width: 50%;
+    float: right;
+}
+.item .iMg img{
+    width: 98%;
+    float: right;
+}
+.item .skill{
+    width: 50%;
+    text-align: center;
+    float: left;
+    border-right:1px solid #dddddd ;
+}
+.item .skill #skill-bg{
+    background-color: #665e57;
+}
+ .skill .skill-table table{
+    margin:  auto;
+    color: #dddddd;
+    width: 34.5rem;
+    height: 10.4rem;
+}
