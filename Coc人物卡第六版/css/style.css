@@ -8,6 +8,11 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
 }
 /*----------header end-----------------*/
 /*----------item start-----------------*/
+.clearfix:after {
+    content:"";
+    display: block;
+    clear:both;
+}
 .item{
     background-color: rgba(0,0,0,0.9);
 }
@@ -21,13 +26,15 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
     width: 98%;
 }
 input{
-   opacity: 0.1;
+   border-radius: 20%;
+   background-color:rgb(51,51,53) ;
     width: 5rem;
 }
-option{
-
+.item input{
+    color: #dddddd;
 }
 select{
+    border-radius: 20%;
     background: rgb(51,51,53);
     color: #dddddd;
 }
