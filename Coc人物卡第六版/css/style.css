@@ -11,14 +11,25 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
 .item{
     background-color: rgba(0,0,0,0.9);
 }
+.item .btn{
+    margin: 1rem 0 1rem 0 ;
+}
 .item span{
-    color: white;
-
+    color: #dddddd;
 }
 .item p{
-    background-color: rgba(0,0,100,.5);
     width: 98%;
+}
+input{
+   opacity: 0.1;
+    width: 5rem;
+}
+option{
 
+}
+select{
+    background: rgb(51,51,53);
+    color: #dddddd;
 }
 .item .personal-information {
     width: 50%;
@@ -26,33 +37,45 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
     border-right:1px solid #dddddd ;
     float: left;
 }
- .item .money {
+.item .personal-information select{
+    margin: 0.5rem 0 0.5rem 0;
+}
+.item .personal-information div{
+    margin: 0.5rem 0 0.5rem 0;
+}
+.item .money {
      width: 50%;
      text-align: center;
      float: right;
  }
- .money p{
-     float: right;
+.item  .money p{
  }
+.item .money input{
+    margin: 0.5rem 0 0.5rem 0;
+}
  .item .personal-attributes-left{
      width: 50%;
      text-align: center;
      float: left;
      border-right:1px solid #dddddd ;
  }
+.item .personal-attributes-left div{
+    margin: 0.5rem 0 0.5rem 0;
+}
  .item .personal-attributes-right{
      width: 50%;
      text-align: center;
      float: right;
  }
 .personal-attributes-right p{
-    float: right;
 }
 .personal-attributes-right .table-attributes table {
     margin:  auto;
     color: #dddddd;
-    width: 34.5rem;
-    height: 10.4rem;
+    width: 16.5rem;
+}
+.personal-attributes-right .table-attributes tr{
+    height: 4.2rem;
 }
  .item .point{
      width: 50%;
@@ -63,25 +86,27 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
  .point .table-skill table {
      margin:  auto;
      color: #dddddd;
-     width: 34.5rem;
-     height: 10.4rem;
  }
 .table-skill table select{
     color: black;
 }
+.point .table-skill tr{
+    height: 3.2rem;
+    font-size: 1.2rem;
+}
 .item .iMg{
     width: 50%;
     float: right;
+    margin-top: 1rem;
 }
 .item .iMg img{
-    width: 98%;
+    width: 98%  ;
     float: right;
 }
 .item .skill{
-    width: 50%;
+    width: 100%;
     text-align: center;
     float: left;
-    border-right:1px solid #dddddd ;
 }
 .item .skill #skill-bg{
     background-color: #665e57;
@@ -89,6 +114,31 @@ html {font-size: 625%; /*100 ÷ 16 × 100% = 625%*/}
  .skill .skill-table table{
     margin:  auto;
     color: #dddddd;
-    width: 34.5rem;
-    height: 10.4rem;
+     width: 80%;
+}
+.skill .skill-table button{
+    width: 80%;
+}
+.skill-table-all table{
+    margin:  auto;
+    color: #dddddd;
+    width: 80%;
+}
+.skill-table-all {
+    width: 100%;
+    text-align: center;
+    float: left;
+    display: none;
+}
+.item  #skill-bg-all{
+    background-color: #665e57;
+}
+.item  .active{
+    display: block;
+}
+.item #ipt{
+    opacity: 1;
+    height: 4rem;
+    background: black;
+    border-radius: 50%;
 }
