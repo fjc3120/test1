@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="container-fluid" id="container-fluid-header">
+        <div class="header-logo">
+            <a href=""><img src="img/QQ图片20180501215312.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="item">
+    <div class="container">
+        <hr>
+        <form id="myForm">
+            <div class="personal-information">
+                <p class="btn btn-primary btn-lg"><span>基本信息</span></p>
+                <div><span>姓名：</span><input type="text"></div>
+                <span>性别：</span><select name="" id="" style='width:5rem;height: 2.6rem;'>
+                         <option value="">男</option>
+                         <option value="">女</option>
+                    </select><br>
+                <span>年龄：</span><select name="" id="age" style='width:5rem;height: 2.6rem'>
+
+                    </select><br>
+            </div>
+
+            <div class="money">
+                <p class="btn btn-primary btn-lg"><span>资产</span></p>
+                <div><span>总金：</span><input type="text" name=""></div>
+                <div><span>现金：</span><input type="text" name=""></div>
+                <div><span>储蓄：</span><input type="text" name=""></div>
+            </div>
+
+            <div class="personal-attributes-left">
+                <p class="btn btn-primary btn-lg"><span>人物属性</span></p>
+                <div><span>力量：</span><input type="text" name=""></div>
+                <div><span>敏捷：</span><input type="text" name=""></div>
+                <div><span>体质：</span><input type="text" name=""></div>
+                <div><span>智力：</span><input type="text" name=""></div>
+                <div><span>意志：</span><input type="text" name=""></div>
+                <div><span>外貌：</span><input type="text" name=""></div>
+                <div><span>体型：</span><input type="text" name=""></div>
+                <div><span>教育：</span><input type="text" name=""></div>
+            </div>
+
+            <div class="personal-attributes-right">
+                <p class="btn btn-primary btn-lg"><span>人物属性</span></p>
+                <div class="table-attributes">
+                    <table border="1">
+                        <tr>
+                            <td><span>灵感：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>幸运：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>知识：</span></td>
+                            <td><span>**</span></td>
+
+                        </tr>
+                        <tr>
+                            <td><span>SAN值：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>HP值：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>MP值：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="point">
+                <p class="btn btn-primary btn-lg"><span>配点</span></p>
+                <div class="table-skill">
+                    <table border="1">
+                        <tr>
+                            <td><span>职业点：</span></td>
+                            <td><span>**</span></td>
+
+                        </tr>
+                        <tr>
+                            <td><span>兴趣点：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>剩余职业：</span></td>
+                            <td><span>**</span></td>
+
+                        </tr>
+                        <tr>
+                            <td><span>剩余兴趣：</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>职业：</span></td>
+                            <td><select style='width:10rem;' name="">
+                                <option value="">考古学家</option>
+                                <option value="">艺术家</option>
+                                <option value="">运动员</option>
+                                <option value="">作家</option>
+                                <option value="">牧师</option>
+                                <option value="">罪犯</option>
+                                <option value="">艺术爱好者</option>
+                                <option value="">医生</option>
+                                <option value="">流浪者</option>
+                                <option value="">工程师</option>
+                                <option value="">艺人</option>
+                                <option value="">农夫/伐木工</option>
+                                <option value="">黑客/顾问</option>
+                                <option value="">记者</option>
+                                <option value="">律师</option>
+                                <option value="">军官</option>
+                                <option value="">传教士</option>
+                                <option value="">音乐家</option>
+                                <option value="">心理学家</option>
+                                <option value="">驾驶员</option>
+                                <option value="">警方侦探</option>
+                                <option value="">警察</option>
+                                <option value="">私家侦探</option>
+                                <option value="">教授</option>
+                                <option value="">士兵</option>
+                                <option value="">发言人</option>
+                                <option value="">部落成员</option>
+                                <option value="">狂热者</option>
+                            </select></td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="iMg">
+                <img src="img/450px-克苏鲁_影法师.png" alt="" >
+            </div>
+            <div class="skill">
+                <p class="btn btn-primary btn-lg"><span>技能点</span></p>
+                <div class="skill-table">
+                    <table border="1">
+                        <tr id="skill-bg">
+                            <td colspan="3"><span>技能名称</span></td>
+                            <td><span>初始</span></td>
+                            <td><span>本职</span></td>
+                            <td><span>职业</span></td>
+                            <td><span>兴趣</span></td>
+                            <td><span>合计</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>快速交谈</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>聆听</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>侦查</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>闪避</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>拳击/厮打</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>开锁</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>驾驶</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span>心理学</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                            <td><span>**</span></td>
+                        </tr>
+                        <tr>
+
+                            <td colspan="6"><button type="button" class="btn btn-primary btn-lg btnDisplay">展开技能</button></td>
+                            <td colspan="2"><input type="button" name="" id="ipt" value="保存"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="skill-table-all">
+                <table border="1"  id="skill">
+                    <tr id="skill-bg-all">
+                        <td colspan="2"><span>技能名称</span></td>
+                        <td><span>初始</span></td>
+                        <td><span>本职</span></td>
+                        <td><span>职业</span></td>
+                        <td><span>兴趣</span></td>
+                        <td><span>合计</span></td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<script src="jquery/jquery-3.3.1.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
