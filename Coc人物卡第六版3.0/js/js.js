@@ -29,7 +29,7 @@ let vm = new Vue({
         },
         methods:{
                      postData() { //传给后台
-                     axios.post('',this.prom) //v-model input select
+                     axios.post('https://bird.ioliu.cn/v2?url=http://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=10',this.prom) //v-model input select
                     .then((res)=>{
                     this.getData();
                     }).catch((res)=>{
@@ -37,7 +37,7 @@ let vm = new Vue({
             });
         },
             getData() {//导入
-                axios.get('')
+                axios.get('https://bird.ioliu.cn/v2?url=http://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=10')
                     .then((res)=>{ //插入值
 
                     })
@@ -70,7 +70,7 @@ for(let i of arr){
 
 
 for (let i=0; i<=99; i++){
-    $("#age").append("<option>"+i+"</option>"); //  value="+data.aa+"
+    $("#age").append(`<option value=${i}>${i}</option>`); //  value="+data.aa+"
 }
 let isShow = 1;
 $(".btnDisplay").click(function () {

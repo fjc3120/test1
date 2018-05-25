@@ -64,7 +64,34 @@
 
         document.body.removeChild(oDiv2);//【移除】孩子元素
 
+        let scrollTop = document.documentElement.scrollTop;        //滚动条高度,，子元素不可见部分的高度
+        let scrollHeigth = document.documentElement.scrollHeight;  //内容高+padding
+        let clientHeight = document.documentElement.clientHeight;   //子元素可见部分的高度，网页可见区域高
+        if(scrollTop+clientHeight+1>=scrollHeigth) //判断滚轮是否到内容底部
+           // offsetTop: 网页可见区域高（包括边线的高）
 
+        var Img = new Image();
+        Img.onload = function () {  //onload加载完后才执行
+            Img.src = "xxx.jpg";
+        };
+
+            window.onresize  =function () { //浏览器的宽度、高度改变，拉伸窗口，时执行
+                console.log(document.body.clientWidth);
+        };
+
+        window.oncontextmenu = function () { //右键菜单的事件
+
+        };
+
+        /*
+        *  事件三要素：事件源、事件处理函数、事件对象e
+        *
+        *
+         */
+        oDiv1.onclick = function (e) {
+            var target = e.target || window.event.srcElement//兼容性,//获取事件源
+
+        }
     </script>
 </body>
 </html>
