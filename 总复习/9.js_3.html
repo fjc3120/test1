@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="add">add</button>
+    <ul id="tab">
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+        <li>005</li>
+    </ul>
+
+    <script>
+        var oUl=document.getElementById("tab");
+        var aLi=oUl.getElementsByTagName("li");
+        for(var i=0;i<aLi.length;i++){
+           // 点击li查询li的索引
+          /* aLi[i].index=i;//定义索引方法  给子元素绑定的话，添加新的子元素后就没有绑定，需要换成给父元素绑定才有效
+            aLi[i].onclick=function () {
+                console.log(this.index);//输出li索引，没有要重定义索引。或者用闭包方法
+            };*/
+
+
+           /*
+            (function (idx) {  //闭包方法
+                aLi[idx].onclick=function () {
+                    console.log(idx);//输出li索引，没有要重定义索引。或者用闭包方法
+                }
+            })(i);
+            */
+           //点击ul查询li的内容， 会冒泡,用事件委托、事件代理，子元素给父元素同意绑定
+            //事件委托（冒泡）的使用情况1.子元素统一给父元素绑定点击事件，2.有新的子元素要绑定事件
+           oUl.onclick=function (e) {//给父元素绑定，就算有新添加的子元素，也会生效
+                var target = e.target || window.event.srcElement;
+                console.log(target.innerHTML);
+            };
+
+            var oBtn=document.getElementById("add");
+            oBtn.onclick=function () {
+                var oLi=document.createElement("li");
+                oLi.innerHTML=Math.random();
+                oUl.appendChild(oLi);
+            }
+        }
+    </script>
+</body>
+</html>
