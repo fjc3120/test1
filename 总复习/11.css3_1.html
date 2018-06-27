@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*-------CSS3里多兼容性问题，一般要写5个-----------------*/
+        /*#div1::before{*/
+            /*content:"before";!*这个属性必须要有，在内容的前面,是行级*!*/
+            /*background: #ff0000;*/
+            /*display: block;!*变块级*!*/
+        /*}*/
+
+        #div1{
+            /*文字阴影*/
+            text-shadow: 10px 10px 10px #f00 ;  /*text阴影参数 x y 模糊度 颜色*/
+            /*元素阴影*/
+            box-shadow:  10px 10px 10px  10px #ff6600 ; /*阴影参数 x y 模糊度 外延值 颜色*/
+
+            width:100px;
+            border:1px solid #00ff00;
+
+            /*超出部分变...，用下面这三个属性一起*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;/*不换行*/
+
+            /*引入字体*/
+            /*font-family:'diyfont';!*引用定义的文字名字*!*/
+
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: url(450px-克苏鲁_影法师.png) no-repeat;
+            border:20px solid rgba(0,0,0,.5);
+            padding:30px; /*原本背景是从padding开始*/
+
+            /*背景原点background-origin*/
+            /*background-origin: content-box;!*变成从content开始*!*/
+            /*background-origin: border-box;!*变成从border开始*!*/
+            /*background-origin: padding-box;!*变成从padding开始*!*/
+
+            /*背景裁切background-clip*/
+            /*background-clip: content-box;!*背景从content开始裁切*!*/
+
+            /*背景大小*/
+            background-size: cover;
+/*
+<length>：
+用长度值指定背景图像大小。不允许负值。
+<percentage>：
+用百分比指定背景图像大小。不允许负值。
+auto：
+背景图像的真实大小。
+cover：
+将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器,等比覆盖会超出。
+contain：
+将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内，等比缩放不会超出*/
+        }
+
+        /*引入字体，在手册里复制以下代码，只需要改名字+url*/
+        @font-face {
+            font-family: 'diyfont';/*定义文字的名字*/
+            src: url('diyfont.eot'); /* IE9+ */
+            src: url('diyfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('diyfont.woff') format('woff'), /* chrome、firefox */
+            url('diyfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('diyfont.svg#fontname') format('svg'); /* iOS 4.1- */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">divdivdivdivdivdivdivdivdiv</div>
+    <div id="div2"></div>
+</body>
+</html>

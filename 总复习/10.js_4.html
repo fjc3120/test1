@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            height: 200px;
+            width: 200px;
+            background: #ff0000;
+            padding: 10px;
+            border:10px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1" style=""></div>
+
+    <script>
+        var oDiv1=document.getElementById("div1");
+        //js下获取css样式
+        console.log(oDiv1.style.width);//只能取到内联样式的值，但可以赋值
+        console.log(getComputedStyle(oDiv1,null).width);//获取css样式 ,参数1为对象，2为null或false都可以.IE兼容性
+        alert(oDiv1.currentStyle.width);//IE下可以使用，获取css样式，与上面封装成函数
+
+        console.log(oDiv1.offsetWidth);//包括padding、border、不包括margin
+        offsetWidth
+        offsetHeight
+        offsetTop //距离它最近的已经定位的父元素的距离
+        offsetLeft
+        offsetParent//距离它最近的已经定位的父元素
+
+        jq：width()内容的  innerWidth()内容+padding  outerWidth()内容+padding+border outerWidth(true)内容+padding+border+margin
+    </script>
+</body>
+</html>
