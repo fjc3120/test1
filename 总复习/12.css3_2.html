@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1   {
+            width: 200px;
+            height: 200px;
+            background: #ff00ff;
+
+            /*-------- rotate 2D效果旋转 */
+            /*transform: rotate(30deg);!*旋转,以元素的中心为原点  30deg是顺时针30度角度、-30deg是逆时针，+*!*/
+            /* --------- rotateX   rotateY 3D效果旋转，父元素  perspective: 1000px;*/
+            /*transform: rotateY(30deg); !*需要和 父元素的 perspective: 1000px;配合才更有效果*!*/
+
+            position: absolute;
+            top:50%;
+            left: 50%;
+            /*margin-top: -100px;*/
+            /*margin-left: -100px;*/
+
+            /*css3的位移，块级在块级内水平垂直居中，与父子定位+top：50%+margin-top：-高度一半 。效果相同，优点：不需要知道高度宽度*/
+            transform: translate(-50%,-50%);/* transform: translate(-50%,-50%),等效于margin-top: -100px;margin-left: -100px; */
+        }
+        #div2{
+            width: 400px;
+            height: 400px;
+            margin: 200px 200px ;
+            border: 1px dotted #1b1e21;
+
+            /*perspective: 1000px; !* transform: rotateY*!*/
+
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="div2">
+        <div id="div1">
+            div1
+        </div>
+    </div>
+</body>
+</html>

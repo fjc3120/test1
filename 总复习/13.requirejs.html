@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- requirejs 是为了解决模块化开发和页面加载问题-->
+    <script src="require.js" data-main="index"></script> <!--  data-main="index" 入口文件 index.js  js省略 -->
+    <script>
+        /* AMD方法  */
+        define(["a"],function (obj) { /*一开始就加载*/
+
+        });
+        /* a.js */
+        require(["jquery"],function ($) {
+
+            return obj;
+        });
+
+        /* sea.js   CMD方法 */
+        define(function (require) {
+            sdsd  操作1
+            scxvvx 操作1
+            grfr 操作1
+            var obj = require("a");/*用到时才加载*/
+        })
+        /* AMD是jquery.js提出的   CMD是sea.js提出的
+        AMD 异步模块定义：依赖前置 define(["a"],function (obj){}) 一开始就加载
+        CMD 通用模块定义：依赖就近 define(function (require){var obj = require("a");}) 用到时才加载
+        轮播图 弹出层 事例
+
+        * */
+    </script>
+</body>
+</html>
