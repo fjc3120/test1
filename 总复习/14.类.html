@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //定义对象两种方式：对象直接量  实例化对象
+    var obj = { //对象直接量
+        name:'laoshan',
+        age:19
+    }
+
+    var obj1 = new Object();    //实例化对象
+    obj1.name = 'zhangsan';
+
+    //具有相同属性和方法的对象集合称为类
+    function Person() { //定义类
+        this.name = name;   //类添加属性
+       // this.sayHello = fn; //类添加方法，方法一般不直接写，否则实例化多个对象，就会有多个不同的方法
+    }
+   /* var fn = function () { //写在外面变成了全局，不好
+        console.log('my name is '+this.name);
+    }*/
+    Person.prototype.name = 'lisi'; //存在【栈】里
+    Person.prototype.father = function () {   //所以声明时不要把属性写在外面，要写在类、构造函数的里面
+        name = 'xyz';//在原型里添加属性， 存在【堆】里
+    }
+    Person.prototype.sayHello = function () {  //类添加方法，最佳方法  //方法要写在prototype里
+        console.log('my name is '+this.name);
+    }
+
+    //原型 prototype ，是用来【继承】的，每次new实力对象时，此对象都会继承原型下的所有方法
+    //原型链 是一个查找的过程。构造函数-prototype原型-父类-Object-undefined
+    //若访问对象的方法person1.eat,会先到构造函数Person类下来找,如果没有就会去构造函数的原型prototype下找,若还没有会向上的父类找，一直找到Object，还有没会返回undefined
+
+
+
+    var person1 = new Person('zhangsan');//实例化对象，引用类
+    var person2 = new Person('lisi');
+    person1.father.name = 'xxx'; //   person1栈和堆里的属性都分别改动
+    person1.name = 'yyy';
+    console.log(person1.father.name);  //person1.father.name 改动了   【堆】里存的是指针地址，指向对象fater.name。共用一个对象
+    console.log(person2.father.name);  //person2.father.name 改动了
+    console.log(person1.name);      //person1.name 改动了       【栈】中每个属性都有自己的小空间，不共用
+    console.log(person2.name);      //person2.name 没有改动
+
+    person1.sayHello();
+</script>
+</body>
+</html>

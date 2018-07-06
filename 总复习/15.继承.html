@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //继承的三步1. A类.call(this); 2.  B类.prototype = new A类();  3.   B类.prototype.constructor = B类;
+        //A类
+        function A() {
+            this.name = 'zhangsan';
+            this.hobby = ['dance','sing'];
+        }  
+        //B类
+        function B() { //B类想继承A类下的所有方法和属性
+            //this.name = "zhangsan";//若没有new B()， function B(){this指向windows}。若有new B()，function下this指向new 的对象
+            A.call(this);//改变this指向,this指向了B-new的对象，调用了A（）即oB1.name = 'zhangsan';
+           // A.call(this); B继承了A的【属性】
+        }
+        // B.prototype = new A();B继承了A的【方法】
+        B.prototype = new A();//B类用prototype继承了A类的所有方法
+       /* //  B.prototype = new A(); 相当于 实例化A（），等于下面两行
+        B.prototype.name = 'zhangsan'; //导致属性写在了prototype里、类外了，
+        B.prototype.hobby = ['dance','sing'];*/
+
+       B.prototype.constructor = B;//解决constructor指向A的问题
+        var oB1 = new B();
+        var oB2 = new B();
+
+        console.log(oB1.constructor);//constructor 构造函数，从B变成了A，因为constructor是在prototype下的
+
+       /* oB1.hobby.push('shopping');
+        console.log(oB1.name); //只改oB1继承的hobby，也会影响oB2的hobby
+        console.log(oB2.name);*/
+    </script>
+</body>
+</html>

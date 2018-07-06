@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = 'abc';
+    var arr = [1,2,3];//其实是 new Array（），所以数据类型是Object
+    var obj = {
+        name:'lisi'
+    }
+    console.log(typeof str);//返回数据类型
+    console.log(typeof arr);// 用typeof 无法分辨， arr和obj都返回object
+    console.log(typeof obj);
+
+    //constructor 返回构造函数
+    console.log(arr.constructor);//用constructor代替typeof，解决问题
+
+    //instanceof 布尔型 是否是构造函数的实例
+    console.log(arr instanceof Array);//true
+    console.log(arr instanceof Object);//true，因为Array也是Object下的实例，但数组的构造函数一定是数组
+    console.log(obj instanceof Array);//false
+</script>
+</body>
+</html>
