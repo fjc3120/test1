@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 什么是跨域：
+ 跨域
+ www.a.com           www.b.com          域名不同
+ www.qq.com          news.qq.com        主域和子域
+ http://www.a.com    https://www.a.com  协议不同
+ localhost:8080      localhost:8000     端口号不同
+
+ 非跨域
+ www.a.com/detail/    www.a.com/index    同一域名下不同文件夹
+
+
+ -->
+<!-- 1.jsonp 方式 解决跨域问题 -->
+<!-- 2.iframe 方式 与script的src原理相似 -->
+<!-- 3.后端实现，a文件下建个a.php后台文件，把数据传到这里，a.php再传到b.php里，因为后台无跨域问题 -->
+<!-- 4.ajax服务器代理方法，引入jquery，利用$.get(),在后台加请求头header -->
+<!--可以直接引入script，也可以点击时再引入script-->
+<input type="button" value="点击" id="btn">
+<!-- 2.iframe 方式 麻烦 -->
+<iframe src="http://www.b.com/index1.php?name=lisi& age=10 & callback=aa" frameborder="0"></iframe>
+<!-- 引入的文件代码不能执行，需要在其基础上套上script标签 -->
+<!--iframe下，子页不能直接访问父页的方法。不能向script一样使用aa（）  -->
+
+
+
+<!--script 的 src 是没有跨域问题的-->
+<!-- 1.jsonp 方式 解决跨域问题 -->
+<script>
+    var oBtn = document.getElementById("btn");
+    //1.jsonp 方式
+   /* oBtn.onclick = function () {
+        //目的 <script src="http://www.b.com/index1.php?name=lisi& age=10 & callback=aa">，动态创建script
+        var script = document.createElement('script');
+        script.src = "http://www.b.com/index1.php?name=lisi& age=10 & callback=aa";
+        document.body.appendChild(script);
+    }*/
+    function aa(data) { //可以传普通参数也可以传json格式
+        alert('hh'+data.name +data.age);
+    }
+</script>
+<!--<script src="http://www.b.com/index1.php?name=lisi& age=10 & callback=aa"></script>--> 不直接引入，改成通过点击按钮动态添加
+<!--通过src能把数据发送出去。src执行的是index1.php的返回值即回调函数,此函数声明在本页面. callback=aa是统一函数名aa()-->
+</body>
+</html>
