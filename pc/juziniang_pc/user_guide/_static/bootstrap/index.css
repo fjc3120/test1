@@ -1,0 +1,118 @@
+#leftList, #rightList{
+	margin-top: 20px;
+	width: 100%;
+}
+#leftList li{
+	width: 100%;
+	height: 120px;
+	background-color: #fff;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+	padding: 10px 10px;
+	font-size: 18px;
+	font-family:\534E\6587\4EFF\5B8B;
+	font-weight: bold;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;	
+	-webkit-transition: all 0.5s;	
+	-o-transition: all 0.5s;	
+}
+#leftList li:hover{
+	transform: scale(1.01);
+}
+
+#leftList a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+
+
+
+/*
+  * 外面盒子样式---自己定义
+  */
+
+#page{
+	margin-top:50px;
+	margin-bottom: 20px;
+	margin-left:-5px; 
+	font-size: 15px;
+	font-family: "microsoft yahei";
+	color: rgba(0,0,0,0.5);
+	padding-left: 20px;
+	box-sizing: border-box;
+	position: relative;
+	
+	
+	
+}
+/*
+ * 页数按钮样式
+ */
+
+#page a{
+	min-width: 28px;
+	height: 28px;
+	border:none;
+	/*border: 1px solid white!important;*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	margin: 0 4px;
+	cursor: pointer;
+	line-height: 28px;
+	color: rgb(150,150,150);
+	font-size: 13px;
+	display: inline-block;
+    text-decoration: none;
+	background: white;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#page a:hover{
+	background: cyan;
+	color: white;
+}
+
+#firstPage,
+#lastPage {
+	width: 50px;
+	color: deepskyblue;
+	/*border: 1px solid deepskyblue!important;*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#prePage,
+#nextPage {
+	width: 70px;
+	color: deepskyblue;
+	/*border: 1px solid deepskyblue!important;*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#page .current {
+	background-color: deepskyblue;
+	border-color: deepskyblue;
+	color: #FFFFFF;
+}
+
+.totalPages {
+	margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+	color: deepskyblue;
+	margin: 0 5px;
+}

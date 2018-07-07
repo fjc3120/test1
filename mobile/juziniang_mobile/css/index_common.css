@@ -1,0 +1,226 @@
+#logo{
+    height: 40px;
+    float: left;
+    width: 50px;
+}
+#logo img{
+    width: 60px;
+    height: 40px;
+}
+#logo a.moback{
+    height: 40px;
+    width: 50px;
+    display: block;
+    font-size: 22px;
+    color: #ffaf37;
+    text-align: center;
+    line-height: 40px;
+    
+    background-size: 20px 460px;
+    background-position: center -430px;
+}
+#content{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+#content .homepage{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #888;
+}
+#content .homepage img{
+    width: 165px;
+    margin: 0 auto 3px;
+    padding-top: 10px;
+}
+#content .homenav{
+    width: 100%;
+    position: relative;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ddd;
+}
+#content .homenav .line1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ddd;
+}
+#content .homenav .line2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 12px;
+    position: relative;
+}
+#content .homenav .line2:after{
+    height: 10px;
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    content: "";
+    clear: both;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #ddd;
+    border-bottom-color: #ddd;
+}
+#content .homenav .line_button{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    width: 33%;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #ddd;
+}
+#content .homenav .line_button a{
+    color: #666;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#content .homenav .line_button .icon{
+    background-size: 20px 20px;
+    font-size: 24px;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+#content .essay_list{
+    padding-bottom: 20px;
+}
+#content .essay_list .essay_row{
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#content .essay_list .essay_row a{
+    color: #333334;
+    line-height: 22px;
+}
+#content .essay_list .essay_row:before {
+    height: 1px;
+    background-color: #ddd;
+    display: block;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+#content .essay_list .essay_row:after {
+    height: 10px;
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    content: "";
+    clear: both;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #ddd;
+    border-bottom-color: #ddd;
+}
+#content .essay_list .essay_body{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family:仿宋;
+}
+#content .essay_list .essay_resource{
+    text-align: right;
+    height: 35px;
+    
+}
+#content .essay_list .essay_resource a{
+    
+}
+#content .essay_list .essay_foot{
+    position: relative;
+    display: block;
+    color:#5cb43f;
+}
+#content .essay_list .essay_foot .essay_func{
+
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 20px;
+    width: 31%;
+}
+.resource_body{
+    color:#5cb43f;
+}
+#content .essay_list .essay_foot .essay_func .flag-action {
+    background-size: 16px;
+    height: 30px;
+    display: block;
+    color: #999;
+    font-weight: bold;
+}
+.more-sentence {
+    margin:10px auto 20px;
+    width: 50%;
+}
+.more-sentence a {
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    padding: 12px;
+    color: #5cb43f;
+}
+.xqcaliou {
+    background: url(http://img.juzimi.com/jmo/images/v2cateou.png) no-repeat center center;
+    background-size: 20px 20px;
+}
+.xqcalimin {
+    background: url(http://img.juzimi.com/jmo/images/v2catemin.png) no-repeat center center;
+    background-size: 20px 20px;
+}
+.xqcaliyan {
+    background: url(http://img.juzimi.com/jmo/images/v2cateyan.png) no-repeat center center;
+    background-size: 20px 20px;
+}
+.xqcalialb {
+    background: url(http://img.juzimi.com/jmo/images/v2catealb.png) no-repeat center center;
+    background-size: 20px 20px;
+}
+.xqcalimei {
+    background: url(http://img.juzimi.com/jmo/images/v2catemei.png) no-repeat center center;
+    background-size: 20px 20px;
+}
+.xqcalixin {
+    background: url(http://img.juzimi.com/jmo/images/v2catexin.png) no-repeat center center;
+    background-size: 20px 20px;
+}

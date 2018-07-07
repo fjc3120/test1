@@ -1,0 +1,5368 @@
+html
+{
+	-ms-touch-action:none
+}
+body
+{
+	color:#333;font-size:14px;font-family:微软雅黑,tahoma,arial,simsun,sans-serif
+}
+a
+{
+	text-decoration:none;color:#5cb43f
+}
+a:visited
+{
+	color:#5cb43e
+}
+.xqtouch
+{
+	background-color:#DDD
+}
+header a,header div
+{
+	-webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+footer a,#newfooter a
+{
+	-webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+*
+{
+	-webkit-text-size-adjust:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+}
+ul,li
+{
+	list-style:url(none) none outside
+}
+ul
+{
+	margin:0;padding:0
+}
+fieldset
+{
+	margin:0;padding:0;border-style:none
+}
+input[type=text],input[type=password],textarea
+{
+	-webkit-border-radius:4px;border-radius:4px;border:1px solid #999;padding-left:2px;min-height:25px;background-color:#fff;box-shadow:inset 0 2px 2px rgba(0,0,0,0.1);padding:10px
+}
+input[type=button]
+{
+	padding:10px
+}
+input[type=submit]
+{
+	background:#eee;border:1px solid #bbb;display:block;height:30px;line-height:30px;padding-left:10px;padding-right:10px
+}
+input:-moz-placeholder
+{
+	color:#ccc
+}
+.gray
+{
+	color:#aaa
+}
+table
+{
+	border-collapse:collapse;border-spacing:0
+}
+input[type="checkbox"]
+{
+	-webkit-appearance:none;width:26px;height:26px;border:#dbdbdb 1px solid;border-radius:3px;background:#FFF
+}
+input[type="checkbox"]:checked
+{
+	background:#effbe6 url(//img.juzimi.com/jmo/images/check.png) no-repeat center center
+}
+input[type="radio"]
+{
+	-webkit-appearance:none;width:26px;height:26px;border:#dbdbdb 1px solid;border-radius:13px;background:#FFF
+}
+input[type="radio"]:checked
+{
+	background:#effbe6 url(//img.juzimi.com/jmo/images/circle.png) no-repeat center center;background-size:16px 16px
+}
+header
+{
+	height:41px;width:100%;z-index:8;position:absolute;left:0;top:0;background-color:#f27a0a
+}
+#contentin
+{
+	min-height:100px;padding-right:0;padding-bottom:10px;padding-left:0
+}
+.xpuser #contentin,.xpnode7465 #contentin,.xpreg #contentin
+{
+	padding:10px
+}
+.userfav #contentin,.userpost #contentin,.useroriginal #contentin,.userfavalbum #contentin,.useralbum #contentin,.xpalluserpage #contentin
+{
+	padding:0
+}
+.node-type-sentence #contentin,.node-type-album #contentin,.xpuserlogin #contentin,.xpuserregister #contentin,.front #contentin
+{
+	padding:0
+}
+#logo
+{
+	height:40px;float:left;width:50px
+}
+#logo a
+{
+	padding-left:5px;padding-right:5px
+}
+#logo a.mologo
+{
+	height:39px;width:48px;display:block;font-size:0;text-indent:-1999px
+}
+#logo a.moback
+{
+	height:40px;width:50px;display:block;font-size:22px;color:#ffaf37;text-align:center;line-height:40px;background:url(//img.juzimi.com/jmo/images/v2foicon.png) no-repeat center center;background-size:20px 460px;background-position:center -430px
+}
+#logo .xqtouch,#searchicon a.xqtouch,#writeicon a.xqtouch
+{
+	background-color:#e36f04!important
+}
+#logo a.moback:visited
+{
+	color:#ffaf38
+}
+#title
+{
+	font-size:16px;color:#fff;height:40px;line-height:40px;float:left;padding-left:5px;overflow:hidden;min-width:150px;max-width:50%
+}
+.localtest
+{
+	position:absolute;font-size:8px;line-height:10px
+}
+#logo a:hover
+{
+	color:#FFF!important
+}
+#searchicon
+{
+	width:54px;float:right
+}
+#writeicon
+{
+	width:53px;float:right
+}
+#searchicon a
+{
+	width:53px;float:left;height:40px;display:block;text-indent:-1999px;background:url(//img.juzimi.com/jmo/images/v2foicon.png) no-repeat center center;background-size:20px 460px;background-position:center -310px;font-size:0
+}
+#writeicon a
+{
+	width:52px;float:left;height:40px;display:block;text-indent:-1999px;background:url(//img.juzimi.com/jmo/images/v2foicon.png) no-repeat center center;background-size:20px 460px;background-position:center -390px;font-size:0
+}
+#searchibar
+{
+	height:50px;width:100%;position:absolute;left:0;top:41px;z-index:3;display:none;border-bottom:1px solid #999;background-color:#eee
+}
+#search #edit-search-theme-form-1-wrapper
+{
+	width:95%;margin-left:15%
+}
+#search #edit-custom-search-types-wrapper
+{
+	width:15%;height:46px;overflow:hidden;position:absolute;left:0;top:1px
+}
+#search #edit-custom-search-types-wrapper select
+{
+	height:47px;width:100%
+}
+#search .custom_search-popup
+{
+	display:none
+}
+#edit-search-theme-form-1
+{
+	width:68%;height:47px;margin-top:1px;float:left;border-bottom-right-radius:0;border-top-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:0;border-right-style:none
+}
+#search .form-submit
+{
+	width:20%;height:47px;margin-top:1px;border-bottom-left-radius:0;border-top-left-radius:0
+}
+.downarr
+{
+	font-size:10px
+}
+#addibar
+{
+	position:absolute;top:41px;background:#fff;display:none;margin-left:58%;margin-right:5px;margin-top:1px;width:40%;border-radius:5px;border:1px solid #ccc;overflow:hidden
+}
+#titlebar
+{
+	position:absolute;top:41px;background:#fff;display:none;margin-right:28%;margin-left:5px;margin-top:1px;width:70%;border-radius:5px;border:1px solid #ccc;overflow:hidden
+}
+#addibar .xqtouch,#titlebar .xqtouch
+{
+	background-color:#eee
+}
+#addibar a,#titlebar a,#titlebar .breadlast
+{
+	height:48px;width:100%;display:block;line-height:50px;position:relative;color:#666;padding-left:30px;font-size:14px
+}
+#titlebar .breadlast
+{
+	background-size:10px 10px;background-image:url(//img.juzimi.com/jmo/images/v2rightarrow.png);background-repeat:no-repeat;background-position:12px center
+}
+#addibar .xqaddsencla
+{
+	background-size:18px 18px;background-image:url(//img.juzimi.com/jmo/images/v2addse.png);background-repeat:no-repeat;background-position:7px center
+}
+#addibar .xqaddalbumcla
+{
+	background-size:18px 18px;background-image:url(//img.juzimi.com/jmo/images/v2addal.png);background-repeat:no-repeat;background-position:7px center
+}
+#addibar .xqaddline,#titlebar .xqaddline
+{
+	height:1px;overflow:hidden;margin-top:0;margin-right:5%;margin-left:5%;background-color:#eee
+}
+#addibar a:visited,#titlebar a:visited
+{
+	color:#66666e
+}
+.tabs,#content-header
+{
+	display:-moz-box;display:-webkit-box;display:box;width:100%
+}
+.tabs li,#content-header .inlititle
+{
+	-moz-box-flex:1;-webkit-box-flex:1;box-flex:1
+}
+.tabs li a,#content-header .inlititle
+{
+	height:45px;width:100%;text-align:center;display:block;line-height:45px;border-right-width:1px;border-bottom-width:1px;border-right-style:solid;border-bottom-style:solid;border-right-color:#999;border-bottom-color:#999;color:#666
+}
+#content-header .inlititle a
+{
+	display:block
+}
+.tabs li a:visited,#content-header .inlititle a:visited
+{
+	color:#666667
+}
+.tabs .active a,#content-header .inlititleactive
+{
+	color:#000;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#F90
+}
+.tabs .active a:visited
+{
+	color:#000001
+}
+#content-header .inlititle a
+{
+	color:#666
+}
+#articletitle .taxtitleba
+{
+	display:-moz-box;display:-webkit-box;display:box;width:100%;border-bottom-style:none;margin:0;font-size:14px
+}
+#articletitle .taxtitleba .taxtitle,#articletitle .taxtitleba .taxtitlew
+{
+	-moz-box-flex:1;-webkit-box-flex:1;box-flex:1
+}
+#articletitle .taxtitleba .taxtitle,#articletitle .taxtitleba .taxtitlew
+{
+	height:45px;width:100%;text-align:center;display:block;line-height:45px;border-right-width:1px;border-bottom-width:1px;border-right-style:solid;border-bottom-style:solid;border-right-color:#999;border-bottom-color:#999;color:#666;overflow:hidden
+}
+#articletitle .taxtitleba .taxtitle
+{
+	color:#000;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#F90
+}
+#articletitle .taxtitleba a
+{
+	color:#666;display:block;width:100%;height:45px;overflow:hidden;padding-left:8px
+}
+#articletitle .taxtitleba h1
+{
+	color:#000;font-size:14px;font-weight:normal;line-height:45px;margin:0
+}
+#articletitle .taxtitleba .xqwritertab
+{
+	width:130%;text-align:left
+}
+.usercommentinbox #xqtitle,.usercommentofwriter #xqtitle
+{
+	display:-moz-box;display:-webkit-box;display:box;width:100%;border-bottom-style:none;margin:0;font-size:14px
+}
+.usercommentinbox #xqtitle .inlititle,.usercommentofwriter #xqtitle .inlititle
+{
+	-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;height:45px;width:100%;text-align:center;display:block;line-height:45px;border-right-width:1px;border-bottom-width:1px;border-right-style:solid;border-bottom-style:solid;border-right-color:#999;border-bottom-color:#999;color:#666;font-weight:normal
+}
+.usercommentinbox #xqtitle .inlititleactive,.usercommentofwriter #xqtitle .inlititleactive
+{
+	color:#000;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#F90
+}
+.usercommentinbox #xqtitle .inlititle a,.usercommentofwriter #xqtitle .inlititle a
+{
+	color:#666;width:100%;height:100%;display:block
+}
+.usercommentinbox .xalllist .ajaxviform #comment-form input[type="submit"]
+{
+	margin:0 auto
+}
+.usercommentinbox .xalllist .comment-group
+{
+	padding-bottom:0
+}
+.messages .xqmessneednum
+{
+	line-height:35px
+}
+.messages .xqmessneednum li
+{
+	list-style:circle;margin-left:18px
+}
+.userpost #title .inlititle a,.userfav #title .inlititle a,.userfavalbum #title .inlititle a,.useralbum #title .inlititle a
+{
+	display:none
+}
+#content
+{
+	width:100%
+}
+#scroller
+{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);width:100%;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;text-size-adjust:none;padding-bottom:15px
+}
+footer,#newfooter
+{
+	width:100%;height:50px;z-index:10;background-color:#fff
+}
+body
+{
+	margin:0;overflow-x:hidden
+}
+#content
+{
+	margin-top:40px;margin-bottom:56px
+}
+footer,#newfooter
+{
+	position:relative;bottom:0;left:0;margin-top:-56px
+}
+#footermenu
+{
+	position:absolute;bottom:56px;left:0
+}
+header
+{
+	position:fixed
+}
+footer,#newfooter
+{
+	position:fixed
+}
+#footermenu
+{
+	position:fixed
+}
+#footermenu
+{
+	z-index:2;width:100%;height:218px;display:none
+}
+#footermenunav
+{
+	background:#111;opacity:.95;height:44px;padding-left:5px;margin-left:1%;margin-right:1%;border-top-left-radius:5px;border-top-right-radius:5px
+}
+.footermenunav_tab
+{
+	width:33%;float:left
+}
+.footermenunav_tab a
+{
+	width:100%;display:block;height:40px;border-bottom:4px solid #333;text-align:center;line-height:40px;color:#ddd
+}
+#footerrecomtags a
+{
+	border-bottom:4px solid #f60;color:#f60
+}
+.footermenucont
+{
+	height:118px;background:#111;opacity:.95;margin-left:1%;margin-right:1%
+}
+#footermenucont2,#footermenucont3
+{
+	display:none
+}
+.footermenucont_nav
+{
+	width:25%;float:left
+}
+.footermenucont_nav a
+{
+	display:block;font-size:12px;color:#666;text-align:center;padding-top:5px;height:52px
+}
+.footermenucont_nav a:visited
+{
+	color:#666665
+}
+#footermenubar
+{
+	width:100%;height:56px;background-color:#111
+}
+.footer_nav
+{
+	width:25%;float:left
+}
+.footer_nav a
+{
+	display:block;font-size:10px;color:#666;text-align:center;padding-top:4px;height:50px;border-top:1px solid #ccc
+}
+.footer_nav a:visited
+{
+	color:#666667
+}
+#newfooter .xqtouch
+{
+	background:url(//img.juzimi.com/jmo/images/v2navtouchback2.png) no-repeat center center;background-size:80px 80px
+}
+#newfooter .footer_navon .xqtouch
+{
+	background:url(//img.juzimi.com/jmo/images/v2navtouchback.png) no-repeat center center;background-size:80px 80px
+}
+#newfooter .xqtouch a
+{
+	color:#fff!important
+}
+.footer_navon
+{
+	color:#6dab10!important
+}
+.footer_navon a
+{
+	color:#6dab10!important
+}
+.footer_reddot
+{
+	position:absolute;height:8px;width:8px;background-color:#F00;border-radius:6px;top:15px;right:15px
+}
+.userpage_reddot
+{
+	color:#F00
+}
+#allcategory .footer_navon
+{
+	background-color:#333!important
+}
+.footer_navhomeon
+{
+	border-left:none;border-top:0
+}
+.footicon
+{
+	font-size:24px;line-height:24px;width:24px;height:24px;background:url(//img.juzimi.com/jmo/images/v2foicon.png) no-repeat center center;background-size:20px 460px;margin-top:0;margin-right:auto;margin-left:auto
+}
+.foothomeicon
+{
+	background-position:center -38px
+}
+.foothomeicon2
+{
+	background-position:center 2px
+}
+.footramdonicon
+{
+	background-position:center -78px
+}
+.footcateicon
+{
+	background-position:center -158px
+}
+.footcateicon2
+{
+	background-position:center -118px
+}
+.footiconli
+{
+	background-position:center -238px
+}
+.footiconli2
+{
+	background-position:center -198px
+}
+#switch
+{
+	text-align:center;padding:8px;height:30px;width:70%;margin:15px auto 15px;clear:both
+}
+#switch .on
+{
+	float:left;display:block;border-top-left-radius:3px;border-bottom-left-radius:3px;width:49%;padding-top:8px;padding-bottom:7px;border-top:1px solid #b1b1b1;border-bottom:1px solid #b1b1b1;border-left:1px solid #b1b1b1;border-right:1px none #b1b1b1;color:#000
+}
+#switch .off
+{
+	border:1px solid #b1b1b1;color:#333;border-top-right-radius:3px;border-bottom-right-radius:3px;display:block;float:left;display:block;text-align:center;padding-top:8px;padding-bottom:7px;width:49%
+}
+#switch a:visited
+{
+	color:#000
+}
+#footerinfo
+{
+	width:100%;height:60px;display:-moz-box;display:-webkit-box;display:box
+}
+#footerwx
+{
+	width:100%;height:30px;padding-top:15px;margin-bottom:20px;text-align:center;color:#999
+}
+#footerlink
+{
+	width:100%;height:30px;padding-top:15px;margin-bottom:15px;text-align:center
+}
+.xqappversion .xqfootaboutus
+{
+	display:none
+}
+#footeradd
+{
+	width:100%;height:30px;padding-top:15px;margin-bottom:5px;text-align:center
+}
+#footeradd a
+{
+	margin-left:10px;margin-right:10px;color:#666
+}
+#footerlink a
+{
+	margin-left:10px;margin-right:10px;color:#666
+}
+#footerinfole
+{
+	-moz-box-flex:8;-webkit-box-flex:8;box-flex:8;background:url(//img.juzimi.com/jmo/images/logo.png) no-repeat right top;background-size:36px 36px
+}
+#footerinfole a
+{
+	display:block;width:36px;height:36px;text-indent:-1999px;font-size:0;float:right
+}
+#footerinfori
+{
+	-moz-box-flex:7;-webkit-box-flex:7;box-flex:7;text-align:left;line-height:40px;overflow:hidden
+}
+#footerinfori a:visited .gray
+{
+	color:#aaaaab
+}
+.xqjmofollowwx
+{
+	display:block;text-align:center;border-radius:4px;border:1px solid #CCC;padding:12px;margin-left:auto;margin-right:auto;margin-top:30px;margin-bottom:16px;width:50%;-webkit-background-clip:padding-box;-webkit-tap-highlight-color:rgba(0,0,0,0);background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#d3d3d3),color-stop(.5,#eee),color-stop(.51,#e9e9e9));text-shadow:#fff 0 1px 0
+}
+.xqjmofollowmqq
+{
+	display:block;text-align:center;border-radius:4px;border:1px solid #CCC;padding:12px;margin-left:auto;margin-right:auto;margin-top:15px;margin-bottom:16px;width:50%;-webkit-background-clip:padding-box;-webkit-tap-highlight-color:rgba(0,0,0,0);background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#d3d3d3),color-stop(.5,#eee),color-stop(.51,#e9e9e9));text-shadow:#fff 0 1px 0
+}
+.xqjmowxaddimg
+{
+	margin-top:0;margin-left:auto;margin-right:auto;display:block;margin-bottom:10px
+}
+#jmopagebottom #StranLink
+{
+	color:#666;text-align:center;display:block;border:1px solid #999;width:90px;margin-top:8px;margin-right:auto;margin-left:auto;padding-top:8px;padding-right:15px;padding-bottom:8px;padding-left:15px;background-color:#f3f3f3;border-radius:3px
+}
+.pager
+{
+	height:34px;margin-left:10px;margin-right:10px;margin-top:8px;margin-bottom:12px;display:block
+}
+.pager a,.pager span
+{
+	border:1px solid #d0d6e1;display:block;font-size:16px;height:34px;line-height:18px;padding:7px 0;text-align:center;background-attachment:scroll;background-color:#fdfdfd
+}
+.pager a.xqtouch
+{
+	background-color:#DDD
+}
+.pager span
+{
+	color:#a2a6ae
+}
+.pager .pager-first
+{
+	width:17%;float:left
+}
+.pager .pager-first a,.pager .pager-first span
+{
+	border-radius:3px 0 0 3px;border-width:1px 0 1px 1px
+}
+.pager .pager-previous
+{
+	width:22%;float:left
+}
+.pager .pager-previous a,.pager .pager-previous span
+{
+	border-width:1px 0 1px 1px
+}
+.pager .pager-current
+{
+	width:22%;float:left
+}
+.pager .pager-current a,.pager .pager-current span
+{
+	border-width:1px 0 1px 1px;padding:0
+}
+.pager .pager-current input
+{
+	background:linear-gradient(#e7e9ee,#f5f7f9) repeat scroll 0 0 #fff;border:1px solid #d0d6e1;color:#4e5563;font-size:16px;height:28px;line-height:18px;margin:2px 0;overflow:hidden;padding:4px 0;text-align:center;width:88%
+}
+.pager .pager-next,.pager .pager-confirm
+{
+	width:22%;float:left
+}
+.pager .pager-next a,.pager .pager-next span,.pager .pager-confirm span
+{
+	border-width:1px 0 1px 1px
+}
+.pager .pager-last,.pager .pager-cancel
+{
+	width:17%;float:left
+}
+.pager .pager-last a,.pager .pager-last span,.pager .pager-cancel span
+{
+	border-radius:0 3px 3px 0
+}
+.pager .pager-confirm
+{
+	display:none
+}
+.pager .pager-confirm span
+{
+	color:#FFF;background-color:#C60;cursor:pointer
+}
+.pager .pager-cancel
+{
+	display:none
+}
+.pager .pager-cancel span
+{
+	background-color:#EEE;cursor:pointer;color:#000
+}
+.juhomepage
+{
+	border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#888
+}
+.xqjmohomenav
+{
+	border-top-width:1px;border-top-style:solid;border-top-color:#ddd
+}
+.xqjmohomenav .xqafteraddline:after
+{
+	height:12px;bottom:-12px;border-bottom-style:none
+}
+.xqjmohomelogo
+{
+	width:200px;margin:10px auto 3px;padding-top:10px
+}
+.xqjmohomelogo img
+{
+	width:200px
+}
+.xqhomereclink
+{
+	margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:20px;width:50%
+}
+.xqhomereclink a
+{
+	display:block;text-align:center;border-radius:4px;border:1px solid #CCC;padding:12px
+}
+.front #jushare
+{
+	margin-bottom:20px
+}
+.xqdouarra
+{
+	font-size:9px;color:#999;margin-right:5px
+}
+.front .view-recom .view-footer
+{
+	display:none
+}
+.front .view-recom .view-content .views-field-field-sns2-value
+{
+	display:none
+}
+.xqhomebromhotfi
+{
+	padding-top:5px;padding-bottom:5px;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#ddd;border-bottom-color:#ddd
+}
+.xqhomebromhotti
+{
+	font-size:15px;margin-top:5px;margin-left:10px;border-left-width:3px;border-left-style:solid;border-left-color:#F93;padding-left:5px;margin-bottom:5px
+}
+.xqhomebromhotbl a
+{
+	display:block;padding-top:10px;padding-bottom:10px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;color:#666;padding-left:22px;background:url("//img.juzimi.com/jmo/images/v2rightarrow2w.png") no-repeat scroll 8px center;background-size:12px
+}
+.xqhomebromhotbl a.xqtouch
+{
+	background-color:#eee
+}
+.xqhomebromhotbl
+{
+	margin-bottom:25px;padding-top:7px
+}
+#concenter
+{
+	padding:10px
+}
+.xalllist .view-header
+{
+	padding:10px;color:#666
+}
+.xalllist .views-row
+{
+	padding-bottom:20px;position:relative;-webkit-background-clip:padding-box;background:#fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAYAAABvewHEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNS8yNS8xN4aEz3cAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAGklEQVQImWM4c+bMf4bfv3//Z2JgYGAYfgQAb9AHqgibOCwAAAAASUVORK5CYII=) repeat-x bottom;margin-top:5px;margin-right:0;margin-bottom:12px;margin-left:0;padding-top:10px;padding-right:15px;padding-left:15px
+}
+.xalllist .views-row:after
+{
+	height:10px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-12px;left:0;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#ddd;border-bottom-color:#ddd
+}
+.xalllist .views-row-first
+{
+	margin-top:1px
+}
+.xalllist .views-row-first:before
+{
+	height:1px;background-color:#ddd;display:block;width:100%;content:"";position:absolute;top:-1px;left:0
+}
+.xalllist .views-field-phpcode-1
+{
+	margin-bottom:10px;margin-top:5px;font-size:16px
+}
+.xalllist .views-row-last:after
+{
+	height:1px;border:0 none #FFF;bottom:-1px;background-color:#ddd
+}
+.xalllist .xqjulistwafo
+{
+	text-align:right
+}
+.xalllist .views-field-field-oriarticle-value
+{
+	color:#5cb43f
+}
+.xalllist .views-field-field-oriwriter-value
+{
+	margin-right:10px;margin-left:3px
+}
+.xalllist .xqalllisbottom
+{
+	width:100%;height:38px;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-moz-box-pack:justify;-ms-flex-pack:justify;-webkit-box-align:center;-moz-box-align:justify;-ms-flex-align:center
+}
+.xalllist .xqalllisbottom .views-field-ops,.xalllist .xqalllisbottom .views-field-field-addtoalbum-value,.xalllist .xqalllisbottom .views-field-comment-count,.xalllist .xqalllisbottom .views-field-name,.xalllist .xqalllisbottom .xqjmojushare,.xalllist .xqalllisbottom .xqjmojushareapp,.view-xqalbumpage .views-field-phpcode-3
+{
+	-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;text-align:center;box-sizing:border-box;display:block;margin-top:20px;width:20%
+}
+.xalllist .views-field-ops
+{
+	font-size:10px
+}
+.xalllist .views-field-ops .flag-throbber
+{
+	display:none
+}
+.xalllist .views-field-field-addtoalbum-value
+{
+	font-size:10px
+}
+.xalllist .views-field-field-addtoalbum-value a
+{
+	background:url(//img.juzimi.com/jmo/images/iconwenjianjiai.png) no-repeat center top;background-size:16px;height:30px;display:block;color:#999;padding-top:19px
+}
+.xalllist .views-field-field-addtoalbum-value a.xqtouch
+{
+	background-color:#eee
+}
+.xalllist .views-field-comment-count
+{
+	font-size:10px
+}
+.xalllist .views-field-comment-count .node-nid
+{
+	display:none
+}
+.xalllist .views-field-comment-count .user-uid
+{
+	display:none
+}
+.xalllist .views-field-comment-count .comment-link
+{
+	background:url(//img.juzimi.com/jmo/images/iconcommunicate.png) no-repeat center top;background-size:16px;height:30px;display:block;color:#999;padding-top:19px
+}
+.xalllist .views-field-comment-count a.xqtouch
+{
+	background-color:#eee
+}
+.xalllist .views-field-comment-count a
+{
+	color:#999
+}
+.xalllist .views-field-name
+{
+	font-size:10px;text-align:center
+}
+.xalllist .views-field-name a
+{
+	min-width:20px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;background:url(//img.juzimi.com/jmo/images/iconmyae.png) no-repeat center top;background-size:16px;height:33px;display:block;color:#999;padding-top:19px
+}
+.xalllist .views-field-name a.xqtouch
+{
+	background-color:#eee
+}
+.xalllist .xqjmojushare
+{
+	font-size:10px
+}
+.xalllist .xqjmojushare a
+{
+	background:url(//img.juzimi.com/jmo/images/iconfenxiang.png) no-repeat center top;background-size:16px;height:30px;display:block;color:#999;padding-top:19px
+}
+.xalllist .xqjmojushare a.xqtouch
+{
+	background-color:#eee
+}
+.alljmojusharecon
+{
+	display:none;height:120px
+}
+.alljmojusharecon .bds_more
+{
+	height:37px!important
+}
+.alljmojusharecon .bds_tools_32 a,.bds_tools_32 span.bds_more
+{
+	width:140px!important;text-indent:0!important;padding-left:40px!important;color:#666;padding-top:13px;margin-bottom:13px
+}
+.alljmojusharecon .alljmojushareconlin
+{
+	width:140px;padding-left:40px;color:#666;padding-top:13px;margin-bottom:13px;height:37px;display:block;float:left;font-size:12px
+}
+.alljmojusharecon #bdshare a
+{
+	width:30%!important;height:60px;display:inline-block;padding-top:53px;padding-left:0!important;text-align:center;color:#999
+}
+.alljmojusharecon #bdshare
+{
+	width:100%
+}
+.alljmojusharecon #bdshare .shareCount
+{
+	display:none
+}
+.alljmojusharecon #bdshare .bds_tsina
+{
+	background:url("//img.juzimi.com/jmo/images/jusoweibo.png") no-repeat scroll center center!important;background-size:40px 40px!important
+}
+.alljmojusharecon #bdshare .bds_qzone
+{
+	background:url("//img.juzimi.com/jmo/images/jusoqqzone.png") no-repeat scroll center center!important;background-size:40px 40px!important
+}
+.alljmojusharecon #bdshare .bds_tqq
+{
+	background:url("//img.juzimi.com/jmo/images/jusotqq.png") no-repeat scroll center center!important;background-size:40px 40px!important
+}
+.alljmoshmail
+{
+	background:url(//img.juzimi.com/jmo/images/sharemail.png) no-repeat 0 0
+}
+.alljmoshsms
+{
+	background:url(//img.juzimi.com/jmo/images/sharesms.png) no-repeat 0 0
+}
+.xalllist .xqjmojushareapp
+{
+	font-size:10px
+}
+.xalllist .xqjmojushareapp a
+{
+	background:url(//img.juzimi.com/jmo/images/iconfenxiang.png) no-repeat center top;background-size:16px;height:30px;display:block;color:#999;padding-top:19px
+}
+.xalllist .xqjmojushareapp a.xqtouch
+{
+	background-color:#eee
+}
+.xalllist .views-field-phpcode-1 a
+{
+	color:#333;line-height:22px
+}
+.xalllist .views-field-phpcode-1 a:visited
+{
+	color:#333334
+}
+.xalllist .views-field-phpcode-1 a.xqtouch
+{
+	background-color:#FFF
+}
+.xalllist .views-field-timestamp
+{
+	display:none
+}
+.xalllist .alllistatafl
+{
+	display:none
+}
+.xalllist .ajaxviform
+{
+	clear:both;padding-top:30px;padding-bottom:10px
+}
+.xalllist .ajaxviform #comment-form
+{
+	border-top-width:1px;border-top-style:solid;border-top-color:#ccc;padding-top:10px
+}
+.xalllist .comment-group
+{
+	clear:both;padding-bottom:15px;border-top-width:1px;border-top-style:solid;border-top-color:#eee;padding-top:10px
+}
+.xalllist .comment-group .comment_reply
+{
+	display:none
+}
+.xalllist .comment-group .pager-next
+{
+	width:100%
+}
+.xalllist .comment-group .pager-next a
+{
+	border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;font-size:12px
+}
+.xalllist .xqjulistfulltext
+{
+	background:url("//img.juzimi.com/jmo/images/v2catequan.png") no-repeat scroll center center rgba(0,0,0,0);background-size:39px 18px;display:inline;height:12px;margin-left:12px;width:42px
+}
+.xalllist .views-field-phpcode-2 .flag-action,.xalllist .views-field-ops .flag-action
+{
+	background:url(//img.juzimi.com/jmo/images/iconlike.png) no-repeat center top;background-size:16px;height:30px;display:block;color:#999;padding-top:19px
+}
+.xalllist .views-field-ops a.xqtouch
+{
+	background-color:#eee
+}
+.xalllist .views-field-ops .unflag-action
+{
+	background:url(//img.juzimi.com/jmo/images/iconliked.png) no-repeat center top;background-size:16px;height:15px;display:block;color:#999;padding-top:19px
+}
+.xqfulunvis
+{
+	visibility:hidden
+}
+.xalllist .xqjulistori
+{
+	background:url("//img.juzimi.com/jmo/images/v2cateyan2.png") no-repeat scroll center center rgba(0,0,0,0);background-size:39px 18px;height:12px;width:30px;overflow:hidden
+}
+.view-xqforpageqq .views-field-nothing
+{
+	display:none
+}
+.view-xqforpageqq .qrcode
+{
+	display:none
+}
+.view-xqforpage img.chromeimg,.view-meitu img.chromeimg
+{
+	max-height:180px;width:auto;max-width:280px;height:auto
+}
+.view-shouxie img.chromeimg
+{
+	margin-bottom:15px
+}
+.view-shouxie .views-row
+{
+	background-color:#FFF;background-image:none;padding:15px;padding-bottom:0
+}
+.view-shouxie .views-row .xqjmojushare
+{
+	margin-top:-25px
+}
+.view-xqalbumpage .views-field-phpcode-3
+{
+	font-size:10px
+}
+.view-xqalbumpage .views-field-phpcode-3 a
+{
+	background:url(//img.juzimi.com/jmo/images/iconremove.png) no-repeat center top;background-size:16px;height:30px;display:block;color:#999;padding-top:19px;text-align:center
+}
+.view-xqalbumpage .views-field-phpcode-3 span
+{
+	display:block
+}
+.view-xqalbumpage .views-field-phpcode-3 .flag-throbber
+{
+	display:none
+}
+.view-xqalbumpage.view-dom-id-2 .view-header
+{
+	text-align:center;padding-top:5px;padding-bottom:15px
+}
+.view-xqalbumpage .but_albumcreatsen
+{
+	display:block;padding:10px;border:1px solid #CCC;border-radius:3px;width:80%;margin-top:0;margin-right:auto;margin-left:auto
+}
+.view-xqalbumpage.view-dom-id-2 .view-footer .xqorigcatediv
+{
+	margin-left:10px
+}
+.ajaxviform .formcloselink
+{
+	float:right;padding-top:10px
+}
+.ajaxviform .xqcomflag
+{
+	clear:both
+}
+.ajaxviform .edit-submit
+{
+	clear:both;margin-left:25px
+}
+.comment-group .closelink
+{
+	display:none
+}
+.view-meitu .views-field-phpcode-2
+{
+	display:none
+}
+.view-meitu .views-field-name
+{
+	display:none
+}
+.view-meitu .views-field-ops
+{
+	clear:none
+}
+.view-meitu .views-row-11,.view-meitu .views-row-12,.view-meitu .views-row-13,.view-meitu .views-row-14,.view-meitu .views-row-15,.view-meitu .views-row-16,.view-meitu .views-row-17,.view-meitu .views-row-18,.view-meitu .views-row-19,.view-meitu .views-row-20,.view-meitu .views-row-21
+{
+	display:none
+}
+.views-row .spinner
+{
+	display:none
+}
+.front .view-recom .view-content
+{
+	padding-bottom:5px
+}
+.senbox
+{
+	padding:5px 16px 16px;border-bottom:1px solid #999;margin-bottom:6px;background-color:#FFF
+}
+.sentence
+{
+	font-size:20px;font-weight:normal;color:#000;line-height:36px;text-align:justify;text-justify:inter-ideograph
+}
+.sentencetag
+{
+	background:#eee;border-bottom:1px solid #bbb;padding-bottom:12px;margin-bottom:15px
+}
+.sentencetag .group-for
+{
+	display:none
+}
+.senbox .field-label-inline-first
+{
+	display:none
+}
+.senbox .senconwriart
+{
+	text-align:right
+}
+.senbox .field-field-oriwriter a
+{
+	margin-left:3px
+}
+.senbox .field-field-oriarticle a:before
+{
+	content:'《'
+}
+.senbox .field-field-oriarticle a:after
+{
+	content:'》'
+}
+.senbox .field-field-oriarticle
+{
+	height:25px
+}
+.senbox .field-field-oriwriter
+{
+	margin-right:6px;height:25px
+}
+.senbox .artandori
+{
+	margin-top:8px
+}
+.senbox .artandori:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.senbox .group-whar
+{
+	border-style:none;font-size:13px;line-height:22px;margin-bottom:10px;float:left;padding:5px;border-radius:5px 5px 5px;background-color:#f5f5f5
+}
+.senbox .field-field-wholearticle .field-label
+{
+	color:#6C0;background:transparent url("//img.juzimi.com/jmo/images/icon_white.png?v=1") no-repeat scroll -4px -450px;padding-left:10px
+}
+.senbox .field-field-wholearticle .xqlabelcollapsed
+{
+	background:transparent url("//img.juzimi.com/jmo/images/icon_white.png?v=1") no-repeat scroll -4px -310px
+}
+.senbox .field-field-wholearticle .field-items
+{
+	height:20px;overflow:hidden
+}
+.senbox .field-field-wholearticle .field-items .field-item br
+{
+	display:none
+}
+.senbox .field-field-wholearticle .xqcollapsed .field-item br
+{
+	display:inline
+}
+.senbox .field-field-wholearticle .xqcollapsed
+{
+	height:auto
+}
+.submitted
+{
+	font-size:12px;color:#999;padding-right:12px;padding-left:12px;display:block
+}
+.submitted a
+{
+	color:#333
+}
+.xqsenteidtlink
+{
+	margin-left:12px;margin-top:10px;margin-bottom:6px
+}
+.xqsenteidtlink a
+{
+	color:#666
+}
+.senbox .group-ori
+{
+	width:48px;float:right;text-indent:-9999em;background:url("//img.juzimi.com/jmo/images/v2cateyan2.png") no-repeat scroll center center rgba(0,0,0,0);background-size:48px 22px
+}
+.senbox .group-ori .field-item
+{
+	float:left
+}
+.flagandalbumwrap
+{
+	text-align:center;margin-top:18px
+}
+.flagandalbum
+{
+	display:-moz-box;display:-webkit-box;display:box;width:80%;margin-top:0;margin-right:auto;margin-bottom:-25px;margin-left:auto
+}
+.flag-link-toggle span
+{
+	display:none
+}
+.flag-flavalbum div.unflag-action
+{
+	width:80px;margin:0 auto -20px
+}
+.flagandalbum #anflag
+{
+	-moz-box-flex:1;-webkit-box-flex:1;box-flex:1
+}
+.flagandalbum #basic-modal
+{
+	-moz-box-flex:1;-webkit-box-flex:1;box-flex:1
+}
+.jupageimg
+{
+	margin-top:5px;float:left
+}
+.jupageimg img
+{
+	max-width:100%;height:auto;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;max-height:320px
+}
+.jupageimg .jupageimhovertxt
+{
+	display:block;position:absolute;margin-left:15px
+}
+.jupageimg .jupageimhovertxt a
+{
+	color:#fff;text-shadow:1px 1px 2px #000;font-size:13px;filter:glow(color=black,strength=1);*zoom:1
+}
+.jupageimg .jupagelastpic
+{
+	margin-left:6px
+}
+.submitted .nodemeitulink
+{
+	margin-left:18px;color:#AAA;background:url("//img.juzimi.com/jmo/images/v2cateaddpic.png") no-repeat scroll left center transparent;background-size:16px;padding-left:19px
+}
+.submitted .nodeeditjulink
+{
+	margin-left:19px;color:#AAA;background:url("//img.juzimi.com/jmo/images/v2cateeditno.png") no-repeat scroll left center transparent;background-size:15px;padding-left:16px
+}
+#jushare
+{
+	margin-left:10px;margin-bottom:10px
+}
+#jushare:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.jusharetopmargin
+{
+	margin-top:15px;margin-bottom:-20px!important
+}
+#jushare div.shareto
+{
+	padding-top:3px;float:left;padding-top:12px
+}
+#jushare #bdshare
+{
+	float:left
+}
+#jushare #bdshare .shareCount
+{
+	display:none
+}
+#jushare #bdshare a,#jushare #bdshare .bds_more
+{
+	width:40px!important;height:40px;display:block;margin-right:15px;float:left
+}
+#jushare #bdshare .bds_more
+{
+	margin-bottom:0;padding-left:0!important
+}
+#jushare #bdshare .bds_tsina
+{
+	background:url('//img.juzimi.com/jmo/images/jusoweibo.png')!important;background-size:cover!important
+}
+#jushare #bdshare .bds_qzone
+{
+	background:url('//img.juzimi.com/jmo/images/jusoqqzone.png')!important;background-size:cover!important
+}
+#jushare #bdshare .bds_tqq
+{
+	background:url("//img.juzimi.com/jmo/images/jusotqq.png")!important;background-size:cover!important
+}
+#jushare .xqjmoshsms
+{
+	background:url("//img.juzimi.com/jmo/images/shareicon_32bl.png") no-repeat scroll center -320px transparent;width:32px;height:32px;display:block;margin-right:7px;float:left;text-indent:-100em;margin-bottom:12px
+}
+#jushare .xqjmoshmail
+{
+	background:url("//img.juzimi.com/jmo/images/shareicon_32bl.png") no-repeat scroll center -256px transparent;width:32px;height:32px;display:block;margin-right:7px;float:left;text-indent:-100em;margin-bottom:12px
+}
+#jushare #bdshare .bds_more
+{
+	background:url("//img.juzimi.com/jmo/images/shareicon_32bl.png") no-repeat scroll center 0 transparent!important
+}
+#bdshare_s #bdshare_l p
+{
+	display:none
+}
+#bdshare_pop p
+{
+	display:none
+}
+.xqjuandroidsharelink
+{
+	padding-bottom:6px;margin-top:-9px
+}
+.xqjuandroidsharetitle
+{
+	margin-bottom:5px;font-size:10px;text-align:center;color:#999
+}
+.xqjuandroidshareicon
+{
+	width:100%;height:70px;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-moz-box-pack:justify;-ms-flex-pack:justify;-webkit-box-align:center;-moz-box-align:justify;-ms-flex-align:center
+}
+.xqjuandroidsharelink a
+{
+	height:60px;border:1px solid #CCC;color:#333;border-radius:4px;margin-right:2px;margin-left:2px;padding-top:35px;padding-right:4px;padding-bottom:4px;padding-left:4px;background-repeat:no-repeat;background-size:25px 25px;font-size:12px;background-position:center 7px;-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;text-align:center;box-sizing:border-box;display:block;width:25%
+}
+.xqjuandroidsharelink .xqjuandroidsharepyq
+{
+	margin-left:5px;background-image:url(//img.juzimi.com/jmo/images/wxfriend.png)
+}
+.xqjuandroidsharelink .xqjuandroidsharesina
+{
+	background-image:url(//img.juzimi.com/jmo/images/appshare_sina.png)
+}
+.xqjuandroidsharelink .xqjuandroidshareqzone
+{
+	background-image:url(//img.juzimi.com/jmo/images/appshare_qzone.png)
+}
+.xqjuandroidsharelink .xqjuandroidsharemore
+{
+	margin-right:5px;background-image:url(//img.juzimi.com/jmo/images/appshare_more.png)
+}
+.xqwxjushare .shareBtn02,.xqwxjushare .shareBtn03,.xqqqjushare .shareBtn02,.xqqqjushare .shareBtn03
+{
+	background-color:#ededed;border-radius:8px;color:#000;cursor:pointer;display:inline-block;margin-left:3px;margin-right:3px;overflow:hidden;text-align:center;width:48%
+}
+.xqwxjushare span,.xqqqjushare span
+{
+	font-size:17px;line-height:41px
+}
+.xqwxjushare .shareBtn02 span
+{
+	background:url("//img.juzimi.com/jmo/images/wxfriend.png") no-repeat scroll left center / 20px 22px rgba(0,0,0,0);display:inline-block;margin:0 auto;padding-left:25px;padding-top:2px
+}
+.xqqqjushare .shareBtn02 span
+{
+	background:url("//img.juzimi.com/jmo/images/qqfriend.png") no-repeat scroll left center / 20px 22px rgba(0,0,0,0);display:inline-block;margin:0 auto;padding-left:25px;padding-top:2px
+}
+.xqwxjushare .shareBtn03 span
+{
+	background:url("//img.juzimi.com/jmo/images/wxfriendcircle.png") no-repeat scroll left center / 18px 18px rgba(0,0,0,0);display:inline-block;margin:0 auto;padding-left:25px;padding-top:2px
+}
+.xqqqjushare .shareBtn03 span
+{
+	background:url("//img.juzimi.com/jmo/images/qqfriendcircle.png") no-repeat scroll left center / 20px 22px rgba(0,0,0,0);display:inline-block;margin:0 auto;padding-left:25px;padding-top:2px
+}
+#xqwxshare_weixin,#xqqqshare_weixin
+{
+	right:10px;top:2px;width:260px;display:none;position:fixed;z-index:3000
+}
+#xqwxshare_weixin img,#xqqqshare_weixin img
+{
+	height:165px;width:260px
+}
+#xqwxshare_weixin button,#xqqqshare_weixin button
+{
+	margin-top:25px;width:100%
+}
+.xqwxtipbutton3,.xqqqtipbutton3
+{
+	background-color:#eee;border:medium none;border-radius:8px;color:#757575;font-size:16px;line-height:20px;padding:10px 0;text-align:center
+}
+#xqwxsharecover2,#xqqqsharecover2
+{
+	background-color:#333;display:none;left:0;opacity:.8;position:absolute;top:0;z-index:1000
+}
+.xqcommentile,.view-xqalbumpage
+{
+	clear:both
+}
+.xtoalslju
+{
+	font-size:12px;color:#999
+}
+.xqcommentile
+{
+	padding-top:5px;padding-bottom:5px
+}
+.view-xqalbumpage .xqablusortlink
+{
+	color:#AAA;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll 6px -561px transparent;padding-left:25px;line-height:22px;font-size:12px;line-height:30px;padding-top:2px;padding-bottom:2px
+}
+#juhot_tags
+{
+	display:none
+}
+#community-tags-form
+{
+	margin-top:25px;font-size:12px;margin-left:10px
+}
+#community-tags-form .xqctcbprocessed
+{
+	padding-right:8px;padding-left:0;height:20px;line-height:20px
+}
+#community-tags-form a.xqctcbprocessed
+{
+	color:#999
+}
+#community-tags-form a.xqctcbprocessed:visited
+{
+	color:#999998
+}
+#community-tags-form .form-item
+{
+	display:-moz-box;display:-webkit-box;display:box
+}
+#community-tags-form label
+{
+	-moz-box-flex:1;height:20px;line-height:20px;width:33px;font-size:12px
+}
+#community-tags-form .xqlinks
+{
+	line-height:20px;color:#666;margin-right:5px
+}
+#community-tags-form .ct-cloud
+{
+	-moz-box-flex:1;margin-right:35px
+}
+#community-tags-form .ct-my-tags
+{
+	display:none
+}
+#community-tags-form input
+{
+	display:none
+}
+.taxtitleba
+{
+	font-size:14px;color:#999;border-bottom:1px solid #eee;margin:10px
+}
+.showmoretag
+{
+	display:inline
+}
+#comments
+{
+	padding-right:10px;padding-left:10px
+}
+#comments:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#comments h2
+{
+	font-size:14px;font-weight:normal;color:#666
+}
+#edit-comment
+{
+	width:97%;height:50px
+}
+#edit-comment-wrapper label
+{
+	display:none
+}
+#edit-comment-wrapper .resizable-textarea
+{
+	padding:5px 10px 10px
+}
+.comment
+{
+	display:-moz-box;display:-webkit-box;display:box;font-size:12px;color:#666;width:100%;margin-bottom:18px
+}
+.xcommentavatar
+{
+	width:55px;overflow:hidden
+}
+.commentcontentwrap
+{
+	-moz-box-flex:5;-webkit-box-flex:5;box-flex:5;margin-left:6px
+}
+.xqcommentdate
+{
+	float:right;font-size:10px
+}
+.commentslinks
+{
+	float:right;font-size:12px;margin-left:15px
+}
+.commentslinks a
+{
+	color:#666
+}
+#comment-form input[type=submit]
+{
+	width:25%;float:right;margin-right:6%
+}
+.commentbasicinfo
+{
+	margin-bottom:5px;color:#ccc;font-size:10px
+}
+.commentcontent
+{
+	margin-bottom:3px;padding-top:3px
+}
+.commentslinks .links li
+{
+	float:right;margin-right:5px
+}
+.commentslinks .links:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqreplyquote
+{
+	color:#bbb;padding-left:6px;border-left:2px solid #999;margin-bottom:6px
+}
+.xqreplyquote a.xqusernpop
+{
+	margin-left:20px
+}
+#comments .xqcomre
+{
+	background:#f3f3f3;padding:3px 8px 3px 8px;margin-top:5px;margin-bottom:5px;font-weight:normal
+}
+#modalContent
+{
+	width:320px;overflow:hidden;background:#FFF;border:1px solid #aaa;border-radius:5px;padding:5px;box-shadow:0 0 5px rgba(32,64,0,0.7);-webkit-box-shadow:0 0 5px rgba(32,64,0,0.7);-moz-box-shadow:0 0 5px rgba(32,64,0,0.7)
+}
+#modalContent .modal-header
+{
+	width:30px;margin-left:280px
+}
+#modalContent .xqrforgetpassword
+{
+	color:#999
+}
+.modal-comment-login-data
+{
+	display:none
+}
+#modalContent #edit-submit
+{
+	position:absolute;top:150px;width:94%
+}
+#modalContent #edit-user-login-name-wrapper label
+{
+	display:none
+}
+#modalContent #edit-user-login-pass-wrapper label
+{
+	display:none
+}
+#modalContent #edit-user-login-pass-wrapper .description
+{
+	text-align:right
+}
+#modal-comment-login-login-form
+{
+	width:300px
+}
+#modal-comment-login-login-form input
+{
+	width:100%;margin-bottom:5px
+}
+#modal-comment-login-login-form .xqloginbu
+{
+	margin-top:80px
+}
+#block-flag_lists-0,.alllistatafl
+{
+	display:none;clear:both;padding-top:16px;text-align:center
+}
+.boxy-wrapper .flag-lists-links
+{
+	overflow:scroll;height:168px
+}
+.boxy-wrapper .flag-lists-links::-webkit-scrollbar
+{
+	display:none
+}
+.boxy-wrapper
+{
+	position:absolute;width:100%
+}
+.boxy-wrapper.fixed
+{
+	position:fixed
+}
+.boxy-modal-blackout
+{
+	position:absolute;background-color:black;left:0;top:0
+}
+.boxy-wrapper h2
+{
+	font-size:16px;margin:0;float:left
+}
+.boxy-wrapper .close
+{
+	float:right;-webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+.boxy-wrapper .boxy-inner
+{
+	background-color:#FFF;padding:16px;border-radius:8px
+}
+.boxy-wrapper td
+{
+	min-height:6px;min-width:6px
+}
+.boxy-wrapper td.top
+{
+	height:6px
+}
+.boxy-wrapper td.bottom
+{
+	height:6px
+}
+.boxy-wrapper .item-list
+{
+	text-align:left
+}
+.boxy-wrapper li
+{
+	margin-top:10px
+}
+.boxy-wrapper li.last
+{
+	padding-bottom:20px
+}
+.boxy-wrapper li.last a
+{
+	background:url(//img.juzimi.com/jmo/images/v2catemagalb.png) no-repeat left center;background-size:20px;height:20px;padding-left:22px;line-height:20px
+}
+.boxy-wrapper .xanewalbumlink
+{
+	display:block;line-height:33px;background-color:#f5f5f5;height:33px;color:#000;border:1px solid #CCC;margin-top:3px
+}
+.boxy-wrapper ul li a.flag-action
+{
+	background:url(//img.juzimi.com/jmo/images/v2cateaddalb.png) no-repeat left center;background-size:18px;height:20px;padding-left:22px;line-height:20px
+}
+.boxy-wrapper ul li a.unflag-action
+{
+	color:#F60;background:url(//img.juzimi.com/jmo/images/v2cateaddedalb.png) no-repeat left center;background-size:18px;height:20px;padding-left:22px;line-height:20px
+}
+.boxy-wrapper .xqpopalview
+{
+	color:#999!important
+}
+.imagecache-avatar_50x50
+{
+	border-radius:25px
+}
+.xqsendsina
+{
+	width:35%;float:left;font-size:12px
+}
+.xqsendsina legend
+{
+	float:left;height:30px;line-height:30px
+}
+.xqsendsina fieldset
+{
+	border-style:none
+}
+#edit-sina-open-check-wrapper
+{
+	float:left;margin-left:5px
+}
+.xqcomflag
+{
+	width:30%;float:left;font-size:12px;margin-left:2%
+}
+.xqcomflag fieldset
+{
+	border-style:none
+}
+.xqcomflag legend
+{
+	float:left;height:30px;line-height:30px
+}
+#edit-xqcomflag-check-wrapper
+{
+	float:left;margin-left:5px
+}
+#edit-submit
+{
+	width:30%
+}
+.form-submit
+{
+	background-image:-moz-linear-gradient(31% 98% 90deg,#c4c4c4 0,#fff 100%);background-image:-webkit-gradient(linear,31% 98%,31% 13%,color-stop(0,#c4c4c4),color-stop(1,#fff));background-image:-webkit-linear-gradient(90deg,#c4c4c4 0,#fff 100%);background-image:-o-linear-gradient(90deg,#c4c4c4 0,#fff 100%);background-image:-ms-linear-gradient(90deg,#c4c4c4 0,#fff 100%);background-image:linear-gradient(0deg,#c4c4c4 0,#fff 100%);height:30px;border:1px solid #999;-webkit-border-radius:5px 5px 5px;-moz-border-radius:5px 5px 5px;border-radius:5px 5px 5px
+}
+#jubigshare
+{
+	display:none
+}
+#block-taxonomy_image-0 .xqjupagewaa
+{
+	display:-webkit-box;display:-moz-box;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;font-size:12px
+}
+#block-taxonomy_image-0 .xqjupagewaa .xqjuwriterpic img
+{
+	padding:2px;border:1px solid #CCC;max-height:84px
+}
+#block-taxonomy_image-0 .xqjupagewaa .xqjuwriterpic
+{
+	text-align:center;margin:8px
+}
+#block-taxonomy_image-0 .xqjupagewaa .xqjuwriterpicdesc a
+{
+	display:block;background:url("//img.juzimi.com/jmo/images/v2rightarrow2.png") no-repeat scroll left center;background-size:12px;padding-left:16px;height:20px;line-height:20px
+}
+#block-taxonomy_image-0 .xqjupagewaa .xqjuwriterpicdesc
+{
+	margin-top:5px
+}
+.node-type-sentence .xpnode .jumodilink
+{
+	font-size:12px;line-height:22px;padding-top:5px;padding-right:15px;padding-bottom:0;padding-left:15px
+}
+.node-type-sentence .xpnode .jupostlink
+{
+	padding:15px 15px 15px;margin-bottom:-24px;font-size:12px;line-height:22px;color:#aaa;position:relative
+}
+.node-type-sentence .xpnode .jupostlink:after,.xqnodeflaglistblock:after,#block-views-whoflag-block_1:after
+{
+	height:17px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-16px;left:0;border-top-width:1px;border-top-style:solid;border-top-color:#ddd
+}
+.node-type-sentence .xpnode .jupostlink a
+{
+	display:block;padding-left:20px;background:url("//img.juzimi.com/jmo/images/v2cateyan.png") no-repeat scroll left center;background-size:16px
+}
+.xqmbblock
+{
+	clear:both;margin-top:30px;border-bottom:1px solid #ddd
+}
+.xqmbblocktitle
+{
+	border-top:2px solid #F93;border-bottom:1px solid #999;padding-top:8px;padding-bottom:6px;padding-left:8px;font-size:14px;color:#333
+}
+#block-views-similarterms-block_1 .views-row a,#block-views-userpost-block_1 .views-row a,#block-views-fav-block_1 .views-row a,#blockxqjurecom p
+{
+	background:url("//img.juzimi.com/jmo/images/v2rightarrow2w.png") no-repeat scroll left 10px;background-size:12px;border-bottom:1px dotted #ccc;color:#666;display:block;margin-left:9px;padding:7px 9px 7px 17px;font-size:13px;line-height:20px
+}
+.xqmbblock .more-link
+{
+	margin:7px 15px 15px 10px;font-size:12px
+}
+.xqmbblock .more-link a
+{
+	color:#999;display:block;padding-left:13px;background:url("//img.juzimi.com/jmo/images/v2rightarrow.png") no-repeat scroll left center;background-size:9px
+}
+.xpjusimilar .xqnumfavalbumhead
+{
+	font-size:12px;color:#999;line-height:20px
+}
+#blockxqjurecom h2
+{
+	font-weight:normal;margin:0
+}
+#blockxqjurecom h2 a
+{
+	color:#333
+}
+#blockxqjurecom .xqjurecomdesc
+{
+	display:none
+}
+#blockxqjurecom p
+{
+	margin-top:0;margin-bottom:0
+}
+#blockxqjurecom .xqjurecomafterde
+{
+	padding:12px
+}
+#blockxqjurecom .xqmojurehide
+{
+	display:none
+}
+#blockxqjurecom .xqjurecommore
+{
+	text-align:center;padding:10px
+}
+.xqnodeflaglistblock
+{
+	padding-top:10px;border-bottom-style:none;margin-bottom:-24px;position:relative
+}
+.xqnodeflaglistblock .xqmbblocktitle
+{
+	padding:0
+}
+.xqnodeflaglistblock a
+{
+	color:#555;line-height:18px;display:block;padding-top:8px;padding-bottom:6px;padding-left:8px;height:33px
+}
+.xqnodeflaglistblock .xqnodeflagliclick
+{
+	float:right;padding-right:10px;font-size:20px;line-height:16px
+}
+.xqnodeflaglistblock .xqnodeflaglitxt
+{
+	color:#999;font-size:13px
+}
+.xpjualbum .xqnumfavalbumhead
+{
+	padding:10px;color:#999;line-height:20px;font-size:12px
+}
+#block-views-whoflag-block_1
+{
+	margin-bottom:-15px;position:relative;margin-top:40px
+}
+#block-views-whoflag-block_1 .view-whoflag .view-content
+{
+	padding:10px 10px 0;font-size:12px
+}
+#block-views-whoflag-block_1 .view-whoflag .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.right3userflag
+{
+	font-size:12px
+}
+.right3userflag .views-field-name
+{
+	overflow:hidden;margin-bottom:3px;height:20px;line-height:20px;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;color:#5cb43f
+}
+.right3userflag .views-field-value
+{
+	color:#ccc;display:inline
+}
+.right3userflag .views-field-value-1
+{
+	color:#ccc;display:inline
+}
+.right3userflag .views-field-timestamp
+{
+	clear:both;visibility:hidden;margin-bottom:-13px;white-space:nowrap
+}
+.right3userflag .views-field-phpcode
+{
+	clear:both
+}
+.xpjufavuser .right3userflag .views-field-phpcode .userreljmolink
+{
+	margin-right:auto;margin-left:auto
+}
+.right3userflag .views-row
+{
+	float:left;width:33%;overflow:hidden;margin-bottom:10px
+}
+.right3userflag .views-row.views-row-last:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqnumfavuser
+{
+	color:#888;font-size:13px;position:relative;top:-23px;left:109px;margin-bottom:-15px;width:100px
+}
+#block-views-whoflag-block_1 .more-link
+{
+	clear:both
+}
+.xpjufavuser .xqnumfavuserhead
+{
+	padding:10px;color:#999;line-height:20px
+}
+.userreljmolink
+{
+	border:1px solid #ddd;color:#8ccf76;border-radius:12px;height:20px;line-height:18px;width:62px;display:block;text-align:center;margin-top:3px
+}
+.view-xqarticletermspage .xqorigcatediv .xqctcbprocessed
+{
+	margin-right:10px;color:#666
+}
+.view-xqarticletermspage .view-footer
+{
+	font-size:12px;padding-left:10px
+}
+#footergototop
+{
+	width:100%;margin-top:28px;margin-bottom:18px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;display:block;height:35px;line-height:35px;clear:both;background:#f6f6f6;text-align:center;color:#ccc
+}
+#gototop
+{
+	color:#666;margin-right:15px
+}
+#gotohome
+{
+	color:#666!important;margin-left:15px;margin-right:15px
+}
+#gotohome:visited
+{
+	color:#aaaaab
+}
+#bottomnightmode,#bottomndaymode
+{
+	color:#666;margin-left:15px
+}
+.xqalbumbolist .views-row div
+{
+	display:inline
+}
+.xqalbumbolist .views-row
+{
+	background:rgba(0,0,0,0) url("//img.juzimi.com/jmo/images/v2rightarrow2w.png") no-repeat scroll 8px 10px;background-size:12px auto;border-bottom:1px dotted #ccc;color:#666;display:block;font-size:13px;line-height:20px;padding:7px 9px 7px 25px
+}
+.xqalbumbolist .views-row-last
+{
+	border-bottom-style:none
+}
+#block-views-authorsotheralbum-block_1
+{
+	margin-bottom:-15px;margin-top:40px;position:relative
+}
+#block-views-authorsotheralbum-block_1:after
+{
+	background-color:#eee;border-top:1px solid #ddd;bottom:-16px;clear:both;content:"";display:block;height:17px;left:0;position:absolute;width:100%
+}
+.xallalbumlist .views-row
+{
+	position:relative;-webkit-background-clip:padding-box;background:#fff;font-size:12px;margin-top:5px;margin-right:0;margin-bottom:10px;margin-left:0;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#ddd;border-bottom-color:#ddd
+}
+.xallalbumlist .views-row:after
+{
+	height:10px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-12px;left:0;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#ddd;border-bottom-color:#ddd
+}
+.xallalbumlist .views-row-first
+{
+	margin-top:0
+}
+.xallalbumlist .views-row-first:before
+{
+	height:1px;background-color:#ddd;display:block;width:100%;content:"";position:absolute;top:-1px;left:0
+}
+.xallalbumlist .views-row-last:after
+{
+	height:1px;border:0 none #FFF;bottom:-1px;background-color:#ddd
+}
+.xallalbumlist .views-field-title
+{
+	margin-bottom:5px;font-size:16px
+}
+.xallalbumlist .views-field-view .view-display-id-block_2 .view-header .xtoalslju
+{
+	line-height:30px
+}
+.xallalbumlist .views-field-view .view-display-id-block_2 .view-content,.xqalbumnum .view-display-id-block_2 .view-content
+{
+	display:none
+}
+.xallalbumlist .xqallistto
+{
+	width:100%;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:horizontal;-webkit-flex-flow:row;flex-flow:row
+}
+.xallalbumlist .views-field-picture-bare
+{
+	width:90px;margin:10px
+}
+.xallalbumlist .xqallistcobl
+{
+	margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:0;-webkit-box-flex:1;-webkit-flex:1;flex:1
+}
+.xallalbumlist .xqallistbo
+{
+	height:42px;border-top-width:1px;border-top-style:solid;border-top-color:#CCC;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:horizontal;-webkit-flex-flow:row;flex-flow:row;font-size:10px
+}
+.xallalbumlist .xqallistbo .xtoalslju
+{
+	font-size:10px
+}
+.xallalbumlist .views-field-picture-bare .field-content
+{
+	text-align:center
+}
+.xallalbumlist .views-field-picture-bare img
+{
+	border:1px solid #CCC;width:85px;height:85px;display:block;background:url(//file.juzimi.com/avatar_selection/avatar0000.jpg) no-repeat center center;text-indent:-9999em
+}
+.xallalbumlist .views-field-view .view-header
+{
+	margin-left:0;margin-bottom:6px;color:#999
+}
+.xallalbumlist .views-field-ops,.xallalbumlist .views-field-phpcode-2,.xallalbumlist .views-field-created
+{
+	-webkit-box-flex:1;-webkit-flex:1;flex:1;text-align:center
+}
+.xallalbumlist .views-field-ops a,.xallalbumlist .flag-flavalbum div.unflag-action
+{
+	background:url(//img.juzimi.com/jmo/images/iconlike.png) no-repeat center 6px;background-size:16px;padding-top:23px;color:#999;display:block
+}
+.xallalbumlist .flag-flavalbum .unflag-action,.xallalbumlist .flag-flavalbum div.unflag-action
+{
+	background:url(//img.juzimi.com/jmo/images/iconliked.png) no-repeat center 6px;background-size:16px
+}
+.xallalbumlist .flag-flavalbum .flag-link-toggle .xqallilinum
+{
+	display:inline
+}
+.xallalbumlist .flag-flavalbum .unflag-action .xqallilinum
+{
+	display:none
+}
+.xallalbumlist .views-field-phpcode-2
+{
+	background:url(//img.juzimi.com/jmo/images/v2albsou.png) no-repeat center 6px;background-size:16px;padding-top:23px;color:#999
+}
+.xallalbumlist .views-field-created
+{
+	background:url(//img.juzimi.com/jmo/images/v2albcreda.png) no-repeat center 6px;background-size:16px;padding-top:23px;color:#999
+}
+.xallalbumlist .views-field-ops-1
+{
+	display:none
+}
+.xallalbumlist .views-field-name a
+{
+	line-height:26px;float:left;color:#666;display:block;height:26px;padding-left:17px;background:url(//img.juzimi.com/jmo/images/iconmyae.png) no-repeat left center;background-size:12px
+}
+.xallalbumlist .views-field-body
+{
+	color:#999;line-height:20px;clear:both
+}
+.xallalbumlist .views-field-phpcode .views-field-phpcode
+{
+	float:left;margin-right:12px;margin-bottom:20px;margin-top:13px;clear:both
+}
+.xallalbumlist .views-field-phpcode-1
+{
+	float:left;margin-bottom:20px;margin-top:13px
+}
+.xallalbumlist .views-field-phpcode .views-field-phpcode a
+{
+	color:#666;background:#eee;padding:5px 8px;border:1px solid #999;border-radius:3px 3px 3px
+}
+.xallalbumlist .views-field-phpcode-1 a
+{
+	color:#666;background:#eee;padding:5px 8px;border:1px solid #999;border-radius:3px 3px 3px
+}
+.view-favalbum .view-header,.view-useralbumlist .view-header
+{
+	color:#666;padding:10px
+}
+.xqalbumusertitle
+{
+	font-size:18px;margin-top:12px;font-weight:bold
+}
+.xqalbumnum
+{
+	color:#999;margin-bottom:10px
+}
+.node-type-album .artandori
+{
+	font-size:14px;color:#666;line-height:24px
+}
+.node-type-album .submitted .xqalbumeidtlink,.node-type-album .submitted .xqalbumdellink
+{
+	display:inline;margin-left:8px
+}
+.node-type-album .flag-favalbum a,.node-type-album .flag-flavalbum a,.node-type-album .flag-flavalbum div.unflag-action,.node-type-sentence .flag-fav a,.node-type-sentence .flag-fav div.unflag-action,.flagandalbum #basic-modal a
+{
+	display:block;width:100px;border:1px solid #bbb;border-radius:4px;margin-top:0;margin-right:auto;margin-left:auto;line-height:30px;text-align:center;height:45px;background-size:16px;color:#999;padding-top:15px;background-color:#FFF;background-image:url(//img.juzimi.com/jmo/images/iconlike.png);background-repeat:no-repeat;background-position:center 4px;font-size:12px
+}
+.node-type-album .flag-flavalbum .unflag-action,.node-type-album .flag-flavalbum div.unflag-action,.node-type-sentence .flag-fav .unflag-action,.node-type-sentence .flag-fav div.unflag-action
+{
+	background-image:url(//img.juzimi.com/jmo/images/iconliked.png)
+}
+.node-type-album .flag-flavalbum a.xqtouch,.node-type-sentence .flag-fav a.xqtouch,.flagandalbum #basic-modal a.xqtouch
+{
+	background-color:#eee
+}
+.flagandalbum #basic-modal a
+{
+	background-image:url(//img.juzimi.com/jmo/images/iconwenjianjiai.png)
+}
+.node-type-album .flag-favalbum a
+{
+	margin-bottom:15px;margin-top:15px
+}
+.view-xqfamoustermspage .xqwriterpic img
+{
+	height:85px;width:85px;padding:3px;border:1px solid #ccc
+}
+.view-xqarticletermspage .xqwriterpic img
+{
+	border:1px solid #ccc
+}
+.xqwriterpic .xqwriterpicdesc
+{
+	margin-left:10px;font-size:13px;line-height:19px;color:#bbb;height:110px;overflow:hidden;text-overflow:ellipsis;text-overflow:-o-ellipsis-lastline;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;-webkit-box-flex:1;-moz-box-flex:1
+}
+.xqwriterpic .xqwriterpicdesc p
+{
+	margin:0
+}
+.xqwriterpic
+{
+	display:-webkit-box;display:-moz-box;-webkit-box-orient:horizontal;-moz-box-orient:horizontal
+}
+.xqwriterpicimg .flag-wrapper
+{
+	height:40px;overflow:hidden;display:block
+}
+.xqwriterpicimg .flag-throbber
+{
+	display:none
+}
+.view-xqarticletermspage .xqwriterpic .xqwriterpicdesc
+{
+	height:110px;-webkit-line-clamp:6
+}
+.xquserjusearch
+{
+	margin-top:3px;display:none
+}
+.xquserjusearchimg
+{
+	background:url(//img.juzimi.com/jmo/images/formsearch.png) no-repeat scroll center center transparent;background-size:20px;height:32px;width:32px;margin-bottom:-32px;float:right;position:relative;top:-32px
+}
+.xquserjusearchimg:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xquserjusearch #xqviewsearchw
+{
+	width:100%;border-top-color:#CCC;border-right-color:#CCC;border-bottom-color:#CCC;border-left-color:#CCC;color:#888
+}
+.xquserjusearch #xqviewsearchsub
+{
+	background-color:#fff;border:medium none;display:block;height:16px;overflow:hidden;width:16px;-moz-box-sizing:content-box;background:url(//img.juzimi.com/jmo/images/formsearch.png) no-repeat scroll center center transparent;background-size:16px;position:relative;left:-10px;top:-26px;margin-bottom:-52px;float:right;outline:0;padding:5px
+}
+.xqviewssearchresultgoback
+{
+	float:left;margin-left:0;margin-bottom:8px;margin-top:8px
+}
+.xqviewssearchblanktxtgoback a,.xqviewssearchresultgoback a
+{
+	display:block;width:80px;height:22px;line-height:22px;border-radius:12px;text-align:center;border:1px solid #89d96e;margin-top:0;margin-right:auto;margin-left:auto
+}
+.xqviewssearchblanktxtcs
+{
+	margin-bottom:20px;margin-top:20px
+}
+.xqnumfav
+{
+	height:35px;line-height:35px
+}
+.view-xqfamoustermspage .xqnumfav
+{
+	clear:both;margin-top:5px
+}
+.view-xqarticletermspage .xqnumfav
+{
+	clear:both;margin-top:5px
+}
+.xqfamwriterdesc
+{
+	color:#ccc;font-size:12px;text-overflow:ellipsis;white-space:nowrap;-webkit-text-overflow:ellipsis;overflow:hidden;width:100%;display:block;margin-top:3px;margin-bottom:3px
+}
+.xqappversion .xqfamwriterdesc
+{
+	display:none
+}
+.xqfamwriterdesc .xqfamwriterdescpost
+{
+	color:#ccc
+}
+.xqorigcatediv
+{
+	margin-top:8px
+}
+.xqorigcatediv,.xqorigcatediv a,.xqorigcatediv span
+{
+	color:#aaa!important;font-size:12px
+}
+.xqorigcatediv a,.xqorigcatediv span
+{
+	margin-left:5px;margin-right:5px!important
+}
+.xqysmobbotoma
+{
+	padding-top:8px
+}
+.view-xqfamoustermspage .xqysmobbotoma,.view-xqtermspage .xqysmobbotoma
+{
+	position:relative;left:-10px
+}
+.view-xqarticletermspage .xqysmobbotoma
+{
+	position:relative;left:-20px
+}
+.xqappversion .view-xqarticletermspage .view-footer,.xqappversion .view-xqfamoustermspage .view-footer,.xqappversion .view-xqtermspage .view-footer,.xqappversion .view-xqalbumpage .view-footer,.xqappversion .articlepostdivtitle,.xqappversion .view-xqwriterszuopin .view-footer,.xqappversion .xpmingyan .view-footer
+{
+	display:none
+}
+.xqappversion .articlepostdivline
+{
+	visibility:hidden;height:5px
+}
+#node-delete-confirm
+{
+	margin:25px
+}
+#node-delete-confirm .container-inline
+{
+	margin-top:20px
+}
+#node-delete-confirm input
+{
+	margin-right:30px
+}
+.all50writer .view-content
+{
+	display:-webkit-box;display:-moz-box;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;padding:5px;width:100%;overflow:scroll
+}
+.all50writer .views-row
+{
+	width:60px;text-align:center;font-size:11px
+}
+.all50writer .views-row .views-field-tid img
+{
+	padding:2px;border:1px solid #CCC;width:50px;height:50px
+}
+.pagexqmblock
+{
+	margin-top:10px
+}
+.allrightarticle .view-content
+{
+	display:-webkit-box;display:-moz-box;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;padding:5px;width:100%;overflow:scroll
+}
+.allrightarticle .views-row
+{
+	width:100px;text-align:center;font-size:11px
+}
+.allrightarticle .views-row .views-field-tid img
+{
+	padding:2px;border:1px solid #CCC;max-height:100px
+}
+.view-favwriter .view-content
+{
+	display:block;overflow:auto
+}
+.view-favwriter .views-row
+{
+	float:left;margin-bottom:10px;width:80px;height:75px;overflow:hidden
+}
+.view-favwriter .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-favzuopin .views-row
+{
+	float:left;margin-bottom:20px;width:110px;height:120px;text-align:center;overflow:hidden;font-size:11px
+}
+.view-favzuopin .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-favzuopin .views-row img
+{
+	border:1px solid #CCC
+}
+.userfans .view-favwriter .views-row,.userfollow .view-favwriter .views-row
+{
+	float:none;margin-bottom:0;width:auto;height:auto
+}
+.userfans .view-favwriter div,.userfollow .view-favwriter div
+{
+	display:inline
+}
+.userfans .view-favwriter .view-content:after,.userfollow .view-favwriter .view-content:after
+{
+	content:"\20";display:inline;height:0;clear:both
+}
+.userfans .view-favwriter,.userfollow .view-favwriter
+{
+	margin-bottom:5px
+}
+.articlepostdiv
+{
+	font-size:12px;margin-top:5px;margin-right:15px;margin-bottom:15px;margin-left:15px
+}
+.articlepostdivin
+{
+	padding:8px 10px 15px;border:1px solid #ccc;color:#999;text-align:center;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px
+}
+.articlepostdivin:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.articlepostdivpost
+{
+	margin-top:8px;height:30px;background:url(//img.juzimi.com/jmo/images/icon_add.png) no-repeat scroll left center;background-size:36px;padding-left:38px;line-height:30px;font-size:14px;font-weight:bold;padding-top:16px;padding-bottom:6px;letter-spacing:2px
+}
+.articlepostdivline
+{
+	height:11px;width:80%;margin-top:8px;margin-right:auto;margin-left:auto;border-top:1px solid #CCC
+}
+.xqtermpagefootadd .articlepostlink
+{
+	display:none
+}
+.xqtermpagefootadd .xqbobooks
+{
+	display:none
+}
+.xqartpoly_in
+{
+	padding:4px;color:#666
+}
+.xqartpolydesc
+{
+	color:#888;margin-left:-8px
+}
+.xqtepapolist
+{
+	margin-right:20px;color:#999;line-height:28px;float:left
+}
+.xqtepapolist a
+{
+	padding-left:10px
+}
+.xqartpoly_inwr
+{
+	margin-bottom:5px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ccc;padding-bottom:3px
+}
+.xqartpoly_inwr:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqcurpagpolyclass
+{
+	font-weight:bold;color:#000;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -331px rgba(0,0,0,0)
+}
+.xqtepapolistdesc
+{
+	color:#999
+}
+.xqartserititle
+{
+	color:#999;padding-top:10px;padding-right:10px;padding-bottom:0;padding-left:10px
+}
+.xqartseri li
+{
+	float:left;margin-right:5px;display:inline;line-height:28px;padding-left:10px
+}
+.xqartseri .xqartseritermname
+{
+	color:#5cb43f
+}
+.xqartseri ul
+{
+	margin-bottom:10px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ccc;padding-bottom:2px;padding:10px
+}
+.xqartseri ul:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqcurpagrelatclass
+{
+	font-weight:bold;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -325px rgba(0,0,0,0)
+}
+#user-login
+{
+	padding:5px;padding-top:68px;background-attachment:scroll;background-image:url(//img.juzimi.com/jmo/images/jmo_logo.png);background-size:150px;background-repeat:no-repeat;background-position:center 4px
+}
+#user-login #edit-name-wrapper label
+{
+	display:none
+}
+#user-login #edit-pass-wrapper label
+{
+	display:none
+}
+#user-login #edit-pass-wrapper .description
+{
+	text-align:right;font-size:12px
+}
+#user-login #edit-name
+{
+	margin-bottom:0;border:medium none;outline:0;box-shadow:none;height:40px;line-height:40px;border:1px solid #CCC;border-radius:5px 5px 0 0;box-shadow:0 1px 3px rgba(215,215,215,0.75) inset,0 1px rgba(255,255,255,0.2);overflow:hidden
+}
+#user-login #edit-pass
+{
+	margin-top:0;border:medium none;outline:0;box-shadow:none;height:40px;line-height:40px;border-radius:0 0 5px 5px;box-shadow:0 1px 3px rgba(215,215,215,0.75) inset,0 1px rgba(255,255,255,0.2);overflow:hidden;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:none;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#CCC;border-right-color:#CCC;border-bottom-color:#CCC;border-left-color:#CCC
+}
+#user-login #edit-pass-wrapper .description a
+{
+	line-height:20px;color:#999;height:20px;margin:5px
+}
+#user-login .xqwaitlogin
+{
+	color:#777;font-size:10px;padding-left:8px
+}
+#user-login input
+{
+	width:100%;margin-top:10px;margin-bottom:10px
+}
+.xqloginbu
+{
+	clear:both;margin-top:35px
+}
+.xqloginbu a
+{
+	width:80%;display:block;height:36px;line-height:36px;color:#222;text-align:center;background-color:#f6f6f6;border:1px solid #bbb;margin-left:10%;margin-right:10%
+}
+.xqloginbu .xqrregisterlinks a
+{
+	border-radius:5px 5px 0 0;border-bottom:0
+}
+.xqloginbu .homesinaloginlink
+{
+	border-bottom:0
+}
+.xqloginbu .homeqqloginlink
+{
+	border-radius:0 0 5px 5px
+}
+.xqloginbu a img,.regsnsaccount a img
+{
+	position:relative;top:3px
+}
+#user-login #edit-submit
+{
+	height:35px
+}
+.xpuserlogin #articletitle
+{
+	display:none
+}
+.xqloginbu .xqjmosettinglink
+{
+	border-radius:3px;margin-top:30px
+}
+.xqsettingpage .settingitem
+{
+	display:block;height:55px;width:100%;color:#333;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;line-height:55px;padding-left:20px
+}
+.xpsetting #contentin
+{
+	padding:0
+}
+.xqsettingpage #setfontitem div,.xqsettingpage #setfontitem a
+{
+	float:left;margin-right:18px
+}
+.xqsettingpage .xqsetfontbut
+{
+	border:1px solid #CCC;border-radius:5px;padding-top:1px;padding-right:4px;padding-bottom:1px;padding-left:4px;text-align:center;height:35px;line-height:30px;width:45px;margin-top:10px;color:#666
+}
+.xqsettingpage .xqsetfontactive
+{
+	background-color:#eee
+}
+.xqafteraddline
+{
+	width:100%;height:auto;margin-bottom:12px;position:relative
+}
+.xqnoaddline
+{
+	width:100%;height:auto;position:relative;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd
+}
+.xqafteraddline:after
+{
+	height:10px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-10px;left:0;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#ddd;border-bottom-color:#ddd
+}
+.xpcate #articletitle
+{
+	display:none
+}
+.xqcateline1
+{
+	display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex
+}
+.xqcateline1 .xqcateline1bu
+{
+	-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;text-align:center;box-sizing:border-box;display:block;width:33%;border-left-width:1px;border-left-style:solid;border-left-color:#ddd
+}
+.xqcateline1 .xqcateline1bu a
+{
+	color:#666;display:block;padding-top:15px;padding-bottom:15px
+}
+.xqcateline1icon
+{
+	font-size:24px;line-height:24px;width:24px;height:24px;margin-top:0;margin-right:auto;margin-left:auto
+}
+.xqcalijin
+{
+	background:url(//img.juzimi.com/jmo/images/v2catejin.png) no-repeat center center;background-size:20px 20px
+}
+.xqcalimin
+{
+	background:url(//img.juzimi.com/jmo/images/v2catemin.png) no-repeat center center;background-size:20px 20px
+}
+.xqcalire
+{
+	background:url(//img.juzimi.com/jmo/images/v2catere.png) no-repeat center center;background-size:20px 20px
+}
+.xqcalimei
+{
+	background:url(//img.juzimi.com/jmo/images/v2catemei.png) no-repeat center center;background-size:20px 20px
+}
+.xqcalialb
+{
+	background:url(//img.juzimi.com/jmo/images/v2catealb.png) no-repeat center center;background-size:20px 20px
+}
+.xqcaliyan
+{
+	background:url(//img.juzimi.com/jmo/images/v2cateyan.png) no-repeat center center;background-size:20px 20px
+}
+.xqcaliou
+{
+	background:url(//img.juzimi.com/jmo/images/v2cateou.png) no-repeat center center;background-size:20px 20px
+}
+.xqcalixin
+{
+	background:url(//img.juzimi.com/jmo/images/v2catexin.png) no-repeat center center;background-size:20px 20px
+}
+.xqcatelinetil
+{
+	font-size:15px;margin-top:20px;margin-left:10px;border-left-width:3px;border-left-style:solid;border-left-color:#F93;padding-left:5px;margin-bottom:5px
+}
+.xqcateline2bu
+{
+	width:29%;display:block;height:auto;float:left;margin:2%;text-align:center
+}
+.xqcateline2bu img
+{
+	width:auto;height:auto;max-width:100%;max-height:100%
+}
+.xqcatelinecon:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqcateline3bu
+{
+	width:33%;display:block;height:55px;float:left;text-align:center;line-height:55px;border-top-width:1px;border-top-style:solid;border-top-color:#dbdbea;border-left-width:1px;border-left-style:solid;border-left-color:#dbdbea;color:#000
+}
+.xqcateline3bu:visited
+{
+	color:#000
+}
+#user-register
+{
+	font-size:12px
+}
+#user-register .regsnsaccount
+{
+	font-size:14px
+}
+#user-register label
+{
+	display:block;margin-top:10px;float:left;width:22%
+}
+#user-register .regsnsaccountlogin,#user-register .homesinaloginlink,#user-register .homeqqloginlink
+{
+	width:80%;display:block;height:36px;line-height:36px;color:#222;text-align:center;background-color:#f6f6f6;border:1px solid #bbb;margin-left:10%;margin-right:10%
+}
+#user-register .regsnsaccountlogin
+{
+	margin-top:10px;border-radius:5px 5px 0 0;border-bottom:0
+}
+#user-register .homesinaloginlink
+{
+	border-bottom:0
+}
+#user-register .homeqqloginlink
+{
+	border-radius:0 0 5px 5px
+}
+#username-check-wrapper .description
+{
+	display:none
+}
+#user-register
+{
+	margin-bottom:70px
+}
+#user-register input[type="text"],input[type="password"]
+{
+	width:78%;margin:3px 0;border:1px solid #ddd
+}
+.xpuserregister #articletitle
+{
+	display:none
+}
+.xpuserregister #edit-pass-pass3-wrapper
+{
+	display:none
+}
+.xpuserregister .regsnsaccount
+{
+	margin-top:10px;border-top:1px solid #ddd
+}
+.xpuserregister #username-check-wrapper
+{
+	margin-top:10px
+}
+.xpuserregister #edit-pass-wrapper
+{
+	margin-top:10px
+}
+.xpuserregister #edit-pass-wrapper .password-strength
+{
+	display:block
+}
+.xpuserregister #edit-pass-pass2-wrapper .password-confirm
+{
+	display:block
+}
+.xpuserregister #username-check-wrapper
+{
+	margin-left:6px;margin-right:6px
+}
+.xpuserregister #edit-mail-wrapper
+{
+	margin-left:6px;margin-right:6px
+}
+.xpuserregister #edit-pass-wrapper
+{
+	margin-left:6px;margin-right:6px
+}
+.xpuserregister .xqrcaptchatitle
+{
+	float:left;width:22%
+}
+.xpuserregister .xqrcaptcha
+{
+	margin-left:6px;margin-right:6px
+}
+.xpuserregister .regagreement
+{
+	margin-left:6px;margin-right:6px;margin-bottom:15px;margin-left:22%
+}
+.xpuserregister .regagreement #xqregagreementid
+{
+	position:relative;top:8px
+}
+.xpuserregister #edit-submit
+{
+	margin-left:35%;margin-top:10px
+}
+.xqrcaptcha #edit-captcha-response-wrapper label
+{
+	display:none
+}
+#user-register #edit-pass-wrapper .password-strength,#user-register span.password-confirm
+{
+	visibility:hidden
+}
+#user-register #edit-pass-wrapper .password-title,#user-register #edit-pass-pass2-wrapper span.password-confirm,#user-register .password-description
+{
+	padding-left:22%
+}
+#user-register #edit-captcha-response-wrapper
+{
+	margin-left:22%
+}
+.usersina_openemail h1
+{
+	display:none
+}
+#edit-sinaweibo-login-email
+{
+	width:80%
+}
+.userbandemail h1
+{
+	display:none
+}
+#edit-user-band-login-email
+{
+	width:80%
+}
+.xpreg #edit-profile-pqq-wrapper,.xpreg #edit-profile-msn-wrapper,.xpreg #edit-profile-sina-wrapper,.xpreg #edit-profile-tencent-wrapper,.xpreg #edit-profile-renren-wrapper,.xpreg #edit-profile-web-wrapper,.xpreg #edit-profile-douban-wrapper,.xpreg #edit-profile-usershortdesc-wrapper
+{
+	display:none
+}
+.xpreg #edit-user-terms-19-wrapper
+{
+	position:relative;top:-20px;background:#FFF
+}
+.xpreg .welcomepagebody
+{
+	line-height:25px
+}
+.xpreg .pageroute_buttons #edit-forward
+{
+	margin:12px 35% 0;width:30%
+}
+.xpuserpassword h1
+{
+	display:none
+}
+.xpuserpassword #edit-name-wrapper input
+{
+	width:100%
+}
+#xqadd
+{
+	padding:10px
+}
+.group-whar .fieldset-wrapper
+{
+	display:none
+}
+.nodeaddsentence #articletitle
+{
+	display:none
+}
+.group-whar:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#xqadd #edit-title-wrapper
+{
+	margin-top:15px
+}
+#xqadd #edit-title-wrapper #status1
+{
+	text-align:right;font-size:10px;color:#bbb;margin-bottom:10px;padding-right:3%
+}
+#xqadd #edit-title,#xqadd #edit-field-oriwriter-value,#xqadd #edit-field-oriarticle-value,#xqadd #edit-field-wholearticle-0-value,#xqadd #edit-taxonomy-tags-3,#flag-lists-form #edit-title,#flag-lists-form #edit-con,#xqadd #edit-xqxindeinput
+{
+	width:98%
+}
+#xqadd #edit-field-oriarticle-value-wrapper
+{
+	clear:both;margin-top:6px
+}
+#xqadd #edit-field-oriarticle-value-wrapper .description
+{
+	display:none
+}
+#xqadd #edit-field-oriwriter-value-wrapper
+{
+	margin-top:6px;clear:both
+}
+#xqadd #edit-field-oriwriter-value-wrapper .description
+{
+	display:none
+}
+#xqadd .xqaddpagefrom .xqaddpagesubtitle
+{
+	display:none
+}
+#xqadd .xqaddpagewhoart .xqaddpagesubtitle
+{
+	display:none
+}
+#xqadd .group-whar label
+{
+	display:none
+}
+#xqadd .group-ori
+{
+	float:left;width:60px;overflow:hidden
+}
+#xqadd .group-ori label
+{
+	display:none
+}
+#xqadd .group-ori .form-checkboxes label
+{
+	display:block;width:80px
+}
+#xqadd .group-ori .form-checkboxes #edit-field-ori-value-23
+{
+	float:left
+}
+#xqadd .group-ori .form-checkboxes #edit-field-ori-value-23-wrapper
+{
+	line-height:35px
+}
+#xqadd .xqoridesc
+{
+	margin-bottom:20px;margin-top:-5px;clear:both
+}
+#xqadd .group-whar
+{
+	clear:both;margin-top:10px;margin-bottom:15px
+}
+#xqadd .group-whar .description
+{
+	display:none
+}
+#xqadd .group-whar a
+{
+	display:block;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -330px rgba(0,0,0,0);padding-left:16px
+}
+#xqadd .xqsendsina
+{
+	height:35px;overflow:hidden;width:50%
+}
+#xqadd .xqsendsina fieldset
+{
+	float:left;margin-right:20px;width:100px;overflow:hidden;height:35px;display:none
+}
+#xqadd .xqsendsina .xqaipro
+{
+	float:left
+}
+#xqadd .xqsendsina #edit-sina-open-check
+{
+	margin-top:3px
+}
+#xqadd .xqsendsina #edit-sina-open-check-wrapper
+{
+	left:0;top:-15px;position:relative;width:25px;height:25px
+}
+#xqadd .xqsendsina #edit-sina-open-check-wrapper label
+{
+	display:block
+}
+#xqadd .xqsendsina #edit-sina-open-check-wrapper label input
+{
+	left:0;top:-20px;position:relative
+}
+#xqadd .xqsendsina legend
+{
+	color:#666;font-weight:normal;height:35px;line-height:35px;padding-left:35px;width:100px
+}
+#xqadd .xqsendsina #xqzhinayes
+{
+	float:left
+}
+#xqadd .xqsendsina .xqaipro
+{
+	line-height:35px
+}
+#xqadd .xqtags .description
+{
+	color:#999;margin-bottom:6px
+}
+#xqadd #edit-submit
+{
+	margin:10px 35% 10px;float:none
+}
+#xqadd .xqaddpagetagsti .xqaddpagetagtides
+{
+	color:#bbb;padding-left:10px
+}
+#xqadd .xqaddpagetagsti .xqaddpagetagtidesmohid
+{
+	display:none
+}
+#xqadd .xqaddpagetagsti
+{
+	margin-top:6px
+}
+#xqadd .xqaddpagexindewrap
+{
+	margin-top:6px
+}
+#xqadd .xqaddpagexindewrap .xqaddpagesubtitle
+{
+	color:#000;margin-right:10px
+}
+#xqadd .xqaddpagexindewrap .xqaddpagexindetil
+{
+	color:#bbb
+}
+#xqadd .xqaddpagexindewrap textarea
+{
+	height:60px;resize:none
+}
+#xqadd #edit-flag-lists-lists-wrapper select
+{
+	height:21px;overflow:hidden
+}
+#xqadd .oriwritertip
+{
+	display:none;height:0;overflow:hidden
+}
+#xqadd .oriarticletip
+{
+	display:none;height:0;overflow:hidden
+}
+.xqpoltipdesc
+{
+	padding-top:10px;color:#000;clear:both
+}
+.xqpolylist
+{
+	border:1px solid #CCC;height:auto;max-height:145px;min-height:100px;line-height:20px;overflow:auto;padding:4px;width:100%;margin-bottom:8px;margin-top:10px
+}
+.xqpolylist li
+{
+	cursor:pointer;color:#5cb43f;margin-top:0!important;padding-top:5px;padding-right:6px;padding-bottom:5px;padding-left:22px;border-bottom:1px solid #eee
+}
+.xqpolylist li:hover
+{
+	background:#efefef
+}
+.xqpolylist li.xqpolyactive
+{
+	color:#000;font-weight:bold;background:url(//img.juzimi.com/juzimi/images/icon_yes_small.png) no-repeat 2px center
+}
+.xqpolylist li.xqpolyactive:hover
+{
+	background:#efefef url(//img.juzimi.com/juzimi/images/icon_yes_small.png) no-repeat 2px center
+}
+.xqpolyitemdesc
+{
+	color:#999;font-weight:normal
+}
+.xqaddsenpoly .question:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#edit-field-oriarticle-value-wrapper .xqartpolyselect
+{
+	position:relative;float:right;margin-right:4%;top:-30px;margin-top:3px;margin-bottom:-23px;width:30px;height:20px;cursor:pointer;font-size:11px;color:#111;text-align:center
+}
+.xqaddsenpoly .answers input
+{
+	margin-right:25px;margin-left:25px;border:1px solid #999;padding-right:25px;padding-left:25px
+}
+.xqaddsenpoly .answers .xqpolyansweryes
+{
+	background:#49b64f;color:#FFF;font-weight:bold
+}
+.xqaddsenpoly .answers .xqpolyanswerno
+{
+	background:#eee
+}
+.xqaddsenpoly h2
+{
+	background:url("//img.juzimi.com/juzimi/images/icon_poly.png") no-repeat scroll left center rgba(0,0,0,0);padding-left:38px;font-size:14px
+}
+.xqpolyothertext
+{
+	width:100px;height:18px;border:1px solid #eee;cursor:text;background-color:#FFF;color:#666;font-weight:normal;margin-right:3px;margin-left:3px;padding-left:2px;white-space:nowrap;overflow:hidden;float:left
+}
+.xqpolyotherleft,.xqpolyotherright
+{
+	float:left
+}
+.xqpolyotherdesc
+{
+	color:#BBB;padding-left:3px;font-weight:normal
+}
+.node-type-sentence .nodeedit .standard
+{
+	padding:10px
+}
+.node-type-sentence .nodeedit .group-whar legend
+{
+	display:block;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -330px rgba(0,0,0,0);padding-left:16px;color:#5cb43f
+}
+.node-type-sentence .nodeedit .oriwritertip a
+{
+	display:none
+}
+.node-type-sentence .nodeedit .oriarticletip a
+{
+	display:none
+}
+.node-type-sentence .nodeedit .oriwritertip
+{
+	display:none
+}
+.node-type-sentence .nodeedit .oriarticletip
+{
+	display:none
+}
+.node-type-sentence .nodeedit #edit-taxonomy-tags-3-wrapper
+{
+	display:none
+}
+.node-type-sentence .nodeedit #edit-log
+{
+	width:98%
+}
+.node-type-sentence .nodeedit #xqadd #edit-submit
+{
+	float:left;width:35%;display:block;margin-top:0;margin-right:10%;margin-bottom:35px;margin-left:10%
+}
+.node-type-sentence .nodeedit #xqadd #edit-delete
+{
+	float:left;width:35%;display:block
+}
+.node-type-sentence .nodeedit #xqadd .xqdelr
+{
+	float:left;width:35%;display:block;margin-top:0;margin-bottom:35px
+}
+.node-type-sentence .nodeedit #xqadd #edit-xqdelreq
+{
+	width:100%;display:block
+}
+.node-type-sentence .nodeedit #xqadd:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.node-type-sentence #edit-log-wrapper .description
+{
+	font-size:10px;color:#bbb
+}
+.node-type-sentence .xqrevinfo
+{
+	margin-top:10px
+}
+.xpjufavuser .view-whoflag ul:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xpjufavuser .view-whoflag .views-row
+{
+	height:150px;text-align:center
+}
+.xpjufavuser .xqnumfavuserhead
+{
+	margin-bottom:10px
+}
+.xqsenrevvewtil
+{
+	background-color:#eee;padding:6px;margin-top:-3px
+}
+.xqsenrevvewsenwrap
+{
+	padding:5px 16px 16px;border-bottom:1px solid #999;margin-bottom:6px;box-shadow:rgba(255,255,255,.3) 0 6px 0;-webkit-box-shadow:rgba(0,0,0,.3) 0 0 6px;-moz-box-shadow:rgba(0,0,0,.3) 0 0 6px;background:#FFF url(//img.juzimi.com/jmo/images/ricu_toba.jpg) no-repeat left top
+}
+.xqsenrevvewsen
+{
+	font-size:20px;font-weight:normal;color:#000;line-height:36px;text-align:justify;text-justify:inter-ideograph
+}
+.xqsenrevvewsenwrap .field-field-oriarticle
+{
+	color:#5cb43f
+}
+.adminbuildalbum #flag-lists-form
+{
+	padding:10px
+}
+.adminbuildalbum #articletitle
+{
+	display:none
+}
+#flag-lists-form #edit-title-wrapper label
+{
+	display:none
+}
+#flag-lists-form #edit-con-wrapper label
+{
+	display:none
+}
+#flag-lists-form #edit-con-wrapper .description
+{
+	display:none
+}
+#flag-lists-form #edit-submit
+{
+	margin-bottom:30px;margin:10px 35% 30px
+}
+#flag-lists-form #edit-title-wrapper
+{
+	margin-bottom:10px
+}
+.node-type-album .nodeedit #articletitle
+{
+	display:none
+}
+.node-type-album .nodeedit .standard
+{
+	padding:10px
+}
+.node-type-album .nodeedit #xqadd #edit-submit
+{
+	float:left;width:35%;display:block;margin-top:0;margin-right:10%;margin-bottom:35px;margin-left:10%
+}
+.node-type-album .nodeedit #xqadd #edit-delete
+{
+	float:left;width:35%;display:block
+}
+.node-type-album .nodeedit #xqadd:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.node-type-album .nodeedit #edit-body
+{
+	width:98%
+}
+.wrtitle
+{
+	clear:both;margin-top:8px;padding-top:6px;padding-bottom:6px
+}
+.wrlist .writersal
+{
+	padding-top:5px;padding-right:10px;padding-bottom:5px;padding-left:10px;margin-right:6px;float:left;margin-bottom:10px;border-radius:5px;border:1px solid #ddd
+}
+.xqfindtermall .xqfindtermsea #edit-search
+{
+	width:90%
+}
+.xqfindtermall .xqftresult
+{
+	clear:both
+}
+.xqfindtermall .xqwriterspagedesc .views-field-field-sns-value
+{
+	display:none
+}
+.xqfindtermall .xqwriterspagedesc img
+{
+	display:none
+}
+.xqfindtermall .xqwriterspagedesc
+{
+	margin-bottom:10px
+}
+.view-weekrecomfamar img
+{
+	padding:3px;border:1px solid #CCC
+}
+.view-weekrecomfamar .views-row
+{
+	float:left;margin-right:8px;margin-left:9px;margin-top:5px;font-size:11px
+}
+.view-weekrecomfamar .views-field-name
+{
+	text-align:center
+}
+.view-weekrecomfamar .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#block-views-weekrecomfamar-block_1 .xqwriterspagelist a
+{
+	float:left;width:33%;height:35px;line-height:35px;text-align:center;font-size:12px;border-left-width:1px;border-bottom-width:1px;border-left-style:solid;border-bottom-style:solid;border-left-color:#CCC;border-bottom-color:#CCC;color:#666
+}
+#block-views-weekrecomfamar-block_1 .xqwriterspagelist
+{
+	*zoom:1;border-top:1px solid #CCC;margin-top:8px;margin-bottom:5px;height:281px;overflow:hidden
+}
+#block-views-weekrecomfamar-block_1 .xqwriterspagelist:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-weekrecomfamju .more-link a
+{
+	display:block;text-align:center;border-radius:4px;border:1px solid #CCC;padding:12px;width:50%;margin-top:10px;margin-right:auto;margin-bottom:10px;margin-left:auto
+}
+.xqfindtermall
+{
+	padding:10px;color:#999;font-size:12px;line-height:18px
+}
+.xqfindtermall #taxonomy-find-search-terms-form
+{
+	color:#000
+}
+.xqfindtermall #edit-search
+{
+	margin-top:6px;margin-bottom:6px
+}
+.xpwriters .wrtitle,.xpwriters .wrlist
+{
+	margin-right:10px;margin-left:10px
+}
+.xqappversion .xqjingdianyulupagedesctxt
+{
+	display:none
+}
+.xqjingdianyulutop .xqjingdianyulupagedesc .views-field-field-sns-value
+{
+	display:none
+}
+.xqjingdianyulutop .xqjingdianyulupagedesc img
+{
+	display:none
+}
+.xqjingdianyulutop .xqjingdianyulupagedesc .xqjingdianyulupagedesctxt
+{
+	padding:10px;color:#999;font-size:12px;line-height:20px
+}
+.blockxqyulub img
+{
+	padding:3px;border:1px solid #CCC
+}
+.blockxqyulub li
+{
+	float:left;margin-right:8px;margin-left:9px;_display:inline;text-align:center;margin-top:5px;width:120px;font-size:11px
+}
+#block-xqminzhuyulu li,#block-xqxiaoshuoyulu li,#block-xqyinshiyulu li
+{
+	width:140px;height:150px
+}
+.blockxqyulub .yulupicname
+{
+	text-align:center
+}
+.blockxqyulub ul:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.blockxqyulub .yululist a
+{
+	float:left;width:40%;margin-bottom:8px;padding:10px;border:1px solid #CCC;border-radius:3px;margin-right:5%;margin-left:5%;text-align:center;font-size:12px
+}
+.blockxqyulub .yululist span
+{
+	width:55px;margin-bottom:8px;display:block;clear:both
+}
+.blockxqyulub .yululist
+{
+	*zoom:1;padding-left:15px;padding-top:12px;border-top:1px solid #CCC;margin-top:12px;margin-bottom:5px
+}
+.blockxqyulub .yululist:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.quicktabs_tabpage .xallleft .content
+{
+	width:auto
+}
+.xpjingdianyulu #contentin
+{
+	padding:0
+}
+.blockxqyulub h2
+{
+	border-bottom:1px solid #999;border-top:2px solid #f93;color:#333;font-size:14px;padding-bottom:6px;padding-left:8px;padding-top:8px
+}
+.xpjingdianyulu .view-recom .more-link a
+{
+	display:block;text-align:center;border-radius:4px;border:1px solid #CCC;padding:12px;width:50%;margin-top:10px;margin-right:auto;margin-bottom:10px;margin-left:auto
+}
+.xpnode43648 .taxtitleba,.xptawithtab .taxtitleba
+{
+	display:-webkit-box;display:-moz-box;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;width:100%;overflow:scroll
+}
+.xpnode43648 #articletitle .taxtitleba .taxtitlew,.xptawithtab #articletitle .taxtitleba .taxtitlew
+{
+	width:75px;-moz-box-flex:0;-webkit-box-flex:0;box-flex:0
+}
+.xpnode43648 #articletitle .taxtitleba a,.xptawithtab #articletitle .taxtitleba a
+{
+	padding-left:0
+}
+.xptawithtab #articletitle .taxtitleba .taxtitle
+{
+	width:75px;-moz-box-flex:0;-webkit-box-flex:0;box-flex:0
+}
+#block-views-xqtermspagewriterage-block_1 .block-inner
+{
+	padding-right:15px;padding-left:15px
+}
+.view-xqtermspagewriterage .views-row img
+{
+	padding:3px
+}
+.view-xqtermspagewriterage .views-row .views-field-tid
+{
+	background:url("//img.juzimi.com/jmo/images/defaultavatar85.jpg") no-repeat scroll center center transparent;background-size:70px;border:1px solid #ccc;display:block;height:87px;margin-left:auto;margin-right:auto;margin-top:0;overflow:hidden;width:87px
+}
+.view-xqtermspagewriterage .views-row .views-field-name
+{
+	text-align:center;padding-top:3px;height:20px;overflow:hidden
+}
+.view-xqtermspagewriterage .views-row .views-field-name a
+{
+	font-weight:bold
+}
+.view-xqtermspagewriterage .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-xqtermspagewriterage .view-content
+{
+	*zoom:1
+}
+.view-xqtermspagewriterage .views-field-phpcode a
+{
+	color:#333;display:block;float:left;clear:left
+}
+.view-xqtermspagewriterage .views-field-ops .flag-action,.xqzoupinlistflag .flag-action
+{
+	background:transparent url(//img.juzimi.com/jmo/images/icon_fav_li.png) no-repeat scroll left top;color:#999;display:block;height:20px;line-height:20px;padding-left:25px;width:80px;margin:8px auto 8px;width:40px;text-align:left
+}
+.view-xqtermspagewriterage .views-field-ops .unflag-action,.xqzoupinlistflag .unflag-action
+{
+	background:transparent url(//img.juzimi.com/jmo/images/icon_fav_li.png) no-repeat scroll left bottom;height:20px;padding-left:25px;display:block;line-height:20px;margin:8px auto 8px;width:40px
+}
+.view-xqtermspagewriterage .views-field-ops .flag-throbber,.xqzoupinlistflag .flag-throbber
+{
+	display:none
+}
+.view-xqtermspagewriterage .views-field-phpcode
+{
+	clear:both
+}
+.view-xqtermspagewriterage .xqagepawir
+{
+	margin-bottom:6px;margin-top:6px;font-weight:bold
+}
+.view-xqtermspagewriterage .xqagepawir a
+{
+	*white-space:nowrap;font-weight:normal
+}
+.view-xqtermspagewriterage .xqagepawirdesc
+{
+	color:#888;margin-bottom:8px;float:none;display:inline
+}
+.view-xqtermspagewriterage a.xqagepawirdesclink
+{
+	color:#888;margin-bottom:8px;float:none;color:#5cb43f
+}
+.xqagepawirdesclink
+{
+	background:url("//img.juzimi.com/jmo/images/icon_itemarrow.gif") no-repeat scroll left 5px rgba(0,0,0,0);clear:both;display:block;margin-top:5px;padding-left:17px
+}
+.view-xqtermspagearticletype .xqviepagearfoote .xqviepagearfooteleft a,.view-xqtermspagearticletype .xqviepagearfoote .xqviepagearfooteleft span
+{
+	margin-right:10px;color:#999
+}
+.xqviepagearhetxt
+{
+	padding:10px;font-size:12px;line-height:18px;color:#aaa;font-weight:normal
+}
+.xqllxjsubti
+{
+	margin-top:10px
+}
+.xqllxjsubti:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqllxjsubtilink
+{
+	margin-right:2%;margin-left:2%;font-size:12px;color:#333;display:block;width:29%;border:1px solid #CCC;float:left;line-height:28px;text-align:center;height:28px;margin-bottom:8px
+}
+.xqllxjsubtilink:visited
+{
+	color:#333
+}
+.xqllxjsubti h1
+{
+	font-size:12px;display:inline
+}
+.xqllxjsubti h1 a
+{
+	font-weight:bold
+}
+.xqappversion .xqviepagearhetxt
+{
+	display:none
+}
+.xqappversion .xqviepagearfoote
+{
+	display:none
+}
+.xqletterpage .vocabindex-pager
+{
+	font-size:14px;margin-top:5px;margin-bottom:5px;clear:both;color:#bbb;font-size:0
+}
+.xqletterpage .vocabindex-pager:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqletterpage .vocabindex-pager a
+{
+	display:block;width:33px;height:33px;float:left;background:#eee;margin-right:5px;margin-bottom:5px;font-size:14px;text-align:center;border-radius:8px
+}
+.xqletterpage .alphabetical
+{
+	border-top:1px solid #CCC;border-bottom:1px solid #CCC;*zoom:1
+}
+.xqletterpage .alphabetical:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqletterpage .alphabetical li
+{
+	width:100%;clear:both;border-bottom:1px solid #eee;height:68px;padding-top:8px
+}
+.xqletterpage .xqletterpagepic
+{
+	float:left;margin-right:8px
+}
+.xqletterpage .xqletterpagenamelink
+{
+	color:#999
+}
+.xqletterpage .xqletterpagename
+{
+	margin-top:4px;display:block;margin-bottom:5px
+}
+.xqletterpage .xqcurletteronative
+{
+	font-size:20px;color:#F90
+}
+.xqletterpage .vocabindex-pager a
+{
+	padding:8px
+}
+.view-xqtermspagewriterage .views-field-ops .flag-action,.xqzoupinlistflag .flag-action,.xqwriterpicimg .flag-action,.jianjieconpic .flag-action
+{
+	background:transparent url(//img.juzimi.com/jmo/images/iconlike.png) no-repeat 5px center;background-size:16px;color:#888;display:block;height:30px;line-height:30px;padding-left:25px;width:58px;text-align:left;margin-top:8px;margin-right:auto;margin-bottom:8px;margin-left:auto;padding-right:5px;border:1px solid #ddd;border-radius:3px;font-size:12px
+}
+.view-xqtermspagewriterage .views-field-ops .unflag-action,.xqzoupinlistflag .unflag-action,.xqwriterpicimg .unflag-action,.jianjieconpic .unflag-action
+{
+	background:transparent url(//img.juzimi.com/jmo/images/iconliked.png) no-repeat 5px center;background-size:16px;height:30px;padding-left:25px;padding-right:5px;display:block;line-height:30px;margin:8px auto 8px;width:70px;color:#666;text-align:left;border:1px solid #ddd;border-radius:3px;font-size:12px
+}
+.view-xqtermspagewriterage .views-field-ops .flag-action.xqtouch,.xqzoupinlistflag .flag-action.xqtouch,.view-xqtermspagewriterage .views-field-ops .unflag-action.xqtouch,.xqzoupinlistflag .unflag-action.xqtouch
+{
+	background-color:#CCC
+}
+.view-xqtermspagewriterage .views-field-ops .flag-throbber,.xqzoupinlistflag .flag-throbber
+{
+	display:none
+}
+.xqzuopinvieheaderdesc
+{
+	color:#ccc;margin-top:8px;margin-right:5px;font-size:12px
+}
+.zuopinliebiao .views-row,.view-xqtermspagewriterage .views-row,.xpxiangsi .view-otherarticle .views-row,.xpleisi .view-artistlistrelatewr .views-row
+{
+	width:100%;padding:15px;margin-bottom:11px;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#DDD;border-bottom-color:#DDD;position:relative
+}
+.zuopinliebiao .views-row:after,.view-xqtermspagewriterage .views-row:after,.xpxiangsi .view-otherarticle .views-row:after,.xpleisi .view-artistlistrelatewr .views-row:after
+{
+	height:11px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-13px;left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd
+}
+.zuopinliebiao .views-row-last:after,.view-xqtermspagewriterage .views-row-last:after,.xpxiangsi .view-otherarticle .views-row-last:after,.xpxiangsi .view-otherarticle .xqxiangsimorelink:after,.xpleisi .view-artistlistrelatewr .views-row-last:after,.xpleisi .view-artistlistrelatewr .xqxiangsimorelink:after
+{
+	height:1px;border:0 none #FFF;bottom:-1px;background-color:#ddd
+}
+.zuopinliebiao .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.zuopinliebiao .view-content
+{
+	*zoom:1;margin-top:10px
+}
+.zuopinliebiao .views-field-tid img
+{
+	border:1px solid #EEE;max-width:185px;max-height:120px;width:auto;height:auto
+}
+.zuopinliebiao .views-field-tid
+{
+	text-align:center;margin-bottom:6px
+}
+.zuopinliebiao a.xqagepawirdesc
+{
+	color:#888;margin-bottom:8px;float:none;display:inline
+}
+.zuopinliebiao .xqallarticletilelink
+{
+	font-weight:bold;font-size:15px
+}
+.zuopinliebiao .xqallarticletilelinkspan
+{
+	font-weight:bold;font-size:15px;color:#5cb43f
+}
+.zuopinliebiao .views-field-phpcode
+{
+	text-align:center
+}
+.zuopinliebiao .wridesccon
+{
+	text-align:left;margin-top:6px
+}
+.wridesccon .xqagepawirdesc
+{
+	max-height:90px;overflow:hidden;color:#777;font-size:12px;line-height:18px;margin-bottom:6px
+}
+.view-xqwriterszuopin .view-header
+{
+	padding-top:10px;padding-right:10px;padding-left:10px;color:#888
+}
+.view-xqwriterszuopin .view-header a
+{
+	color:#888
+}
+.xqappversion .view-xqwriterszuopin .xqzuopinvieheaderdesc
+{
+	display:none
+}
+.view-writersfans .view-content
+{
+	margin-top:15px
+}
+.xpwriterfans .view-header
+{
+	padding-top:10px;padding-right:10px;padding-left:10px;color:#999
+}
+.xpwriterfans .view-header a
+{
+	color:#999
+}
+.all950user .view-content ul:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.all950user .view-content ul
+{
+	zoom:1;overflow:hidden;text-align:center
+}
+.all950user .view-content li
+{
+	float:left;height:105px;width:32%;overflow:hidden;display:inline;text-align:center
+}
+.all950user .view-content .views-field-picture a
+{
+	display:block;overflow:hidden;height:58px;width:58px;margin-top:0;margin-right:auto;margin-left:auto
+}
+.all950user .view-content li .views-field-name
+{
+	height:16px;overflow:hidden;margin-bottom:3px
+}
+.all950user .view-content li .views-field-field-usercity-value
+{
+	clear:both;height:16px;overflow:hidden
+}
+.all950user .views-field-value,.all950user .views-field-value-1
+{
+	display:inline;color:#bbb;font-size:12px
+}
+.all950user .views-field-value-1
+{
+	margin-left:-2px
+}
+#block-block-23
+{
+	width:100%;overflow:hidden;line-height:22px;font-size:12px
+}
+#block-block-23:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#block-block-23 li
+{
+	width:600px;overflow:hidden;height:93px;margin:25px 5px 12px
+}
+#block-block-23 .item-list
+{
+	line-height:18px
+}
+#block-block-23 .affcalti
+{
+	float:left;line-height:20px
+}
+#block-block-23 .picture img
+{
+	border-radius:50px
+}
+#block-block-23 .picture
+{
+	float:left;margin-right:16px
+}
+#block-block-23 .affcityde
+{
+	color:#999;margin-left:3px
+}
+#block-block-23 .affsign
+{
+	color:#999;margin-top:2px;height:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;-webkit-text-overflow:ellipsis;width:230px
+}
+#block-block-23 .calcuaff
+{
+	margin-top:5px
+}
+#block-block-23 .xqaffwait
+{
+	height:200px;padding-top:130px;background:#FFF url(//img.juzimi.com/jmo/images/poploading.gif) no-repeat center center;text-align:center;width:300px
+}
+#block-block-23 .affnchangebu
+{
+	border:1px solid #ccc;display:block;height:30px;line-height:30px;text-align:center;width:60px;color:#000;margin-right:auto;margin-top:15px;border-radius:5px;background-color:#eee;margin-left:auto
+}
+#block-block-23 .affnchangebu:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#block-block-23 .item-list
+{
+	padding-top:5px;padding-bottom:5px
+}
+#block-block-23 .contentin
+{
+	*zoom:1
+}
+.affinity-match-meter
+{
+	margin-left:155px;margin-right:15px;background:#e1f4e1;border:1px solid #a6d779;height:20px;width:135px
+}
+.affinity-match-scale
+{
+	background-color:#a6d779;height:18px
+}
+.affinity-match-value
+{
+	position:relative;top:-1.5em;margin-left:160px;margin-bottom:-1em
+}
+.view-user-otherinfo .views-field-phpcode .affinity-match-meter
+{
+	display:block;margin-top:-18px;margin-bottom:-20px;margin-left:105px;height:18px
+}
+.view-user-otherinfo .views-field-phpcode .affinity-match-value
+{
+	top:4px;margin-left:110px
+}
+#block-block-23 .userreljmolink
+{
+	margin-left:105px
+}
+.addfrpage
+{
+	margin-top:20px
+}
+.view-hottags .views-row
+{
+	width:33%;float:left;line-height:33px;text-align:center;height:33px;border-bottom-width:1px;border-left-width:1px;border-bottom-style:solid;border-left-style:solid;border-bottom-color:#CCC;border-left-color:#CCC;font-size:12px
+}
+.view-hottags .views-row a
+{
+	display:block;color:#666
+}
+.view-hottags .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-hottags .item-list
+{
+	clear:both;margin-top:15px
+}
+.xpalluserpage #articletitle
+{
+	margin-top:10px;padding-top:2px
+}
+.view-user-basic .views-field-field-following-value,.view-user-basic .views-field-field-follower-value,.view-user-basic .views-field-field-favnum-value,.view-user-basic .views-field-field-userori-value,.view-user-basic .views-field-field-favlistnum-value,.view-user-basic .views-field-field-comment-value
+{
+	width:48%;display:block;height:36px;line-height:36px;color:#222;text-align:center;background-color:#f6f6f6;border:1px solid #ddd
+}
+.userptitle
+{
+	display:none
+}
+.xqusermoodtitle
+{
+	display:none
+}
+.userppostsendescde
+{
+	display:none
+}
+.userppostsendesc
+{
+	display:-moz-box;display:-webkit-box;display:box;width:100%;margin-top:12px;margin-bottom:18px;clear:both
+}
+.xquserownpost
+{
+	margin-top:50px;margin-bottom:-40px
+}
+.upshareway
+{
+	-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;text-align:center
+}
+.upshareway a
+{
+	width:80%;display:block;color:#000;text-align:center;border:1px solid #999;line-height:35px;height:35px;margin-top:0;margin-right:auto;margin-left:auto;border-radius:25px
+}
+.xquserpaotherpage
+{
+	width:100%;position:absolute;top:123px;margin-top:0;margin-bottom:0
+}
+.view-user-basic .views-row
+{
+	position:relative;margin-bottom:20px;padding-top:10px;height:280px
+}
+.view-user-basic .views-row:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-user-basic .picture img
+{
+	border-radius:50px
+}
+.view-user-basic .views-field-picture
+{
+	float:left;margin-right:15px;margin-left:15px;height:85px;overflow:hidden
+}
+.view-user-basic .views-field-name
+{
+	margin-bottom:8px
+}
+.view-user-basic .views-field-name a
+{
+	font-weight:bold;color:#000;font-size:16px
+}
+.view-user-basic .views-field-name a:visited
+{
+	color:#000001
+}
+.view-user-basic .picture
+{
+	height:90px
+}
+.view-user-basic .views-field-phpcode
+{
+	position:absolute;left:0;top:98px;margin-top:10px;margin-bottom:15px;display:block;width:100%;border-top-width:1px;border-top-style:solid;border-top-color:#ddd
+}
+.view-user-basic .views-field-phpcode:after,.view-user-basic .views-field-phpcode-1:after,.view-user-basic .views-field-phpcode-4:after,.view-user-basic .views-field-phpcode-5:after,.view-user-basic .views-field-phpcode-6:after,.view-user-basic .views-field-phpcode-7:after,.view-user-basic .views-field-phpcode-8:after,.view-user-otherinfo:after
+{
+	height:13px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-14px;left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;border-left-width:1px;border-left-style:solid;border-left-color:#eee
+}
+.view-user-basic .views-field-phpcode .field-content
+{
+	display:-moz-box;display:-webkit-box;display:box;text-align:center;width:100%
+}
+.view-user-basic .views-field-phpcode a,.view-user-basic .views-field-phpcode-1 a,.view-user-basic .views-field-phpcode-4 a,.xquserpaotherpage a
+{
+	display:block;line-height:40px;height:40px;padding-left:40px;background-image:url(//img.juzimi.com/jmo/images/editinfo.png);background-repeat:no-repeat;background-position:4px center;background-size:26px;color:#333;-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;width:50%
+}
+.view-user-basic .views-field-phpcode-1 .xquserfoander,.view-user-basic .views-field-phpcode-4 .xquserfoander
+{
+	padding-left:40px
+}
+.view-user-basic .views-field-phpcode a,.xquserpaotherpage a
+{
+	height:40px;line-height:40px;border-bottom-width:1px;border-left-width:1px;border-bottom-style:solid;border-left-style:solid;border-bottom-color:#ddd;border-left-color:#ddd;text-align:left
+}
+.view-user-basic .views-field-phpcode-1,.view-user-basic .views-field-phpcode-4
+{
+	height:40px;line-height:40px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#ddd;border-bottom-color:#ddd;border-left-color:#ddd;text-align:left
+}
+.view-user-basic .views-field-phpcode-1:after,.view-user-basic .views-field-phpcode-4:after
+{
+	bottom:-15px
+}
+.view-user-basic .views-field-phpcode a.xqusepagenightbutton
+{
+	background-image:url(//img.juzimi.com/jmo/images/setting.png);background-size:28px
+}
+.view-user-basic .views-field-phpcode .field-content br
+{
+	display:none
+}
+.view-user-basic .views-field-signature:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-user-basic .views-field-signature
+{
+	color:#999;max-height:34px;overflow:hidden;font-size:12px;padding-right:10px
+}
+.view-user-basic .views-field-nothing
+{
+	margin-bottom:8px
+}
+.xquserpaotherpage .uspafir
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catefol.png)
+}
+.xquserpaotherpage .uspafirno
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catenofol.png)
+}
+.xquserpaotherpage .uspasec
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catesixi.png)
+}
+.view-user-basic .views-field-phpcode-5 a,.view-user-basic .views-field-phpcode-6 a,.view-user-basic .views-field-phpcode-7 a,.view-user-basic .views-field-phpcode-8 a
+{
+	display:block;width:100%;height:100%;background-repeat:no-repeat;background-position:center 10px
+}
+.view-user-basic .views-field-phpcode-5,.view-user-basic .views-field-phpcode-6,.view-user-basic .views-field-phpcode-7,.view-user-basic .views-field-phpcode-8
+{
+	background-repeat:no-repeat;background-position:center 10px
+}
+.view-user-basic .views-field-phpcode-5:after,.view-user-basic .views-field-phpcode-6:after,.view-user-basic .views-field-phpcode-7:after,.view-user-basic .views-field-phpcode-8:after
+{
+	bottom:-15px
+}
+.view-user-basic .views-field-phpcode-5,.view-user-basic .views-field-phpcode-5 a
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catefju.png);background-size:25px
+}
+.view-user-basic .views-field-phpcode-6,.view-user-basic .views-field-phpcode-6 a
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2cateyan.png);background-size:25px
+}
+.view-user-basic .views-field-phpcode-7,.view-user-basic .views-field-phpcode-7 a
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catefal.png);background-size:25px
+}
+.view-user-basic .views-field-phpcode-8,.view-user-basic .views-field-phpcode-8 a
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catecom.png);background-size:25px
+}
+.view-user-basic .views-field-phpcode-1
+{
+	position:absolute;top:162px;width:50%
+}
+.view-user-basic .views-field-phpcode-1 a,.view-user-basic .views-field-phpcode-4 a
+{
+	background-image:none;width:100%
+}
+.view-user-basic .views-field-phpcode-4
+{
+	position:absolute;top:162px;left:50%;width:50%
+}
+.view-user-basic .views-field-phpcode-5,.view-user-basic .views-field-phpcode-6,.view-user-basic .views-field-phpcode-7,.view-user-basic .views-field-phpcode-8
+{
+	position:absolute;top:216px;width:25%;height:68px;line-height:100px;text-align:center;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd
+}
+.view-user-basic .views-field-phpcode-6
+{
+	left:25%
+}
+.view-user-basic .views-field-phpcode-7
+{
+	left:50%
+}
+.view-user-basic .views-field-phpcode-8
+{
+	left:75%
+}
+.messalink
+{
+	width:100%;display:block;height:42px;line-height:42px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;padding-left:40px;color:#666!important;background-repeat:no-repeat;background-position:10px center
+}
+.mrmes
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catesixi.png);background-size:25px
+}
+.dongtai
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catedong.png);background-size:25px
+}
+.mrxin
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catefast.png);background-size:25px
+}
+.mrminji
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2cateminjia.png);background-size:25px
+}
+.mrzhuop
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catezhuo.png);background-size:25px
+}
+.logoutlink
+{
+	background-image:url(//img.juzimi.com/jmo/images/v2catetui.png);background-size:25px;margin-top:15px;position:relative
+}
+.logoutlink:before
+{
+	height:14px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;top:-15px;left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;border-left-width:1px;border-left-style:solid;border-left-color:#eee
+}
+.view-user-otherinfo
+{
+	position:relative;padding-top:10px;padding-right:10px;padding-bottom:0;padding-left:10px;margin-bottom:14px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd
+}
+.view-user-otherinfo:after
+{
+	bottom:-15px
+}
+.view-user-otherinfo .views-field-phpcode-1 div
+{
+	display:inline;float:left;height:32px;margin-left:3px;margin-right:3px;width:34px
+}
+.view-user-otherinfo .views-field-phpcode-1:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-user-otherinfo .views-field-value-5
+{
+	clear:both;padding-top:12px;margin-bottom:6px
+}
+.view-user-otherinfo .views-field-value-5 .field-content
+{
+	padding-top:4px;color:#999
+}
+.view-user-otherinfo .views-field-tid
+{
+	padding-top:10px;padding-bottom:10px
+}
+.view-user-otherinfo .views-field-phpcode-2
+{
+	display:none
+}
+.view-user-otherinfo .views-field-phpcode
+{
+	clear:both;margin-top:8px;margin-bottom:15px
+}
+.view-user-otherinfo .views-field-phpcode div
+{
+	display:inline
+}
+.view-user-otherinfo .views-field-value
+{
+	margin-top:8px
+}
+.userfollow #articletitle,.userfans #articletitle,.usercommentinbox #articletitle,.usercommentofwriter #articletitle
+{
+	display:none
+}
+.xqbaneduser .view-user-otherinfo
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-row
+{
+	height:300px;background-image:url(//img.juzimi.com/juzimi/images/canceleduser.jpg);background-repeat:no-repeat;background-position:center 40px
+}
+.xqbaneduser .view-user-basic .userppostsendesc
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-signature
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode-1
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode-4
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode-5
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode-6
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode-7
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode-8
+{
+	display:none
+}
+.xqbaneduser .logoutlink,.xqbaneduser .messalink
+{
+	display:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode
+{
+	border-top-style:none
+}
+.xqbaneduser .view-user-basic .views-field-phpcode:after
+{
+	display:none
+}
+.userfavalbum #articletitle,.useralbum #articletitle
+{
+	display:none
+}
+.view-userscomment .views-row
+{
+	border-top:1px solid #CCC;padding-bottom:7px;padding-top:10px
+}
+.view-userscomment .views-field-title a
+{
+	display:block;width:570px;float:left
+}
+.view-userscomment .views-field-title label
+{
+	display:block;float:left;padding-right:8px
+}
+.view-userscomment .views-field-comment
+{
+	background:transparent url(//img.juzimi.com/jmo/images/icon_comment02.jpg) no-repeat scroll left 6px;padding-left:35px;clear:both;padding-top:6px;*padding-top:2px
+}
+.view-userscomment .views-field-timestamp
+{
+	display:inline;line-height:29px;height:29px;color:#999;margin-left:33px
+}
+.view-userscomment .views-field-delete-comment
+{
+	display:inline;float:right
+}
+.usercomment #articletitle
+{
+	display:none
+}
+#user-profile-form label
+{
+	display:block;margin-top:10px;float:left;width:22%
+}
+#user-profile-form
+{
+	font-size:12px
+}
+#edit-profile-xqhide-wrapper
+{
+	display:none
+}
+#user-profile-form .xqshownameform legend
+{
+	display:none
+}
+#user-profile-form .description
+{
+	color:#999;padding-left:22%;line-height:20px
+}
+#user-profile-form .xqprosignaform legend
+{
+	display:none
+}
+#user-profile-form .xquserpiccss
+{
+	margin-top:15px
+}
+#user-profile-form .picture img
+{
+	border:1px solid #ccc;padding:3px
+}
+#user-profile-form .avatar-crop-picture
+{
+	padding-top:15px;padding-bottom:15px
+}
+#user-profile-form .xquserprimsgcss
+{
+	margin-top:15px
+}
+#user-profile-form .xqusercomnotcss
+{
+	margin-top:15px
+}
+#user-profile-form .xquserlcalcss
+{
+	margin-top:15px;margin-bottom:35px
+}
+#user-profile-form #edit-submit
+{
+	margin:12px 35% 0
+}
+#user-profile-form .option
+{
+	height:30px;line-height:30px;display:block;clear:both
+}
+#user-profile-form .option input
+{
+	float:left;margin-right:5px
+}
+#user-profile-form #edit-profile-sm-name-wrapper
+{
+	clear:both
+}
+#user-profile-form .xquserteldiv
+{
+	line-height:60px
+}
+#user-profile-form .xqusertelb label
+{
+	margin-top:20px
+}
+#user-profile-form input[type=text],#user-profile-form input[type=password],#user-profile-form textarea
+{
+	width:78%;margin:3px 0;border:1px solid #ddd
+}
+#user-profile-form #edit-pass-wrapper .password-strength,#user-profile-form #edit-pass-wrapper .password-confirm
+{
+	display:block
+}
+#user-profile-form #edit-pass-wrapper .password-strength,#user-profile-form span.password-confirm
+{
+	visibility:hidden
+}
+#user-profile-form #edit-pass-wrapper .password-title,#user-profile-form #edit-pass-pass2-wrapper span.password-confirm,#user-profile-form .password-description
+{
+	padding-left:22%
+}
+#user-profile-form:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+#user-profile-form .xquserprimsgcss legend,#user-profile-form .xqusercomnotcss legend
+{
+	display:none
+}
+#user-profile-form .xquserprimsgcss .description,#user-profile-form .xqusercomnotcss .description,#user-profile-form .xquserlcalcss .description,#user-profile-form .xquserpiccss .description,#user-profile-form .xqprosignaform .description
+{
+	display:none
+}
+#user-profile-form .xquserpiccss legend
+{
+	display:block;margin-top:10px;float:left;width:22%
+}
+#user-profile-form .xquserpiccss .avatar-crop-picture
+{
+	padding-left:22%
+}
+#user-profile-form .xquserlcalcss legend
+{
+	display:block;margin-top:10px;float:left;width:22%;line-height:5px
+}
+#user-profile-form .xquserprimsgcss label,#user-profile-form .xqusercomnotcss label,#user-profile-form .xquserlcalcss label
+{
+	width:auto
+}
+#user-profile-form select
+{
+	height:28px;margin-right:10px
+}
+#user-profile-form .form-radios
+{
+	float:left;width:78%;margin-bottom:20px;margin-top:-10px
+}
+#user-profile-form .form-radios .form-item
+{
+	float:left;width:30%
+}
+#user-profile-form .form-radios .form-item label
+{
+	float:none;width:100%
+}
+.xquserpiccss .form-item
+{
+	display:none
+}
+.xquserpiccss .avatar-selection-pager-nav
+{
+	display:none
+}
+.xpusergetimage h1
+{
+	display:none
+}
+.xpusergetimage #avatarcrop-form
+{
+	font-size:12px
+}
+.xpusergetimage #avatarcrop-form input
+{
+	clear:both;display:block;margin-top:25px
+}
+.xpusercropimage h1
+{
+	display:none
+}
+.xpusercropimage #preview-pane
+{
+	display:none
+}
+.xpusercropimage .jcrop-preview
+{
+	display:none
+}
+.xpusercropimage .jcrop-holder
+{
+	margin-bottom:15px;margin-top:15px
+}
+.xpusercropimage .xqavcrdesc
+{
+	display:none
+}
+.xpusercropimage #edit-cropsubmit
+{
+	display:block
+}
+.xpusercropimage .avatar-crop-title
+{
+	float:left;line-height:30px;margin-right:15px
+}
+#edit-profile-bir-wrapper
+{
+	margin-top:25px
+}
+#edit-profile-bir-wrapper #edit-profile-bir-year-wrapper
+{
+	float:left
+}
+#edit-profile-bir-wrapper #edit-profile-bir-month-wrapper
+{
+	float:left
+}
+#edit-profile-bir-wrapper .description
+{
+	color:#999;clear:both
+}
+#edit-profile-usershortdesc-wrapper
+{
+	margin-top:10px
+}
+#edit-profile-usershortdesc-wrapper .description
+{
+	display:none
+}
+#edit-profile-pqq-wrapper
+{
+	margin-bottom:15px;margin-top:15px
+}
+#edit-profile-sina-wrapper
+{
+	margin-bottom:15px
+}
+#edit-profile-tencent-wrapper
+{
+	margin-bottom:15px
+}
+#edit-profile-renren-wrapper
+{
+	margin-bottom:15px
+}
+#edit-profile-douban-wrapper
+{
+	margin-bottom:15px
+}
+#edit-profile-web-wrapper
+{
+	margin-bottom:15px
+}
+.page-user #edit-submit
+{
+	margin-bottom:18px
+}
+.password-strength,.password-confirm
+{
+	color:#999
+}
+.sinabandinsetting,.qqbandinsetting
+{
+	font-size:12px;color:#333;line-height:28px
+}
+.sinabandinsetting h3
+{
+	margin-bottom:0
+}
+.qqbandinsettitle
+{
+	margin-top:25px;font-size:14px;font-weight:bold
+}
+.weibodisconnect h1
+{
+	display:none
+}
+.xquserlistcss .avleft
+{
+	float:left;display:inline;margin-right:10px;width:50px
+}
+.xquserlistcss .conright
+{
+	float:left;width:75%;font-size:12px;color:#888
+}
+.xquserlistcss .conrightname
+{
+	color:#999;margin-bottom:6px;color:#555
+}
+.xquserlistcss
+{
+	margin-right:5px;margin-left:5px;margin-bottom:20px
+}
+.xquserlistcss li.views-row
+{
+	clear:both;margin-bottom:10px;padding-top:10px;border-top:1px solid #CCC
+}
+.xquserlistcss li.views-row:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xquserlistcss .view-favwriter
+{
+	margin-top:4px;color:#999
+}
+.xquserlistcss .view-favwriter div
+{
+	display:inline;float:none
+}
+.xquserlistcss .user_relationships_popup_link
+{
+	margin-top:4px
+}
+.view-usertaglist .view-favwriter .view-content:after
+{
+	clear:none;display:none
+}
+.popuptc_wai_up
+{
+	padding-bottom:5px
+}
+.popuptc_wai_up .view-id-user_pop
+{
+	padding:13px;border-top-width:1px;border-top-style:solid;border-top-color:#ddd;position:relative
+}
+.popuptc_wai_up .view-id-user_pop:after
+{
+	height:10px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-16px;left:0;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:#ddd;border-bottom-color:#ddd
+}
+.xpsearchuser .xqsearcon
+{
+	margin-bottom:10px
+}
+.popuptc_wai_up .views-field-picture
+{
+	float:left;margin-right:8px;display:inline
+}
+.popuptc_wai_up .xquserinfocofrpop
+{
+	color:#999
+}
+.popuptc_wai_up .views-field-signature
+{
+	height:20px;overflow:hidden;margin-top:3px;margin-bottom:2px
+}
+.popuptc_wai_up .views-field-field-following-value,.popuptc_wai_up .views-field-phpcode
+{
+	float:left;margin-right:20px;display:inline
+}
+.popuptc_wai_up .views-field-nothing-2
+{
+	padding-right:5px;padding-left:5px;margin-top:8px;clear:both;height:20px
+}
+.popuptc_wai_up .views-field-nothing-2 li
+{
+	display:inline;float:left;margin-right:15px;background-color:#f5f5f5;padding-top:6px;padding-right:10px;padding-bottom:6px;padding-left:10px
+}
+.popuptc_wai_up .views-field-value-2
+{
+	padding-top:10px;clear:both
+}
+.popuptc_wai_up .views-field-value-2 label
+{
+	font-weight:bold
+}
+.popuptc_wai_up .views-field-phpcode-1 a
+{
+	display:block;border-radius:15px;border:1px solid #ddd;padding-top:3px;padding-right:10px;padding-bottom:3px;padding-left:10px;width:100px;text-align:center;margin-top:5px;margin-right:auto;margin-left:auto
+}
+.xpsearchuser .xqsearcon .user_relationships_popup_link_notlogin
+{
+	display:none
+}
+.popuptc_wai_up .views-field-view
+{
+	padding-top:7px;color:#333;clear:both
+}
+.popuptc_wai_up .views-field-view div
+{
+	display:inline;float:none;height:auto;margin-bottom:auto;width:auto
+}
+.popuptc_wai_up .view-favwriter .view-content:after
+{
+	display:none
+}
+.xpmessages #articletitle
+{
+	display:none
+}
+.xpmessagesview .privatemsg-message-participants
+{
+	display:none
+}
+.xpmessagesview .privatemsg-message-actions
+{
+	display:none
+}
+.xpmessagesview #edit-cancel
+{
+	display:none
+}
+.xpmessagesview ul.tabs li.active
+{
+	display:none
+}
+#privatemsg-list .container-inline
+{
+	padding-top:10px;padding-left:10px
+}
+.privatemsg-list tr td.privatemsg-list-participants
+{
+	padding-top:10px;padding-bottom:10px
+}
+.privatemsg-list tr td.privatemsg-list-participants a
+{
+	display:block;width:50px;height:50px
+}
+.privatemsg-list thead
+{
+	display:none
+}
+.privatemsg-list .privatemsg-list-date
+{
+	color:#ccc;font-size:11px;display:block;white-space:nowrap;width:72px
+}
+.privatemsg-list .privatemsg-list-select
+{
+	clear:both;width:33px;padding-top:20px
+}
+.privatemsg-list .privatemsg-list-subject
+{
+	-webkit-box-flex:1;-webkit-flex:1;flex:1
+}
+.privatemsg-list .privatemsg-list-subject .marker
+{
+	color:#F00
+}
+.privatemsg-list .xqpmglistusername a
+{
+	color:#333;font-weight:bold
+}
+.privatemsg-list .xqpmglistlasttime
+{
+	color:#CCC;float:right;padding-right:5px
+}
+.privatemsg-list .privatemsg-list-participants
+{
+	width:60px
+}
+#privatemsg-list #edit-delete
+{
+	float:left;margin-right:20px;height:28px;line-height:28px;width:50px
+}
+#privatemsg-list #edit-operation-wrapper select
+{
+	height:28px
+}
+.privatemsg-list
+{
+	clear:both;margin-top:15px;width:100%;display:block
+}
+.privatemsg-list tbody
+{
+	display:block;width:100%;border-top:1px solid #ddd
+}
+.privatemsg-list tr
+{
+	width:100%;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:horizontal;-webkit-flex-flow:row;flex-flow:row;border-bottom:1px solid #ddd
+}
+.privatemsg-list td
+{
+	display:block
+}
+#privatemsg-list .privatemsg-op-button
+{
+	display:none
+}
+.privatemsg-view-pager
+{
+	text-align:center
+}
+.privatemsg-view-pager a
+{
+	padding:10px
+}
+.xpmessagesnew #contentin,.xpmessagesblocked #contentin,.messagesview #contentin
+{
+	padding:10px
+}
+.messages
+{
+	background:#EEE;padding:20px 10px 20px 10px;border:1px solid #CCC;font-size:12px;line-height:25px
+}
+.xpmessages #contentin
+{
+	font-size:12px;line-height:25px
+}
+.allmessages .messages
+{
+	border:1px none #e8e8e8!important;overflow:hidden;background:#FFF!important;margin:2px
+}
+.allmessages .messages li
+{
+	_display:inline;list-style:decimal inside
+}
+.allmessages
+{
+	width:80%;padding:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;background:url(//img.juzimi.com/juzimi/images/boderbg2.png) repeat;-moz-box-shadow:3px 3px 7px #aaa;-webkit-box-shadow:3px 3px 7px #aaa;box-shadow:3px 3px 7px #aaa;display:none
+}
+.allmessagesin
+{
+	border:1px solid #f60;background:#FFF;padding:20px 13px 30px 13px;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;_zoom:1;line-height:22px
+}
+.allmessagesbegin
+{
+	*position:relative;*z-index:9999
+}
+.allmessages .xqmessneednum li
+{
+	margin-top:6px;margin-bottom:9px;list-style:none;background:#FFF url(//img.juzimi.com/juzimi/images/icon_white.png?v=1) no-repeat scroll -4px -454px;padding-left:10px;*padding-left:0;line-height:17px
+}
+.xqrolesadmin .mesadmin .allmessages,.mnoderevisionsview .allmessages
+{
+	width:952px
+}
+#DivShim
+{
+	_border:1px solid #f60
+}
+.allmessagesbegin a
+{
+	white-space:nowrap;margin-right:3px;margin-left:3px
+}
+.allmessages .xqmessneednum li a
+{
+	white-space:normal
+}
+.allmessages .messclose
+{
+	text-align:center;background-color:#f5f5f5;border:1px solid #ddd;padding:3px;border-radius:3px;display:block;margin:10px auto 0;width:100px;color:#555
+}
+.xpmessagesblocked #edit-name
+{
+	width:100%
+}
+.xpmessagesblocked .description
+{
+	visibility:hidden
+}
+.xpmessagesblocked table
+{
+	margin-top:10px
+}
+#pm-block-user-list #edit-submit
+{
+	margin-top:15px;margin-bottom:10px
+}
+#pm-block-user-list table
+{
+	width:100%;text-align:center
+}
+#pm-block-user-list tr
+{
+	border-top-width:1px;border-top-style:solid;border-top-color:#bbb;height:35px;line-height:35px
+}
+.privatemsg-message
+{
+	border-bottom:1px solid #ddd;clear:both;margin-bottom:10px;padding-bottom:5px;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:horizontal;-webkit-flex-flow:row;flex-flow:row
+}
+.privatemsg-message .privatemsg-author-avatar
+{
+	margin-right:10px;width:50px
+}
+.privatemsg-message .privatemsg-message-column
+{
+	-webkit-box-flex:1;-webkit-flex:1;flex:1
+}
+.privatemsg-message .privatemsg-message-column .privatemsg-message-date
+{
+	color:#CCC;float:right
+}
+#xqreadmes .privatemsg-author-avatar img
+{
+	border-radius:25px;width:50px;height:50px
+}
+#xqreadmes .privatemsg-message-column
+{
+	margin-top:-5px
+}
+.privatemsg-message .privatemsg-clearfix
+{
+	clear:both
+}
+.privatemsg-message-column .privatemsg-message-new
+{
+	visibility:hidden
+}
+#privatemsg-form-reply textarea,#privatemsg-new #edit-recipient,#privatemsg-new #edit-subject,#privatemsg-new #edit-body
+{
+	width:100%
+}
+#privatemsg-new #edit-submit,#privatemsg-form-reply #edit-submit
+{
+	margin:10px auto 20px
+}
+#privatemsg-new #edit-cancel
+{
+	display:none
+}
+#privatemsg-form-reply .privatemsg-reply
+{
+	display:none
+}
+#privatemsg-form-reply #edit-body-wrapper label
+{
+	display:none
+}
+.xpmessagesnew .xqpmguestbookto,.xpmessagesnew .xqpmguestbooktitle
+{
+	display:none
+}
+.usercommentinbox .heartbeat-message-block
+{
+	display:flex;flex-flow:row
+}
+.cphbavatar
+{
+	margin-right:15px;width:55px
+}
+.cphbmessage
+{
+	color:#666;flex:1
+}
+.hebaddpost a
+{
+	line-height:22px;color:#000
+}
+.hebaddpost .hblinealbum
+{
+	color:#5cb43f
+}
+.hebaddpost .hblinealbum:hover
+{
+	text-decoration:underline
+}
+.heartbeat-message-block .activity-time
+{
+	display:block;font-size:12px;color:#bbb;text-decoration:none;font-style:normal;margin-top:5px
+}
+div.beat-item blockquote
+{
+	background:url(none);margin-left:0;margin-right:0
+}
+.xqhbcomment
+{
+	margin-top:12px;color:#000;margin-bottom:12px
+}
+.view-writercomment .xqhbcomment
+{
+	padding-left:0
+}
+div.heartbeat-message-block:hover .beat-item,div.heartbeat-message-block.hover .beat-item
+{
+	*position:static
+}
+.heartbeat-more-messages-wrapper a
+{
+	background:url(//img.juzimi.com/jmo/images/icon_white.png) no-repeat left -330px;padding-left:15px;height:18px;float:right;display:block;width:90px;margin-top:5px
+}
+.heartbeat-more-messages-wrapper
+{
+	height:28px
+}
+.heartbeat-messages-wrapper p
+{
+	color:#999
+}
+#heartbeat-stream-publicheartbeat
+{
+	width:640px;height:1030px;margin:0 auto;position:relative;overflow:hidden
+}
+#heartbeat-stream-publicheartbeat .heartbeat-messages-wrapper
+{
+	position:absolute;top:0;left:0
+}
+#heartbeat-stream-publicheartbeat .heartbeat-messages-wrapper .heartbeat-message-block
+{
+	width:100%
+}
+.view-user-flagsen-comment-new .views-row,.view-writercomment .views-row
+{
+	clear:both;margin-bottom:15px;border-bottom:1px solid #ccc;padding-bottom:6px
+}
+.view-user-flagsen-comment-new .views-row .views-row
+{
+	border-bottom:0;margin-top:-15px
+}
+.view-user-flagsen-comment-new .views-row .views-field-nothing
+{
+	display:none
+}
+.view-user-flagsen-comment-new .views-field-ops,.view-user-flagsen-comment-new .views-field-field-addtoalbum-value,.view-user-flagsen-comment-new .views-field-comment-count
+{
+	margin-top:5px;margin-bottom:15px
+}
+.view-user-flagsen-comment-new .clear,.view-writercomment .clear
+{
+	clear:both
+}
+.view-user-flagsen-comment-new .xqdongtju
+{
+	margin-top:8px;display:block;margin-bottom:-15px;line-height:20px
+}
+.view-writercomment .user-uid
+{
+	display:none
+}
+.xpprofileprofile_sm_city #contentin
+{
+	padding:10px
+}
+.xpprofileprofile_sm_city .view-xqcityuser .views-row
+{
+	float:left;width:33%;margin-bottom:15px;height:108px;overflow:hidden;text-align:center
+}
+.xpprofileprofile_sm_city .view-xqcityuser .view-content:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xpprofileprofile_sm_city .view-xqcityuser .views-row .views-field-picture img
+{
+	border-radius:50px
+}
+.xpprofileprofile_sm_city .xqprocityheader
+{
+	margin-bottom:20px
+}
+.xqappversion .xpprofileprofile_sm_city .xqprocityheader
+{
+	display:none
+}
+.jianjiecontent,.jianjieyulu,.jianjiezuopin
+{
+	padding:10px;position:relative;margin-bottom:11px
+}
+.jianjiecontent:after,.jianjieyulu:after,.jianjiezuopin:after
+{
+	height:11px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-13px;left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;clear:both;border-top-width:1px;border-top-style:solid;border-top-color:#ddd
+}
+.xqjianjieflagwr .flag-throbber
+{
+	display:none
+}
+.jianjieyulu li
+{
+	list-style:decimal
+}
+.xqjianjieagewr
+{
+	clear:both;margin-top:8px
+}
+.xqjianjieeditwr .xqwaatermedit
+{
+	color:#AAA;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -273px transparent;padding-left:18px;display:block;margin-bottom:8px;margin-top:10px
+}
+.xqjianjieeditwr:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.jianjieyulu h2,.jianjieyulu h2 a,.jianjiezuopin h2,.jianjiezuopin h2 a
+{
+	font-size:16px;color:#555
+}
+.jianjieyulu h2,.jianjiezuopin h2
+{
+	border-left:3px solid #f93;padding-left:5px
+}
+.jianjieyulumore,.jianjiezuopinmore
+{
+	margin-right:15px;color:#5cb43f;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -329px rgba(0,0,0,0);padding-left:15px;font-size:14px;margin-top:6px;margin-bottom:12px
+}
+.jianjiecontext
+{
+	line-height:22px;text-align:justify;text-justify:inter-ideograph
+}
+.jianjieconpic .jianjieconpichtml
+{
+	text-align:center
+}
+.xpjianjie .jianjieconpic .jianjieconpichtml img
+{
+	padding:3px;border:1px solid #ccc;margin-top:15px;max-width:150px;height:auto;width:auto;max-height:150px
+}
+.xpjianjiejieshao .jianjieconpic .jianjieconpichtml img
+{
+	border:1px solid #ccc;margin-top:15px;max-width:150px;height:auto;width:auto;max-height:150px
+}
+.jianjieyulu,.jianjiezuopin
+{
+	line-height:22px;*zoom:1;color:#666;border-top:1px solid #ddd;margin-top:12px
+}
+.jianjietag li
+{
+	color:#999;float:left;margin-right:10px;display:block
+}
+.jianjietag .jianjietagtitle
+{
+	float:left;margin-right:5px
+}
+.jianjietag
+{
+	*zoom:1;margin-top:30px;margin-right:10px;margin-left:10px
+}
+.jianjietag:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqappversion .jianjietag
+{
+	display:none
+}
+.jianjietag a
+{
+	color:#999
+}
+.jianjiejc
+{
+	color:#ccc;line-height:22px;margin:15px;font-size:12px
+}
+.jianjietitle
+{
+	display:none
+}
+.jianjiezuopinlist .jianjiezplistpic img
+{
+	border:1px solid #ccc
+}
+.jianjiezuopinlist li
+{
+	border-top-width:1px;border-top-style:solid;border-top-color:#eee;margin-bottom:8px;text-align:center
+}
+.jianjiezuopinlist .jianjiezuopindesc,.jianjiezuopin .jianjiezuopinswriterdesc
+{
+	text-align:justify;text-justify:inter-ideograph
+}
+.jianjiejc strong,.jianjiejc em
+{
+	font-style:normal;font-weight:normal
+}
+.jianjiezuopinswriterpic
+{
+	text-align:center
+}
+.jianjiezuopinswriterpic img
+{
+	padding:3px;border:1px solid #ccc;margin-top:10px
+}
+#abuse-report-form
+{
+	padding:10px
+}
+#abuse-report-form #edit-body
+{
+	width:100%;margin-top:10px;margin-bottom:10px
+}
+#abuse-report-form #edit-send
+{
+	margin-top:0;margin-right:auto;margin-left:auto
+}
+#abuse-report-form #cancel
+{
+	display:none
+}
+.xpleisi .view-artistlistrelatewr .views-row .views-field-tid
+{
+	background:url("//img.juzimi.com/jmo/images/defaultavatar85.jpg") no-repeat scroll center center transparent;background-size:70px;border:1px solid #ccc;display:block;height:87px;margin-left:auto;margin-right:auto;margin-top:0;overflow:hidden;width:87px
+}
+.xpleisi .view-artistlistrelatewr .views-row .views-field-name
+{
+	text-align:center;padding-top:3px;height:20px;overflow:hidden
+}
+.xpleisi .view-artistlistrelatewr .views-row .views-field-name a
+{
+	font-weight:bold
+}
+.leisicon
+{
+	line-height:20px;color:#aaa;margin:10px;font-size:12px
+}
+.xqleisiwritlink
+{
+	background:url("//img.juzimi.com/juzimi/images/icon_itemarrow.gif") no-repeat scroll left 5px transparent;clear:both;float:left;display:inline;margin-top:5px;padding-left:17px
+}
+.xpleisi .view-artistlistrelatewr .xqleisiwritdesc
+{
+	color:#777;line-height:18px;margin-bottom:6px;margin-top:8px
+}
+.xpleisi .view-artistlistrelatewr .wridesccon:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xpleisi h2
+{
+	display:none
+}
+.xpxiangsi h2
+{
+	display:none
+}
+.xpxiangsi .view-otherarticle .views-row .views-field-tid
+{
+	text-align:center
+}
+.xpxiangsi .view-otherarticle .views-row img
+{
+	border:1px solid #ddd
+}
+.xpxiangsi .view-otherarticle .views-row .views-field-name
+{
+	text-align:center;padding-top:3px;height:20px;overflow:hidden
+}
+.xpxiangsi .view-otherarticle .views-row .views-field-name a
+{
+	font-weight:bold
+}
+.xpxiangsi .view-otherarticle .wridesccon:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xpxiangsi .view-otherarticle .xqleisiwritdesc
+{
+	color:#777;line-height:18px;margin-bottom:6px;margin-top:8px
+}
+.xqxiangsimorelink
+{
+	text-align:center;font-size:20px
+}
+.xqxiangsiiconadd
+{
+	font-size:50px;font-weight:bold;line-height:30px;color:#DDD
+}
+#othermingyanblock .views-row
+{
+	width:33%;text-align:center;margin:0;float:left
+}
+#othermingyanblock a
+{
+	height:35px;display:block;color:#777;line-height:35px
+}
+#othermingyanblock .rightmingyan:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.searpagetoparori
+{
+	border-bottom:1px solid #CCC;padding:10px;position:relative;margin-bottom:11px
+}
+.searpagetoparori:after
+{
+	height:11px;background-color:#eee;display:block;width:100%;content:"";clear:both;position:absolute;bottom:-13px;left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#ddd;clear:both;border-top-width:1px;border-top-style:solid;border-top-color:#ddd
+}
+.searcharimgleft a
+{
+	display:block
+}
+.searcharimgleft img
+{
+	padding:3px;border:1px solid #CCC;max-width:120px;max-height:120px;height:auto;width:auto
+}
+.searpagetoparori .flag-action
+{
+	background:transparent url(//img.juzimi.com/jmo/images/icon_fav_li.png) no-repeat scroll left top;color:#999;display:block;height:20px;line-height:20px;padding-left:25px;font-weight:normal!important;font-size:12px!important
+}
+.searpagetoparori .flag-action:hover
+{
+	background:transparent url(//img.juzimi.com/jmo/images/icon_fav_li.png) no-repeat scroll left center
+}
+.searpagetoparori .unflag-action
+{
+	background:transparent url(//img.juzimi.com/jmo/images/icon_fav_li.png) no-repeat scroll left bottom;height:20px;padding-left:25px;display:block;line-height:20px;width:80px;font-weight:normal!important;font-size:12px!important
+}
+.searpagetoparori .flag-throbber
+{
+	display:none
+}
+.searpagetoparori .searchrightinfotop a
+{
+	float:left;margin-right:10px;display:inline;font-weight:bold;font-size:15px
+}
+.searpagetoparori .searchrightinfo div
+{
+	margin-bottom:6px
+}
+.searpagetoparori .view-articlelistimagesearch .searchrightinfo div
+{
+	margin-bottom:6px
+}
+.searpagetoparori .view-articlelistimagesearch .wridesccon
+{
+	margin-top:6px
+}
+.searpagetoparori .searchrightinfotop
+{
+	margin-bottom:10px;margin-top:10px
+}
+.searpagetoparori .searchrightinfotop:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.searpagetoparori .xqsearpawirdesclink
+{
+	margin-top:10px;display:block;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -327px rgba(0,0,0,0);padding-left:18px;font-size:16px;margin-bottom:10px
+}
+.searpagetoparori .xqsearpagerelatwriter,.searpagetoparori .xqsearpagerelatarticle,.searpagetoparori .xqsearpagerelattags
+{
+	margin-top:6px
+}
+.searpagetoparori .xqsearpagerelatwriter a,.searpagetoparori .xqsearpagerelattags a
+{
+	margin-right:12px
+}
+.search-results dd
+{
+	margin-left:0;margin-top:4px
+}
+.search-results dd .search-snippet
+{
+	font-size:12px;color:#999
+}
+.search-results dd .search-info
+{
+	font-size:12px
+}
+.view-artistlistimagesearch,.view-articlelistimagesearch
+{
+	border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#eee;margin-bottom:10px;padding-bottom:10px
+}
+.xqsearchrecount
+{
+	padding:10px;color:#666
+}
+.xqsearchpageoptiontitle,.xqsearchpagesorttitle
+{
+	display:block;margin-right:35px
+}
+.xqsearchpageoptionblock
+{
+	margin-bottom:7px
+}
+.xqsearchpageoptionblock a
+{
+	margin-right:18px;line-height:24px
+}
+.xqsearchpageoptionblock .xqseaopfocus
+{
+	margin-right:18px;background-image:url(//img.juzimi.com/jmo/images/icon_white.png);background-repeat:no-repeat;background-position:left -331px;padding-left:15px;font-weight:bold
+}
+.xqsearchpageoptioncon,.xqsearchpagesortcon
+{
+	display:none
+}
+.xqsearchpageoptionblock
+{
+	float:left;margin-left:10px;color:#666
+}
+.view-jusearch
+{
+	clear:both
+}
+.xqnoresult
+{
+	clear:both
+}
+.xpsearchuser .search-results
+{
+	margin-top:0
+}
+.xpnode96 #contentin,.xpnode276 #contentin,.xpnode572 #contentin,.xpnode570 #contentin
+{
+	padding:0
+}
+.xpnode96 #contentin
+{
+	line-height:20px
+}
+.xpnode96 #articletitle,.xpnode572 #articletitle,.xpnode570 #articletitle
+{
+	display:none
+}
+.xpnode96 .mobilehide
+{
+	display:none
+}
+.xpnode276 #comments .comment
+{
+	display:none
+}
+.xpnode276 #comments .xqnodecomtitlecou
+{
+	display:none
+}
+.xpnode276 #comments .item-list
+{
+	display:none
+}
+.xpnode276 #node-276
+{
+	display:none
+}
+.xpnode276 .xqcommentile
+{
+	padding-top:15px
+}
+.xpnode276 #edit-submit
+{
+	margin-left:25px
+}
+.xqaboutpage
+{
+	text-align:center
+}
+.xqaboutpage img
+{
+	margin:30px 0
+}
+.relationshiprequest #articletitle h1,.userrelationships #articletitle h1
+{
+	display:none
+}
+.relationshiprequest #user-relationships-ui-request,.userrelationships #user-relationships-ui-remove
+{
+	padding:20px
+}
+.relationshiprequest #user-relationships-ui-request .container-inline,.userrelationships #user-relationships-ui-remove .container-inline
+{
+	margin-top:30px
+}
+.relationshiprequest #user-relationships-ui-request .container-inline input,.userrelationships #user-relationships-ui-remove .container-inline input
+{
+	margin-right:30px;margin-bottom:30px
+}
+.relationshiprequest #user-relationships-ui-request .container-inline a,.userrelationships #user-relationships-ui-remove .container-inline a
+{
+	line-height:35px;color:#999
+}
+.xqapppagetitle
+{
+	text-align:center
+}
+.xqapppagetitle h1
+{
+	font-size:18px;margin-top:10px
+}
+.xqapppagetitledesc
+{
+	margin-top:10px;color:#999;margin-bottom:20px
+}
+.xqapppagelist
+{
+	border:1px solid #ddd;background:url("//img.juzimi.com/juzimi/images/list_back.jpg") repeat-x scroll center bottom rgba(0,0,0,0);margin-bottom:15px;padding-top:5px;padding-right:10px;padding-bottom:15px;padding-left:10px
+}
+.xqapppageandroidtitle
+{
+	color:#666;padding-top:5px;padding-bottom:0
+}
+.xqapppageandroidtitle h2
+{
+	font-size:16px
+}
+.xqapppageandroiddownlaoddesc
+{
+	color:#999;margin-top:5px;line-height:25px
+}
+.xqappdownloadtip
+{
+	display:none
+}
+.xqapppagemobile
+{
+	display:none
+}
+.usert #contentin
+{
+	padding:0
+}
+.view-facebook-status-stream .view-header
+{
+	margin:10px
+}
+.view-facebook-status-stream .view-header
+{
+	margin-bottom:8px
+}
+#facebook-status-box #edit-fbss-submit
+{
+	float:right;margin-right:10px
+}
+#facebook-status-box #edit-fbss-status
+{
+	margin-bottom:4px
+}
+#facebook-status-box #facebook-status-replace
+{
+	padding:10px
+}
+#facebook-status-box #facebook-status-replace:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.view-facebook-status-stream .views-row
+{
+	padding-bottom:5px;border-bottom:1px solid #ddd;padding-bottom:7px;padding-right:10px;padding-left:10px;padding-top:10px
+}
+.view-facebook-status-stream .views-row:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqfbssmess:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.xqfbssmess
+{
+	line-height:25px
+}
+.view-facebook-status-stream .xqfbssname
+{
+	float:left
+}
+.fbss-comments-hide
+{
+	display:none
+}
+.view-facebook-status-stream #edit-status-comment,.view-facebook-status-stream #edit-fbss-status,#edit-fbss-status
+{
+	width:100%
+}
+.xqfbssmess .picture
+{
+	width:55px;float:left
+}
+.facebook-status-edit a,.facebook-status-delete a
+{
+	color:#999;font-size:12px
+}
+.facebook-status-edit
+{
+	margin-left:20px;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -272px transparent;padding-left:17px;float:right;height:18px;line-height:18px;margin-top:20px
+}
+.facebook-status-delete
+{
+	margin-left:12px;margin-right:12px;background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -86px transparent;padding-left:16px;float:right;height:18px;line-height:18px;margin-top:20px
+}
+.view-facebook-status-stream .xqfbsscomm,.fbss-comments-created
+{
+	height:20px;line-height:20px;margin-top:20px;float:right;color:#bbb;font-size:10px
+}
+.view-facebook-status-stream .facebook-status-content
+{
+	float:left;width:100%;padding-left:55px;position:relative;top:-30px;margin-bottom:-30px
+}
+.fbss-comments-form form
+{
+	margin:0 0 0 58px
+}
+.fbss-comments
+{
+	margin:0;border-top:1px dotted #e0e0e0;border-right-style:none;border-bottom-style:none;border-left-style:none;padding-top:5px;padding-right:5px;padding-bottom:10px;padding-left:0
+}
+.fbss-comments-author-picture
+{
+	float:left;margin-right:10px;height:56px;overflow:hidden;width:56px;background:url(//img.juzimi.com/juzimi/images/defaultavatar50.jpg) no-repeat center center;border:1px solid #ccc
+}
+.fbss-comments-form .resizable-textarea
+{
+	margin:1.5em 1.5em 2px 0
+}
+.fbss-comments-form textarea
+{
+	height:60px;border:1px solid #CCC;margin-left:6px;width:100%
+}
+.fbss-comments-form .form-submit
+{
+	margin-left:5px;margin-top:5px;margin-bottom:5px
+}
+.fbss-comments-form .fbss-comments-edit-delete
+{
+	display:none
+}
+.fbss-comments .first
+{
+	margin:0
+}
+.view-facebook-status-stream .views-row-even
+{
+	background:#f9f9f9
+}
+.fbss-comments-show-comment-inner-form-link,.fbss-comments-show-comment-form-link
+{
+	background:url("//img.juzimi.com/jmo/images/icon_white.png") no-repeat scroll left -21px transparent;padding-left:17px;color:#999;font-size:12px;position:relative;top:-20px;margin-left:55px
+}
+.fbss-comments-show-comment-form-inner .fbss-comments-show-comment-inner-form-link
+{
+	margin-left:-5px;top:-10px
+}
+.fbss-comments-show-comment-form-inner
+{
+	display:inline;margin-left:5px;position:relative;left:0;font-size:12px;top:5px
+}
+.fbss-comments-show-comment-form
+{
+	margin-bottom:-20px
+}
+.fbss-comments-form .fbss-comments-text
+{
+	font-size:12px;margin-bottom:6px;margin-top:4px
+}
+.fbss-comments-form .fbss-comments-closure
+{
+	position:relative;top:-38px
+}
+.statusesdelete h1
+{
+	display:none
+}
+.statusesdelete input
+{
+	margin:30px auto
+}
+.statusesedit #contentin,.statusesdelete #contentin
+{
+	padding:10px
+}
+.jusocialshlist
+{
+	font-size:12px;color:#666
+}
+.jusocialshlist .jusocSharetitle
+{
+	font-size:13px;vertical-align:75%;color:#000
+}
+.jusocialshlist span,.jusocialshlist a
+{
+	width:16%;display:inline-block;text-align:center;margin:10px 0;color:#999
+}
+.jusocialshlist a.xqtouch
+{
+	opacity:.5;background-color:transparent
+}
+.jusocialshlist span i,.jusocialshlist a i
+{
+	width:40px;height:40px;display:block;margin:0 auto;margin-bottom:5px;background-size:cover
+}
+.jusocialshlist .jssweibo i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusoweibo.png')
+}
+.jusocialshlist .jssweixin i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusoweixin_friend.png')
+}
+.jusocialshlist .jssweixin_timeline i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusoweixin.png')
+}
+.jusocialshlist .jssqzone i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusoqqzone.png')
+}
+.jusocialshlist .jsstqq i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusotqq.png')
+}
+.jusocialshlist .jssqq i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusoqq.png')
+}
+.jusocialshlist .jssmore i
+{
+	background-image:url('//img.juzimi.com/jmo/images/jusomore.png')
+}
+.boxy-wrapper .jusocSharetitle
+{
+	display:none
+}
+.boxy-wrapper .jusocialshlist
+{
+	clear:both;text-align:center;padding-top:10px
+}
+.boxy-wrapper .jusocialshlist a
+{
+	width:20%
+}
+.boxy-wrapper .jusocialshlistnoucqq a
+{
+	width:30%
+}
+#edit-phonenum,#edit-verificode
+{
+	-webkit-appearance:none!important;-moz-appearance:textfield;padding:8px 10px;font-size:13px;line-height:15px;background:#fff;border:1px solid #ccc;color:#222;box-sizing:border-box
+}
+#xqr-xqcellphone-form input::-webkit-outer-spin-button,#xqr-xqcellphone-form input::-webkit-inner-spin-button
+{
+	-webkit-appearance:none!important
+}
+#xqr-xqcellphone-form
+{
+	margin-top:35px
+}
+#xqr-xqcellphone-form #edit-phonenum,#xqr-xqcellphone-form #edit-verificode
+{
+	width:95%
+}
+#xqr-xqcellphone-form .form-item
+{
+	margin-top:20px;margin-left:5%
+}
+#xqr-xqcellphone-form #edit-submit
+{
+	margin:35px 35% 20px;float:none;height:35px
+}
+#xqr-xqcellphone-form .xqgetco
+{
+	margin-left:15px;text-align:center
+}
+#xqr-xqcellphone-form .xqcance
+{
+	text-align:center;margin-top:10px;margin-bottom:10px
+}
+#xqr-xqcellphone-form .form-required
+{
+	display:none
+}
+#xqr-xqcellphone-form .xqsendinfo
+{
+	text-align:center;padding-top:8px
+}
+#xqr-xqcellphone-form #xqgetcowait
+{
+	color:#999!important
+}
+#xqr-xqcellphone-form .xqgetco .form-item
+{
+	margin-left:0
+}
+#xqr-xqcellphone-form #xqgetcodiv
+{
+	border:thin solid #bbb;border-radius:5px;background-color:#eee;line-height:38px;padding-right:10px;padding-left:10px;display:block;width:35%;text-align:center;margin-top:0;margin-right:auto;margin-left:auto
+}

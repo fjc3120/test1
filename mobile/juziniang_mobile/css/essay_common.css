@@ -1,0 +1,192 @@
+fieldset {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+h1{
+	-webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+}
+.senconwriart
+{
+    text-align: right;
+}
+#content .essay_list .essay_resource{
+    text-align: right;
+    height: 35px;
+}
+.resource_body{
+    color:#5cb43f;
+}
+#logo{
+    height: 40px;
+    float: left;
+    width: 50px;
+}
+#logo img{
+    width: 60px;
+    height: 40px;
+}
+#logo a.moback{
+    height: 40px;
+    width: 50px;
+    display: block;
+    font-size: 22px;
+    color: #ffaf37;
+    text-align: center;
+    line-height: 40px;
+    background: url(http://img.juzimi.com/jmo/images/v2foicon.png) no-repeat center center;
+    background-size: 20px 460px;
+    background-position: center -430px;
+}
+.flagandalbum #anflag {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+.flagandalbum #basic-modal {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+.submitted a {
+    color: #333;
+}
+.flagandalbum {
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    width: 80%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+.flagandalbumwrap 
+{
+    text-align: center;
+    margin-top: 18px;
+
+}
+.route
+{
+	-webkit-transform: rotate(180deg); 
+}
+.flag-action,.node-type-album .flag-favalbum a, .node-type-album .flag-flavalbum a, .node-type-album .flag-flavalbum div.unflag-action, .node-type-sentence .flag-fav a, .node-type-sentence .flag-fav div.unflag-action, .flagandalbum #basic-modal a 
+{
+    display: block;
+    width: 120px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+    text-align: center;
+    height: 45px;
+    background-size: 16px;
+    color: #999;
+    padding-top: 15px;
+    background-color: #FFF;
+    background-image: url(../img/iconlike.png);
+    -webkit-transform: rotate(180deg); 
+    background-repeat: no-repeat;
+    background-position: center 4px;
+    font-size: 12px;
+}
+.submitted {
+    font-size: 12px;
+    color: #999;
+    padding-right: 12px;
+    padding-left: 12px;
+    display: block;
+}
+.sentencetag
+{
+	background:#eee;border-bottom:1px solid #bbb;padding-bottom:12px;margin-bottom:15px
+}
+.sentencetag .group-for
+{
+	display:none
+}
+.senbox
+{
+	margin-top: 41px;
+	padding:5px 16px 16px;border-bottom:1px solid #999;margin-bottom:6px;background-color:#FFF
+}
+.senbox .field-label-inline-first
+{
+	display:none
+}
+.senbox .senconwriart
+{
+	text-align:right
+}
+.senbox .field-field-oriwriter a
+{
+	margin-left:3px
+}
+.senbox .field-field-oriarticle a:before
+{
+	content:'《'
+}
+.senbox .field-field-oriarticle a:after
+{
+	content:'》'
+}
+.senbox .field-field-oriarticle
+{
+	height:25px
+}
+.senbox .field-field-oriwriter
+{
+	margin-right:6px;height:25px
+}
+.senbox .artandori
+{
+	margin-top:8px
+}
+.senbox .artandori:after
+{
+	content:"\20";display:block;height:0;clear:both
+}
+.senbox .group-whar
+{
+	border-style:none;font-size:13px;line-height:22px;margin-bottom:10px;float:left;padding:5px;border-radius:5px 5px 5px;background-color:#f5f5f5
+}
+.senbox .field-field-wholearticle .field-label
+{
+	color:#6C0;background:transparent url("../img/icon_white.png") no-repeat scroll -4px -450px;padding-left:10px
+}
+.senbox .field-field-wholearticle .xqlabelcollapsed
+{
+	background:transparent url("../img/icon_white.png") no-repeat scroll -4px -310px
+}
+.senbox .field-field-wholearticle .field-items
+{
+	height:20px;overflow:hidden
+}
+.senbox .field-field-wholearticle .field-items .field-item br
+{
+	display:none
+}
+.senbox .field-field-wholearticle .xqcollapsed .field-item br
+{
+	display:inline
+}
+.senbox .field-field-wholearticle .xqcollapsed
+{
+	height:auto
+}
+.senbox .group-ori
+{
+	width:48px;float:right;text-indent:-9999em;background:url("../img/v2cateyan2.png") no-repeat scroll center center rgba(0,0,0,0);background-size:48px 22px
+}
+.senbox .group-ori .field-item
+{
+	float:left
+}
+.sentence
+{
+	font-size:20px;font-weight:normal;color:#000;line-height:36px;text-align:justify;text-justify:inter-ideograph
+}
