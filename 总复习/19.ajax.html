@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <!-- AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。
+                AJAX 不是新的编程语言，而是一种使用现有标准的新方法。
+                AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。
+         -->
+        <!--ajax-->
+<!-- jq的方法 -->
+<!--$.get();-->
+<!--$.post();-->
+<!--$.ajax();-->
+        ajax的源生原理
+        <div id="div1"></div>
+        <input type="button" id="btn" value="click">
+        <script>
+            var oDiv1 = document.getElementById('div1');
+            var oBtn = document.getElementById('btn');
+            oBtn.onclick = function () {
+                //1 创建 XMLHttpRequest
+                if(window.XMLHttpRequest) {
+                    // 标准浏览器
+                    var xmlhttp = new XMLHttpRequest();
+                }
+                else{
+                    //IE浏览器
+                    var xmlhttp = new ActLHTTPiveXObject('Microsoft.XMLHTTP');
+                }
+            }
+
+            //2.发送请求
+            //GET
+            xmlhttp.open('GET','url?name=xx',true);//GET
+            xmlhttp.send();
+            //POST
+            xmlhttp.open('POST','url',true);//POST,参数不写url里，写send里
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");//添加 HTTP 头
+            xmlhttp.send('name=cc & age=20');
+            //3.服务器响应
+            xmlhttp.onreadystatechange = function () {//每当readyState状态改变，就会调用该函数
+                /*  readyState 状态
+                *   0 ：请求未初始化
+                *   1：服务器链接已建立
+                *   2：请求已接收
+                *   3：请求处理中
+                *   4：请求已完成，且响应已就绪
+                * */
+                /*  status 状态码常见
+                *   200: 服务器成功返回
+                *   301：永久重定项
+                *   302：临时重定项
+                *   400-505失败相关
+                *   404：没有发现文件、查询、url，资源找不到
+                *   500：服务器错误
+                *
+                * */
+                if(xmlhttp.readyState==4 && xmlhttp.status==200)
+                   /* 接收获得来自服务器的响应
+                    xmlhttp.responseText 获得字符串形式的响应数据。
+                    xmlhttp.responseXML 获得 XML 形式的响应数据。*/
+                    oDiv1.innerHTML = xmlhttp.responseText;
+                }
+            }
+
+        </script>
+
+
+</body>
+</html>
