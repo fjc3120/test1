@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //cookie 4K大小
+    //cookie会始终在同源的http请求中携带（即使不需要）
+    //默认过期时间是Session
+    var date = new Date();//创建时间
+    date.setDate(25);//设置日期day
+    document.cookie = 'name=lisi; expires='+date;//expires=+date 设置过期时间
+    document.cookie = 'age=18';//cookie不覆盖
+    console.log(document.cookie);//取出cookie，出的是所有字符串，可以按照逗号或空格或等号来分割
+
+    //H5的sessionStorage和localStorage.name,只有key和value，5M大小
+    //过期时间
+    //不会自动把数据发给服务器，仅在本地保存
+    sessionStorage.name = 'aa';//针对一个session的数据存储，关闭浏览器窗口后数据删除。
+    // 作用域：不在不同的浏览器窗口中共享，即使同网页
+
+
+    localStorage.name='aa';//没有时间限制，
+    //作用域：和cookie一样所有同源窗口都共享
+
+    //三者共同点：都是保存在浏览器端，且是同源的
+
+    //cookie和session的区别
+    cookie客户端  session服务器端
+</script>
+</body>
+</html>

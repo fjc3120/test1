@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #FF0000;
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+            background: #0000FF;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">
+    <div id="div2"></div>
+</div>
+
+<script>
+    //1.定时器,this指向window
+    setTimeout(function () {
+        console.log(this);//window
+    },10);
+
+    //2.全局函数，this指向window
+    function aa() {
+        console.log(this);//window
+    }
+    aa();
+
+    //3.对象的方法,this指向 对象
+    obj = {
+        name:'zhangsan',
+        say:function () {
+            console.log(this);//obj
+        }
+    }
+    obj.say();
+
+    //4.点击oDiv1，this指向 oDiv1
+    //5.点击oDiv2，this指向 oDiv2,因为冒泡，oDiv1也被点击，this指向oDiv1
+    //6.点击oDiv2，this指向 oDiv2，冒泡oDiv1，事件源oDiv2
+    var oDiv1 = document.getElementById('div1');
+    var oDiv2 = document.getElementById('div2');
+    oDiv1.onclick = function (e) {
+        var target = e.target || window.event.srcElement;//获取事件源（点的是谁）
+        console.log(this);//oDiv1
+        console.log(target);//oDiv2
+    }
+    oDiv2.onclick = function () {
+        console.log(this)//oDiv2   oDiv1
+    }
+
+    //7.call、aplay
+</script>
+
+
+</body>
+</html>
