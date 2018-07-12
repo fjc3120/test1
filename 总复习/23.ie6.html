@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1,#div2{
+            /* 1.在ie6下无效display: inline-block;，BUG*/
+            display: inline-block;/*ie6下无效bug*/
+            background: #FF0000;
+            /*解决方法 ie6下  _display:inline;等于 display: inline-block;*/
+            _display:inline;/*ie6*/
+        }
+        #div1{
+            /*2.ie6下浮动产生双倍边距（margin/padding）bug*/
+            width: 200px;
+            height: 200px;
+            background: #ff00ff;
+            margin-left: 10px;/*左边距10px*/
+            float: left;/*浮动后，左边距20px  bug*/
+            /*解决方法 ie6下 _display:inline;*/
+            _display:inline;
+        }
+        /*3. ie6下 min-height:200px无效*/
+        /*解决方法 _height:200px*/
+        /*4.CSS Hack 利用浏览器漏洞解决兼容性问题*/
+        选择符Hack /*特定版本IE浏览器才生效*/
+        * html.test{color:#090;} IE6或更早
+        * + html.test{color:#090;} IE7
+        条件/属性级Hack
+        _ IE6或更早
+        * IE7或更早
+        \9 选择IE6+
+        \0 选择IE8+和Opera15以下的浏览器
+        .text{ /*只有在特等浏览器下才生效*/
+            color:#090\9;  /*针对IE8+ \9  \0写在后面*/
+            *color:#009; /* 针对IE7或更早 *写前面 */
+            _color:#001; /* 针对IE6或更早 _写前面 */
+           }
+
+        /*5.IE下的3像素BUG  当一个元素浮动时，另一个元素和他并列会有一个3像素边距*/
+        /*解决方法 给左边浮动元素加一个 _margin-right:-3px*/
+        /*6.IE6只支持 a标签的 :hover，不支持其他标签的*/
+        /*7. IE6下png24 透明图会有灰底色 */
+        /*解决方法   网上搜 png24滤镜 css解决   或者js 解决*/
+    </style>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+</body>
+</html>

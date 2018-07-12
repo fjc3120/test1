@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    浮动造成父元素高度塌陷
+    1.在父元素高度写死
+    2.父元素里最下面加<div style="clear:both"></div>
+    效果等同于 .clearfix:after{  // :after 伪类
+                        content:'';
+                        display:block;
+                        clear:both;
+                        height:0;   //让after的高度0、不可见，防止再其它浏览器出问题
+                        visibility:hidden;
+                         }
+
+</body>
+</html>
