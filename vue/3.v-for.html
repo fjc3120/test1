@@ -64,7 +64,7 @@
               computed: {  /*计算属性   下面的方法名不能和data里的重复,不能用arr（） */
                   arrSort() {  /*es6的 arrSor：function（）｛｝简写*/
                      return this.arr.sort(function (a,b) {/*sort()排序*/  /*vm.arr.sort()*/
-                          return a.age - b.age;
+                          return b.age - a.age;  //(a,b) a-b 正序， b-a 倒序
                       });
                   }
               }

@@ -15,27 +15,30 @@
     </style>
 </head>
 <body>
-<canvas id="box" width="400" height="400">
-
-</canvas> <!--width 和height不能用style写  画板-->
+<canvas id="box" width="400" height="400"></canvas> <!--width 和height不能用style写  画板-->
 <script>
-
         var oBox = document.querySelector("#box");  /*可以取class也可以取id*/
         var context = oBox.getContext("2d"); /*声明一块画布,获取“2d”上下文动画*/
 
         context.beginPath();/*开始*/  /*context是画直线*/
-        context.moveTo(10,10); /*要画坐标起始点*/
-        context.lineTo(100,100); /*线的终点*/
-        context.lineWidth = 10; /*线宽*/
+        context.moveTo(100,100); /*要画坐标起始点*/
+        context.lineTo(200,200); /*线的终点*/
+        context.lineWidth = 2; /*线宽*/
         context.strokeStyle = "#ffffff"; /*线颜色*/
         context.stroke(); /*执行画线*/
 
-
         context.beginPath();/*开始*/  /*这是第二条线开始，如果不写会变成一条线同事操作*/
-        context.moveTo(100,100); /*要画坐标起始点*/
+        context.moveTo(200,200); /*要画坐标起始点*/
         context.strokeStyle = "#ff0000";
-        context.lineWidth = 5;
-        context.lineTo(10,200);
+        context.lineWidth = 2;
+        context.lineTo(0,200);
+        context.stroke();
+
+        context.beginPath();/*开始*/  /*这是第三条线开始*/
+        context.moveTo(0,200); /*要画坐标起始点*/
+        context.strokeStyle = "#0000FF";
+        context.lineWidth = 2;
+        context.lineTo(100,100);
         context.stroke();
 /*************************************/
         var x = oBox.width / 2;  /*画弧线*/
