@@ -13,19 +13,19 @@
 
     -->
 
-    <ul>
+        <ul>
         <li>01</li>
         <li>02</li>
         <li>03</li>
-    </ul>
-    <script>
+        </ul>
+        <script>
         var aLi = document.getElementsByTagName('li');
         /*for(var i=0; i<aLi.length; i++){
-            aLi[i].index = i;
-            aLi[i].onclick = function () {
-                console.log(this.index);
-            }
-        }*/
+         aLi[i].index = i;
+         aLi[i].onclick = function () {
+         console.log(this.index);
+         }
+         }*/
         //使用闭包方法能保留i
         for(var i=0; i<aLi.length; i++){
             (function (idx) { //包一层立即执行函数。形成闭包

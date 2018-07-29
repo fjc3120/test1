@@ -13,14 +13,14 @@
  localhost:8080      localhost:8000     端口号不同
 
  非跨域
- www.a.com/detail/    www.a.com/index    同一域名下不同文件夹
+ www.a.com/detail/    www.a.com/index    同一域名下不夹同文件
 
 
  -->
 <!-- 1.jsonp 方式 解决跨域问题 -->
 <!-- 2.iframe 方式 与script的src原理相似 -->
 <!-- 3.后端实现，a文件下建个a.php后台文件，把数据传到这里，a.php再传到b.php里，因为后台无跨域问题 -->
-<!-- 4.ajax服务器代理方法，引入jquery，利用$.get(),在后台加请求头header -->
+<!-- 4.cors,在后台加请求头header,容许访问 -->
 <!--可以直接引入script，也可以点击时再引入script-->
 <input type="button" value="点击" id="btn">
 <!-- 2.iframe 方式 麻烦 -->

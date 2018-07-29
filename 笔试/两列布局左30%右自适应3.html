@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #box{
+            width:100%;
+            display:flex;
+        }
+        #left{
+            height:100px;
+            width:30%;
+            background:#00ff00;
+        }
+        #right{
+            height:100px;
+            /*方法4. flex-grow: 1；自适应*/
+            flex-grow: 1;
+            background:#1b1e21;
+        }
+    </style>
+</head>
+<body>
+<!--两列布局左30%右自适应-->
+<div id="box">
+    <div id="left">left</div>
+    <div id="right">right</div>
+</div>
+</body>
+</html>
