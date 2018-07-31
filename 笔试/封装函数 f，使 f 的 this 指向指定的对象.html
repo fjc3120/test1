@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function bindThis(f, oTarget){
+        return function(){
+            return f.apply(oTarget,arguments);
+        }
+    }
+    /****/
+    function bindThis(f, oTarget) {
+        return  f.bind(oTarget);
+    }
+</script>
+</body>
+</html>
