@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<!--
+2.2.1. 缩进
+·[强制] [RULE003] 使用 4 个空格做为一个缩进层级，不允许使用 2 个空格 或 tab 字符。
+·[强制] switch 下的 case 和 default 必须增加一个缩进层级。
+2.2.2. 空格
+·[强制] [RULE005] 二元运算符两侧必须有一个空格，一元运算符与操作对象之间不允许有空格。
+a++;
+a = b + c;
+·[强制] [RULE006] 用作代码块起始的左花括号 { 前必须有一个空格。
+if/while/function () {}
+·[强制] [RULE007] if / else / for / while / function / switch / do / try / catch / finally 关键字后，必须有一个空格。
+if () {}
+·[强制] [RULE008] 在对象创建时，属性中的 : 之后必须有空格，: 之前不允许有空格。
+var obj = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+·[强制] [RULE009] 函数声明、具名函数表达式、函数调用中，函数名和 ( 之间不允许有空格。
+function fn() {}
+·[强制] , 和 ; 前不允许有空格。
+max(a, b);
+·[强制] 在函数调用、函数声明、括号表达式、属性访问、if / for / while / switch / catch 等语句中，() 和 [] 内紧贴括号部分不允许有空格。
+·[强制] [RULE012] 单行声明的数组与对象，如果包含元素，{} 和 [] 内紧贴括号部分不允许包含空格。
+·[强制] [RULE013] 行尾不得有多余的空格。
+2.2.3. 换行
+·[强制] 每个独立语句结束后必须换行。
+·[强制] [RULE015] 每行不得超过 120 个字符。
+不可分割的代码允许例外,如正则表达式,长字符串。
+·[强制] 运算符处换行时，运算符必须在新行的行首。
+var result = number1 + number2 + number3
+    + number4 + number5;
+·[强制] [RULE017] 在函数声明、函数表达式、函数调用、对象创建、数组创建、for语句等场景中，不允许在 , 或 ; 前换行。
+·[建议] 不同行为或逻辑的语句集，使用空行隔开，更易阅读。
+2.2.4. 语句
+·[强制] [RULE021] 不得省略语句结束的分号。
+·[强制] [RULE022] 在 if / else / for / do / while 语句中，即使只有一行，也不得省略块 {...}。
+·[强制] [RULE023] 函数定义结束不允许添加分号。
+function funcName() {
+}
+2.3. 命名
+·[强制] 变量 使用 Camel命名法 。驼峰命名法 ，第一个单词首字母小写，之后单词首字母大写
+var loadingModules = {};
+·[强制] 常量 使用 全部字母大写，单词间下划线分隔 的命名方式。
+var HTML_ENTITY = {};
+·[强制] 函数 使用 Camel命名法 。驼峰命名法
+·[强制] 函数的 参数 使用 Camel命名法 。驼峰命名法
+·[强制] [RULE029] 类 使用 Pascal命名法 。帕斯卡命名法，每个单词首字母大写
+·[强制] [RULE025] 类的 方法 / 属性 使用 Camel命名法 。
+TextNode.prototype
+·[强制] 枚举变量 使用 Pascal命名法 ，枚举的属性 使用 全部字母大写，单词间下划线分隔 的命名方式。
+var TargetState = {
+    READING: 1,
+    READED: 2,
+    APPLIED: 3,
+    READY: 4
+};
+·[强制] 命名空间 使用 Camel命名法 。
+·[强制] 由多个单词组成的缩写词，在命名中，根据当前命名法和出现的位置，所有字母的大小写与首字母的大小写保持一致。
+insertHTML
+·[强制] 类名 使用 名词 。
+·[建议] 函数名 使用 动宾短语 。
+getStyle
+·[建议] boolean 类型的变量使用 is 或 has 开头。
+·[建议] Promise对象 用 动宾短语的进行时 表达。
+loadingData.then(callback);
+2.4.1. 单行注释
+·[强制] [RULE038] 必须独占一行。// 后跟一个空格，缩进与下一行被注释说明的代码一致。
+2.4.2. 多行注释
+·[建议] 避免使用 /*...*/ 这样的多行注释。有多行注释内容时，使用多个单行注释。
+2.4.3. 文档化注释
+·[强制] 为了便于代码阅读和自文档化，以下内容必须包含以 /**...*/ 形式的块注释中。
+文件
+namespace
+类
+函数或方法
+类属性
+事件
+全局变量
+常量
+AMD 模块
+·[强制] 文档注释前必须空一行。
+2.4.5. 文件注释
+·[强制] 文件顶部必须包含文件注释，用 @file 标识文件说明。
+/**
+ * @file Describe the file
+ */
+ ·[建议] 文件注释中可以用 @author 标识开发者信息。
+·[强制] 使用包装方式扩展类成员时， 必须通过 @lends 进行重新指向。
+·[强制] 类的属性或方法等成员信息使用 @public / @protected / @private 中的任意一个，指明可访问性。
+3.1. 变量
+·[强制] [RULE070] 变量在使用前必须通过 var 定义。
+不通过 var 定义变量将导致变量污染全局环境。
+·[强制] [RULE071] 每个 var 只能声明一个变量。
+一个 var 声明多个变量，容易导致较长的行长度，并且在修改时容易造成逗号和分号的混淆。
+·[强制] [RULE072] 变量必须 即用即声明 ，不得在函数或其它形式的代码块起始位置统一声明所有变量。
+3.2. 条件
+·[强制] [RULE073] 在 Equality Expression 中使用类型严格的 === 。仅当判断 null 或 undefined 时，允许使用 == null 。
+·[建议] 尽可能使用简洁的表达式。
+·[建议] 按执行频率排列分支的顺序。
+·[建议] 对于相同变量或表达式的多值条件，用 switch 代替 if 。
+·[建议] 如果函数或全局中的 else 块后没有任何语句，可以删除 else 。
+3.3. 循环
+·[建议] 不要在循环体中包含函数表达式，事先将函数提取到循环体外。
+·[建议] 对循环内多次使用的不变值，在循环外用变量缓存。
+·[建议] 对有序集合进行遍历时，缓存 length 。
+for (var i = 0, len = elements.length; i < len; i++) {
+    var element = elements[i];
+    // ......
+}
+·[建议] 对有序集合进行顺序无关的遍历时，使用逆序遍历。
+for (var len = arr.length; len<1; len--;) {}
+3.4.1. 类型检测
+·[建议] 类型检测优先使用 typeof 。对象类型检测使用 instanceof 。null 或 undefined 的检测使用 == null 。
+// string
+typeof variable === 'string'
+
+// number
+typeof variable === 'number'
+
+// boolean
+typeof variable === 'boolean'
+
+// Function
+typeof variable === 'function'
+
+// Object
+typeof variable === 'object'
+
+// RegExp
+variable instanceof RegExp
+
+// Array
+variable instanceof Array
+
+// null
+variable === null
+
+// null or undefined
+variable == null
+
+// undefined
+typeof variable === 'undefined'
+3.4.2. 类型转换
+·[建议] 转换成 string 时，使用 + '' 。
+// good
+num + '';
+
+// bad
+new String(num);
+num.toString();
+String(num);
+·[建议] 转换成 number 时，通常使用 + 。
+// good
++str;
+
+// bad
+Number(str);
+·[建议] string 转换成 number ，要转换的字符串结尾包含非数字并期望忽略时，使用 parseInt。
+·[强制] [RULE086] 使用 parseInt 时，必须指定进制。
+·[建议] number 去除小数点，使用 Math.floor / Math.round / Math.ceil ，不使用 parseInt。
+3.5. 字符串
+·[强制] [RULE089] 字符串开头和结束使用单引号 ' 。
+·[建议] 使用 数组 或 + 拼接字符串。
+·[建议] 复杂的数据到视图字符串的转换过程，选用一种模板引擎。
+3.6. 对象
+·[强制] [RULE092] 使用对象字面量 {} 创建新 Object 。
+// good
+var obj = {};
+
+// bad
+var obj = new Object();
+·[强制] [RULE094] 对象创建时，如果一个对象的所有 属性 均可以不添加引号，则所有 属性 不得添加引号。
+·[强制] 对象创建时，如果任何一个 属性 需要添加引号，则所有 属性 必须添加 ' 。
+·[强制] [RULE095] 不允许修改和扩展任何原生对象和宿主对象的原型。
+·[建议] 属性访问时，尽量使用 . 。否则就只能通过 [expr] 方式访问。
+·[建议] for in 遍历对象时, 使用 hasOwnProperty 过滤掉原型中的属性。
+3.7. 数组
+·[强制] [RULE098] 使用数组字面量 [] 创建新数组，除非想要创建的是指定长度的数组。
+// good
+var arr = [];
+
+// bad
+var arr = new Array();
+·[强制] 遍历数组不使用 for in。
+·[建议] 不因为性能的原因自己实现数组排序功能，尽量使用数组的 sort 方法。
+·[建议] 清空数组使用 .length = 0 。
+3.8.1. 函数长度¶
+·[建议] 一个函数的长度控制在 50 行以内。
+3.8.2. 参数设计
+·[建议] 一个函数的参数控制在 6 个以内。
+·[建议] 通过 options 参数传递非数据输入型参数。
+有些函数的参数并不是作为算法的输入，而是对算法的某些分支条件判断之用，此类参数建议通过一个 options 参数传递。
+3.8.3. 闭包
+·[建议] 在适当的时候将闭包内大对象置为 null
+·[建议] 使用 IIFE 避免 Lift 效应 。
+var tasks = [];
+for (var i = 0; i < 5; i++) {
+    // 注意有一层额外的闭包
+    tasks[tasks.length] = (function (i) {
+        return function () {
+            console.log('Current cursor is at ' + i);
+        };
+    })(i);
+}
+防止tasks函数里i一直为5
+3.9. 面向对象
+·[强制] 类的继承方案，实现时需要修正 constructor。
+·[建议] 属性在构造函数中声明，方法在原型中声明。
+·[强制] 自定义事件的 事件名 必须全小写。
+·[建议] 设计自定义事件时，应考虑禁止默认行为。
+常见禁止默认行为的方式有两种：
+事件监听函数中 return false。
+事件对象中包含禁止默认行为的方法，如 preventDefault。
+3.10.1. eval
+·[强制] 避免使用直接 eval 函数。
+3.10.2. 动态执行代码
+·[建议] 使用 new Function 执行动态代码。
+3.10.3. with
+·[建议] 尽量不要使用 with。
+4.1. 模块化
+4.1.1. AMD
+·[强制] 使用 AMD 作为模块定义。
+·[强制] 模块 id 必须符合标准。
+模块 id 必须符合以下约束条件：
+类型为 string，并且是由 / 分割的一系列 terms 来组成。例如：this/is/a/module。
+term 应该符合 [a-zA-Z0-9_-]+ 规则。
+不应该有 .js 后缀。
+跟文件的路径保持一致。
+4.1.3. require
+·[强制] 全局运行环境中，require 必须以 async require 形式调用。
+// good
+require(['foo'], function (foo) {
+});
+
+// bad
+var foo = require('foo');
+·[强制] 模块定义中只允许使用 local require ，不允许使用 global require 。
+·[强制] Package在实现时，内部模块的 require 必须使用 relative id 。
+4.2.2. 样式获取
+·[建议] 获取元素实际样式信息时，应使用 getComputedStyle 或 currentStyle 。
+4.2.3. 样式设置
+·[建议] 尽可能通过为元素添加预定义的 className 来改变元素样式，避免直接操作 style 设置。
+·[强制] 通过 style 对象设置元素样式时，对于带单位非 0 值的属性，不允许省略单位。
+4.2.5. DOM 事件
+·[建议] 优先使用 addEventListener / attachEvent 绑定事件，避免直接在 HTML 属性中或 DOM 的 expando 属性绑定事件处理。
+·[建议] 使用 addEventListener 时第三个参数使用 false。
+·[建议] 在没有事件自动管理的框架支持下，应持有监听器函数的引用，在适当时候（元素释放、页面卸载等）移除添加的监听器。
+-->
+</body>
+</html>
