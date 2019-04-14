@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ipt">
+<button id="btn"></button>
+<!--<a href="tel:10086">10086</a>    标签电话功能-->
+
+<script>
+    var oIpt = document.getElementById("ipt");
+    var oBtn = document.getElementById('btn');
+    oBtn.onclick = function () {
+        var str = oIpt.value;
+//        var reg=/^0*(13|15)\d{9}$/;//不定个0开头，13或15，共11位
+//        var reg =  /^13[1-9][0-9]{8}$/; //131-139开头，共11位
+        var reg =  /^13[1-9]\d{8}$/;//   \d ==数字
+        console.log(reg.test(str));//判断
+        console.log(reg.exec(str));//显示
+    }
+
+    {
+        var t='tt';
+        let s='ss'; //s is not defined
+    }
+    console.log(t);
+    console.log(s);
+    var a = '10';
+    var b = 1;
+    var s = a+b; //'101'
+    var t = a-b; // 9
+    console.log(s,t);
+</script>
+</body>
+</html>

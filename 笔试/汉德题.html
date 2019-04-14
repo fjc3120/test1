@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+### setTimeout、setInterval和requestAnimationFrame之间的区别
+Wayne 2019/03/17 16:33:02
+
+### 输出以下序列, 要求每隔两秒输出一行数字 ( 使用Promise async分别实现 )
+
+2
+4
+6
+8
+...
+100
+方法一： 自执行函数
+    for (var i=0; i<5; i++) {
+      (function (i) {
+        setTimeout(() => console.log(i), 1000*i)
+      })(i)
+    }
+    方法二： es6块级作用域let
+     for (let i=0; i<5; i++) {
+      (function () {
+        setTimeout(() => console.log(i), 1000*i)
+      })()
+    }
+方法四： Promise.all()方法
+   var arr = []
+    var output = (i) => new Promise(res => {
+      setTimeout(()=>{
+        console.log(i)
+        res()
+      }, 1000*i)
+    })
+    for (var i=0; i<99; i++) {
+      arr.push(output(i+2))
+    }
+    Promise.all(arr).then(()=> console.log(5))
+---------------------
+
+方法五：async await方法
+var sleep = () => new Promise (res => setTimeout(res, 1000))
+    (async function () {
+      for (let i=0; i<99; i++) {
+        await sleep()
+        console.log(i+2)
+      }
+    })()
+---------------------
+
+
+### Promise
+
+function Promise2(fun){
+// 实现这里的代码, 不能使用原声Promise, 要求自己实现Promise
+}
+
+function timeout(ms) {
+  return new Promise2((resolve) => {
+    setTimeout(resolve, ms, 'done');
+  });
+}
+
+const step = async () => {
+	await timeout(3000);
+	console.log('我3秒后被输出');
+};
+
+step();
+Wayne 2019/03/17 16:33:10
+
+### 简单实现Node的Events模块
+
+function EventEmitter () {
+	// 实现这里的代码
+}
+
+var eventEmitter=new EventEmitter();
+
+eventEmitter.on('say',function(name){
+    console.log('Hello',name);
+})
+eventEmitter.emit('say','Jony yu');
+
+-->
+简单实现Node的Events模块
+function EventEmitter ()
+{
+var eventArray = new Array(999);
+this.on = function(eventName,eventCallback)
+{
+eventArray[eventName] = eventCallback;
+}
+this.emit = function(eventName)
+{
+var args = new Array(999);
+for(var i=1; i<arguments.length; i++){
+args[i-1] = arguments[i];
+}
+eventArray[eventName].apply(this, args);
+}
+}
+var eventEmitter=new EventEmitter();
+eventEmitter.on('say',function(name){
+console.log('Hello',name);
+})
+eventEmitter.emit('say','Jony yu');
+</body>
+</html>

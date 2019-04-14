@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    var sc;
+//    while(sc = read_line()) {
+//        var arr = sc.split(' ');
+//        for(var i=0;i<19;i++){
+////            arr.index=i;
+//            arr[i] = parseInt(arr[i]);
+//        }
+//
+//    }
+
+var N = 5;
+
+var price = "4 1 8 2 5";
+function sort1(N,price) {
+    var sum =0;
+    for(var i=0;i<N-1;i++){
+            for(var j=0;j<N-1-i;j++){
+            if(price[j]>price[j+1]){
+
+    //                var temp =price[j];
+    //                price[j] = price[j+1];
+    //                price[j+1] = temp;
+                sum += Math.max(price[j],price[j+1]);
+                console.log(price[j])
+            }
+        }
+    }
+    return sum;
+}
+
+console.log(sort1(5,[4,1,8,2,5]));
+</script>
+</body>
+</html>

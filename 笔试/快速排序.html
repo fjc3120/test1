@@ -6,28 +6,28 @@
 </head>
 <body>
 <script>
-//    var array = [1,0,5,3,12,10,21,0];
-//    var array1 = Array.from(new Set(array));
-//    console.log(array1);
-//    function quickSort(arr) {
-//        if (arr.length <= 1) {
-//            return arr;
-//        }
-//
-//        var index = Math.floor(arr.length / 2);
-//        var temp = arr.splice(index, 1);
-//        var left = [];
-//        var right = [];
-//        for (var i = 0; i < arr.length; i++) {
-//            if (arr[i] < temp) {
-//                left.push(arr[i]);
-//            } else {
-//                right.push(arr[i]);
-//            }
-//        }
-//        return quickSort(left).concat(temp, quickSort(right));
-//    }
-//    console.log(quickSort(array1));
+    var array = [1,0,5,3,12,10,21,0];
+    var array1 = Array.from(new Set(array));//去重
+    console.log(array1);
+    function quickSort(arr) { // 数组只有一位以下时直接返回
+        if (arr.length <= 1) {
+            return arr;
+        }
+
+        var index = Math.floor(arr.length / 2); // 取数组索引中间值做基点
+        var temp = arr.splice(index, 1); // 创建没有基点的数组
+        var left = []; //基点左边的数组
+        var right = []; //基点右边的数组
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < temp) {
+                left.push(arr[i]); // 数组中小于基点的放在左边
+            } else {
+                right.push(arr[i]); // 数组中大于基点的放在右边
+            }
+        }
+        return quickSort(left).concat(temp, quickSort(right)); // 将左+基点+右的数组合并程一个数组
+    }
+    console.log(quickSort(array1));
 
 
 </script>

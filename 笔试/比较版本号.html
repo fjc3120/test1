@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function compareVersions(v1,v2){
+        var v1s = v1.split('.');
+        var v2s = v2.split('.');
+        var res = compare(v1s,v2s);
+// console.log(res);
+        if(1 === res){
+            return '第一个版本高';
+        }else if(-1 === res){
+            return '第二个版本高';
+        }else if(0 === res){
+            return '两个版本相同';
+        }
+    }
+    function compare(v1,v2){
+        var lens = v1.length>v2.length?v2.length:v1.length;// min（长度）
+
+        for(let i = 0;i<lens;i++){
+            console.log(i);
+            v1[i] = v1[i].split('');
+            v2[i] = v2[i].split('');
+            var len = v1[i].length>v2[i].length?v2[i].length:v1[i].length;
+            // 相同长度版本判别
+            for(let j = 0;j<len;j++){
+                console.log(v1[i][j],v2[i][j])
+                if(v1[i][j]>v2[i][j]){
+                    return 1;
+                }else if(v1[i][j]<v2[i][j]){
+                    return -1;
+                }else{
+
+                }
+            }
+            // 不同长度版本追加判别
+            if(v1[i].length>v2[i].length){
+                return 1;
+            }else if(v1[i].length<v2[i].length){
+                return -1;
+            }else{
+
+            }
+        }
+
+        if(v1.length>v2.length){
+            return 1;
+        }else if(v1.length<v2.length){
+            return -1;
+        }else{
+            return 0;
+        }
+    }
+    let v1 = '1.1.1';
+    let v2 = '1.2.1';
+    console.log(compareVersions(v1,v2));
+</script>
+</body>
+</html>

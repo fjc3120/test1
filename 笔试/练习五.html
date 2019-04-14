@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //数列的第一项为n，以后各项为前一项的平方根，求数列的前m项的和。
+//        var m;
+//        var sum,n;
+//        var sc = "2 2";
+//
+//            var arr = sc.split(' ');
+//
+//            n=parseInt(arr[0]);
+//            m=parseInt(arr[1]);
+//
+//            sum=0;
+//            for(var i=0;i<m;i++){
+//                sum=sum+n;
+//                n=Math.pow(n,2);
+//                console.log(sum);
+//            }
+//            console.log(sum.toFixed(2))
+
+
+//数列的第一项为n，以后各项为前一项的平方根，求数列的前m项的和。
+//function narcissus(m,n){
+//    var t=0;
+//    n=parseInt(n);
+//    m=parseInt(m);
+//    if (m>=100&&m<=n&&n<=999){
+//        for(var i=m;i<=n;i++){
+//            var a = i%10;
+//            var b = parseInt((i/10)%10);
+//            var c = parseInt(i/100);
+//            if(a*a*a+b*b*b+c*c*c== i){
+//                document.write(i+' ');
+//                t++;
+//            }
+//        }
+//        if(t===0){console.log("No")}
+//        // 如果没有找出水仙花数就弹出no
+//    }
+//    else{console.log('请输入100~999之间的范围')
+//    }
+//}
+//        narcissus(300,380);
+
+        var sc;
+        while(sc = read_line()){
+            var arr = sc.split(' ');
+            n=parseInt(arr[0]);
+            m=parseInt(arr[1]);
+            if (m>=100&&m<=n&&n<=999){
+                var out = [];
+                var t=0;
+                for(var i=m;i<=n;i++){
+                    var a = i%10;
+                    var b = parseInt((i/10)%10);
+                    var c = parseInt(i/100);
+                    if(a*a*a+b*b*b+c*c*c== i){
+                        t++;
+                        if(t>1){
+                            out.push(" "+i);
+                        }
+                        else{
+                            out.push(i);
+                        }
+                    }
+                }
+                if(t==0){
+                    out.push("no");
+                         }
+        print(out.join(''));
+        }
+        }
+
+    </script>
+</body>
+</html>

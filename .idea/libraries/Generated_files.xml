@@ -2,22 +2,22 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.7e4da93481a92631315a.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/.postcssrc.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.base.conf.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.dev.conf.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.prod.conf.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/config/dev.env.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/config/index.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/config/prod.env.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.2a615da655a58be59f4d.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.7e4da93481a92631315a.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/config/dev.env.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.eb0557f7798af6a1b1e4.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.f16ac5c624284d30f5af.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.1748317793fd05195ff8.js" />
-        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/src/main.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.f16ac5c624284d30f5af.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/src/router/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.base.conf.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.prod.conf.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/build/webpack.dev.conf.js" />
+        <item url="file://$PROJECT_DIR$/dist/vue-cli/dist/static/js/app.2a615da655a58be59f4d.js" />
         <item url="file://$PROJECT_DIR$/dist/vue-cli/src/vuex/store.js" />
       </sourceFilesUrls>
     </properties>

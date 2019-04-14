@@ -25,6 +25,14 @@
 
 <body>
     <div id="div1"></div>
+    <input class="ipt" type="text" x-webkit-speech />
 
 </body>
+<script>
+    if (document.createElement("input").webkitSpeech === undefined) {
+
+           alert("Speech input is not supported in your browser.");
+
+        }
+</script>
 </html>

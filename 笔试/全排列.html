@@ -7,19 +7,33 @@
 <body>
 <script>
 //*************************全排列
-    function show(arr) {
-        console.log(arr);
+/*
+* 1．全排列就是从第一个数字起每个数分别与它后面的数字交换。
+
+ 2．去重的全排列就是从第一个数字起每个数分别与它后面非重复出现的数字交换。
+
+ 3．全排列的非递归就是由后向前找替换数和替换点，然后由后向前找第一个比替换数大的数与替换数交换，最后颠倒替换点后的所有数据。*/
+var arr = [1,2,1];
+var array1 = Array.from(new Set(arr));
+function permutate(str) {
+    var result = [];
+    if(str.length > 1) {
+        var left = str[0];
+        var rest = str.slice(1, str.length);
+        var preResult = permutate(rest); //递归操作
+        for(var i=0; i<preResult.length; i++) {
+            for(var j=0; j<preResult[i].length+1; j++) {
+                var tmp = preResult[i].slice(0, j) + left + preResult[i].slice(j, preResult[i].length);
+                result.push(tmp);
+            }
+        }
+    } else if (str.length == 1) {
+        return [str];
     }
-    function perm(arr) {
-        (function fn(source, result) {
-            if (source.length == 0)
-                show(result);
-            else
-                for (var i = 0; i < source.length; i++)
-                    fn(source.slice(0, i).concat(source.slice(i + 1)), result.concat(source[i]));
-        })(arr, []);
-    }
-    perm([1,2,3]);
+
+    return result;
+}
+console.log(permutate(array1));
 </script>
 </body>
 </html>

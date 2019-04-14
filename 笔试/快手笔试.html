@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--输入十进制转成二进制，输出有几个1-->
+<script>
+//    function fn (n) {
+//        var x= n.toString(2);
+//        var sum = 0;
+//        for (var i = 0; i < x.length; i++) {
+//            if (x[i] == '1') {
+//                sum++;
+//            }
+//        }
+//        console.log(sum);
+//    }
+//    fn(4);
+    //牛客网写法
+//while(line=readline()){
+//    var lines = line.split(' ');
+//    var a = parseInt(lines[0]);
+//    //var b = parseInt(lines[1]); //输入多行，输出一行情况
+//    function fn (n) {
+//        var x= n.toString(2);
+//        var sum = 0;
+//        for (var i = 0; i < x.length; i++) {
+//            if (x[i] == '1') {
+//                sum++;
+//            }
+//        }
+//        return sum;
+//    }
+//    print(fn(a));
+//}
+
+///////////////////////////////////////////////////
+function fn (m,n,k) {
+    var num = m*n;
+    var x= m.toString().split('');
+    var y = n.toString().split('');
+    var sum1 = eval(x.join('+'));
+    var sum2 = eval(y.join('+'));
+    var sum = sum1 + sum2;
+    var z = 0;
+    for(var i =1; i <= num; i++) {
+        if(sum <= k) {
+            z = z + 1;
+        }
+
+    }
+    return z;
+}
+    console.log(fn(3,3,6));
+</script>
+</body>
+</html>
